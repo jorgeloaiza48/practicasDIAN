@@ -35,11 +35,11 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
     if (indexQuestion === 0) { disableBotonFirstQuestion = true }
 
     return (
-        <div className=" border-2 flex flex-col justify-between shadow-md shadow-salet-300 p-10 rounded-lg mt-0">
+        <div className=" border-8 flex flex-col shadow-md shadow-salet-300  rounded-lg w-3/5">
             <span className='text-xl font-bold text-center mb-6'>
                 Categoría: {categoria}
             </span>
-            <div className="mb-6">
+            <div className="w-3/5 mx-auto mb-6">
                 <span className='text-xl font-bold'>
                     {/* Número de pregunta actual y totales */}
                     Pregunta {indexQuestion + 1} de {preguntas.length}
@@ -51,7 +51,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
             {/* Las respuestas aquí */}
             <div className='grid grid-cols-1 gap-3 mx-auto w-3/5'>
                 {answersRandom.map((answer, index) => (
-                    <button className={`border p-5 rounded-lg flex items-center hover:sclae-105 hover:bg-slate-100 ${selectAnswerIndex !== null &&
+                    <button className={`border p-5 rounded-lg flex items-center ${selectAnswerIndex !== null &&
                         index === selectAnswerIndex ? answer === preguntasIndex.correct_answer ? 'bg-green-500' : 'bg-red-500' : ''}`}
                         key={answer}
                         onClick={() => checkAnswer(index)}>
@@ -60,13 +60,13 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
 
                 ))}
             </div>
-            <div className='mt-4'>
+            <div className='w-3/5 mt-4 mx-auto'>
                 {answersRandom.map((answer, index) => (
                     <p> {selectAnswerIndex !== null && index === selectAnswerIndex ? answer === preguntasIndex.correct_answer ? <strong className='animate-pulse'>{preguntasIndex.description}</strong> : <strong>Respuesta incorrecta</strong> : ''}
                     </p>
                 ))}
             </div>
-            <div className='flex justify-between mt-10'>
+            <div className='flex justify-between mt-10  mx-auto w-3/5'>
                 <button className={`border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium' ${indexQuestion === 0 ? 'cursor-not-allowed' : ''}`} onClick={previousQuestion} disabled={disableBotonFirstQuestion} >
                     Anterior pegunta <svg className="h-8 w-40 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
                 </button>
@@ -76,7 +76,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                 </button>
             </div>
 
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center my-3.5'>
                 <Link to='/category/list'>
                     <button className="border border-blue-600 px-5 py-2 rounded-lg font-bold transition-all hover:bg-blue-500 hover:text-gray-900">
                         Volver a las categorías

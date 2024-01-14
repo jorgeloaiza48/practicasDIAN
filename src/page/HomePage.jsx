@@ -32,8 +32,9 @@ export const HomePage = () => {
           <h1 className='text-2xl font-semibold text-stone-100 bg-stone-800 bg-opacity-60 p-3 px-5 text-center'>Practicar por categorías</h1>
         </Link>
 
-      </div>
+      </div>      
     </div>
+
   )
 }
 

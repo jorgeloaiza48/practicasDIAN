@@ -3,6 +3,7 @@ import ag2 from '../assets/ag2.png';
 import ag3 from '../assets/ag3.png';
 import cgDIAN from '../assets/cgDIAN.png'
 import ofimatica from '../assets/ofimatica.png'
+import basicas_organizacionales from '../assets/basicas_organizacionales.png'
 
 
 
@@ -11,7 +12,8 @@ export const imgs = [
 	ag2,
 	ag3,
 	cgDIAN,  //conceptos generales DIAN
-	ofimatica
+	ofimatica,
+	basicas_organizacionales
 ];
 
 export const categories = {
@@ -19,7 +21,8 @@ export const categories = {
 	aspectos_generales2: 'Aspectos generales II',
 	aspectos_generales3: 'Aspectos generales III',
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
-	ofimatica_sistemas: 'Ofimática y Sistemas'
+	ofimatica_sistemas: 'Ofimática y Sistemas',
+	basicas_organizacionales: 'Basicas Organizacionales'
 };
 
 export const aspectos_generales1 = [
@@ -814,5 +817,16 @@ export const ofimatica_sistemas = [
 		correct_answer: 'El conjunto de reglas que especifican el intercambio de datos u órdenes durante la comunicación entre las entidades que forman parte de una red.',
 		incorrect_answers: ['La idea de añadir metadatos semánticos a la World Wide Web.','Una enorme base de datos léxica del idioma inglés.','Un listado de palabras, términos o temas.'],
 		description: '¡¡¡Correcto!!!!'
+	}
+]
+
+export const basicasorganizacionales = [
+
+	{
+		id:1,
+		question: 'Usted pertenece a un grupo de trabajo, en donde se cuenta con una sola impresora compartida para ocho funcionarios. Últimamente se están presentando conflictos, teniendo en cuenta que uno de los compañeros esta acaparando el uso de la impresora, teniendo en cuenta que esta liderando un proceso de fiscalización que exige la impresión de una gran cantidad de copias. ¿Cuál seria la salida adecuada a este inconveniente?',
+		correct_answer: 'Realizar un plan de trabajo conjunto, con el fin de colaborar con el compañero que mas impresiones tiene en el momento y evacuar efectivamente las impresiones de todos.',
+		incorrect_answers:['Que se establezcan horarios de impresión para cada uno de los ocho funcionarios, con el fin de no generar conflictos internos.','Buscar al interior de otros grupos de trabajo, impresoras que se encuentren disponibles para imprimir mientras la impresora del grupo esta ocupada.'],
+		description:'¡¡¡Correcto!!! Esta respuesta hace referencia a la competencia trabajo en equipo, la cual hace parte de las competencias básicas organizacionales.'
 	}
 ]

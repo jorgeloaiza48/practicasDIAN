@@ -3,7 +3,7 @@ import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
 
-const [ag1,ag2,ag3,cgDIAN,ofimatica] = imgs
+const [ag1,ag2,ag3,cgDIAN,ofimatica,basicas_organizacionales] = imgs
 
 export const CategoryList = () => {
     return (
@@ -17,9 +17,9 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.aspectos_generales2}      src={ag2}       alt={`categoria ${categories.aspectos_generales2}`}      gradientColor={'from-lime-400   to-teal-700'} />
                 <CategoryCard category={categories.aspectos_generales3}      src={ag3}       alt={`categoria ${categories.aspectos_generales3}`}      gradientColor={'from-lime-400   to-teal-700'} />
                 <CategoryCard category={categories.conceptos_generales_DIAN} src={cgDIAN}    alt={`categoria ${categories.conceptos_generales_DIAN}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.ofimatica_sistemas}       src={ofimatica} alt={`categoria ${categories.ofimatica_sistemas}`} gradientColor={'from-lime-400   to-teal-700'} />
+                <CategoryCard category={categories.ofimatica_sistemas}       src={ofimatica} alt={`categoria ${categories.ofimatica_sistemas}`}       gradientColor={'from-lime-400   to-teal-700'} />
+                <CategoryCard category={categories.basicas_organizacionales} src={basicas_organizacionales} alt={`categoria ${categories.basicas_organizacionales}`} gradientColor={'from-lime-400   to-teal-700'} />
                 {/*<CategoryCard category={categories.historia} src={Historia} alt={`categoria ${categories.historia}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.historia} src={Historia} alt={`categoria ${categories.historia}`} gradientColor={'from-lime-400   to-teal-700'} />
                 <CategoryCard category={categories.historia} src={Historia} alt={`categoria ${categories.historia}`} gradientColor={'from-lime-400   to-teal-700'} />
                 <CategoryCard category={categories.historia} src={Historia} alt={`categoria ${categories.historia}`} gradientColor={'from-lime-400   to-teal-700'} /> */}
             </div>
