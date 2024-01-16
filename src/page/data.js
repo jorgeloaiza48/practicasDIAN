@@ -667,6 +667,76 @@ export const conceptos_generales_DIAN = [
 		description: '¡¡¡Correcto!!!!'
 	},
 
+	{
+		id: 12,
+		question: 'La inobservancia del contenido normativo, el incumplimiento o la inejecución de la conducta que la misma contempla, permite al Estado por conducto de la autoridad pública, imponer:',
+		correct_answer: 'Una consecuencia adversa al infractor, traducida por regla general en una sanción.',
+		incorrect_answers: ['Los derechos que la norma especifica.', 'Los procesos legislativos y ejecutarlos en la interposición de la norma.', 'Claridad sobre cualquier actividad donde se integre la norma.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 13,
+		question: 'La potestad tributaria por regla general, informa que el poder de imposición se confiere en la Constitución Política a la institución parlamentaria o a las corporaciones de orden territorial de elección popular, el cual debe:',
+		correct_answer: 'Ser ejercido conforme a las reglas que ella misma establece.',
+		incorrect_answers: ['Proporcionar de manera clara ante el Estado los compromisos de pagos de impuestos que exige la norma.', 'Controlar las entidades encargadas del recaudo de los impuestos a nivel Nacional.', 'Relacionar ante el Estado la lista de compromisos que adquieren las entidades encargadas del manejo de los impuestos.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 14,
+		question: 'Para expedir leyes de contenido fiscal según la Constitución Política, el Congreso de la Republica debe agotar un procedimiento especial; así las leyes pueden tener origen en cualquiera de las Cámaras a propuesta de sus respectivos miembros, del Gobierno Nacional o por iniciativa popular en casos específicos. Sin embargo, cuando se trata de leyes relacionadas con las rentas nacionales, la iniciativa debe ser:',
+		correct_answer: 'Gubernamental e iniciar su trámite en la Cámara de Representantes.',
+		incorrect_answers: ['Basada en las propuestas generadas por la norma en los numerales que citen las obligaciones de pago de los impuestos.', 'Una propuesta hecha desde las instituciones del gobierno que tienen el deber de realizar el control y recaudo de cada uno de los impuestos a nivel nacional.', 'Creada desde la entidad con más poder monetario a nivel nacional como lo es el Banco de la Republica.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 15,
+		question: 'El “principio de legalidad del tributo”, históricamente concebida como una protección para los contribuyentes frente a los regímenes monárquicos absolutistas y que con la evolución de los sistemas políticos, ha pasado a ser un derecho del ciudadano, es una garantía en sentido que:',
+		correct_answer: 'El destinatario de la norma que lo contempla, deberá pagar únicamente los impuestos establecidos mediante una ley adoptada por el congreso el cual es un órgano de representación popular.',
+		incorrect_answers: ['El contribuyente tendrá un tiempo determinado dentro de la normatividad establecida para el cumplimiento de la obligación del impuesto que deba pagar dentro de los requisitos establecidos por las entidades del gobierno.', 'Será un pago que se efectúe a nivel nacional y para todos los contribuyentes que de una forma determinada posean representativamente alguna posesión que deba ser registraba o gravada en los impuestos nacionales.', 'Es una normatividad establecida a nivel nacional sin distinción alguna.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 16,
+		question: 'El ejercicio de la potestad reglamentaria, no autoriza al ejecutivo para completar la norma en los elementos estructurales de la misma, so pena de ser calificado y sancionado con la inconstitucionalidad. Por tanto, es necesario que la ley determine:',
+		correct_answer: 'Todos los elementos que configuran el tributo en forma inteligible, sin que ello signifique que se establezcan todos los detalles que en la práctica sean necesarios.',
+		incorrect_answers: ['Los procesos que ante las diferentes entidades del gobierno se establezcan dentro de los marcos constitucionales presentados para los pagos de los tributos a nivel nacional.', 'La creación de las normatividades presentadas para cada impuesto y el registro de estos a nivel nacional, dentro de la aprobación del Congreso y la repartición de las labores de cobro en las entidades gubernamentales.', 'La presentación de los impuestos que se deben pagar determinando los procesos de cobros, montos, reglamentación y descripción de los pasos a seguir para su respectivo pago.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 17,
+		question: 'El Congreso de la Republica, debe dictar normas generales, y señalar en ellas los objetivos y criterios a los cuales debe sujetarse el gobierno para regular el comercio exterior y modificar por razones de política comercial a:',
+		correct_answer: 'Los aranceles, tarifas y demás disposiciones concernientes al régimen de aduanas.',
+		incorrect_answers: ['Los impuestos involucrados por las ventas realizadas de artículos que por su exclusividad deben ser importados al país.', 'Los convenios de comercio entre países específicos de donde se traen en sistema de importación artículos que también son de comercio nacional, con probabilidades de oxigenar el comercio nacional y darle oportunidades al comprador.', 'Los compradores e importadores de los diversos productos del exterior.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 18,
+		question: 'Corresponde al ejecutivo asegurar el bienestar de todos los ciudadanos y el orden público económico en el país, en este contexto la facultad constitucional de promulgar las normas respecto del manejo de la política monetaria y cambiaria, corresponde a:',
+		correct_answer: 'La Junta Directiva del Banco de la Republica como máxima autoridad y al Banco el poder de reglamentar su aplicación.',
+		incorrect_answers: ['Las entidades del gobierno que determinan los sistemas de cobro de los impuestos en el país.', 'El Ministerio de Hacienda a través de las entidades representativas de manejo de políticas de cobros de los impuestos.', 'La Presidencia de la Republica como ente mayor de creación de normativas que permitan los manejos de políticas de inversión internacional.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 19,
+		question: 'Conjunto de principio, valores y virtudes fundamentales aceptados por la generalidad de los individuos, que deben informar permanentemente las actuaciones del Estado, a través de sus organismos y agentes, con el fin de lograr la convivencia de sus miembros, libre y digna y respetuosa, así como la realización de sus asociados tanto en el plano individual como en su ser o dimensión social.',
+		correct_answer: 'Moralidad administrativa',
+		incorrect_answers: ['Actuación administrativa', 'Principio de eficacia', 'Percepción de servicio del Estado'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 20,
+		question: 'El debido proceso es un derecho fundamental que debe ser observado en todo tipo de procesos y procedimientos, sin distingos de naturaleza, origen onormatividad que lo rija; principio que es inherente a los postulados esenciales de un Estado Constitucional Democrático, como también a:',
+		correct_answer: 'Los principios y valores que la propia Constitución incorpora.',
+		incorrect_answers: ['Las reglamentaciones estipuladas en cada una de las entidades del gobierno.','Las posiciones ideológicas de los gobernantes del país.','Los procesos que no tengan nada que ver con la regulación de las normativas dentro de cada zona del país.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 21,
+		question: 'El principio de eficiencia materializa la relación que debe existir entre los ingresos tributarios obtenidos y los recursos utilizados por el Estado para conseguirlos; en tal sentido, el tributo será eficiente únicamente cuando:',
+		correct_answer: 'No se distorsione la economía, donde el Estado pueda obtener los recursos que le permitan financiar su funcionamiento y satisfacer las necesidades de los ciudadanos a un costo razonable.',
+		incorrect_answers: ['La producción sea el equivalente a las ventas en el mercado y su balance permita al Estado obtener las ganancias necesarias para su funcionamiento.','El proceso económico permita que el producto interno bruto sea comparable dentro del mercado nacional promoviendo su auto sostenimiento.','Las regalías obtenidas de la venta de los recursos nacionales explotables permitan un sostenimiento propio separado de las producciones a nivel nacional.'],
+		description: '¡¡¡Correcto!!!!'
+	},
 	/* {
 		id: 1,
 		question: '',
@@ -681,6 +751,21 @@ export const conceptos_generales_DIAN = [
 		incorrect_answers: ['','',''],
 		description: '¡¡¡Correcto!!!!'
 	}, */
+	/* {
+		id: 1,
+		question: '',
+		correct_answer: '',
+		incorrect_answers: ['','',''],
+		description: '¡¡¡Correcto!!!!'
+	}, */
+	/* {
+		id: 1,
+		question: '',
+		correct_answer: '',
+		incorrect_answers: ['','',''],
+		description: '¡¡¡Correcto!!!!'
+	}, */
+
 ]
 
 export const ofimatica_sistemas = [
@@ -979,32 +1064,67 @@ export const basicasorganizacionales = [
 		incorrect_answers: ['Decide esperar a que el sistema se reestablezca, teniendo en cuenta que no es muy eficiente para la buena atención al ciudadano.', 'Toma la decisión de esperar a que se reestablezcan los sistemas informáticos, con el fin de dar un buen servicio al ciudadano.'],
 		description: '¡¡¡Correcto!!! Nótese que esta respuesta refleja una de las competencias básicas u organizacionales que es adaptabilidad.'
 	}
-	/* ,{
-			id:10,
-			question:'',
-			correct_answer:'',
-			incorrect_answers:['',''],
-			description:'¡¡¡Correcto!!!'
-		} */
-	/* ,{
-		id:10,
-		question:'',
-		correct_answer:'',
-		incorrect_answers:['',''],
-		description:'¡¡¡Correcto!!!'
-	} */
-	/* ,{
-		id:10,
-		question:'',
-		correct_answer:'',
-		incorrect_answers:['',''],
-		description:'¡¡¡Correcto!!!'
-	} */
-	/* ,{
-		id:10,
-		question:'',
-		correct_answer:'',
-		incorrect_answers:['',''],
-		description:'¡¡¡Correcto!!!'
-	} */
+	, {
+		id: 22,
+		question: 'El equipo informático asignado a su nombre ha presentado fallas de hardware, ocasionando que no se pueda trabajar en el desarrollo de sus labores en la entidad. Esta situación ha sido comunicada a su jefe inmediato. Mientras su equipo tiene dificultades usted:',
+		correct_answer: 'Decide ayudarle a uno de sus compañeros en sus labores de archivo,	teniendo en cuenta que presenta represamiento en su trabajo.',
+		incorrect_answers: ['Gestiona ante la división correspondiente la reparación o cambio de equipo nformático, con el fin de acelerar este procedimiento y poder brindar un buen servicio a los ciudadanos.', 'Trata de hallar la solución al problema de hardware de su equipo, teniendo en cuenta que este puede presentar un daño menor.'],
+		description: '¡¡¡Correcto!!! Nótese que esta respuesta refleja una de las competencias básicas u organizacionales que es trabajo en equipo.'
+	}
+	, {
+		id: 23,
+		question: 'Se acercan a su puesto de trabajo tres ciudadanos solicitando ayuda en la verificación de información de ciertos expedientes; uno de los ciudadanos es un adulto mayor de 80 años; otro es una persona en situación de discapacidad y otro es un ciudadano de 20 años de edad, que esta actuando de forma grosera para ser atendido. Ante esta situación usted:',
+		correct_answer: 'Atiende a los tres ciudadanos, teniendo en cuenta el compromiso con el trabajo y respeto por las personas a quien se sirve.',
+		incorrect_answers: ['Prefiere llamar a su jefe inmediato, con el fin de que le asigne a otro compañero para atender al señor que esta actuando de forma grosera.', 'Atiende al ciudadano en situación de discapacidad junto con el adulto mayor, pero le indica al señor que actúa de forma grosera, que si no se calma no será atendido.'],
+		description: '¡¡¡Correcto!!! Nótese que esta respuesta refleja una de las competencias básicas u organizacionales que es comportamiento ético.'
+	}
+	, {
+		id: 24,
+		question: 'Su jefe inmediato los ha reunido con el fin de dar instrucciones sobre los informes que deben presentar, conforme a las campañas y procesos realizados en el mes. Al finalizar la reunión todos están de acuerdo en haber entendido todas las instrucciones. Antes del plazo para la entrega de los informes, usted olvida varias de las instrucciones impartidas. Ante esta situación usted:',
+		correct_answer: 'Realiza las preguntas a su jefe nuevamente, con el fin de entregar eficientemente el informe.',
+		incorrect_answers: ['Realiza las preguntas a uno de sus compañeros, teniendo en cuenta que no queda bien que el jefe se entere que no se entendieron los lineamientos.', 'Prefiere realizar el informe utilizando su criterio, con el fin de que el jefe no se entere de usted olvido las instrucciones.'],
+		description: '¡¡¡Correcto!!! Nótese que esta respuesta refleja una de las competencias básicas u organizacionales que es comunicación efectiva'
+	}
+	, {
+		id: 25,
+		question: 'Para la correcta ejecución de cierto programa de fiscalización, usted evidencia que el trabajo se puede hacer en la mitad del tiempo al utilizar un software que tiene de manera personal. Ante esta situación usted decide llevar a la oficina su equipo portátil y utilizar este software para el desarrollo de las labores mejorando la productividad.	Esta situación:',
+		correct_answer: 'No es correcta, teniendo en cuenta que se deben alcanzar los objetivos y metas propuestas, utilizando las herramientas otorgadas por la entidad.',
+		incorrect_answers: ['Es correcta, teniendo en cuenta que para el cumplimiento de los objetivos, es valido hacer uso de cualquier tecnología.', 'Coloca en evidencia el retraso de la entidad en cuanto a herramientas tecnológicas.'],
+		description: '¡¡¡Correcto!!! Este comportamiento refleja adaptabilidad al uso de las tecnologias otorgadas por la entidad. El hacer uso de nuevas tecnologias hace referencia a la competencia iniciativa, la cual no pertenece a las competencias basicas organizacionales.'
+	}
+	, {
+		id: 26,
+		question: 'Un familiar suyo le solicita un favor que tiene que ver con información que cuenta con reserva por parte de la entidad. Ante esta situación usted:',
+		correct_answer: 'Le informa que esta información cuenta con reserva por parte de la entidad, razón por la cual no le puede ser suministrada.',
+		incorrect_answers: ['Le otorga la información, teniendo en cuenta que se trata de un familiar suyo y esto no tendrá repercusiones a futuro.', 'Le entrega la información, pero le indica que en ningún momento puede publicar la fuente.'],
+		description: '¡¡¡Correcto!!! Esta es una conducta asociada a la competencia comportamiento etico, teniendo en cuenta que se debe tener cuidado con la informacion que cuenta con reserva por parte de la entidad.'
+	}
+	, {
+		id: 27,
+		question: 'Usted atiende a un ciudadano con referencia al tramite de un proceso con la entidad; sin embargo, queda pendiente hacer un ultimo proceso, razón por la cual el ciudadano vuelve al día siguiente. Ese día usted tiene a varios ciudadanos esperando a ser atendidos y llega el ciudadano que quedo con el proceso pendiente. Ante esta situación usted:',
+		correct_answer: 'Prefiere explicarle a todos los ciudadanos que están esperando, sobre la situación con este ciudadano, con el fin de que todos entiendan el porque será atendido.',
+		incorrect_answers: ['Lo atiende sin ningún inconveniente, teniendo en cuenta que el ciudadano ya había sido atendido y tenia un proceso pendiente.', 'Le manifiesta que debe venir otro día, teniendo en cuenta que tiene muchos ciudadanos que atender.'],
+		description: '¡¡¡Correcto!!! Esta conducta esta asociada a la comunicación efectiva. Es mejor que los usuarios se enteren de la dinamica de atencion, con el fin de evitar malos entendidos.'
+	}
+	, {
+		id: 28,
+		question: '¿Qué representa mas importancia para usted?',
+		correct_answer: 'Cumplir con las funciones asignadas aplicando el código de ética de la entidad.',
+		incorrect_answers: ['Cumplir en tiempo record las funciones asignadas por la entidad.', 'Cumplir las metas de productividad pese a todas las cosas.'],
+		description: '¡¡¡Correcto!!! Esta es la competencia mas relevante sobre todas las demás al interior de la entidad, que hace referencia al comportamiento ético. Es quizá lo mas importante que busca la entidad en sus funcionarios.'
+	}
+	, {
+		id: 29,
+		question: '¿Qué es mas importante para usted?',
+		correct_answer: 'Recibir el reconocimiento de satisfacción de los ciudadanos.',
+		incorrect_answers: ['Recibir el reconocimiento de sus compañeros.', 'Recibir el reconocimiento de su jefe.'],
+		description: '¡¡¡Correcto!!! Este comportamiento refleja el nivel de compromiso con el usuario y el ciudadano. Adicionalmente este comportamiento lleva como consecuencia, el reconocimiento de la entidad y de los compañeros'
+	}
+	, {
+		id: 30,
+		question: 'Usted considera que:',
+		correct_answer: 'Los cambios dentro del área laboral son buenos porque brindan nuevas perspectivas y objetivos.',
+		incorrect_answers: ['La diligencia es el aspecto mas importante dentro de un ambiente laboral.', 'No hay trabajo completo sin una adecuada responsabilidad social.'],
+		description: '¡¡¡Correcto!!! Este comportamiento es una de las conductas observables en la competencia adaptabilidad.'
+	}
 ]

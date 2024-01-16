@@ -35,7 +35,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
     if (indexQuestion === 0) { disableBotonFirstQuestion = true }
 
     return (
-        <div className=" border-8 flex flex-col shadow-md shadow-salet-300  rounded-lg w-3/5">
+        <div className=" border-2 flex flex-col shadow-md shadow-salet-300  rounded-lg w-3/4">
             <span className='text-xl font-bold text-center mb-6'>
                 Categoría: {categoria}
             </span>
@@ -49,7 +49,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                 <h1 className='font-bold pb-6'>{preguntasIndex.question}</h1>
             </div>
             {/* Las respuestas aquí */}
-            <div className='grid grid-cols-1 gap-3 mx-auto w-3/5'>
+            <div className='grid grid-cols-1 gap-3 mx-auto w-4/5'>
                 {answersRandom.map((answer, index) => (
                     <button className={`border p-5 rounded-lg flex items-center ${selectAnswerIndex !== null &&
                         index === selectAnswerIndex ? answer === preguntasIndex.correct_answer ? 'bg-green-500' : 'bg-red-500' : ''}`}
@@ -66,13 +66,13 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                     </p>
                 ))}
             </div>
-            <div className='flex justify-between mt-10  mx-auto w-3/5'>
-                <button className={`border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium' ${indexQuestion === 0 ? 'cursor-not-allowed' : ''}`} onClick={previousQuestion} disabled={disableBotonFirstQuestion} >
-                    Anterior pegunta <svg className="h-8 w-40 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
+            <div className='flex justify-between mt-10  mx-auto w-5/6'>
+                <button className={`w-1/2 border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium' ${indexQuestion === 0 ? 'cursor-not-allowed' : ''}`} onClick={previousQuestion} disabled={disableBotonFirstQuestion} >
+                    <p className='text-xs'>Anterior pegunta</p><svg className="h-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" /></svg>
                 </button>
 
-                <button className={`border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium ${(indexQuestion + 1) / preguntas.length === 1 ? 'cursor-not-allowed' : ''}`} onClick={nextQuestion} disabled={disableBotonLastQuestion}>
-                    Siguiente pegunta <svg className="h-8 w-40 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                <button className={`w-1/2 border-2 border-yellow-600 text-yellow-600 rounded-md px-5 py-2 hover:bg-yellow-600 hover:text-black font-medium ${(indexQuestion + 1) / preguntas.length === 1 ? 'cursor-not-allowed' : ''}`} onClick={nextQuestion} disabled={disableBotonLastQuestion}>
+                    <p className='text-xs'>Siguiente pegunta</p><svg className=" h-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                 </button>
             </div>
 
