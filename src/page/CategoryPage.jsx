@@ -18,7 +18,7 @@ export const CategoryPage = () => {
   else { preguntas = basicasorganizacionales }
 
   return (
-    <div className='flex flex-col items-center justify-center gap-10 mt-32' style={{ height: 'calc(100vh-5rem)' }}>
+    <div className='flex flex-col items-center justify-center gap-10 my-3' style={{ height: 'calc(100vh-5rem)' }}>
       <Question preguntasIndex={preguntas[indexQuestion]}
         setIndexQuestion={setIndexQuestion}
         indexQuestion={indexQuestion}

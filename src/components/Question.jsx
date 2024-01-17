@@ -35,7 +35,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
     if (indexQuestion === 0) { disableBotonFirstQuestion = true }
 
     return (
-        <div className=" border-2 flex flex-col shadow-md shadow-salet-300  rounded-lg w-3/4">
+        <div className="border-4 flex flex-col shadow-md shadow-salet-300 rounded-lg w-5/6 top-2">
             <span className='text-xl font-bold text-center mb-6'>
                 Categoría: {categoria}
             </span>
@@ -45,7 +45,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                     Pregunta {indexQuestion + 1} de {preguntas.length}
                 </span>
             </div>
-            <div className='flex mx-auto justify-center w-3/5'>
+            <div className='flex mx-auto w-3/5 text-justify'>
                 <h1 className='font-bold pb-6'>{preguntasIndex.question}</h1>
             </div>
             {/* Las respuestas aquí */}
@@ -55,7 +55,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                         index === selectAnswerIndex ? answer === preguntasIndex.correct_answer ? 'bg-green-500' : 'bg-red-500' : ''}`}
                         key={answer}
                         onClick={() => checkAnswer(index)}>
-                        <p className='font-medium text-center text-sm'>{answer}</p>
+                        <p className='font-medium text-center text-sm text-justify'>{answer}</p>
                     </button>
 
                 ))}

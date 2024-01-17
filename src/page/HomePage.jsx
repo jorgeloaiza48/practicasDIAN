@@ -12,10 +12,10 @@ export const HomePage = () => {
 
       <div className='flex flex-col mx-auto'>
 
-        <Link to={'/materialApoyo'} className={`w-80 mx-auto flex flex-col jusify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden
+        <Link to={'/materialApoyo'} className={`py-1 w-80 mx-auto flex flex-col jusify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden
                       bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105 `} >
 
-          <div className='p-5 flex justify-center items-center h-48'>
+          <div className='flex justify-center items-center h-48'>
             <img src={materialestudio} alt="material-Estudio" className='w-auto' />
           </div>
 
