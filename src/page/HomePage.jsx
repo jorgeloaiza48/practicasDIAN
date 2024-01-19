@@ -10,10 +10,10 @@ export const HomePage = () => {
     <div>
       <h1 className='text-3xl text-center my-6 md:mt-16'>Página principal</h1>
 
-      <div className='flex flex-col mx-auto md:p-8 md:w-96 md:mt-12'>
+      <div className='flex flex-col mx-auto md:p-8 md:w-96 md:mt-12 md:border-8'>
 
         <Link to={'/materialApoyo'} className={`py-1 w-80 mx-auto flex flex-col jusify-between basis-1/4 bg-slate-500 rounded-2xl overflow-hidden
-                      bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105 md:py-2 `} >
+                      bg-gradient-to-r from-purple-500 to-pink-500 transition-all hover:scale-105 md:py-2`} >
 
           <div className='flex justify-center items-center h-48'>
             <img src={materialestudio} alt="material-Estudio" className='w-auto' />

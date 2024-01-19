@@ -35,7 +35,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
     if (indexQuestion === 0) { disableBotonFirstQuestion = true }
 
     return (
-        <div className="border-4 flex flex-col shadow-md shadow-salet-300 rounded-lg w-5/6 top-2">
+        <div className="border-4 flex flex-col shadow-md shadow-salet-300 rounded-lg w-5/6 top-2  sm:w-3/5 md:border-indigo-100/100 md:w-3/5 md:mt-20">
             <span className='text-xl font-bold text-center mb-6'>
                 Categoría: {categoria}
             </span>

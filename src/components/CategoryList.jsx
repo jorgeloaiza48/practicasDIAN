@@ -17,7 +17,7 @@ export const CategoryList = () => {
                 <h1 className='text-3xl'>Categorías</h1>
                 <div className='text-white'>pfdfggfffggg</div> {/* Este div me tocó colocarlo para que el div principal quede con tres elementos y así al darle "justify-between" entonces el botón Incio se va para la izquierda y la palabra Categoría se centra. También hay que darle color blanco al texto para que no aparezca */}
             </div>
-            <div className='sm:flex sm:flex-wrap sm:justify-around sm:w-5/6 sm:mx-auto'> {/* sm es para 640px */}
+            <div className='sm:flex sm:flex-col sm:mx-auto md:justify-around md:w-80 lg:flex lg:flex-row lg:flex-wrap lg:w-3/5'> {/* sm es para 640px */}
                 <CategoryCard category={categories.aspectos_generales1} src={ag1} alt={`categoria ${categories.aspectos_generales1}`} gradientColor={'from-purple-500 to-pink-500'} />
                 <CategoryCard category={categories.aspectos_generales2} src={ag2} alt={`categoria ${categories.aspectos_generales2}`} gradientColor={'from-lime-400   to-teal-700'} />
                 <CategoryCard category={categories.aspectos_generales3} src={ag3} alt={`categoria ${categories.aspectos_generales3}`} gradientColor={'from-lime-400   to-teal-700'} />
