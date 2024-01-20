@@ -60,7 +60,7 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
 
                 ))}
             </div>
-            <div className='w-3/5 mt-4 mx-auto'>
+            <div className='w-3/5 mt-4 mx-auto ml-8 sm:ml-10 md:ml-12 lg:ml-16 xl:ml-20 2xl:ml-24'>
                 {answersRandom.map((answer, index) => (
                     <p> {selectAnswerIndex !== null && index === selectAnswerIndex ? answer === preguntasIndex.correct_answer ? <strong className='animate-pulse'>{preguntasIndex.description}</strong> : <strong>Respuesta incorrecta</strong> : ''}
                     </p>

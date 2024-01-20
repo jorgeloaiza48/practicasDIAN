@@ -727,45 +727,156 @@ export const conceptos_generales_DIAN = [
 		id: 20,
 		question: 'El debido proceso es un derecho fundamental que debe ser observado en todo tipo de procesos y procedimientos, sin distingos de naturaleza, origen onormatividad que lo rija; principio que es inherente a los postulados esenciales de un Estado Constitucional Democrático, como también a:',
 		correct_answer: 'Los principios y valores que la propia Constitución incorpora.',
-		incorrect_answers: ['Las reglamentaciones estipuladas en cada una de las entidades del gobierno.','Las posiciones ideológicas de los gobernantes del país.','Los procesos que no tengan nada que ver con la regulación de las normativas dentro de cada zona del país.'],
+		incorrect_answers: ['Las reglamentaciones estipuladas en cada una de las entidades del gobierno.', 'Las posiciones ideológicas de los gobernantes del país.', 'Los procesos que no tengan nada que ver con la regulación de las normativas dentro de cada zona del país.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
 		id: 21,
 		question: 'El principio de eficiencia materializa la relación que debe existir entre los ingresos tributarios obtenidos y los recursos utilizados por el Estado para conseguirlos; en tal sentido, el tributo será eficiente únicamente cuando:',
 		correct_answer: 'No se distorsione la economía, donde el Estado pueda obtener los recursos que le permitan financiar su funcionamiento y satisfacer las necesidades de los ciudadanos a un costo razonable.',
-		incorrect_answers: ['La producción sea el equivalente a las ventas en el mercado y su balance permita al Estado obtener las ganancias necesarias para su funcionamiento.','El proceso económico permita que el producto interno bruto sea comparable dentro del mercado nacional promoviendo su auto sostenimiento.','Las regalías obtenidas de la venta de los recursos nacionales explotables permitan un sostenimiento propio separado de las producciones a nivel nacional.'],
+		incorrect_answers: ['La producción sea el equivalente a las ventas en el mercado y su balance permita al Estado obtener las ganancias necesarias para su funcionamiento.', 'El proceso económico permita que el producto interno bruto sea comparable dentro del mercado nacional promoviendo su auto sostenimiento.', 'Las regalías obtenidas de la venta de los recursos nacionales explotables permitan un sostenimiento propio separado de las producciones a nivel nacional.'],
 		description: '¡¡¡Correcto!!!!'
 	},
-	/* {
+	{
+		id: 22,
+		question: 'Si son las que modifican el tributo, por ejemplo, nuevos bases gravables, nuevas tarifas, nuevos ingresos no contributivos de renta, nuevas rentas exentas, nuevos descuentos tributarios, hablamos de:',
+		correct_answer: 'Norma tributaria sustantiva.',
+		incorrect_answers: ['Norma tributaria especial.', 'Norma tributaria adjetiva.', 'Norma contributiva.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 23,
+		question: 'A diferencia de las otras leyes que rigen a partir del día siguiente de su promulgación, la ley tributaria por regla general, solo entra a regir a partir del periodo fiscal siguiente a aquel en que es sancionada y publicada cumpliendo así la finalidad de:',
+		correct_answer: 'Brindar seguridad al ordenamiento jurídico en materia fiscal.',
+		incorrect_answers: ['Compromiso, ya que se deberá pulir los procesos que al momento se encuentren con pocas bases.', 'Incorporación de los procesos faltantes en la renovación de los planes fijados dentro de cada periodo fiscal.', 'Proporcionar los datos exactos de cada periodo fiscal, cerrando así los ciclos sin ninguna anomalía.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 24,
+		question: 'La legalidad de los tributos es esencial en todo sistema impositivo, pues no puede haber impuesto o contribución que no esté expresamente consagrado en una norma o en la ley. La ley debe fijar por consiguiente:',
+		correct_answer: 'Los elementos de la obligación tributaria, es decir los sujetos activos y pasivos, los hechos, las bases gravables y las tarifas del impuesto.',
+		incorrect_answers: ['Los datos de los procesos de grabación de los montos de cada impuesto y la percepción estipulada como periodo de pago.', 'La creación de la normalización especifica dentro de los procesos de cobros y manejo de ellos en las entidades gubernamentales.', 'Los casos de excepción en los pagos de los impuestos de rentas o prediales, permitiendo una visión más amplia de los ingresos a la nación.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 25,
+		question: 'Las medidas adoptadas y los objetivos planteados en la política fiscal, deberán ser orientados a desarrollar la finalidad de la ley que contempla el tributo, teniendo en cuenta que:',
+		correct_answer: 'No solo se encaminarán a la satisfacción de los requerimientos de la sociedad sino llevar a cabo la meta institucional en la consecución de un resultado eficaz.',
+		incorrect_answers: ['Los procesos que se lleven a cabo en el desarrollo de la implementación de la medida deben ser eficaz.', 'Proporcionaran los datos necesarios en la distribución de los pagos de los impuestos a nivel nacional.', 'Colocaran dentro de los planes de desarrollo, políticas alternas de incremento en los cobros de los impuestos que permitan una mayor rentabilidad de estos.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 26,
+		question: 'El intercambio de bienes y servicios materiales e intangibles preside el comercio nacional e internacional, involucrando elementos tales como el uso, venta y transformación entre otros. Estas actividades tienen incidencia en:',
+		correct_answer: 'El mercado al punto que sobrepasan las fronteras de los Estados a nivel mundial.',
+		incorrect_answers: ['Los procesos de creación de nuevas normas que permitan la facilitación del mejoramiento de sistemas de cobro de los impuestos.', 'La presentación de los planes de desarrollo dentro de los principios obtenidos en las reformas tributarias.', 'Los procesos de reglamentación tributaria a nivel nacional.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 27,
+		question: 'Conceptos como la optimización de recursos, la eficiencia económica, la externalización, el libre comercio, la liberalización y la armonización jurídica o la revolución de las telecomunicaciones han sido desarrolladas por la sociedad moderna, con incidencia en la economía no solo interna sino externa y es conocido como:',
+		correct_answer: 'Globalización.',
+		incorrect_answers: ['Perfeccionamiento de mercado.', 'Reglamentación definida.', 'Posicionamiento de mercados.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 28,
+		question: 'La oportuna y correcta determinación de las obligaciones fiscales y la adecuada aplicación de la legislación en materia fiscal, es una función eminentemente técnica que se basa en la continua y constante presencia fiscalizadora de la entidad ante:',
+		correct_answer: 'El conjunto de clientes, mediante control extensivo, intensivo, atención a las solicitudes técnicas y el reporte de operaciones sospechosas.',
+		incorrect_answers: ['Las entidades de cobros catastrales que nos permiten recibir los más grandes recursos por su buen manejo de recaudación de cartera.', 'El Ministerio de hacienda, realizando los respectivos informes de gestión correspondientes a los periodos fiscales.', 'El Banco de la Republica, permitiendo tener una visión más amplia económicamente de los ingresos durante los periodos fiscales.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 29,
+		question: 'En cumplimiento de la legislación Colombiana, el objetivo y propósito de cada uno de los subprocesos varía dependiendo del contenido del mismo atendiendo las normas fiscales que lo regulan. El subproceso se surte por:',
+		correct_answer: 'Las divisiones internas de la Dirección de Impuestos y Aduanas Nacionales “DIAN” en ejercicio de sus competencias.',
+		incorrect_answers: ['La necesidad de complementar los procesos en la Dirección de Policía Fiscal y Aduanera.', 'Los procesos de facilitación de la revisión de los complementos en la gestión fiscal de la revisión de los sistemas de impuestos.', 'La creación de una normalización impuesta en la DIAN para la creación de oficinas de control de calidad, que permita identificar las fallas del sistema de cobro.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 30,
+		question: 'Si tiene por objeto controlar las obligaciones fiscales que en forma voluntaria determinan los clientes en las declaraciones tributarias, aduaneras, cambiarias o documentos establecidos para ello, o identificar responsables omisos o renuentes a cumplir con sus obligaciones fiscales, conocemos este subproceso como:',
+		correct_answer: 'Investigación y determinación de impuestos y gravámenes.',
+		incorrect_answers: ['Determinación e imposición de sanciones.', 'Control y prevención de acciones sospechosas.', 'Control de lavado de activos.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 31,
+		question: 'La declaratoria de incumplimiento de obligaciones y efectividad de garantías es un subproceso que se encarga de:',
+		correct_answer: 'Verificar el cumplimiento de las obligaciones aduaneras avaladas mediante garantías que otorgan los clientes y acepta la entidad a fin de verificar y declarar el incumplimiento y ordenar la efectividad de la misma.',
+		incorrect_answers: ['Controlar de forma certera los procesos de las obligaciones aduaneras, de manera que no se procesen actividades de forma fraudulenta que pueda alterar los procesos de la entidad de impuestos.', 'Encarga de procesar las solicitudes de entrega de vehículos hurtados en otros países.', 'Aplica la legislación aduanera para definir la situación jurídica de la mercancía sobre la cual se adoptó medida cautelar de aprehensión de decomiso ordinario.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 32,
+		question: 'El conjunto de actividades administrativas y técnicas tendientes a la planificación, manejo y organización de la documentación producida y recibida de diferentes proveedores internos y externos, desde su origen hasta su asignación al empleado público competente, con el objeto de preparar la ejecución de la fiscalización, es conocida como:',
+		correct_answer: 'Gestión administrativa documental.',
+		incorrect_answers: ['Asignación y fiscalización de formas administrativas.', 'Recolección de pruebas de organización de fiscalización de casos procesales.', 'Iniciación de acción de fiscalización.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 33,
+		question: 'Para conformar un expediente o carpeta preliminar, que contenga los documentos necesarios para dar inicio a la acción de fiscalización, los responsables del proceso de fiscalización y liquidación deberán:',
+		correct_answer: 'Aplicar el memorando 233 del 27 de abril de 2010, de la Subdirección de Gestión de Recursos Físicos que contiene los lineamientos sobre la materia.',
+		incorrect_answers: ['Aplicar el memorando 344 del 6 de enero de 2012, donde se especifican los procesos de investigación realizados por la entidad.', 'Complementar mediante acta de investigación de proceso, respaldo por ayudas graficas que permitan evidenciar los hechos.', 'Crear de forma ordenada y cronológica la situación en la investigación y los resultados de estos.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 34,
+		question: 'Cuando existan documentos como catálogos, folletos, muestras, fotografías, etc., que por su condición y tamaño no pueden incorporarse dentro del cuerpo del expediente con los mismos se conformara e identificara un cuaderno anexo, el cual debe tener:',
+		correct_answer: 'Una numeración propia que inicie con 1, independiente del cuaderno del expediente.',
+		incorrect_answers: ['La continuación de la numeración del expediente para no perder el consecutivo y sea más fácil realizarse seguimiento.', 'Procesar el material como prueba fotográfica registrándolos por aparte con una nueva asignación y a parte de los archivos iniciales.', 'Una copia de la conclusión del historial para no perder la continuidad de la información.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 35,
+		question: 'El auditor responsable del proceso de fiscalización y liquidación, podrá encontrar una serie de situaciones que afectan el ejercicio libre y objetivo de la labor que le es encomendada; bajo este término se abordan asuntos relacionados con:',
+		correct_answer: 'Los conflictos de impedimento y recusación, que obliga al empleado público responsable a apartarse de la acción de fiscalización.',
+		incorrect_answers: ['Los presupuestos entregados en las investigaciones y las negociaciones establecidas con el empleado público sobre el tema de auditoria.','Los procesos de respaldo de esta auditoría y las diferencias que se pueden obtener dentro de las investigaciones fiscales.','La creación de bases fiscales en la determinación de las conclusiones de la auditoria mediante las investigaciones realizadas.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 36,
+		question: 'Aquella circunstancia negativa del individuo, el defecto o impedimento para ejercer u obtener un empleo o que le resta mérito para ejercer ciertas funciones en un cargo determinado y se traduce en la prohibición legal para desempeñarlo independientemente de otras, es conocida como:',
+		correct_answer: 'Inhabilidad.',
+		incorrect_answers: ['Auditoria.','Fiscalización.','Incompatibilidad.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 37,
+		question: 'Para la puesta en marcha de la acción de fiscalización con el fin de verificar y controlar el cumplimiento de obligaciones fiscales, que se derivan de los regímenes tributario, aduanero, cambiario, internacional, en los impuestos del orden nacional bajo el control de la DIAN, en el primer contacto con el contribuyente, usuarios aduaneros y/o agente de comercio exterior y/o usuario del régimen de cambio internacionales, es necesario que el responsable de la investigación realice:',
+		correct_answer: 'La comunicación de los derechos, deberes y las responsabilidades que le asisten al investigado, proporcionando un panorama general del proceso de auditoria.',
+		incorrect_answers: ['Los procesos de averiguación necesarios para realizar la aclaración de las informaciones, sobre la cual se realiza la indagación base de la investigación.','La recolección de los datos necesarios para la investigación y aclaración de las acusaciones a los contribuyentes en cuestión, para la pronta solución de los temas activos base de la acusación.','Los informes de gestión necesarios para dar trazabilidad de las investigaciones que den culminación a la acusación.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 38,
+		question: 'El plan de auditoria es el documento que describe las actividades mediante las cuales se establecen las pautas o lineamientos de tipo técnico, para verificación de hechos o circunstancias económicas, de tal forma que se precisan:',
+		correct_answer: 'Los aspectos fundamentales sobre los cuales se debe centrar y desarrollar la investigación.',
+		incorrect_answers: ['Las razones por las cuales se dieron las investigaciones que deben ser finalizadas dentro de un tiempo especificado por la entidad.','Los datos suministrados por los acusados y los informes presentados por los empleados públicos sobre su gestión.','Los datos establecidos dentro del proceso de investigación y las ayudas que pueda necesitar de otras entidades gubernamentales.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 39,
+		question: 'El plan de auditoria hará parte del expediente y será elaborado por el responsable de la investigación y concertado con el jefe inmediato o con quien se le haya asignado la función; igualmente podrá ser ajustado en:',
+		correct_answer: 'El transcurso de la investigación, si es el caso, contando con la aprobación de los funcionarios asignados.',
+		incorrect_answers: ['Los procesos de archivo dentro de los cuales se dará la importancia según las bases que llevaron la investigación.','Los procesos de manejo de las pruebas entregadas dentro de las averiguaciones.','Los procesos de calidad presentados en la aclaración de las pruebas mediante el trabajo de los empleados públicos responsables del caso.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+		{
+		id: 40,
+		question: 'El documento en el que se registra la decisión administrativa adoptada como resultado de una acción de fiscalización para dar a conocer al investigado, atendiendo las formalidades, oportunidad y contenido establecido en las disposiciones aplicables para cada tipo de acto, es llamado:',
+		correct_answer: 'Acto administrativo.',
+		incorrect_answers: ['Acta de ejecución.','Informe de desarrollo.','Plan de fiscalización.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+		/* {
 		id: 1,
 		question: '',
 		correct_answer: '',
 		incorrect_answers: ['','',''],
 		description: '¡¡¡Correcto!!!!'
 	}, */
-	/* {
-		id: 1,
-		question: '',
-		correct_answer: '',
-		incorrect_answers: ['','',''],
-		description: '¡¡¡Correcto!!!!'
-	}, */
-	/* {
-		id: 1,
-		question: '',
-		correct_answer: '',
-		incorrect_answers: ['','',''],
-		description: '¡¡¡Correcto!!!!'
-	}, */
-	/* {
-		id: 1,
-		question: '',
-		correct_answer: '',
-		incorrect_answers: ['','',''],
-		description: '¡¡¡Correcto!!!!'
-	}, */
-
 ]
 
 export const ofimatica_sistemas = [
