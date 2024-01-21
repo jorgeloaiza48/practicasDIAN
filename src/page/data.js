@@ -4,6 +4,7 @@ import ag3 from '../assets/ag3.png';
 import cgDIAN from '../assets/cgDIAN.png'
 import ofimatica from '../assets/ofimatica.png'
 import basicas_organizacionales from '../assets/basicas_organizacionales.png'
+import integridad from '../assets/integridad.png'
 
 
 
@@ -13,7 +14,8 @@ export const imgs = [
 	ag3,
 	cgDIAN,  //conceptos generales DIAN
 	ofimatica,
-	basicas_organizacionales
+	basicas_organizacionales,
+	integridad
 ];
 
 export const categories = {
@@ -22,7 +24,8 @@ export const categories = {
 	aspectos_generales3: 'Aspectos generales III',
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
 	ofimatica_sistemas: 'Ofimática y Sistemas',
-	basicas_organizacionales: 'Basicas Organizacionales'
+	basicas_organizacionales: 'Basicas Organizacionales',
+	prueba_integridad: 'Prueba de Integridad'
 };
 
 export const aspectos_generales1 = [
@@ -832,51 +835,51 @@ export const conceptos_generales_DIAN = [
 		id: 35,
 		question: 'El auditor responsable del proceso de fiscalización y liquidación, podrá encontrar una serie de situaciones que afectan el ejercicio libre y objetivo de la labor que le es encomendada; bajo este término se abordan asuntos relacionados con:',
 		correct_answer: 'Los conflictos de impedimento y recusación, que obliga al empleado público responsable a apartarse de la acción de fiscalización.',
-		incorrect_answers: ['Los presupuestos entregados en las investigaciones y las negociaciones establecidas con el empleado público sobre el tema de auditoria.','Los procesos de respaldo de esta auditoría y las diferencias que se pueden obtener dentro de las investigaciones fiscales.','La creación de bases fiscales en la determinación de las conclusiones de la auditoria mediante las investigaciones realizadas.'],
+		incorrect_answers: ['Los presupuestos entregados en las investigaciones y las negociaciones establecidas con el empleado público sobre el tema de auditoria.', 'Los procesos de respaldo de esta auditoría y las diferencias que se pueden obtener dentro de las investigaciones fiscales.', 'La creación de bases fiscales en la determinación de las conclusiones de la auditoria mediante las investigaciones realizadas.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
 		id: 36,
 		question: 'Aquella circunstancia negativa del individuo, el defecto o impedimento para ejercer u obtener un empleo o que le resta mérito para ejercer ciertas funciones en un cargo determinado y se traduce en la prohibición legal para desempeñarlo independientemente de otras, es conocida como:',
 		correct_answer: 'Inhabilidad.',
-		incorrect_answers: ['Auditoria.','Fiscalización.','Incompatibilidad.'],
+		incorrect_answers: ['Auditoria.', 'Fiscalización.', 'Incompatibilidad.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
 		id: 37,
 		question: 'Para la puesta en marcha de la acción de fiscalización con el fin de verificar y controlar el cumplimiento de obligaciones fiscales, que se derivan de los regímenes tributario, aduanero, cambiario, internacional, en los impuestos del orden nacional bajo el control de la DIAN, en el primer contacto con el contribuyente, usuarios aduaneros y/o agente de comercio exterior y/o usuario del régimen de cambio internacionales, es necesario que el responsable de la investigación realice:',
 		correct_answer: 'La comunicación de los derechos, deberes y las responsabilidades que le asisten al investigado, proporcionando un panorama general del proceso de auditoria.',
-		incorrect_answers: ['Los procesos de averiguación necesarios para realizar la aclaración de las informaciones, sobre la cual se realiza la indagación base de la investigación.','La recolección de los datos necesarios para la investigación y aclaración de las acusaciones a los contribuyentes en cuestión, para la pronta solución de los temas activos base de la acusación.','Los informes de gestión necesarios para dar trazabilidad de las investigaciones que den culminación a la acusación.'],
+		incorrect_answers: ['Los procesos de averiguación necesarios para realizar la aclaración de las informaciones, sobre la cual se realiza la indagación base de la investigación.', 'La recolección de los datos necesarios para la investigación y aclaración de las acusaciones a los contribuyentes en cuestión, para la pronta solución de los temas activos base de la acusación.', 'Los informes de gestión necesarios para dar trazabilidad de las investigaciones que den culminación a la acusación.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
 		id: 38,
 		question: 'El plan de auditoria es el documento que describe las actividades mediante las cuales se establecen las pautas o lineamientos de tipo técnico, para verificación de hechos o circunstancias económicas, de tal forma que se precisan:',
 		correct_answer: 'Los aspectos fundamentales sobre los cuales se debe centrar y desarrollar la investigación.',
-		incorrect_answers: ['Las razones por las cuales se dieron las investigaciones que deben ser finalizadas dentro de un tiempo especificado por la entidad.','Los datos suministrados por los acusados y los informes presentados por los empleados públicos sobre su gestión.','Los datos establecidos dentro del proceso de investigación y las ayudas que pueda necesitar de otras entidades gubernamentales.'],
+		incorrect_answers: ['Las razones por las cuales se dieron las investigaciones que deben ser finalizadas dentro de un tiempo especificado por la entidad.', 'Los datos suministrados por los acusados y los informes presentados por los empleados públicos sobre su gestión.', 'Los datos establecidos dentro del proceso de investigación y las ayudas que pueda necesitar de otras entidades gubernamentales.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
 		id: 39,
 		question: 'El plan de auditoria hará parte del expediente y será elaborado por el responsable de la investigación y concertado con el jefe inmediato o con quien se le haya asignado la función; igualmente podrá ser ajustado en:',
 		correct_answer: 'El transcurso de la investigación, si es el caso, contando con la aprobación de los funcionarios asignados.',
-		incorrect_answers: ['Los procesos de archivo dentro de los cuales se dará la importancia según las bases que llevaron la investigación.','Los procesos de manejo de las pruebas entregadas dentro de las averiguaciones.','Los procesos de calidad presentados en la aclaración de las pruebas mediante el trabajo de los empleados públicos responsables del caso.'],
+		incorrect_answers: ['Los procesos de archivo dentro de los cuales se dará la importancia según las bases que llevaron la investigación.', 'Los procesos de manejo de las pruebas entregadas dentro de las averiguaciones.', 'Los procesos de calidad presentados en la aclaración de las pruebas mediante el trabajo de los empleados públicos responsables del caso.'],
 		description: '¡¡¡Correcto!!!!'
 	},
-		{
+	{
 		id: 40,
 		question: 'El documento en el que se registra la decisión administrativa adoptada como resultado de una acción de fiscalización para dar a conocer al investigado, atendiendo las formalidades, oportunidad y contenido establecido en las disposiciones aplicables para cada tipo de acto, es llamado:',
 		correct_answer: 'Acto administrativo.',
-		incorrect_answers: ['Acta de ejecución.','Informe de desarrollo.','Plan de fiscalización.'],
+		incorrect_answers: ['Acta de ejecución.', 'Informe de desarrollo.', 'Plan de fiscalización.'],
 		description: '¡¡¡Correcto!!!!'
 	},
-		/* {
-		id: 1,
-		question: '',
-		correct_answer: '',
-		incorrect_answers: ['','',''],
-		description: '¡¡¡Correcto!!!!'
-	}, */
+	/* {
+	id: 1,
+	question: '',
+	correct_answer: '',
+	incorrect_answers: ['','',''],
+	description: '¡¡¡Correcto!!!!'
+}, */
 ]
 
 export const ofimatica_sistemas = [
@@ -1237,5 +1240,16 @@ export const basicasorganizacionales = [
 		correct_answer: 'Los cambios dentro del área laboral son buenos porque brindan nuevas perspectivas y objetivos.',
 		incorrect_answers: ['La diligencia es el aspecto mas importante dentro de un ambiente laboral.', 'No hay trabajo completo sin una adecuada responsabilidad social.'],
 		description: '¡¡¡Correcto!!! Este comportamiento es una de las conductas observables en la competencia adaptabilidad.'
+	}
+]
+
+export const pruebaIntegridad = [
+	{
+		id: 1,
+		question: 'Usted debe apoyar para dirimir un conflicto que involucra a dos compañeros de trabajo. El conflicto se presenta por diferencias en cuanto a creencias religiosas. Ante esta situación usted debe:',
+		correct_answer: 'Fomentar el respeto a las diferencias, es clave en la gestión de conflictos',
+		incorrect_answers: ['Fomentar el diálogo entre las partes, es clave para resolver conflictos','Involucrar a los demás compañeros como apoyo para una solución'],
+		description: '¡¡¡Correcto!!!'
+
 	}
 ]

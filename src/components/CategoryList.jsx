@@ -2,8 +2,10 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
+import { aspectos_generales1, aspectos_generales2, aspectos_generales3, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad } from '../page/data'
 
-const [ag1, ag2, ag3, cgDIAN, ofimatica, basicas_organizacionales] = imgs
+const [ag1, ag2, ag3, cgDIAN, ofimatica, basicas_organizacionales,integridad] = imgs
+
 
 export const CategoryList = () => {
     return (
@@ -18,12 +20,14 @@ export const CategoryList = () => {
                 <div className='text-white'>pfdfggfffggg</div> {/* Este div me tocó colocarlo para que el div principal quede con tres elementos y así al darle "justify-between" entonces el botón Incio se va para la izquierda y la palabra Categoría se centra. También hay que darle color blanco al texto para que no aparezca */}
             </div>
             <div className='sm:flex sm:flex-col sm:mx-auto md:justify-around md:w-80 lg:flex lg:flex-row lg:flex-wrap lg:w-3/5'> {/* sm es para 640px */}
-                <CategoryCard category={categories.aspectos_generales1} src={ag1} alt={`categoria ${categories.aspectos_generales1}`} gradientColor={'from-purple-500 to-pink-500'} />
-                <CategoryCard category={categories.aspectos_generales2} src={ag2} alt={`categoria ${categories.aspectos_generales2}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.aspectos_generales3} src={ag3} alt={`categoria ${categories.aspectos_generales3}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.conceptos_generales_DIAN} src={cgDIAN} alt={`categoria ${categories.conceptos_generales_DIAN}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.ofimatica_sistemas} src={ofimatica} alt={`categoria ${categories.ofimatica_sistemas}`} gradientColor={'from-lime-400   to-teal-700'} />
-                <CategoryCard category={categories.basicas_organizacionales} src={basicas_organizacionales} alt={`categoria ${categories.basicas_organizacionales}`} gradientColor={'from-lime-400   to-teal-700'} />
+                <CategoryCard category={categories.aspectos_generales1}      src={ag1}                      alt={`categoria ${categories.aspectos_generales1}`}         gradientColor={'from-purple-500 to-pink-500'} cantidadPreguntas={aspectos_generales1} />
+                <CategoryCard category={categories.aspectos_generales2}      src={ag2}                      alt={`categoria ${categories.aspectos_generales2}`}         gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={aspectos_generales2} />
+                <CategoryCard category={categories.aspectos_generales3}      src={ag3}                      alt={`categoria ${categories.aspectos_generales3}`}         gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={aspectos_generales3}/>
+                <CategoryCard category={categories.conceptos_generales_DIAN} src={cgDIAN}                   alt={`categoria ${categories.conceptos_generales_DIAN}`}    gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conceptos_generales_DIAN}/>
+                <CategoryCard category={categories.ofimatica_sistemas}       src={ofimatica}                alt={`categoria ${categories.ofimatica_sistemas}`}          gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={ofimatica_sistemas}/>
+                <CategoryCard category={categories.basicas_organizacionales} src={basicas_organizacionales} alt={`categoria ${categories.basicas_organizacionales}`}    gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={basicasorganizacionales}/>
+                <CategoryCard category={categories.prueba_integridad}        src={integridad}               alt={`categoria ${categories.prueba_integridad}`}           gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={pruebaIntegridad}/>
+                
             </div>            
         </div>
     )
