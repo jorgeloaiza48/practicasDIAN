@@ -1248,8 +1248,74 @@ export const pruebaIntegridad = [
 		id: 1,
 		question: 'Usted debe apoyar para dirimir un conflicto que involucra a dos compañeros de trabajo. El conflicto se presenta por diferencias en cuanto a creencias religiosas. Ante esta situación usted debe:',
 		correct_answer: 'Fomentar el respeto a las diferencias, es clave en la gestión de conflictos',
-		incorrect_answers: ['Fomentar el diálogo entre las partes, es clave para resolver conflictos','Involucrar a los demás compañeros como apoyo para una solución'],
-		description: '¡¡¡Correcto!!!'
+		incorrect_answers: ['Fomentar el diálogo entre las partes, es clave para resolver conflictos', 'Involucrar a los demás compañeros como apoyo para una solución'],
+		description: '¡¡¡Correcto!!! Respeto.'
+	},
+	{
+		id: 2,
+		question: 'En el ejercicio de sus funciones al interior de la entidad, usted se entera de un proceso de inspección de fiscalización que se adelantará en contra de un familiar de una amiga suya. Ante esta situación usted debe:',
+		correct_answer: 'Honrar la promesa de confidencialidad.',
+		incorrect_answers: ['Informar a su amiga sobre la situación', 'Buscar más información sobre la situación.'],
+		description: '¡¡¡Correcto!!! Honestidad.'
+	},
+	{
+		id: 3,
+		question: 'Un compañro le pide el favor de prestarle 10 minutos su computador, teniendo en cuenta que debe terminar un informe urgente que debe ser enviado para revisión. Ante esta situación usted debe:',
+		correct_answer: 'Prestar el equipo a su compañero, pero debe cerrar todas las sesiones abiertas.',
+		incorrect_answers: ['Negar el préstamos a su compañero, teniendo en cuenta que este tipo de préstamo está prohibido', 'Indicar a su compañero,solicitar la autorización correspondiente al jefe inmediato.'],
+		description: '¡¡¡Correcto!!! No soy descuidado con la información a mi cargo (Honestidad).'
+	},
+	{
+		id: 4,
+		question: 'La entidad ha realizado una actualización al panel de control de los sistemas informáticos electrónicos, adicionando un nuevo servicio en el menú de usuarios. Ante esta situación usted prefiere:',
+		correct_answer: 'Practicar el autoaprendizaje, investigando de qué se trata el nuevo servicio',
+		incorrect_answers: ['Pasar por alto este nuevo servicio, teniendo en cuenta que aún no llega información sobre el mismo', 'Estar a la expectativa de información sobre el nuevo servicio'],
+		description: '¡¡¡Correcto!!! Me capacito y practico el autoaprendizaje constantemente, porque entiendo que es necesario y clave para realizar correctamente mi función. Compromiso.'
+	},
+	{
+		id: 5,
+		question: 'Usted debe imprimir ciertos documentos de carácter personal; sin embargo no lo hace en su casa, porque no cuenta con una impresora láser. En su puesto de trabajo se usa una impresora láser. Ante esto usted:',
+		correct_answer: 'No usa la impresora de la oficina para este tipo de trabajos.',
+		incorrect_answers: ['Imprime los documentos en la impresora de la oficina', 'Usa la impresora de la oficina pero aporta el papel necesario para las impresiones.'],
+		description: '¡¡¡Correcto!!! Uso responsablemente los recursos públicos para cumplir con mis obligaciones. Lo público es de todos y no se desperdicia. Diligencia.'
+	},
 
+	{
+		id: 6,
+		question: 'Se ha solicitado a la oficina de comunicaciones, varios afiches con los requisitos necesarios para la prestación de un buen servicio para los ciudadanos.La oficina de comunicaciones ha manifestado que se demoran aproximadamente un mes para tener listos los afiches, pero estos se requieren con urgencia. Usted tiene el conocimiento para hacer los afiches de manera temporal. Ante esta situación usted debe:',
+		correct_answer: 'Hacerlos, teniendo en cuenta que son de manera temporal y pueden ayudar en la guía correcta de los ciudadanos.',
+		incorrect_answers: ['Indicarle al jefe inmediato, que la única opción es esperar los afiches institucionales', 'No hacerlos, teniendo en cuenta que la imagen institucional se verá afectada.'],
+		description: '¡¡¡Correcto!!! Pongo a disposición de la Entidad mis talentos, habilidades y competencias para que contributan a la creación de formas de cumplimiento eficiente en desarrollo de la misión institucional. Innovación.'
+	},
+
+	{
+		id: 7,
+		question: 'Varios compañeros están realizando el trámite de retiro de cesantías y tienen a una persona que le suministra los contratos de obra para que puedan cumplir con el requisito de remodelación de vivienda y de esta manera tener accesso a esos fondos rápidamente. Usted necesita el dinero de cesantías y le ofrecen esta opción. Ante esto usted:',
+		correct_answer: 'Espera a que realmente se necesite una remodelación, para realizar el trámite',
+		incorrect_answers: ['Acude al servicio de la persona para poder retirar las cesantías', 'Prefiere acudir a otra persona para que le haga ese trámite.'],
+		description: '¡¡¡Correcto!!! No justifico situaciones administrativas o accedo a mejoras laborales con documentos falsos. Honestidad.'
+	},
+	{
+		id: 8,
+		question: 'En el trámite realizado a un ciudadano, usted ha cometido un error que representa que el ciudadano deba esperar varias horas para darle una solución. Ante esta situación usted debe:',
+		correct_answer: 'Decir la verdad al ciudadano, aunque este pueda molestarse.',
+		incorrect_answers: ['Indicar al ciudadano que la culpa es de los servicios informáticos de la entidad', 'Mencionar que hubo complicaciones que no son inherentes a usted.'],
+		description: '¡¡¡Correcto!!! Siempre digo la verdad, incluso cuando tengo errores, porque es humano cometerlos, pero no es correcto esconderlos. Honestidad.'
+	},
+	{
+		id: 9,
+		question: 'En el proceso de atención a un ciudadano, usted no tiene todo el conocimiento necesario para darle toda la información necesaria; por eso, decide pedir ayuda a sus compañeros, pero encuentra que nadie se dispone a ayudar. Ante esto usted:',
+		correct_answer: 'Busca otros medios pertinentes al interior de la ciudad, con el fin de recibir ayuda.',
+		incorrect_answers: ['Atiende al ciudadano con el poco conocimiento que tiene', 'Decide discutir con sus compañeros para que le brinden ayuda.'],
+		description: '¡¡¡Correcto!!! Cuando tengo dudas respecto a la aplicación de mis deberes, busco orientación en las instancias pertinentes al interior de mi entidad. Es válido no saberlo todo y también es válido pedir ayuda. Honestidad.'
+	},
+	{
+		id: 10,
+		question: 'Varios compañeros han manifestado que últimamente el carácter suyo, contribuye a la generación de un mal clima laboral al interior del grupo. Ante esta situación usted decide:',
+		correct_answer: 'Abrir la ventana del diálogo y la comprensión, a pesar de que los demás tengan perspectivas y opiniones distintas a la suyas.',
+		incorrect_answers: ['Cambiar su forma de ser, con el fin de que esta situación mejore.', 'Mencionar al grupo que ellos también deben analizarse, para que el clima laboral mejore.'],
+		description: '¡¡¡Correcto!!! Respeto.'
 	}
+
+
 ]
