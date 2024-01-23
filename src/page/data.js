@@ -1,31 +1,31 @@
 import ag1 from '../assets/ag1.png';
-import ag2 from '../assets/ag2.png';
-import ag3 from '../assets/ag3.png';
 import cgDIAN from '../assets/cgDIAN.png'
 import ofimatica from '../assets/ofimatica.png'
 import basicas_organizacionales from '../assets/basicas_organizacionales.png'
 import integridad from '../assets/integridad.png'
+import tributarios1 from '../assets/tributarios1.png'
+import conductuales from '../assets/conductuales.png'
 
 
 
 export const imgs = [
-	ag1,
-	ag2,
-	ag3,
+	ag1,	
 	cgDIAN,  //conceptos generales DIAN
 	ofimatica,
 	basicas_organizacionales,
-	integridad
+	integridad,
+	tributarios1,
+	conductuales
 ];
 
 export const categories = {
-	aspectos_generales1: 'Aspectos generales I',
-	aspectos_generales2: 'Aspectos generales II',
-	aspectos_generales3: 'Aspectos generales III',
+	aspectos_generales1: 'Aspectos generales I',		
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
 	ofimatica_sistemas: 'Ofimática y Sistemas',
 	basicas_organizacionales: 'Basicas Organizacionales',
-	prueba_integridad: 'Prueba de Integridad'
+	prueba_integridad: 'Prueba de Integridad',
+	conocimientosTributariosI: 'Conocimientos Tributarios I',
+	conductuales:	"Conductuales e interpersonales"
 };
 
 export const aspectos_generales1 = [
@@ -218,19 +218,16 @@ export const aspectos_generales1 = [
 		correct_answer: 'Impuesto de Renta.',
 		incorrect_answers: ['Impuesto al Patrimonio.', 'Impuesto de Valorización.', 'Retención en la fuente.'],
 		description: '¡¡¡Correcto!!!'
-	}
-]
-
-export const aspectos_generales2 = [
+	},
 	{
-		id: 1,
+		id: 27,
 		question: '¿Cuál es la sanción impuesta para los contribuyentes que no expidan factura o documento equivalente estando obligado a ello?',
 		correct_answer: 'Se aplicara clausura por tres (3) días del sitio o sede respectiva del contribuyente.',
 		incorrect_answers: ['La sanción equivaldrá a cien (100) UVTs', 'Se le cancelara automáticamente la Inscripción en el Registro Único Tributario', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 2,
+		id: 28,
 		question: '¿Qué entidad es la encargada de llevar a cabo las sanciones a contadores públicos, auditores o revisores fiscales?',
 		correct_answer: 'Junta central de contadores.',
 		incorrect_answers: ['Ministerio del Interior.', 'DIAN', 'Ministerio de protección social.'],
@@ -238,7 +235,7 @@ export const aspectos_generales2 = [
 
 	},
 	{
-		id: 3,
+		id: 29,
 		question: '¿Cuál de las siguientes NO es catalogada como una operación de Cambios?',
 		correct_answer: 'Prestación de servicios médicos dentro del territorio nacional.',
 		incorrect_answers: ['Inversiones Colombianas en el exterior.', 'Inversiones de capitales del Exterior en el país.', 'Importaciones y exportaciones de bienes y servicios.'],
@@ -247,7 +244,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 4,
+		id: 30,
 		question: '¿Qué es la balanza comercial?',
 		correct_answer: 'Es la variable de medición que refleja la diferencia entre las exportaciones e importaciones realizadas por un país en periodos determinados.',
 		incorrect_answers: ['Es la cuenta del sector externo donde se registran las transacciones económicas de un país con el exterior.', 'Es el punto máximo y mínimo al cual puede llegar la inflación en un país.', 'Es el sistema por el cual los países de manera unilateral o en el marco de acuerdos comerciales plurilaterales resuelven eliminar en un periodo de tiempo sus tarifas aduaneras.'],
@@ -256,7 +253,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 5,
+		id: 31,
 		question: '¿Qué es la balanza de pagos?',
 		correct_answer: 'Cuenta externa expresada en dólares, donde se registran las transacciones económicas de un país con el exterior.',
 		incorrect_answers: ['Es la variable por la cual los países de manera unilateral o en el marco de acuerdos comerciales plurilaterales resuelven eliminar en un periodo de tiempo sus tarifas aduaneras.', 'Máximo y mínimo al cual puede llegar la inflación en un país.', 'Es la variable de medición que refleja la diferencia entre las exportaciones e importaciones realizadas por un país en periodos determinados.'],
@@ -265,7 +262,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 6,
+		id: 32,
 		question: '¿En qué caso existe superávit en la balanza comercial?',
 		correct_answer: 'Cuando en un país, el valor de las exportaciones es mayor que el valor de las importaciones.',
 		incorrect_answers: ['Cuando en un país, el valor de las importaciones es mayor que el valor de las exportaciones.', 'Cuando en un país el valor de las exportaciones es igual al valor de las importaciones.', 'Ninguna de las opciones'],
@@ -274,7 +271,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 7,
+		id: 33,
 		question: '¿En qué caso existe déficit en la balanza comercial?',
 		correct_answer: 'Cuando en un país, el valor de las importaciones es mayor que el valor de las exportaciones.',
 		incorrect_answers: ['Cuando en un país, el valor de las exportaciones es mayor que el valor de las importaciones.', 'Cuando en un país el valor de las exportaciones es igual al valor de las importaciones.', 'Ninguna de las opciones'],
@@ -283,7 +280,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 8,
+		id: 34,
 		question: '¿Qué se entiende por desmonte arancelario?',
 		correct_answer: 'Se refiere a la reducción gradual de las tarifas aduaneras y barreras no arancelarias en un periodo de tiempo determinado, con el fin de posibilitar el libre comercio de bienes y servicios entre países.',
 		incorrect_answers: ['Es la exención total o parcial del pago de los derechos e impuestos a la importación y/o exportación aplicables a las mercancías que entran o salen del territorio aduanero.', 'Se refiere a las devoluciones aduaneras que se hacen efectivas en cada declaración de importación o exportación con el fin de cruzar valores y desmontar aranceles.', 'Ninguna de las opciones.'],
@@ -292,7 +289,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 9,
+		id: 35,
 		question: '¿Qué se entiende por enclave?',
 		correct_answer: 'Parte del territorio de un país, donde no se aplican las disposiciones aduaneras o se permite la aplicación de disposiciones aduaneras de otro país.',
 		incorrect_answers: ['Es la exención total o parcial del pago de los derechos e impuestos a la importación y/o exportación aplicables a las mercancías que entran o salen del territorio aduanero.', 'Es la variable de medición que refleja la diferencia entre las exportaciones e importaciones realizadas por un país en periodos determinados.', 'Es la cuenta del sector externo donde se registran las transacciones económicas de un país con el exterior.'],
@@ -301,7 +298,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 10,
+		id: 36,
 		question: '¿Qué se entiende por franquicia aduanera?',
 		correct_answer: 'Es cuando se otorga exención total o parcial del pago de los derechos e impuestos a la importación y/o exportación aplicables a las mercaderías que entran o salen del territorio aduanero.',
 		incorrect_answers: ['Es cuando la Administración de Aduanas, delega a otra entidad la tarea de fiscalizar y recaudar los tributos aduaneros en calidad de franquicia.', 'Es una especie de sistema prepago que adquieren las empresas altamente exportadoras con el fin de pagar anticipadamente el valor de sus transacciones aduaneras con descuentos especiales.', 'Ninguna de las opciones'],
@@ -310,7 +307,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 11,
+		id: 37,
 		question: '¿Qué se entiende por transito aduanero?',
 		correct_answer: 'Es la modalidad que permite el transporte terrestre de mercancías nacionales o de procedencia extranjera, bajo control aduanero, de una Aduana a otra situadas en el territorio aduanero nacional.',
 		incorrect_answers: ['Es la modalidad que permite a un usuario aduanero sacar rápidamente las mercancías del territorio nacional, sin que estas requieran ser inspeccionadas por la autoridad aduanera.', 'Es la modalidad que permite la legalización de mercancías que ingresan al territorio nacional de una manera rápida y sin necesidad de inspección por parte de las autoridades aduaneras.', 'Ninguna de las opciones'],
@@ -319,7 +316,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 12,
+		id: 38,
 		question: 'Las iglesias católicas, están obligadas a presentar:',
 		correct_answer: 'Declaración de Ingresos y Patrimonio.',
 		incorrect_answers: ['Declaración de renta ordinaria.', 'Declaración de renta especial.', 'Declaración de bienes y rentas.'],
@@ -328,7 +325,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 13,
+		id: 39,
 		question: '¿Qué se entiende por activos fijos o inmovilizados?',
 		correct_answer: 'Bienes corporales muebles o inmuebles y los incorporales que no se enajenen dentro del giro ordinario de los negocios del contribuyente.',
 		incorrect_answers: ['Bienes corporales mueble o inmuebles que se enajenen dentro del giro ordinario de los negocios del contribuyente.', 'Bienes incorporales que se enajenen dentro del giro ordinario de los negocios del contribuyente.', 'Bienes muebles o inmuebles que hayan sido donados dentro del año fiscal objeto de la declaración.'],
@@ -337,7 +334,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 14,
+		id: 40,
 		question: '¿Qué se entiende por activos depreciables?',
 		correct_answer: 'Los activos fijos tangibles que no sean amortizables, con excepción de los terrenos.',
 		incorrect_answers: ['Los activos fijos intangibles que no sean amortizables, con excepción de los terrenos.', 'Los activos fijos tangibles que no sean amortizables, con excepción de los vehículos', 'Los terrenos y los activos intangibles, además de los bienes respecto de los cuales se enajeno el derecho de usufructo'],
@@ -346,7 +343,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 15,
+		id: 41,
 		question: '¿Qué se entiende por pasivos en una declaración de renta?',
 		correct_answer: 'Las obligaciones a cargo del contribuyente vigentes a 31 de diciembre del año gravable que afecten el patrimonio bruto del contribuyente.',
 		incorrect_answers: ['Las inversiones realizadas dentro del año gravable.', 'El ahorro realizado con corte a 31 de diciembre del año gravable.', 'Los giros del exterior que ha recibido el contribuyente durante el año gravable a declarar.'],
@@ -355,7 +352,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 16,
+		id: 42,
 		question: 'En cuanto a las ventas de bienes o servicios, ¿Cuál es el momento de causación del IVA?',
 		correct_answer: 'En la fecha de emisión de la factura o documento equivalente.',
 		incorrect_answers: ['Cuando el usuario del bien o servicio quede satisfecho con el mismo.', 'Cuando el cliente del bien o servicio muestre interés por el mismo, sin que haya comprado el bien o servicio', 'Cuando se haga uso de la garantía del bien o servicio.'],
@@ -364,7 +361,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 17,
+		id: 43,
 		question: 'En el caso de bienes importados ¿En qué momento se causará el IVA?',
 		correct_answer: 'Al momento de nacionalizar el bien importado.',
 		incorrect_answers: ['En el momento cuando es embarcada la mercancía desde su punto de partida.', 'Al momento de realizar el trato o negocio de importación.', 'Ninguna de las opciones'],
@@ -373,7 +370,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 18,
+		id: 44,
 		question: '¿Qué se entiende por IVA?',
 		correct_answer: 'Es un gravamen que recae sobre el consumo de bienes, servicios y explotación de juegos de suerte y azar.',
 		incorrect_answers: ['Es un impuesto que tiene por objeto obtener en forma gradual el recaudo sobre documentos que constituyen valor.', 'Es un mecanismo anticipado de recaudo del impuesto sobre la renta.', 'Ninguna de las opciones'],
@@ -382,7 +379,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 19,
+		id: 45,
 		question: '¿Cuál es la diferencia entre bienes exentos del IVA y bienes excluidos del IVA?',
 		correct_answer: 'Los bienes exentos si están sometidos al impuesto de IVA a la tarifa 0% y los excluidos simplemente no están sometidos al impuesto.',
 		incorrect_answers: ['Los bienes excluidos si están sometidos al impuesto de IVA a la tarifa 0% y los exentos simplemente no están sometidos al impuesto.', 'No existe diferencia', 'Ninguna de las opciones'],
@@ -391,7 +388,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 20,
+		id: 46,
 		question: '¿Un comerciante que introduce mercancías de procedencia extranjera al territorio Aduanero Nacional, a que régimen debe pertenecer?',
 		correct_answer: 'Régimen Común.',
 		incorrect_answers: ['Régimen simplificado.', 'Régimen sancionatorio.', 'Ninguna de las opciones'],
@@ -400,7 +397,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 21,
+		id: 47,
 		question: '¿Cuál es la finalidad de la retención en la fuente?',
 		correct_answer: 'Su finalidad es que el impuesto se recaude, en el momento en que se cause.',
 		incorrect_answers: ['Su finalidad es otorgar beneficios tributarios como descuentos, exenciones para quienes están obligados.', 'Su finalidad es gravar las ganancias ocasionales y las remesas del exterior, que son las que más evasión generan.', 'Ninguna de las opciones'],
@@ -409,7 +406,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 22,
+		id: 48,
 		question: '¿Qué se entiende por aduana de partida?',
 		correct_answer: 'Es aquella donde se inicia legalmente un tránsito aduanero.',
 		incorrect_answers: ['Es el punto de partida donde las mercancías obtienen su código de barras para poder ser comercializada.', 'Es una partida arancelaria que tiene beneficios para el ente exportador.', 'Es un ítem que contiene la declaración de exportación.'],
@@ -418,7 +415,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 23,
+		id: 49,
 		question: '¿Qué se entiende por abandono legal?',
 		correct_answer: 'Situación en que se encuentra una mercancía cuando vencido el término de permanencia en depósito no ha obtenido su levante o no se ha reembarcado.',
 		incorrect_answers: ['Es el acto mediante el cual quien tiene derecho a disponer de la mercancía comunica por escrito a la autoridad aduanera que la deja a favor de la Nación en forma total o parcial.', 'Es una medida cautelar consistente en la retención de mercancías respecto de las cuales se configure alguno de los eventos previstos en el Artículo 502 de decreto 2685.', 'Son aquellas mercancías que un viajero importa o exporta para desarrollar las actividades inherentes a su oficio, profesión, actividad artística o deportiva.'],
@@ -427,7 +424,7 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 24,
+		id: 50,
 		question: 'De las siguientes ¿Cuál NO es una modalidad de importación?',
 		correct_answer: 'Importación chárter.',
 		incorrect_answers: ['Importación ordinaria.', 'Entregas urgentes.', 'Viajeros.'],
@@ -436,145 +433,141 @@ export const aspectos_generales2 = [
 	},
 
 	{
-		id: 25,
+		id: 51,
 		question: '¿De las siguientes, cual NO es una modalidad de Exportación?',
 		correct_answer: 'Exportación contractual.',
 		incorrect_answers: ['Reembarque.', 'Exportación de menajes.', 'Exportación definitiva.'],
 		description: '¡¡¡Correcto!!!!'
 
-	}
-
-]
-
-export const aspectos_generales3 = [
+	},
 	{
-		id: 1,
+		id: 52,
 		question: '¿Cómo está conformado el Mercado Cambiario?',
 		correct_answer: 'Está conformado por la totalidad de las divisas que deben ser canalizadas a través de los intermediarios autorizados para este efecto o a través del mecanismo de compensación.',
 		incorrect_answers: ['Está conformado por la totalidad de impuestos de orden nacional sobre los cuales debe ejercer control la DIAN.', 'Está conformado por la totalidad de la producción generada en el territorio nacional en relación al PIB.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 2,
+		id: 53,
 		question: 'De las siguientes entidades ¿Cuál NO es un intermediario del mercado cambiario?',
 		correct_answer: 'Fondo internacional para el desarrollo exportador.',
 		incorrect_answers: ['Bancos comerciales.', 'Corporaciones financieras.', 'Banco de comercio exterior de Colombia.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 3,
+		id: 54,
 		question: '¿Cuál de las siguientes NO es una operación autorizada por el banco de la republica para los intermediarios del mercado cambiario?',
 		correct_answer: 'Emitir tasas de especulación de acuerdo a estadísticas propias para ser tomadas y aplicadas por el mercado cambiario en general.',
 		incorrect_answers: ['Realizar operaciones activas de crédito en moneda extranjera expresamente autorizadas en un plazo igual o inferior al de la financiación obtenida.', 'Respaldar obligaciones de residentes en el exterior.', 'Enviar o recibir pagos en moneda extranjera y efectuar remesas de divisas desde o hacia el exterior y realizar gestiones de cobro servicios bancarios similare'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 4,
+		id: 55,
 		question: '¿Qué se entiende por contratos de empréstito?',
 		correct_answer: 'Son aquellos que tienen por objeto proveer a la entidad estatal contratante de recursos en moneda nacional o extranjera con plazo para su pago.',
 		incorrect_answers: ['Son aquellos que tienen por objeto proveer exclusivamente servicios de asesoramiento empresarial y en materia de gestión.', 'Son aquellos que tienen por objeto realizar una intermediación en cuando a los trámites que se deben realizar para exportar o importar bienes o servicios.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 5,
+		id: 56,
 		question: 'La firma electronica de la DIAN se emite a nombre de:',
 		correct_answer: 'Personas naturales que actúan a nombre propio y a nombre de personas jurídicas.',
 		incorrect_answers: ['Personas jurídicas.', 'Personas jurídicas que actúan a nombre de personas naturales.', 'Únicamente para grandes contribuyentes.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 6,
+		id: 57,
 		question: '¿De los siguientes cual NO representa un procedimiento valido para el RUT?',
 		correct_answer: 'Escisión.',
 		incorrect_answers: ['Inscripción.', 'Actualización.', 'Cancelación o cese de responsabilidades.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 7,
+		id: 58,
 		question: '¿Cuándo se debe actualizar el Registro Único Tributario?',
 		correct_answer: 'Cuando existan cambios a realizar, puesto que este registro no tiene vencimiento.',
 		incorrect_answers: ['Cada año puesto que este registro vence anualmente.', 'Cada dos (2) años cancelando la suma de 10 UVTs.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 8,
+		id: 59,
 		question: 'En el caso de personas naturales ¿Cuándo se cancela el Registro Único Tributario?',
 		correct_answer: 'En el caso de fallecimiento de la persona natural, en el momento cuando se liquide la sucesión cuando a ello hubiere lugar.',
 		incorrect_answers: ['Cuando la persona natural decida terminar sus actividades mercantiles.', 'Cuando la persona deje de ejercer actividades como prestador de servicios y se convierta en asalariado.', 'Niguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 9,
+		id: 60,
 		question: '¿Las fuentes de salvaguardia del derecho procedimental tributario se refieren a:',
 		correct_answer: 'Esta clase de fuente no existe.',
 		incorrect_answers: ['La jurisprudencia, la costumbre, la doctrina y los principios generales del derecho.', 'La constitución y las leyes que regulan el procedimiento.', 'Los decretos reglamentarios expedidos por el gobierno nacional.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 10,
+		id: 61,
 		question: 'Las fuentes directas del derecho procedimental tributario se refieren a:',
 		correct_answer: 'La constitución y las leyes que regulan el procedimiento.',
 		incorrect_answers: ['La jurisprudencia, la costumbre, la doctrina y los principios generales del derecho.', 'Esta clase de fuente no existe.', 'Los decretos reglamentarios expedidos por el gobierno nacional.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 11,
+		id: 62,
 		question: 'Las fuentes indirectas del derecho procedimental tributario de refieren a:',
 		correct_answer: 'La jurisprudencia, la costumbre, la doctrina y los principios generales del derecho.',
 		incorrect_answers: ['La constitución y las leyes que regulan el procedimiento.', 'Esta clase de fuente no existe.', 'Los decretos reglamentarios expedidos por el gobierno nacional.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 12,
+		id: 63,
 		question: 'Nuestra constitución política está fundamentada en:',
 		correct_answer: 'El estado social de derecho.',
 		incorrect_answers: ['Las normas de convivencia ciudadana.', 'El estado social Bolivariano.', 'Niguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 13,
+		id: 64,
 		question: 'Las leyes pueden definirse como preceptos dictados por la autoridad competente. ¿En Colombia quien elabora las leyes?',
 		correct_answer: 'Es elaborada a través de la función legislativa (Congreso de la republica).',
 		incorrect_answers: ['Es elaborada a través de la función pública.', 'Es elaborada a través de la función judicial.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 14,
+		id: 65,
 		question: 'De las siguientes ¿Cuál NO representa una de las características que cumplen las leyes en Colombia?',
 		correct_answer: 'No tienen validez si el ciudadano manifiesta desconocer la ley prevista.',
 		incorrect_answers: ['Las leyes son de estricta obligatoriedad.', 'Son generales, esto quiere decir que cobijan a todas las personas.', 'No están hechas para regir casos individuales ni ciertas personas determinadas.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 15,
+		id: 66,
 		question: '¿De los siguientes, cual NO representa un principio del Derecho Procesal Tributario?',
 		correct_answer: 'Principio de lealtad.',
 		incorrect_answers: ['Principio de equidad.', 'Principio de progresividad.', 'Principio de eficiencia.'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 16,
+		id: 67,
 		question: '¿A que hace referencia el Principio de Progresividad?',
 		correct_answer: 'Hace referencia al reparto de las cargas tributarias, entre mas se tiene más se tributa.',
 		incorrect_answers: ['Hace referencia al progreso de la nación como resultado del pago d impuestos y al buen manejo de los recursos.', 'No existe el principio de progresividad.', 'Ninuna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 17,
+		id: 68,
 		question: 'Los emplazamientos, requerimientos, liquidaciones oficiales y demás actos administrativos proferidos por la Administración de Impuestos, podrán referirse:',
 		correct_answer: 'A varios periodos gravables en el caso de las declaraciones del impuesto sobre las ventas y retenciones en la fuente.',
 		incorrect_answers: ['A un solo periodo gravable en el caso de las declaraciones del impuesto sobre las ventas y retenciones en la fuente.', 'A un solo periodo gravable y en el caso de ser varios periodos, deben enviar varios emplazamientos, requerimientos o liquidaciones oficiales.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 18,
+		id: 69,
 		question: '¿Un requerimiento y una liquidación pueden referirse al mismo tiempo al impuesto de renta y al impuesto de ventas?',
 		correct_answer: 'Si podrán determinarse oficialmente los dos (2) tributos, en cuyo caso el fallo del recurso comprenderá uno y otro.',
 		incorrect_answers: ['No podrán determinarse oficialmente los dos (2) tributos, debido a que el fallo del recurso no podrá comprender uno y otro.', 'No podrán determinarse oficialmente los dos (2) tributos, ya que se declarara inexequible el requerimiento.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id: 19,
+		id: 70,
 		question: 'Según el Artículo 729 del Estatuto Tributario. Los expedientes de recursos solo podrán ser examinados por:',
 		correct_answer: 'Todas las opciones',
 		incorrect_answers: ['El contribuyente.', 'Un apoderado legalmente constituido por el contribuyente.', 'Un abogado autorizado mediante memorial presentado personalmente por el contribuyente.'],
@@ -582,14 +575,14 @@ export const aspectos_generales3 = [
 	},
 
 	{
-		id: 20,
+		id: 71,
 		question: 'Según el Artículo 738 del Estatuto Tributario. ¿Quién tiene la competencia para fallar las solicitudes de revocatoria directa?',
 		correct_answer: 'El Administrador de impuestos nacionales respectivo o su delegado.',
 		incorrect_answers: ['Quien notifica el acto respectivo.', 'El sustanciador del caso.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
 	}
-
 ]
+
 
 export const conceptos_generales_DIAN = [
 	{
@@ -1240,7 +1233,15 @@ export const basicasorganizacionales = [
 		correct_answer: 'Los cambios dentro del área laboral son buenos porque brindan nuevas perspectivas y objetivos.',
 		incorrect_answers: ['La diligencia es el aspecto mas importante dentro de un ambiente laboral.', 'No hay trabajo completo sin una adecuada responsabilidad social.'],
 		description: '¡¡¡Correcto!!! Este comportamiento es una de las conductas observables en la competencia adaptabilidad.'
-	}
+	},
+	/* {
+		id:,
+		question:'',
+		correct_answer:,
+		incorrect_answers:['',''],
+		description:''
+	} */
+
 ]
 
 export const pruebaIntegridad = [
@@ -1318,4 +1319,68 @@ export const pruebaIntegridad = [
 	}
 
 
+]
+
+export const conocimientosTributariosI = [
+	{
+		id: 1,
+		question: 'En el desarrollo de sus funciones al interior de la DIAN, usted debe realizar un análisis sobre la corporación XYZ, la cual percibe rentas susceptibles de distribuirse total o parcialmente a cualquier título a personas naturales, directamente o a través de otras personas jurídicas, durante su existencia o al momento de su liquidación. Con esta información usted puede:',
+		correct_answer: 'Identificar que la corporación XYZ es una organización con fines de lucro.',
+		incorrect_answers: ['Determinar que la corporación XYZ es una organización sin fines de lucro', 'Inferir que se trata de una comunidad organizada sin fines de lucro.'],
+		description: '¡¡¡Correcto!!! Se entiende que las corporaciones o asociaciones tienen fines de lucro cuando perciban rentas susceptibles de distribuirse total o parcialmente a cualquier título a personas naturales, directamente o a través de otras personas jurídicas, durante su existencia o al momento de su liquidación. Decreto 1625 de 2016, Artículo 1.2.1.1.2'
+	}
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+]
+
+export const conductualesInterpersonales = [
+	{
+		/* {
+				id:,
+				question:'',
+				correct_answer:'',
+				incorrect_answers:['','',''],
+				description:
+			} */
+	}
 ]
