@@ -9,7 +9,7 @@ import conductuales from '../assets/conductuales.png'
 
 
 export const imgs = [
-	ag1,	
+	ag1,
 	cgDIAN,  //conceptos generales DIAN
 	ofimatica,
 	basicas_organizacionales,
@@ -19,13 +19,13 @@ export const imgs = [
 ];
 
 export const categories = {
-	aspectos_generales1: 'Aspectos generales I',		
+	aspectos_generales1: 'Aspectos generales I',
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
 	ofimatica_sistemas: 'Ofimática y Sistemas',
 	basicas_organizacionales: 'Basicas Organizacionales',
 	prueba_integridad: 'Prueba de Integridad',
 	conocimientosTributariosI: 'Conocimientos Tributarios I',
-	conductuales:	"Conductuales e interpersonales"
+	conductuales: "Conductuales e interpersonales"
 };
 
 export const aspectos_generales1 = [
@@ -865,7 +865,7 @@ export const conceptos_generales_DIAN = [
 		correct_answer: 'Acto administrativo.',
 		incorrect_answers: ['Acta de ejecución.', 'Informe de desarrollo.', 'Plan de fiscalización.'],
 		description: '¡¡¡Correcto!!!!'
-	},
+	}
 	/* {
 	id: 1,
 	question: '',
@@ -1233,7 +1233,7 @@ export const basicasorganizacionales = [
 		correct_answer: 'Los cambios dentro del área laboral son buenos porque brindan nuevas perspectivas y objetivos.',
 		incorrect_answers: ['La diligencia es el aspecto mas importante dentro de un ambiente laboral.', 'No hay trabajo completo sin una adecuada responsabilidad social.'],
 		description: '¡¡¡Correcto!!! Este comportamiento es una de las conductas observables en la competencia adaptabilidad.'
-	},
+	}
 	/* {
 		id:,
 		question:'',
@@ -1374,13 +1374,83 @@ export const conocimientosTributariosI = [
 ]
 
 export const conductualesInterpersonales = [
+
 	{
-		/* {
-				id:,
-				question:'',
-				correct_answer:'',
-				incorrect_answers:['','',''],
-				description:
-			} */
+		id: 1,
+		question: 'Cuando termino de explicarle a un cliente un proceso:(CARGO ANALISTA)',
+		correct_answer: 'Prefiero preguntarle al cliente y asegurarme que el mensaje fue captado completamente y que no existan dudas.',
+		incorrect_answers: ['Me despido con amabilidad.', 'Espero un momento, en caso de las posibles preguntas que puedan existir. Si no las hay me despido amablemente.'],
+		description:'¡¡¡Correcto!!! Esta respuesta refleja la COMUNICACIÓN EFECTIVA como competencia de este cargo, teniendo en cuenta que se debe asegurar que el mensaje sea bien entregado, pero también recibido correctamente.'
+	},
+	{
+		id:2,
+		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO ANALISTA)',
+		correct_answer:'Me apoyo en los demas compañeros para hallar soluciones en conjunto.',
+		incorrect_answers:['Busco la solución a problemas sin esperar que la solución llegue de otra parte','Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
+		description:'¡¡¡Correcto!!! Nótese que la respuesta correcta tiene en cuenta la competencia trabajo en equipo. Muchas personas pueden pensar que la respuesta es la A, pero hay que recordar que se debe enfatizar en las cuatro competencias de este cargo.'
+	},
+	{
+		id:3,
+		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO ANALISTA)',
+		correct_answer:'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
+		incorrect_answers:['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description:'¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente válidas, pero al verificar las competencias conductuales del cargo(Analista), se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual esta respuesta es la que representa la adaptación.'
+	},
+	{
+		id:4,
+		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO PROFESIONAL)',
+		correct_answer:'Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.',
+		incorrect_answers:['Prefiero esperar a que se impartan lineamientos por parte del nivel central.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description:'¡¡¡Correcto!!! Nótese que esta pregunta se  desarrolló para el perfil Analista, pero como este perfil tiene competencias distintas(PROFESIONAL), esta respuesta es la que hace referencia a la competencia "iniciativa".'
+	},
+	{
+		id:5,
+		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
+		correct_answer:'Busco la solución a problemas sin esperar que la solución llegue de otra parte',
+		incorrect_answers:['Me apoyo en los demás compañeros para hallar soluciones en conjunto.','Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
+		description:'¡¡¡Correcto!!! Esta respuesta se acomoda a un perfil Profesional'
+	},
+	{
+		id:6,
+		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
+		correct_answer:'No me enfoco en el problema, sino en encontrar posibles soluciones.',
+		incorrect_answers:['Prefiero resolverlos junto con el apoyo de todos los compañeros.','Prefiero esperar a que sea solucionado por otro compañero.'],
+		description:'¡¡¡Correcto!!! ESta opción se ajusta a un perfil Profesional, y hace referencia a la competencia solución de problemas.'
+	},
+	{
+		id:7,
+		question:'¿De las siguientes acciones o competencias, cual cobra mayor relevancia para combatir el mobbing en cualquier ambiente laboral? (CARGO FACILITADOR)',
+		correct_answer:'Comportamiento ético.',
+		incorrect_answers:['Transparencia.','Responsabilidad social.'],
+		description:'¡¡¡Correcto!!! Nótese que este comportamiento esta presente en todos los niveles de desarrollo y cargos de la entidad. Este es un comportamiento que estará siempre por encima de los demás.'
+	},
+	{
+		id:8,
+		question:'¿De que forma se siente mas cómodo? (CARGO FACILITADOR)',
+		correct_answer:'Alcanzando las metas laborales de forma grupal.',
+		incorrect_answers:['Alcanzando las metas laborales por su iniciativa.','Que otros alcancen metas laborales por usted.'],
+		description:'¡¡¡Correcto!!! Este comportamiento esta relacionado con el trabajo en equipo como competencia evaluada en este tipo de cargo.'
+	},
+	{
+		id:9,
+		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO FACILITADOR)',
+		correct_answer:'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
+		incorrect_answers:['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description:'¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente validas, pero al verificar las competencias conductuales del cargo, se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual la respuesta esta respuesta representa la adaptación.'
 	}
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+	/* {
+		id:,
+		question:'',
+		correct_answer:'',
+		incorrect_answers:['','',''],
+		description:
+	} */
+
 ]

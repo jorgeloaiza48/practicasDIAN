@@ -26,7 +26,7 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.basicas_organizacionales}    src={basicas_organizacionales}    alt={`categoria ${categories.basicas_organizacionales}`}    gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={basicasorganizacionales}/>
                 <CategoryCard category={categories.prueba_integridad}           src={integridad}                  alt={`categoria ${categories.prueba_integridad}`}           gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={pruebaIntegridad}/>
                 <CategoryCard category={categories.conocimientosTributariosI}   src={tributarios1}                alt={`categoria ${categories.conocimientosTributariosI}`}   gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conocimientosTributariosI}/>
-                <CategoryCard category={categories.conductuales}                src={conductuales} alt={`categoria ${categories.conductuales}`}                               gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales}/>
+                <CategoryCard category={categories.conductuales}                src={conductuales}                alt={`categoria ${categories.conductuales}`}                gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales}/>
                 
                 
             </div>            
