@@ -5,6 +5,7 @@ import basicas_organizacionales from '../assets/basicas_organizacionales.png'
 import integridad from '../assets/integridad.png'
 import tributarios1 from '../assets/tributarios1.png'
 import conductuales from '../assets/conductuales.png'
+import tramitesServicios from '../assets/tramitesServicios.png'
 
 
 
@@ -15,20 +16,22 @@ export const imgs = [
 	basicas_organizacionales,
 	integridad,
 	tributarios1,
-	conductuales
+	conductuales,
+	tramitesServicios
 ];
 
 export const categories = {
-	aspectos_generales1: 'Aspectos generales I',
+	aspectos_generales: 'Aspectos generales',
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
 	ofimatica_sistemas: 'Ofimática y Sistemas',
 	basicas_organizacionales: 'Basicas Organizacionales',
 	prueba_integridad: 'Prueba de Integridad',
 	conocimientosTributariosI: 'Conocimientos Tributarios I',
-	conductuales: "Conductuales e interpersonales"
+	conductuales: "Conductuales e interpersonales",
+	tramitesServicios: "Trámites y servicios"
 };
 
-export const aspectos_generales1 = [
+export const aspectos_generales = [
 	{
 		id: 1,
 		question: '¿Cuál de estos macro procesos NO pertenecen a la DIAN?',
@@ -580,7 +583,71 @@ export const aspectos_generales1 = [
 		correct_answer: 'El Administrador de impuestos nacionales respectivo o su delegado.',
 		incorrect_answers: ['Quien notifica el acto respectivo.', 'El sustanciador del caso.', 'Ninguna de las opciones'],
 		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 72,
+		question: '¿Qué se entiende por reimportación por perfeccionamiento pasivo?',
+		correct_answer: 'Es la reimportación de mercancía exportada temporalmente para elaboración, reparación o transformación, causará tributos aduaneros sobre el valor agregado en el exterior, incluidos los gastos complementarios a dichas operaciones, para lo cual se aplicarán las tarifas correspondientes a la subpartida arancelaria del producto terminado que se importa. La mercancía así importada quedará en libre disposición.',
+		incorrect_answers: ['Es la situación en la cual se podrá importar sin el pago de los tributos aduaneros, la mercancía exportada temporal o definitivamente que se encuentre en libre disposición, siempre que no haya sufrido modificación en el extranjero y se establezca plenamente que la mercancía que se reimporta es la misma que fue exportada y que se hayan cancelado los impuestos internos exonerados y reintegrado los beneficios obtenidos con la exportación. La mercancía así importada quedará en libre disposición.', 'Es la situación en la cual se podrá importar sin el pago de tributos aduaneros, la mercancía que en cumplimiento de una garantía del fabricante o proveedor, se haya reparado en el exterior, o reemplace otra previamente exportada, que haya resultado averiada, defectuosa o impropia para el fin para el cual fue importada. La mercancía así importada quedará en libre disposición.', 'Ninguna de las opciones'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 73,
+		question: '¿Qué se entiende por la modalidad de Importación Temporal para procesamiento Industrial?',
+		correct_answer: 'Es la modalidad bajo la cual se importan temporalmente materias primas e insumos que van a ser sometidos a transformación, procesamiento o manufactura industrial, por parte de industrias reconocidas como Usuarios Altamente Exportadores y autorizadas para el efecto por la autoridad aduanera, y con base en la cual su disposición quedará restringida.',
+		incorrect_answers: ['Es la modalidad bajo la cual se importan mercancías que van a ser sometidas a procesos de transformación o ensamble, por parte de industrias reconocidas como tales por la autoridad competente, y autorizadas para el efecto por la Dirección de Impuestos y Aduanas Nacionales, y con base en la cual su disposición quedará restringida.', 'Es la modalidad bajo la cual se importan permanentemente materias primas e insumos que van a ser sometidos a transformación, procesamiento o manufactura industrial, por parte de industrias reconocidas como Usuarios Altamente Exportadores y autorizadas para el efecto por la autoridad aduanera, y con base en la cual su disposición quedará restringida.', 'Ninguna de las opciones'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 74,
+		question: '¿Qué se entiende por la modalidad de Importación para transformación o ensamble?',
+		correct_answer: 'Es la modalidad bajo la cual se importan mercancías que van a ser sometidas a procesos de transformación o ensamble, por parte de industrias reconocidas como tales por la autoridad competente, y autorizadas para el efecto por la Dirección de Impuestos y Aduanas Nacionales, y con base en la cual su disposición quedará restringida.',
+		incorrect_answers: ['Es la modalidad bajo la cual se importan permanentemente materias primas e insumos que van a ser sometidos a transformación, procesamiento o manufactura industrial, por parte de industrias reconocidas como Usuarios Altamente Exportadores y autorizadas para el efecto por la autoridad aduanera, y con base en la cual su disposición quedará restringida.', 'Es la modalidad bajo la cual se importan temporalmente materias primas e insumos que van a ser sometidos a transformación, procesamiento o manufactura industrial, por parte de industrias reconocidas como Usuarios Altamente Exportadores y autorizadas para el efecto por la autoridad aduanera, y con base en la cual su disposición quedará restringida.', 'Ninguna de las opciones.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 75,
+		question: '¿De las siguientes, cual NO es una modalidad de Exportación?',
+		correct_answer: 'Exportación contractual.',
+		incorrect_answers: ['Reembarque.', 'Exportación de menajes.', 'Exportación definitiva.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	 {
+		id:76,
+		question:'¿Qué se entiende por exportación temporal para perfeccionamiento pasivo?',
+		correct_answer:'Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser reimportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.',
+		incorrect_answers:['Es la modalidad de exportación que regula la salida permanente de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser exportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.','Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo definitivo en otro país.','Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo temporal en otro país.'],
+		description:'¡¡¡Correcto!!!!'
+	}, 
+	{
+		id:77,
+		question:'¿Qué se entiende por transito aduanero?',
+		correct_answer:'Es la modalidad que permite el transporte terrestre de mercancías nacionales o de procedencia extranjera, bajo control aduanero, de una Aduana a otra situadas en el territorio aduanero nacional.',
+		incorrect_answers:['Es la modalidad que permite a un usuario aduanero sacar rápidamente las mercancías del territorio nacional, sin que estas requieran ser inspeccionadas por la autoridad aduanera.','Es la modalidad que permite la legalización de mercancías que ingresan al territorio nacional de una manera rápida y sin necesidad de inspección por parte de las autoridades aduaneras.','Ninguna de las opciones'],
+		description:'¡¡¡Correcto!!!!'
+	},
+	{
+		id:78,
+		question:'¿Qué se entiende por política cambiaria?',
+		correct_answer:'Se refiere a la intervención del Estado sobre las diversas materias económicas, con el propósito de obtener determinados resultados en la balanza de pagos, teniendo en cuenta variables como la tasa de cambio, el movimiento de capital entre otras.',
+		incorrect_answers:['Es la política que regula la creación y estandarización de las empresas en el territorio nacional, tiene en cuenta variables como la responsabilidad de los socios gestores, los tipos de fusión entre otros.','Es la política que regula el movimiento económico en lo referente a los juegos de azar y las apuestas en establecimientos autorizados para tal fin.','Ninguna de las opciones'],
+		description:'¡¡¡Correcto!!!!'
+	},
+	{
+		id:79,
+		question:'¿Cuál de las siguientes NO es catalogada como una operación de Cambios?',
+		correct_answer:'Prestación de servicios médicos dentro del territorio nacional.',
+		incorrect_answers:['Inversiones Colombianas en el exterior.','Inversiones de capitales del Exterior en el país.','Importaciones y exportaciones de bienes y servicios.'],
+		description:'¡¡¡Correcto!!!!'
+	},
+	{
+		id:80,
+		question:'Según el Artículo 701 del Estatuto Tributario. Cuando el contribuyente, responsable, agente retenedor o declarante, no hubiere liquidado en su declaración las sanciones a que estuviere obligado o las hubiere liquidado incorrectamente la Administración las liquidará:',
+		correct_answer:'Las liquidara incrementadas en un treinta por ciento (30%). Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.',
+		incorrect_answers:['Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.','Las liquidara incrementadas en un diez por ciento (10%). Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.','Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.'],
+		description:'¡¡¡Correcto!!!!'
 	}
+	
 ]
 
 
@@ -1380,63 +1447,63 @@ export const conductualesInterpersonales = [
 		question: 'Cuando termino de explicarle a un cliente un proceso:(CARGO ANALISTA)',
 		correct_answer: 'Prefiero preguntarle al cliente y asegurarme que el mensaje fue captado completamente y que no existan dudas.',
 		incorrect_answers: ['Me despido con amabilidad.', 'Espero un momento, en caso de las posibles preguntas que puedan existir. Si no las hay me despido amablemente.'],
-		description:'¡¡¡Correcto!!! Esta respuesta refleja la COMUNICACIÓN EFECTIVA como competencia de este cargo, teniendo en cuenta que se debe asegurar que el mensaje sea bien entregado, pero también recibido correctamente.'
+		description: '¡¡¡Correcto!!! Esta respuesta refleja la COMUNICACIÓN EFECTIVA como competencia de este cargo, teniendo en cuenta que se debe asegurar que el mensaje sea bien entregado, pero también recibido correctamente.'
 	},
 	{
-		id:2,
-		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO ANALISTA)',
-		correct_answer:'Me apoyo en los demas compañeros para hallar soluciones en conjunto.',
-		incorrect_answers:['Busco la solución a problemas sin esperar que la solución llegue de otra parte','Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
-		description:'¡¡¡Correcto!!! Nótese que la respuesta correcta tiene en cuenta la competencia trabajo en equipo. Muchas personas pueden pensar que la respuesta es la A, pero hay que recordar que se debe enfatizar en las cuatro competencias de este cargo.'
+		id: 2,
+		question: 'Ante los inconvenientes presentados en mi área laboral:(CARGO ANALISTA)',
+		correct_answer: 'Me apoyo en los demas compañeros para hallar soluciones en conjunto.',
+		incorrect_answers: ['Busco la solución a problemas sin esperar que la solución llegue de otra parte', 'Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
+		description: '¡¡¡Correcto!!! Nótese que la respuesta correcta tiene en cuenta la competencia trabajo en equipo. Muchas personas pueden pensar que la respuesta es la A, pero hay que recordar que se debe enfatizar en las cuatro competencias de este cargo.'
 	},
 	{
-		id:3,
-		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO ANALISTA)',
-		correct_answer:'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
-		incorrect_answers:['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
-		description:'¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente válidas, pero al verificar las competencias conductuales del cargo(Analista), se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual esta respuesta es la que representa la adaptación.'
+		id: 3,
+		question: 'Cuando observo que algo se puede mejorar en la entidad:(CARGO ANALISTA)',
+		correct_answer: 'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
+		incorrect_answers: ['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.', 'Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description: '¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente válidas, pero al verificar las competencias conductuales del cargo(Analista), se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual esta respuesta es la que representa la adaptación.'
 	},
 	{
-		id:4,
-		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO PROFESIONAL)',
-		correct_answer:'Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.',
-		incorrect_answers:['Prefiero esperar a que se impartan lineamientos por parte del nivel central.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
-		description:'¡¡¡Correcto!!! Nótese que esta pregunta se  desarrolló para el perfil Analista, pero como este perfil tiene competencias distintas(PROFESIONAL), esta respuesta es la que hace referencia a la competencia "iniciativa".'
+		id: 4,
+		question: 'Cuando observo que algo se puede mejorar en la entidad:(CARGO PROFESIONAL)',
+		correct_answer: 'Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.',
+		incorrect_answers: ['Prefiero esperar a que se impartan lineamientos por parte del nivel central.', 'Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description: '¡¡¡Correcto!!! Nótese que esta pregunta se  desarrolló para el perfil Analista, pero como este perfil tiene competencias distintas(PROFESIONAL), esta respuesta es la que hace referencia a la competencia "iniciativa".'
 	},
 	{
-		id:5,
-		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
-		correct_answer:'Busco la solución a problemas sin esperar que la solución llegue de otra parte',
-		incorrect_answers:['Me apoyo en los demás compañeros para hallar soluciones en conjunto.','Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
-		description:'¡¡¡Correcto!!! Esta respuesta se acomoda a un perfil Profesional'
+		id: 5,
+		question: 'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
+		correct_answer: 'Busco la solución a problemas sin esperar que la solución llegue de otra parte',
+		incorrect_answers: ['Me apoyo en los demás compañeros para hallar soluciones en conjunto.', 'Espero pacientemente las posibles soluciones que lleguen por parte de mi jefe inmediato.'],
+		description: '¡¡¡Correcto!!! Esta respuesta se acomoda a un perfil Profesional'
 	},
 	{
-		id:6,
-		question:'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
-		correct_answer:'No me enfoco en el problema, sino en encontrar posibles soluciones.',
-		incorrect_answers:['Prefiero resolverlos junto con el apoyo de todos los compañeros.','Prefiero esperar a que sea solucionado por otro compañero.'],
-		description:'¡¡¡Correcto!!! ESta opción se ajusta a un perfil Profesional, y hace referencia a la competencia solución de problemas.'
+		id: 6,
+		question: 'Ante los inconvenientes presentados en mi área laboral:(CARGO PROFESIONAL)',
+		correct_answer: 'No me enfoco en el problema, sino en encontrar posibles soluciones.',
+		incorrect_answers: ['Prefiero resolverlos junto con el apoyo de todos los compañeros.', 'Prefiero esperar a que sea solucionado por otro compañero.'],
+		description: '¡¡¡Correcto!!! ESta opción se ajusta a un perfil Profesional, y hace referencia a la competencia solución de problemas.'
 	},
 	{
-		id:7,
-		question:'¿De las siguientes acciones o competencias, cual cobra mayor relevancia para combatir el mobbing en cualquier ambiente laboral? (CARGO FACILITADOR)',
-		correct_answer:'Comportamiento ético.',
-		incorrect_answers:['Transparencia.','Responsabilidad social.'],
-		description:'¡¡¡Correcto!!! Nótese que este comportamiento esta presente en todos los niveles de desarrollo y cargos de la entidad. Este es un comportamiento que estará siempre por encima de los demás.'
+		id: 7,
+		question: '¿De las siguientes acciones o competencias, cual cobra mayor relevancia para combatir el mobbing en cualquier ambiente laboral? (CARGO FACILITADOR)',
+		correct_answer: 'Comportamiento ético.',
+		incorrect_answers: ['Transparencia.', 'Responsabilidad social.'],
+		description: '¡¡¡Correcto!!! Nótese que este comportamiento esta presente en todos los niveles de desarrollo y cargos de la entidad. Este es un comportamiento que estará siempre por encima de los demás.'
 	},
 	{
-		id:8,
-		question:'¿De que forma se siente mas cómodo? (CARGO FACILITADOR)',
-		correct_answer:'Alcanzando las metas laborales de forma grupal.',
-		incorrect_answers:['Alcanzando las metas laborales por su iniciativa.','Que otros alcancen metas laborales por usted.'],
-		description:'¡¡¡Correcto!!! Este comportamiento esta relacionado con el trabajo en equipo como competencia evaluada en este tipo de cargo.'
+		id: 8,
+		question: '¿De que forma se siente mas cómodo? (CARGO FACILITADOR)',
+		correct_answer: 'Alcanzando las metas laborales de forma grupal.',
+		incorrect_answers: ['Alcanzando las metas laborales por su iniciativa.', 'Que otros alcancen metas laborales por usted.'],
+		description: '¡¡¡Correcto!!! Este comportamiento esta relacionado con el trabajo en equipo como competencia evaluada en este tipo de cargo.'
 	},
 	{
-		id:9,
-		question:'Cuando observo que algo se puede mejorar en la entidad:(CARGO FACILITADOR)',
-		correct_answer:'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
-		incorrect_answers:['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.','Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
-		description:'¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente validas, pero al verificar las competencias conductuales del cargo, se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual la respuesta esta respuesta representa la adaptación.'
+		id: 9,
+		question: 'Cuando observo que algo se puede mejorar en la entidad:(CARGO FACILITADOR)',
+		correct_answer: 'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
+		incorrect_answers: ['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.', 'Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
+		description: '¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente validas, pero al verificar las competencias conductuales del cargo, se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual la respuesta esta respuesta representa la adaptación.'
 	}
 	/* {
 		id:,
@@ -1453,4 +1520,14 @@ export const conductualesInterpersonales = [
 		description:
 	} */
 
+]
+
+export const tramites_Servicios = [
+	{
+		id: 1,
+		question: '',
+		correct_answer: '',
+		incorrect_answers: ['', '', ''],
+		description: ''
+	}
 ]
