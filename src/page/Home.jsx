@@ -1,7 +1,7 @@
 import React from 'react'
-import './style.css'
+//import './style.css'
 import slogan from './images/slogan.jpg'
-import logo from './images/logodian.png'
+//import logo from './images/logodian.png'
 import felicidad from './images/felicidad.jpg'
 import aplicar from './images/aplicar.jpg'
 import inscripcion from './images/inscripcion.webp'
@@ -11,31 +11,35 @@ import { Link } from 'react-router-dom'
 export const Home = () => {
     return (
 
-        <div>
-            <div className="tail-top">
-                <div id="header">
-                    <div className="row-1">
-                        <div className="fleft"><img src={logo} alt="" /></div>
-                        <div className="fright">
-                            <ul>
-                                <li>about</li>
-                                <Link to='/category/list'><li>Practicar por categorías</li></Link>
-                                <li>Material de estudio</li>
-                                <li>contacts</li>
-                                <li>sitemap</li>
-                            </ul>
-                        </div>
+        <div className="w-full">
+
+           
+                <div className="row-1">
+                    {/*  <div className="fleft border-8 border-indigo-600">
+                            <img src={logo} alt="" />
+                        </div> */}
+                    <div className="bg-cyan-500 text-white text-2xl flex justify-center items-center h-20 ">
+                        <ul className='flex gap-10'>
+                            <li>about</li>
+                            <Link to='/category/list'><li>Practicar por categorías</li></Link>
+                            <Link to='/materialEstudio'><li>Material de estudio</li></Link>
+                            <li>contacts</li>
+                            <li>sitemap</li>
+                        </ul>
                     </div>
-                    <br></br>
-                    <div className="row-2"><span><b><img src={slogan} alt="" /></b></span></div>
-
-
                 </div>
-                <div id="content">
+                <br></br>
+                <div className="row-2 flex flex-row justify-center items-center "><img src={slogan} alt="" /></div>
+            
+
+
+            <div className='flex flex-col items-center p-5'>
+
+                <div id="content" className=''>
                     <div className="row-1">
                         <div className="">
-                            <div className="container">
-                                <div className="content space-y-10">
+                            <div className="container mt-20">
+                                <div className="content space-y-10 mt-20 ">
                                     <h1 className="text-4xl text-center ">Nuevo concurso meritocrático para cubrir vacantes en la DIAN</h1>
                                     <img className="" src={felicidad} alt="" />
                                     <p className='text-2xl text-justify'>La Comisión Nacional del Servicio Civil (CNSC), designada por la Constitución Política en el artículo 130,

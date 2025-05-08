@@ -10,7 +10,7 @@ export const CategoryPage = () => {
 
   const [indexQuestion, setIndexQuestion] = useState(0)
 
-  if (category === "Aspectos generales") { preguntas = aspectos_generales }  
+  if (category === "Aspectos generales") { preguntas = aspectos_generales }
   else if (category === "Conceptos generales DIAN") { preguntas = conceptos_generales_DIAN }
   else if (category === "Ofimática y Sistemas") { preguntas = ofimatica_sistemas }
   else if (category === "Basicas Organizacionales") { preguntas = basicasorganizacionales }
