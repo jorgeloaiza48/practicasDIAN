@@ -8,47 +8,44 @@ import inscripcion from './images/inscripcion.webp'
 import { Link } from 'react-router-dom'
 
 
+
+
+
 export const Home = () => {
     return (
 
-        <div className="w-full">
+        <div className=" flex justify-center items-center flex-col bg-gray-100">
 
-           
-                <div className="row-1">
-                    {/*  <div className="fleft border-8 border-indigo-600">
-                            <img src={logo} alt="" />
-                        </div> */}
-                    <div className="bg-cyan-500 text-white text-2xl flex justify-center items-center h-20 ">
-                        <ul className='flex gap-10'>
-                            <li>about</li>
-                            <Link to='/category/list'><li>Practicar por categorías</li></Link>
-                            <Link to='/materialEstudio'><li>Material de estudio</li></Link>
-                            <li>contacts</li>
-                            <li>sitemap</li>
-                        </ul>
-                    </div>
-                </div>
-                <br></br>
-                <div className="row-2 flex flex-row justify-center items-center "><img src={slogan} alt="" /></div>
+            <div className="bg-cyan-500 text-white text-2xl font-bold text-center p-5 w-full" >
+                <ul className='flex gap-10 justify-center'>
+                    <li><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca de mi</a></li>
+                    <Link to='/category/list'><li>Practicar por categorías</li></Link>
+                    <Link to='/materialEstudio'><li>Material de estudio</li></Link>
+                </ul>
+            </div>
+
+
+            <br></br>
+            <div className="m-5">
+                <img src={slogan} alt="" />
+            </div>
+
+
+
+            <div className='flex flex-col items-center p-5 w-1/3 rounded-lg bg-white shadow-lg'>
             
-
-
-            <div className='flex flex-col items-center p-5'>
-
                 <div id="content" className=''>
                     <div className="row-1">
-                        <div className="">
-                            <div className="container mt-20">
-                                <div className="content space-y-10 mt-20 ">
-                                    <h1 className="text-4xl text-center ">Nuevo concurso meritocrático para cubrir vacantes en la DIAN</h1>
-                                    <img className="" src={felicidad} alt="" />
-                                    <p className='text-2xl text-justify'>La Comisión Nacional del Servicio Civil (CNSC), designada por la Constitución Política en el artículo 130,
-                                        tiene como función principal la administración y supervisión de las carreras de los servidores públicos, exceptuando aquellas de carácter especial.
-                                        Este organismo estatal, con autonomía, lleva a cabo concursos de méritos para la designación de funcionarios que no están sujetos a sistemas de nombramiento específicos
-                                        establecidos por la ley, según lo dispuesto en el artículo 125 de la Constitución. Los empleos estarán disponibles para los niveles profesional, técnico y asistencial,
-                                        en los que se requieren diferentes meses o años de experiencia, dependiendo del rol a desempeñar.</p>
-                                </div>
-                                <div className="clear"></div>
+
+                        <div className="container mt-20">
+                            <div className="content space-y-10 mt-20 ">
+                                <h1 className="text-4xl text-center ">Nuevo concurso meritocrático para cubrir vacantes en la DIAN</h1>
+                                <img className="rounded-lg" src={felicidad} alt="" />
+                                <p className='text-2xl text-justify'>La Comisión Nacional del Servicio Civil (CNSC), designada por la Constitución Política en el artículo 130,
+                                    tiene como función principal la administración y supervisión de las carreras de los servidores públicos, exceptuando aquellas de carácter especial.
+                                    Este organismo estatal, con autonomía, lleva a cabo concursos de méritos para la designación de funcionarios que no están sujetos a sistemas de nombramiento específicos
+                                    establecidos por la ley, según lo dispuesto en el artículo 125 de la Constitución. Los empleos estarán disponibles para los niveles profesional, técnico y asistencial,
+                                    en los que se requieren diferentes meses o años de experiencia, dependiendo del rol a desempeñar.</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +59,7 @@ export const Home = () => {
                             <div className="container">
                                 <div className="content space-y-10 mt-10">
                                     <h1 className="text-4xl text-center">¿Cómo aplicar a las nuevas vacantes para la DIAN con el CNSC?</h1>
-                                    <img src={aplicar} alt="" />
+                                    <img className='rounded-lg' src={aplicar} alt="" />
                                     <p className='text-2xl text-justify'>El pasado 19 de noviembre de 2024, el CNSC compartió la Resolución No. 16475 “Por la cual se declara desierto el Proceso de Selección DIAN 2667 en la modalidad de Ascenso, para algunos empleos”. Es por esto que ahora los esfuerzos están centrados en convocar a participar del Proceso de Selección DIAN 2667 para la etapa de inscripciones en Modalidad de Ingreso. Este proceso comenzará el próximo 26 de noviembre y finalizará el 9 de diciembre. Todos los aspirantes que deseen postularse a las vacantes disponibles en esta modalidad deberán inscribirse a través del Sistema de Apoyo para la Igualdad, el Mérito y la Oportunidad – SIMO, allí podrán consultar toda la Oferta Pública de Empleos de Carrera de la DIAN.</p>
 
                                     <h1 className='recomendaciones'>Recomendaciones importantes para los aspirantes, según el CNSC:</h1>
@@ -88,7 +85,7 @@ export const Home = () => {
                             <div className="container ">
                                 <div className="content space-y-10 mt-10">
                                     <h1 className="text-4xl text-center">¿Cómo inscribirse en las convocatorias de la CNSC?</h1>
-                                    <img src={inscripcion} alt="" />
+                                    <img className='rounded-lg' src={inscripcion} alt="" />
                                     <p className='text-2xl text-justify'>Periódicamente, la Comisión Nacional del Servicio Civil publica en su portal web los procesos de selección que se están adelantando, junto con los acuerdos técnicos o anexos, para que los interesados puedan conocer con más detalle la convocatoria; sin embargo, la inscripción se lleva a cabo directamente en el aplicativo ‘SIMO’, por lo que, para acceder y postularse, deberá:</p>
 
                                     <ul className='list-disc text-xl'>
