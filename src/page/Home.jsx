@@ -6,11 +6,7 @@ import felicidad from './images/felicidad.jpg'
 import aplicar from './images/aplicar.jpg'
 import inscripcion from './images/inscripcion.webp'
 import { Link } from 'react-router-dom'
-import { FondoAnimado } from '../components/fondoanimado/FondoAnimado'
-
-
-
-
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 
 
@@ -19,7 +15,8 @@ export const Home = () => {
     return (
 
         <div className=" flex justify-center items-center flex-col">
-            <FondoAnimado />
+            <div className='bg-red-500 w-full h-3'></div>
+
 
             <div className="bg-cyan-500 text-white text-2xl font-bold text-center p-5 w-full">
                 <ul className='flex gap-10 justify-center'>
@@ -95,24 +92,74 @@ export const Home = () => {
 
                 </div>
 
-                <div className=' w-1/5 shadow-2xl bg-white rounded-lg p-8'>
 
 
-                    <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-black">Password requirements:</h2>
-                    <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                        <li>
-                            At least 10 characters (and up to 100 characters)
-                        </li>
-                        <li>
-                            At least one lowercase character
-                        </li>
-                        <li>
-                            Inclusion of at least one special character, e.g., ! @ # ?
-                        </li>
-                    </ul>
+                <div className=' w-1/5 h-full flex flex-col items-center justify-center gap-5'>
+
+                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
+
+                        <div>
+                            <h1 className="text-2xl text-center">Proceso de selección DIAN 2667</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
+                            <ul class="max-w-md space-y-3 list-inside">
+
+                                <li><AlternateEmailIcon /><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=65'>Normatividad</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=64'>Avisos informativos</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=66'>Acciones constitucionales</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1479'>Acciones administrativas</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1410'>Guías</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1461'>Listas desiertas</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/divulgacion/dian-2667'>Divulgaciones</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/sites/default/files/2024-10/anexo-acuerdo-dian_2667_0.pdf'>Anexo DIAN 2667</a></button></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
+
+                        <div>
+                            <h1 className="text-2xl text-center">Otros procesos de selección</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
+                            <ul class="max-w-md space-y-3 list-inside">
+
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-desarrollo'>Procesos de selección en desarrollo</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-uso-de-listas'>Lista de Elegibles</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/historicas'>Procesos de selección finalizados</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/universidades-acreditadas'>IES acreditadas</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/tutoriales-y-videos'>Tutoriales y videos</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/procesos-de-seleccion/modelo-de-certificacion'>Modelo de certificación</a></button></li><hr></hr>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
+
+                        <div>
+                            <h1 className="text-2xl text-center">Enlaces de interés</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
+                            <ul class="max-w-md space-y-3 list-inside">
+
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://simo4.cnsc.gov.co/'>Portal SIMO 4.0</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://simo.cnsc.gov.co/'>SIMO</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='http://gestion.cnsc.gov.co/cpqr/'>Ventanilla única CNSC</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://edl.cnsc.gov.co/'>Evaluación del desempeño laboral EDL</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://escuelavirtual.cnsc.gov.co/'>Escuela virtual CNSC</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://doctrina.cnsc.gov.co/doctrina/'>Doctrina</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://bnle.cnsc.gov.co/bnle-listas/bnle-listas-consulta-general'>Banco Nacional de Lista de Elegibles</a></button></li><hr></hr>
+                                <li><button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/sites/default/files/site_ninos/'>CNSC para niños</a></button></li><hr></hr>
+
+
+                            </ul>
+                        </div>
+                    </div>
 
 
                 </div>
+
+
+
+
+
+
             </div>
 
 

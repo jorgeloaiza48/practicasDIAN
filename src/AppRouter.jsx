@@ -5,7 +5,6 @@ import { Navbar } from './components'
 import { CategoryList } from './components/CategoryList'
 import Footer from './components/Footer'
 import { MaterialEstudioList } from './components/materialEstudio/MaterialEstudioList'
-import { FondoAnimado } from './components/fondoanimado/FondoAnimado'
 
 
 
