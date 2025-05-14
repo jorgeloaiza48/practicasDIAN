@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios } from './data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa } from './data'
 import { Question } from '../components/Question'
 
 export const CategoryPage = () => {
@@ -17,7 +17,8 @@ export const CategoryPage = () => {
   else if (category === "Prueba de Integridad") { preguntas = pruebaIntegridad }
   else if (category === "Conocimientos Tributarios I") { preguntas = conocimientosTributariosI }
   else if (category === "Conductuales e interpersonales") { preguntas = conductualesInterpersonales }
-  else { preguntas = tramites_Servicios }
+  else if (category === "Trámites y servicios") { preguntas = tramites_Servicios }
+  else { preguntas = competencia_administrativa }
 
   return (
     <div className='flex flex-col items-center justify-center gap-10 my-3' style={{ height: 'calc(100vh-5rem)' }}>

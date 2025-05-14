@@ -6,6 +6,7 @@ import integridad from '../assets/integridad.png'
 import tributarios1 from '../assets/tributarios1.png'
 import conductuales from '../assets/conductuales.png'
 import tramitesServicios from '../assets/tramitesServicios.png'
+import competencia_admin from '../assets/competencia_administrativa.jpg'
 
 
 
@@ -17,7 +18,8 @@ export const imgs = [
 	integridad,
 	tributarios1,
 	conductuales,
-	tramitesServicios
+	tramitesServicios,
+	competencia_admin
 ];
 
 export const categories = {
@@ -28,7 +30,8 @@ export const categories = {
 	prueba_integridad: 'Prueba de Integridad',
 	conocimientosTributariosI: 'Conocimientos Tributarios I',
 	conductuales: "Conductuales e interpersonales",
-	tramitesServicios: "Trámites y servicios"
+	tramitesServicios: "Trámites y servicios",
+	competencia_administrativa: "Competencia administrativa",
 };
 
 export const aspectos_generales = [
@@ -612,42 +615,42 @@ export const aspectos_generales = [
 		incorrect_answers: ['Reembarque.', 'Exportación de menajes.', 'Exportación definitiva.'],
 		description: '¡¡¡Correcto!!!!'
 	},
-	 {
-		id:76,
-		question:'¿Qué se entiende por exportación temporal para perfeccionamiento pasivo?',
-		correct_answer:'Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser reimportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.',
-		incorrect_answers:['Es la modalidad de exportación que regula la salida permanente de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser exportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.','Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo definitivo en otro país.','Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo temporal en otro país.'],
-		description:'¡¡¡Correcto!!!!'
-	}, 
 	{
-		id:77,
-		question:'¿Qué se entiende por transito aduanero?',
-		correct_answer:'Es la modalidad que permite el transporte terrestre de mercancías nacionales o de procedencia extranjera, bajo control aduanero, de una Aduana a otra situadas en el territorio aduanero nacional.',
-		incorrect_answers:['Es la modalidad que permite a un usuario aduanero sacar rápidamente las mercancías del territorio nacional, sin que estas requieran ser inspeccionadas por la autoridad aduanera.','Es la modalidad que permite la legalización de mercancías que ingresan al territorio nacional de una manera rápida y sin necesidad de inspección por parte de las autoridades aduaneras.','Ninguna de las opciones'],
-		description:'¡¡¡Correcto!!!!'
+		id: 76,
+		question: '¿Qué se entiende por exportación temporal para perfeccionamiento pasivo?',
+		correct_answer: 'Es la modalidad de exportación que regula la salida temporal de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser reimportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.',
+		incorrect_answers: ['Es la modalidad de exportación que regula la salida permanente de mercancías nacionales o nacionalizadas, del territorio aduanero nacional, para ser sometidas a transformación, elaboración o reparación en el exterior o en una zona franca, debiendo ser exportadas dentro del plazo señalado en la declaración de exportación correspondiente, prorrogables por un año más.', 'Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo definitivo en otro país.', 'Es la modalidad de exportación que regula la salida de mercancías nacionales o nacionalizadas, del territorio aduanero nacional para su uso o consumo temporal en otro país.'],
+		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id:78,
-		question:'¿Qué se entiende por política cambiaria?',
-		correct_answer:'Se refiere a la intervención del Estado sobre las diversas materias económicas, con el propósito de obtener determinados resultados en la balanza de pagos, teniendo en cuenta variables como la tasa de cambio, el movimiento de capital entre otras.',
-		incorrect_answers:['Es la política que regula la creación y estandarización de las empresas en el territorio nacional, tiene en cuenta variables como la responsabilidad de los socios gestores, los tipos de fusión entre otros.','Es la política que regula el movimiento económico en lo referente a los juegos de azar y las apuestas en establecimientos autorizados para tal fin.','Ninguna de las opciones'],
-		description:'¡¡¡Correcto!!!!'
+		id: 77,
+		question: '¿Qué se entiende por transito aduanero?',
+		correct_answer: 'Es la modalidad que permite el transporte terrestre de mercancías nacionales o de procedencia extranjera, bajo control aduanero, de una Aduana a otra situadas en el territorio aduanero nacional.',
+		incorrect_answers: ['Es la modalidad que permite a un usuario aduanero sacar rápidamente las mercancías del territorio nacional, sin que estas requieran ser inspeccionadas por la autoridad aduanera.', 'Es la modalidad que permite la legalización de mercancías que ingresan al territorio nacional de una manera rápida y sin necesidad de inspección por parte de las autoridades aduaneras.', 'Ninguna de las opciones'],
+		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id:79,
-		question:'¿Cuál de las siguientes NO es catalogada como una operación de Cambios?',
-		correct_answer:'Prestación de servicios médicos dentro del territorio nacional.',
-		incorrect_answers:['Inversiones Colombianas en el exterior.','Inversiones de capitales del Exterior en el país.','Importaciones y exportaciones de bienes y servicios.'],
-		description:'¡¡¡Correcto!!!!'
+		id: 78,
+		question: '¿Qué se entiende por política cambiaria?',
+		correct_answer: 'Se refiere a la intervención del Estado sobre las diversas materias económicas, con el propósito de obtener determinados resultados en la balanza de pagos, teniendo en cuenta variables como la tasa de cambio, el movimiento de capital entre otras.',
+		incorrect_answers: ['Es la política que regula la creación y estandarización de las empresas en el territorio nacional, tiene en cuenta variables como la responsabilidad de los socios gestores, los tipos de fusión entre otros.', 'Es la política que regula el movimiento económico en lo referente a los juegos de azar y las apuestas en establecimientos autorizados para tal fin.', 'Ninguna de las opciones'],
+		description: '¡¡¡Correcto!!!!'
 	},
 	{
-		id:80,
-		question:'Según el Artículo 701 del Estatuto Tributario. Cuando el contribuyente, responsable, agente retenedor o declarante, no hubiere liquidado en su declaración las sanciones a que estuviere obligado o las hubiere liquidado incorrectamente la Administración las liquidará:',
-		correct_answer:'Las liquidara incrementadas en un treinta por ciento (30%). Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.',
-		incorrect_answers:['Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.','Las liquidara incrementadas en un diez por ciento (10%). Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.','Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.'],
-		description:'¡¡¡Correcto!!!!'
+		id: 79,
+		question: '¿Cuál de las siguientes NO es catalogada como una operación de Cambios?',
+		correct_answer: 'Prestación de servicios médicos dentro del territorio nacional.',
+		incorrect_answers: ['Inversiones Colombianas en el exterior.', 'Inversiones de capitales del Exterior en el país.', 'Importaciones y exportaciones de bienes y servicios.'],
+		description: '¡¡¡Correcto!!!!'
+	},
+	{
+		id: 80,
+		question: 'Según el Artículo 701 del Estatuto Tributario. Cuando el contribuyente, responsable, agente retenedor o declarante, no hubiere liquidado en su declaración las sanciones a que estuviere obligado o las hubiere liquidado incorrectamente la Administración las liquidará:',
+		correct_answer: 'Las liquidara incrementadas en un treinta por ciento (30%). Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.',
+		incorrect_answers: ['Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente procede el recurso de reconsideración.', 'Las liquidara incrementadas en un diez por ciento (10%). Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.', 'Las liquidara sin incremento. Cuando la sanción se imponga mediante resolución independiente no procede el recurso de reconsideración.'],
+		description: '¡¡¡Correcto!!!!'
 	}
-	
+
 ]
 
 
@@ -1505,20 +1508,7 @@ export const conductualesInterpersonales = [
 		incorrect_answers: ['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.', 'Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
 		description: '¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente validas, pero al verificar las competencias conductuales del cargo, se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual la respuesta esta respuesta representa la adaptación.'
 	}
-	/* {
-		id:,
-		question:'',
-		correct_answer:'',
-		incorrect_answers:['','',''],
-		description:
-	} */
-	/* {
-		id:,
-		question:'',
-		correct_answer:'',
-		incorrect_answers:['','',''],
-		description:
-	} */
+
 
 ]
 
@@ -1531,3 +1521,879 @@ export const tramites_Servicios = [
 		description: ''
 	}
 ]
+
+/* Tomado de https://convocatoriacnsc.com/1er-simulacro-en-competencia-administrativa/ */
+export const competencia_administrativa = [
+
+	{
+		id: 1,
+		question: "Para los empleos de libre nombramiento y remoción, el encargo en caso de vacancia temporal o definitiva podrá ser hasta por el término de:",
+		correct_answer: "Tres meses",
+		incorrect_answers: ["Dos meses", "Cuatro meses", "Seis meses"],
+		description: "¡¡¡Correcto!!! Según la Ley 909 de 2004, artículo 24, el encargo puede ser hasta por 3 meses, prorrogables por otros 3."
+	},
+	{
+		id: 2,
+		question: "El régimen de Derecho Público y la jurisdicción Contencioso – Administrativa, resuelven las controversias que se presentan entre la administración y:",
+		correct_answer: "Empleados públicos",
+		incorrect_answers: ["Trabajadores oficiales", "Trabajadores públicos", "Empleados oficiales"],
+		description: "¡¡¡Correcto!!! Las relaciones entre empleados públicos y la administración se rigen por el Derecho Público."
+	},
+	{
+		id: 3,
+		question: "Las personas que prestan sus servicios en los Ministerios, Departamentos Administrativos, Superintendencias y Unidades Administrativas especiales, en labores de construcción y sostenimiento de obras públicas, son:",
+		correct_answer: "Trabajadores oficiales",
+		incorrect_answers: ["Trabajadores públicos", "Empleados públicos", "Servidores públicos"],
+		description: "¡¡¡Correcto!!! Se considera trabajadores oficiales a quienes desempeñan labores de construcción o mantenimiento."
+	},
+	{
+		id: 4,
+		question: "Las personas que prestan sus servicios en los Establecimientos Públicos, son propiamente:",
+		correct_answer: "Empleados públicos",
+		incorrect_answers: ["Trabajadores públicos", "Empleados oficiales", "Trabajadores oficiales"],
+		description: "¡¡¡Correcto!!! En los establecimientos públicos, los servidores tienen naturaleza de empleados públicos."
+	},
+	{
+		id: 5,
+		question: "Se cumple para todos los empleados públicos:",
+		correct_answer: "Son servidores públicos",
+		incorrect_answers: ["Son miembros de las corporaciones públicas", "Son siempre trabajadores oficiales", "Algunas veces son empleados de carrera"],
+		description: "¡¡¡Correcto!!! Todo empleado público es un servidor público, aunque no todos son de carrera."
+	}
+	,
+	{
+		id: 6,
+		question: "A los miembros de las corporaciones públicas, los empleados y trabajadores del estado y de sus entidades descentralizadas territorialmente y por servicios, se les llama:",
+		correct_answer: "Servidores públicos",
+		incorrect_answers: ["Trabajadores oficiales", "Empleados públicos", "Empleados oficiales"],
+		description: "¡¡¡Correcto!!! Según art. 123 de la Constitución Nacional"
+	},
+	{
+		id: 7,
+		question: "Se cumple, solo para el Instituto de los Seguros Sociales, que el Director General, el Secretario General, los Subdirectores y los Gerentes Seccionales son:",
+		correct_answer: "Empleados públicos",
+		incorrect_answers: ["Funcionarios de seguridad social", "Trabajadores oficiales", "Trabajadores particulares"],
+		description: "¡¡¡Correcto!!! Por régimen legal aplicable al ISS"
+	},
+	{
+		id: 8,
+		question: "Los decretos extraordinarios 2400 y 3074 de 1968, reglamentados por el decreto 1950 de 1973 y la ley 909 de 2004, conforman:",
+		correct_answer: "El estatuto de la Carrera Administrativa",
+		incorrect_answers: ["El estatuto del empleado de libre nombramiento y remoción", "El estatuto de los trabajadores", "El estatuto del empleado oficial"],
+		description: "¡¡¡Correcto!!! Normativa clave de la Carrera Administrativa"
+	},
+	{
+		id: 9,
+		question: "Las leyes 61 de 1987; 27 de 1992 y 443 de 1998 están relacionadas directamente, con:",
+		correct_answer: "El estatuto de la Carrera Administrativa",
+		incorrect_answers: ["El estatuto de los trabajadores", "El estatuto del empleado oficial", "El estatuto de los educadores"],
+		description: "¡¡¡Correcto!!! Referentes históricos de la carrera administrativa"
+	},
+	{
+		id: 10,
+		question: "Las personas que prestan sus servicios en las Empresas Industriales y Comerciales del Estado, en actividades de dirección o confianza fijadas en los estatutos, son propiamente:",
+		correct_answer: "Empleados públicos",
+		incorrect_answers: ["Empleados oficiales", "Trabajadores oficiales", "Trabajadores públicos"],
+		description: "¡¡¡Correcto!!! Según los estatutos y régimen legal de estas entidades"
+	},
+
+	{
+		id: 11,
+		question: "La Carrera Administrativa adquiere rango normativo constitucional, enunciando los principios básicos referentes para nombramiento, remoción, ascensos, contemplando la prohibición al funcionario de intervenir en política, en:",
+		correct_answer: "El plebiscito de 1957",
+		incorrect_answers: ["La constitución de 1886", "La ley 19 de 1958", "La ley 165 de 1938"],
+		description: "¡¡¡Correcto!!! Reconocimiento constitucional de la carrera administrativa"
+	},
+	{
+		id: 12,
+		question: "____________________________, que reglamentó el decreto de 1732 de 1960, que creó el Departamento Administrativo del servicio civil, La Comisión Nacional del servicio Civil y la escuela Superior de Administración Pública, ESAP como los organismos encargados del manejo de la carrera Administrativa, fue:",
+		correct_answer: "La ley 65 de 1967",
+		incorrect_answers: ["La ley 165 de 1938", "La ley 19 de 1958", "El plebiscito de 1957"],
+		description: "¡¡¡Correcto!!! Ley que consolidó los organismos clave del sistema administrativo"
+	},
+	{
+		id: 13,
+		question: "Al sistema técnico de administración de personal que tiene por objeto garantizar la eficiencia de la administración pública en general, se le llama:",
+		correct_answer: "Carrera administrativa",
+		incorrect_answers: ["Carrera fiscal", "Carrera judicial", "Carrera docente"],
+		description: "¡¡¡Correcto!!! Es la esencia del mérito en el servicio público"
+	},
+	{
+		id: 14,
+		question: "Al conjunto de regímenes aplicables al personal de la Administración Publica, se le llama generalmente:",
+		correct_answer: "Función pública",
+		incorrect_answers: ["Derecho público", "Derecho administrativo laboral", "Función administrativa"],
+		description: "¡¡¡Correcto!!! Término general para los regímenes del personal estatal"
+	},
+	{
+		id: 15,
+		question: "Las personas que prestan sus servicios en las Sociedades de Economía mixta con capital público igual o superior al noventa por ciento, en actividades de dirección o confianza, fijadas en los estatutos, son propiamente:",
+		correct_answer: "Empleados oficiales",
+		incorrect_answers: ["Empleados públicos", "Trabajadores oficiales", "Trabajadores públicos"],
+		description: "¡¡¡Correcto!!! Según régimen legal aplicable por porcentaje de capital"
+	},
+	{
+		id: 16,
+		question: "Mientras se surte el proceso de selección para proveer empleos de Carrera Administrativa, se podrá encargar a un empleado que este desempeñando el empleo inmediatamente inferior, hasta por un término no superior a:",
+		correct_answer: "Seis meses",
+		incorrect_answers: ["Doce meses", "Diez meses", "Siete meses"],
+		description: "¡¡¡Correcto!!! Según la normativa para encargos en carrera administrativa"
+	},
+	{
+		id: 17,
+		question: "La ley donde se estableció por primera vez la estabilidad en el empleo público, y el merito para ascender en los cargos y creó el consejo de Administración y Disciplina fue:",
+		correct_answer: "La ley 165 de 1938",
+		incorrect_answers: ["El plebiscito de 1957", "La constitución de 1886", "La ley 19 de 1958"],
+		description: "¡¡¡Correcto!!! Primera ley con principios meritocráticos"
+	},
+	{
+		id: 18,
+		question: "Las personas que prestan sus servicios en las sociedades de economía mixta con capital público igual o superior al noventa por ciento del capital social, en actividades diferentes de las de dirección y confianza según los estatutos, son:",
+		correct_answer: "Trabajadores oficiales",
+		incorrect_answers: ["Servidores públicos", "Empleados públicos", "Trabajadores públicos"],
+		description: "¡¡¡Correcto!!! Según tipo de funciones y estructura societaria"
+	},
+	{
+		id: 19,
+		question: "En la época de la Colonia en la América hispánica (del siglo XVI hasta los primeros años del siglo XIX), todos los cargos en los virreinatos dependían directa o indirectamente de:",
+		correct_answer: "El Rey de España",
+		incorrect_answers: ["Del respectivo Virrey", "De la Real Audiencia", "De la Real Hacienda"],
+		description: "¡¡¡Correcto!!! La máxima autoridad en la colonia era el monarca español"
+	},
+	{
+		id: 20,
+		question: "Se cumple para los miembros de las corporaciones públicas que son de elección popular, con periodos fijos y con régimen propio:",
+		correct_answer: "Son servidores públicos",
+		incorrect_answers: ["Son empleados públicos", "Son empleados de Carrera Administrativa", "Son trabajadores oficiales"],
+		description: "¡¡¡Correcto!!! Son servidores públicos por mandato constitucional"
+	},
+
+	{
+		id: 21,
+		question: "Las personas que presentan sus servicios en los Ministerios, Departamentos Administrativos y Superintendencias son propiamente:",
+		correct_answer: "Empleados públicos",
+		incorrect_answers: [
+			"Trabajadores oficiales",
+			"Trabajadores en provisionalidad",
+			"Funcionarios de seguridad social"
+		],
+		description: "¡¡¡Correcto!!! Según clasificación legal por tipo de entidad"
+	},
+	{
+		id: 22,
+		question: "En aquellas Sociedades de Economía Mixta con capital público inferior al noventa por ciento (90%) del capital social, los servidores son considerados como:",
+		correct_answer: "Trabajadores particulares",
+		incorrect_answers: [
+			"Trabajadores oficiales",
+			"Empleados oficiales",
+			"Empleados públicos"
+		],
+		description: "¡¡¡Correcto!!! Por régimen privado cuando el capital público es menor al 90%"
+	},
+	{
+		id: 23,
+		question: "Según la Constitución Nacional, la responsabilidad de la administración y vigilancia de las carreras de los servidores públicos, le corresponde:",
+		correct_answer: "A la Comisión Nacional del Servicio Civil",
+		incorrect_answers: [
+			"Al Congreso de Colombia",
+			"Al Presidente de la República",
+			"A la Comisión Nacional del Servidor Público"
+		],
+		description: "¡¡¡Correcto!!! Órgano constitucional autónomo con esta función"
+	},
+	{
+		id: 24,
+		question: "Se cumple, solo para el Instituto de los Seguros Sociales, que las personas que cumplen funciones de aseo, jardinería, cocina, celaduría o parecidos son:",
+		correct_answer: "Trabajadores oficiales",
+		incorrect_answers: [
+			"Empleados públicos",
+			"Funcionarios de seguridad social",
+			"Trabajadores particulares"
+		],
+		description: "¡¡¡Correcto!!! Por naturaleza operativa de sus funciones"
+	},
+	{
+		id: 25,
+		question: "Las personas que prestan sus servicios en las empresas industriales y comerciales del estado, Excepto las que desarrollan actividades de dirección o confianza, según los estatutos, son:",
+		correct_answer: "Trabajadores oficiales",
+		incorrect_answers: [
+			"Servidores oficiales",
+			"Trabajadores públicos",
+			"Empleados públicos"
+		],
+		description: "¡¡¡Correcto!!! Clasificación especial por tipo de actividad"
+	},
+	{
+		id: 26,
+		question: "A los servidores que en el Instituto de los Seguros Sociales se les llamó funcionarios de Seguridad Social, hoy día se les considera como:",
+		correct_answer: "Empleados oficiales",
+		incorrect_answers: [
+			"Empleados públicos",
+			"Trabajadores oficiales",
+			"Trabajadores particulares"
+		],
+		description: "¡¡¡Correcto!!! Cambio de denominación y régimen aplicable"
+	},
+	{
+		id: 27,
+		question: "Las controversias que se presentan entre los trabajadores oficiales y la Administración son competencia de la:",
+		correct_answer: "Jurisdicción laboral común",
+		incorrect_answers: [
+			"Jurisdicción laboral y penal",
+			"Jurisdicción contencioso-administrativa",
+			"Jurisdicción de familia"
+		],
+		description: "¡¡¡Correcto!!! Por tratarse de una relación laboral"
+	},
+	{
+		id: 28,
+		question: "La estabilidad e igualdad de oportunidades para el acceso y el ascenso al servicio público se obtiene mediante:",
+		correct_answer: "Carrera administrativa",
+		incorrect_answers: [
+			"Las competencias ciudadanas",
+			"La Educación formal",
+			"La Educación no formal"
+		],
+		description: "¡¡¡Correcto!!! Sistema que garantiza meritocracia"
+	},
+	{
+		id: 29,
+		question: "Los empleos de Carrera Administrativa cuyos titulares se encuentren en situaciones administrativas que impliquen separación temporal, serán provistos en forma provisional por:",
+		correct_answer: "Servidores públicos de carrera",
+		incorrect_answers: [
+			"Empleados de libre nombramiento y remoción",
+			"Empleados públicos",
+			"Trabajadores oficiales"
+		],
+		description: "¡¡¡Correcto!!! Provisión temporal por personal de carrera"
+	},
+	{
+		id: 30,
+		question: "Por la forma como la historia, presenta la era Colonial Hispana en nuestra América, es posible afirmar que todos los representantes de la corona Española eran funcionarios:",
+		correct_answer: "De libre nombramiento y remoción",
+		incorrect_answers: [
+			"De periodo fijo",
+			"De carácter temporal",
+			"De carrera"
+		],
+		description: "¡¡¡Correcto!!! Eran designados directamente por la Corona"
+	},
+
+	{
+		id: 31,
+		question: "Según el artículo 3º de la ley 909 de 2.004 son todas Carrera Administrativas especiales, Excepto en:",
+		correct_answer: "Las Corporaciones Autónomas Regionales",
+		incorrect_answers: [
+			"La Rama Judicial del Poder Público",
+			"La Defensoría del Pueblo.",
+			"La Procuraduría General de la Nación"
+		],
+		description: "Las Corporaciones Autónomas Regionales no son consideradas dentro de las carreras administrativas especiales."
+	},
+	{
+		id: 32,
+		question: "Según el Art. 3º de la ley 909 de 2.004 son todas Carreras Administrativas especiales, Excepto en:",
+		correct_answer: "Las contralorías Territoriales",
+		incorrect_answers: [
+			"La Contraloría General de la República",
+			"La Fiscalía General de la Nación",
+			"Las personerías"],
+
+		description: "Las contralorías Territoriales no están dentro de las carreras administrativas especiales."
+	},
+	{
+		id: 33,
+		question: "Se cumple para las auxiliares de la Administración pública como los peritos, jurados de votación y obreros temporales son considerados como:",
+		correct_answer: "Trabajadores oficiales",
+		"incorrect_answers": [
+			"No servidores públicos",
+			"Servidores públicos",
+			"Empleados públicos"
+		],
+		description: "Estos empleados son considerados trabajadores oficiales según la normativa."
+	},
+	{
+		id: 34,
+		question: "Según el Art. 3º de la ley 909 de 2.004, son todas Carreras Administrativas especiales, Excepto en:",
+		correct_answer: "El personal regido por la Carrera Diplomática y Consular",
+		incorrect_answers: [
+			"El personal Docente",
+			"Los entes Universitarios Autónomos",
+			"El de la Comisión Nacional de Televisión"
+		],
+		description: "El personal regido por la Carrera Diplomática y Consular no está dentro de las carreras administrativas especiales."
+	},
+	{
+		id: 35,
+		question: "La Carrera Administrativa que rige para el personal que presta sus servicios en el Departamento Administrativo de la Presidencia de la República, se clasifica como una:",
+		correct_answer: "Carrera Administrativa Especial",
+		incorrect_answers: [
+			"Carrera Administrativa Regular",
+			"Carrera Administrativa Ejecutiva",
+			"Carrera Administrativa Específica"
+		],
+		description: "El personal del Departamento Administrativo de la Presidencia de la República está regido por una carrera administrativa especial."
+	},
+	{
+		id: 36,
+		question: "La ley de Carrera Administrativa se aplica en toda su integridad a todos los empleados públicos que prestan sus servicios en empleos de carrera, en las siguientes entidades, Excepto:",
+		correct_answer: "En las entidades territoriales, llamadas Departamentos",
+		"incorrect_answers": [
+			"En la Rama Judicial del Poder Público",
+			"En la Auditoría General de la República",
+			"En la Contaduría General de la Nación"
+		],
+		description: "Las entidades territoriales como los Departamentos no están regidas por la ley de carrera administrativa."
+	},
+	{
+		id: 37,
+		question: "La carrera Administrativa que rige para el personal científico y tecnológico de las entidades públicas que conforman el Sistema Nacional de Ciencias y Tecnología, se clasifica como una:",
+		correct_answer: "Carrera Administrativa Específica",
+		incorrect_answers: [
+			"Carrera Administrativa Ejecutiva",
+			"Carrera Administrativa Regular",
+			"Carrera Administrativa Especial"
+		],
+		description: "El personal científico y tecnológico está regido por una carrera administrativa específica."
+	},
+	{
+		id: 38,
+		question: "Se cumple para las personas a quienes el gobierno o las corporaciones públicas confieren su representación en las juntas directivas de las Entidades Descentralizadas son consideradas como:",
+		correct_answer: "Empleados de libre nombramiento y remoción",
+		incorrect_answers: [
+			"Trabajadores oficiales",
+			"No servidores públicos",
+			"Servidores públicos"
+		],
+		description: "Estas personas son consideradas empleados de libre nombramiento y remoción."
+	},
+	{
+		id: 39,
+		question: "Tienen normas propias todos los empleados públicos de los siguientes sistemas específicos de carreras administrativas, Excepto:",
+		correct_answer: "El personal de los Establecimientos Públicos",
+		incorrect_answers: [
+			"El personal de la DIAN",
+			"El personal del INPEC",
+			"El personal del DNI"
+		],
+		description: "El personal de los Establecimientos Públicos no tiene un sistema de carrera administrativa específico."
+	},
+	{
+		id: 40,
+		question: "La carrera Administrativa que rige para el personal que presta sus servicios en la Unidad Administrativa Especial de la Aeronáutica Civil, se clasifica como una:",
+		correct_answer: "Carrera Administrativa Regular",
+		incorrect_answers: [
+			"Carrera Administrativa Especial",
+			"Carrera Administrativa Ejecutiva",
+			"Carrera Administrativa Específica"
+		],
+		description: "El personal de la Aeronáutica Civil está regido por una carrera administrativa regular."
+	},
+	{
+		id: 41,
+		question: "La vigilancia para los sistemas de Carreras Administrativas Específicas estará a cargo de:",
+		correct_answer: "La Comisión Nacional del Servicio Civil",
+		incorrect_answers: [
+			"La Contraloría General de la República",
+			"La Secretaría General de la Presidencia de La República",
+			"La respectiva Gerencia de la entidad"
+		],
+		description: "La Comisión Nacional del Servicio Civil es la encargada de la vigilancia en los sistemas de carreras administrativas específicas."
+	},
+	{
+		id: 42,
+		question: "Se cumple tanto para el constructor como para sus obreros, quienes realizan obras para la administración, con base en un contrato de obras públicas; son considerados como:",
+		correct_answer: "Trabajadores oficiales",
+		incorrect_answers: [
+			"Servidores públicos",
+			"No servidores públicos",
+			"Empleados públicos"
+		],
+		description: "Tanto los constructores como los obreros en obras públicas son considerados trabajadores oficiales."
+	},
+	{
+		id: 43,
+		question: "Aquellas carreras administrativas que por la especialidad de las funciones que cumplen las entidades en los cuales se aplican; contienen regulaciones propias para el desarrollo y aplicación de dicha carrera, se llama:",
+		correct_answer: "Carrera Administrativa Específica",
+		incorrect_answers: [
+			"Carrera Administrativa Ejecutiva",
+			"Carrera Administrativa Especial",
+			"Carrera Administrativa Canónica"
+		],
+		description: "Estas carreras administrativas son específicas debido a la especialidad de las funciones que realizan las entidades."
+	},
+	{
+		id: 44,
+		question: "Tienen normas propias todos los empleados públicos de los siguientes sistemas específicos de Carrera Administrativa, Excepto:",
+		correct_answer: "El personal del Departamento Administrativo de la Presidencia de la República",
+		incorrect_answers: [
+			"El personal del Sistema Nacional de Ciencia y Tecnología",
+			"El personal administrativo de los entes de Educación Superior que no sean instituciones universitarias autónomas.",
+			"El personal de las Superintendencias"
+		],
+		description: "El personal del Departamento Administrativo de la Presidencia de la República no tiene un sistema específico de carrera administrativa."
+	},
+	{
+		id: 45,
+		question: "Se cumple para quienes desempeñen empleos en las entidades de la Rama Ejecutiva del nivel nacional y de sus entes descentralizados:",
+		correct_answer: "Se les aplicarán las normas de la carrera administrativa",
+		incorrect_answers: [
+			"Se consideran empleados de libre nombramiento y remoción.",
+			"Se les aplicarán las normas para trabajadores públicos",
+			"Se consideran trabajadores oficiales"
+		],
+		description: "Estas personas estarán regidas por las normas de la carrera administrativa."
+	},
+	{
+		id: 46,
+		question: "Son funciones de _________________ asegurar la atención y satisfacción de los intereses de la comunidad:",
+		correct_answer: "La función pública",
+		incorrect_answers: [
+			"Las leyes relacionadas con el menor",
+			"Las leyes del Derecho Administrativo",
+			"La función privada"
+		],
+		description: "La función pública tiene como finalidad principal la satisfacción del interés general."
+	},
+	{
+		id: 47,
+		question: "La ley 909 de 2.004 en su Art. 28, consagra que el principio de _________________ en la gestión de los procesos de selección y en el escogimiento de los jurados y órganos técnicos encargados de la selección:",
+		correct_answer: "La transparencia",
+		incorrect_answers: [
+			"La economía",
+			"La igualdad",
+			"La celeridad"
+		],
+		description: "El principio de transparencia garantiza procesos limpios, claros y objetivos."
+	},
+	{
+		id: 48,
+		question: "Los servidores públicos deben propender para que los procedimientos se adelanten en el menor tiempo posible y con la menor cantidad de gastos de quienes intervienen en ellos, por lo tanto solo se exigirán los documentos y copias estrictamente necesarios, aquí se configura el principio de la función pública, llamado:",
+		correct_answer: "Principio de economía",
+		incorrect_answers: [
+			"Principio de celeridad",
+			"Principio de eficacia",
+			"Principio de igualdad"
+		],
+		description: "El principio de economía busca reducir gastos innecesarios y simplificar los procedimientos."
+	},
+	{
+		id: 49,
+		question: "Dice la ley 909 de 2.004 en el Art. 27 literal B: “Todos los ciudadanos que acrediten los requisitos determinados en las convocatorias podrán participar en los concursos sin discriminación de ninguna índole”, aquí se consagra el principio de la función pública, llamado:",
+		correct_answer: "Principio de igualdad",
+		incorrect_answers: [
+			"Principio de mérito",
+			"Principio de eficacia",
+			"Principio de publicidad"
+		],
+		description: "Este principio garantiza igualdad de condiciones en el acceso a cargos públicos."
+	},
+	{
+		id: 50,
+		question: "Se cumple para la carrera administrativa, excepto:",
+		correct_answer: "No se requiere que el 30% sean mujeres",
+		incorrect_answers: [
+			"Es para los empleados públicos",
+			"Es para los empleados de las personerías",
+			"Es para los empleados de las gobernaciones"
+		],
+		description: "La carrera administrativa incluye normas de equidad y paridad de género en el acceso a cargos."
+	},
+	{
+		id: 51,
+		question: "El principio de _______________ garantiza que todos los órganos encargados de gestionar y llevar a cabo los procedimientos de selección y, en especial, de cada uno de los miembros responsables de ejecutarlos con equidad:",
+		correct_answer: "La imparcialidad",
+		incorrect_answers: [
+			"La economía",
+			"La eficacia",
+			"La celeridad"
+		],
+		description: "El principio de imparcialidad exige neutralidad y equidad en la selección de personal."
+	},
+	{
+		id: 52,
+		question: "En los casos de ingreso y ascenso en la carrera administrativa, realizada mediante concursos de méritos y calificación de pruebas, será obligatoria ___________________ como autoridades encargadas de efectuar la calificación.",
+		correct_answer: "La participación de hombres y mujeres en igual proporción.",
+		incorrect_answers: [
+			"La participación de la defensoría del pueblo",
+			"La participación del 30% de mujeres",
+			"La participación de la personería respectiva"
+		],
+		description: "Este principio busca asegurar equidad de género en los procesos de selección."
+	},
+	{
+		id: 53,
+		question: "Los servidores públicos tienen la obligación de actuar con rectitud, lealtad, ética y observar los valores sociales de la comunidad, este es el principio de la función pública de:",
+		correct_answer: "La moralidad",
+		incorrect_answers: [
+			"La imparcialidad",
+			"La eficacia",
+			"La igualdad"
+		],
+		description: "El principio de moralidad exige integridad ética en el actuar de los servidores públicos."
+	},
+	{
+		id: 54,
+		question: "La _____________________ es la responsable de la administración y vigilancia de las carreras en la administración pública:",
+		correct_answer: "Comisión Nacional del Servicio Civil",
+		incorrect_answers: [
+			"Comisión Nacional del Servicio Público",
+			"Comisión Nacional de Evaluación y Acreditación",
+			"Personería"
+		],
+		description: "La CNSC es la entidad encargada de la carrera administrativa."
+	},
+	{
+		id: 55,
+		question: "El empleado de carrera administrativa cuyo cargo sea declarado de libre nombramiento y remoción, deberá ser trasladado dentro de la misma planta de personal:",
+		correct_answer: "A otro cargo de carrera con funciones afines",
+		incorrect_answers: [
+			"A un cargo como empleado oficial",
+			"A otro cargo pero de mayor salario",
+			"A una dependencia con contrato a término fijo"
+		],
+		description: "El traslado debe mantener la naturaleza del empleo público de carrera."
+	},
+	{
+		id: 56,
+		question: "Los tres miembros de la Comisión Nacional del Servicio Civil, serán de dedicación exclusiva, no reelegibles y por un periodo de:",
+		correct_answer: "Cuatro años",
+		incorrect_answers: [
+			"Tres años",
+			"Seis años",
+			"Dos años"
+		],
+		description: "El período de los comisionados está establecido en la ley como de cuatro años sin reelección."
+	},
+	{
+		id: 57,
+		question: "El principio de _________________ se refiere a que los instrumentos utilizados para verificar la capacidad y competencias de los aspirantes a acceder a los empleos públicos de carrera sean óptimos en su confección y aplicación:",
+		correct_answer: "Validez y confiabilidad",
+		incorrect_answers: [
+			"Eficacia",
+			"Publicidad",
+			"Imparcialidad"
+		],
+		description: "La validez y confiabilidad aseguran que las pruebas midan correctamente las competencias requeridas."
+	},
+	{
+		id: 58,
+		question: "Cuando un empleo de libre nombramiento y remoción sea clasificado como de carrera administrativa, deberá:",
+		correct_answer: "Ser provisto mediante concurso",
+		incorrect_answers: [
+			"Ser provisto en provisionalidad",
+			"Ser provisto por un empleado temporal",
+			"Ser provisto por un empleado a término fijo"
+		],
+		description: "La carrera administrativa requiere selección por mérito mediante concurso."
+	},
+	{
+		id: 59,
+		question: "El número máximo de miembros que conforman la Comisión Nacional del Servicio Civil es de:",
+		correct_answer: "Tres",
+		incorrect_answers: [
+			"Dos",
+			"Cinco",
+			"Cuatro"
+		],
+		description: "La CNSC está conformada por tres miembros de dedicación exclusiva."
+	},
+	{
+		id: 60,
+		question: "Los servidores públicos tienen el deber de impulsar oficiosamente los procedimientos y no deben someterlos a retardos injustificados, aquí se enuncia el principio de la función pública denominado:",
+		correct_answer: "Celeridad",
+		incorrect_answers: [
+			"Eficacia",
+			"Economía",
+			"Igualdad"
+		],
+		description: "El principio de celeridad promueve la agilidad en la gestión pública."
+	},
+
+
+	{
+		id: 61,
+		question: "Dice la ley 909 de 2.004 en su Art. 37 literal A: “La permanencia en los cargos de carrera administrativa exige la calificación satisfactoria en el desempeño del empleo, el logro de resultados y realizaciones el desarrollo y ejercicio de la función pública”, aquí se consagra el principio de:",
+		correct_answer: "Mérito",
+		incorrect_answers: [
+			"La publicidad",
+			"La moralidad",
+			"La economía"
+		],
+		description: "El principio de mérito es la base de la carrera administrativa en Colombia."
+	},
+	{
+		id: 62,
+		question: "La _____________________ es un órgano de carácter legal, permanente de nivel nacional, independiente de las ramas y órganos del poder público, dotada de personería jurídica, autonomía administrativa y patrimonio propio y responsable de la administración de las carreras.",
+		correct_answer: "Comisión Nacional del Servicio Civil",
+		incorrect_answers: [
+			"Defensoría del pueblo",
+			"Personería",
+			"Comisión Nacional de Evaluación y Acreditación"
+		],
+		description: "La Comisión Nacional del Servicio Civil administra las carreras del servicio público."
+	},
+	{
+		id: 63,
+		question: "Quienes ejercen los cargos de mayor jerarquía en las entidades de las tres ramas u órganos del poder público, en los niveles nacional, departamental, regional, provincial, distrital y municipal, deben:",
+		correct_answer: "Ser mínimo el 30% de mujeres",
+		incorrect_answers: [
+			"Ser mínimo el 25% de mujeres",
+			"Ser mínimo el 20% de mujeres",
+			"Ser mínimo el 10% de mujeres"
+		],
+		description: "La ley busca garantizar la participación equitativa de mujeres en altos cargos públicos."
+	},
+	{
+		id: 64,
+		question: "En virtud del principio de _________________ los servidores públicos tendrán en cuenta que los procedimientos deben lograr su finalidad, removiendo de oficio los obstáculos puramente formales, así está consagrado en el código contencioso administrativo, Art.3º:",
+		correct_answer: "Eficacia",
+		incorrect_answers: [
+			"Imparcialidad",
+			"Igualdad",
+			"Moralidad"
+		],
+		description: "La eficacia implica cumplir la finalidad del acto administrativo eliminando formalismos innecesarios."
+	},
+	{
+		id: 65,
+		question: "___________________ en los procesos de selección para garantizar la adecuación de los candidatos seleccionados al perfil del empleo, así consagra la ley 909 de 2.004 en su Art. 28, literal H, el principio de la función pública llamado:",
+		correct_answer: "La eficacia",
+		incorrect_answers: [
+			"La confiabilidad",
+			"La igualdad",
+			"La publicidad"
+		],
+		description: "El principio de eficacia busca que los candidatos seleccionados se ajusten al perfil del empleo."
+	},
+
+
+	{
+		id: 66,
+		question: "Quienes prestan servicios personales remunerados, con vinculación legal y reglamentaria, en los organismos y entidades de la administración pública, se cumple que:",
+		correct_answer: "Conforman la función pública",
+		incorrect_answers: [
+			"Constituyen la función del servicio",
+			"Conforman la función oficial",
+			"Ejercen la representación estatal"
+		],
+		description: "Las personas con vinculación legal y reglamentaria en entidades públicas hacen parte de la función pública."
+	},
+	{
+		id: 67,
+		question: "Por mandato constitucional y legal, los empleos públicos, en los órganos y entidades del estado colombiano son de Carrera Administrativa EXCEPTO:",
+		correct_answer: "Cargos de elección popular",
+		incorrect_answers: [
+			"Empleos de período fijo;",
+			"Empleos públicos de carrera",
+			"Los de libre nombramiento y remoción"
+		],
+		description: "Los cargos de elección popular no forman parte de la carrera administrativa."
+	},
+	{
+		id: 68,
+		question: "El estado tiene el deber de garantizarle a todos los ciudadanos el mismo derecho, la misma protección, las mismas libertades y oportunidades, sin ninguna discriminación, este es el principio del a función pública llamado:",
+		correct_answer: "Principio de igualdad",
+		incorrect_answers: [
+			"Principio de mérito",
+			"Principio de moralidad",
+			"Principio de eficacia"
+		],
+		description: "El principio de igualdad prohíbe toda forma de discriminación en el acceso y desempeño del empleo público."
+	},
+	{
+		id: 69,
+		question: "El empleado de carrera administrativa cuyo cargo sea declarado de libre nombramiento y remoción, deberá en la misma planta del personal:",
+		correct_answer: "Pasar a otro cargo de carrera con igual o mayor remuneración.",
+		incorrect_answers: [
+			"Pasa a otro cargo de carrera con menor remuneración",
+			"Pasar a otro cargo, pero de libre nombramiento y remuneración",
+			"Pasar de inmediato a disfrutar de su pensión de jubilación"
+		],
+		description: "Se protege el derecho del empleado de carrera al reubicarse en un cargo equivalente o superior."
+	},
+	{
+		id: 70,
+		question: "Dice la ley 909 de 2.004 en el Art. 49 numeral 2: “Para la designación del empleo público, se tendrá en cuenta la capacidad y experiencia para el desempeño del empleo”, aquí se consagra el principio de la función pública, llamado:",
+		correct_answer: "Principio de mérito",
+		incorrect_answers: [
+			"Principio de eficacia",
+			"Principio de publicidad",
+			"Principio de igualdad"
+		],
+		description: "El mérito es el criterio rector en el acceso a empleos públicos de carrera."
+	},
+
+	{
+		id: 71,
+		question: "La Comisión Nacional del Servicio Civil es la responsable de la administración y vigilancia de la carrera administrativa, excepto de:",
+		correct_answer: "Las carreras especiales",
+		incorrect_answers: [
+			"Las convocatorias a concursos",
+			"Las evaluaciones de los concursos",
+			"Los concursos"
+		],
+		description: "Las carreras especiales como la docente o la judicial tienen sus propios regímenes distintos a los administrados por la CNSC."
+	},
+	{
+		id: 72,
+		question: "Si declarado el cargo como de libre nombramiento y remoción, no existiendo vacante dentro de la misma planta de personal, el Empleado de carrera deberá:",
+		correct_answer: "Ser liquidado con indemnización",
+		incorrect_answers: [
+			"Gozar de inmediato de vacaciones adelantadas",
+			"Continuar en el mismo cargo",
+			"Pedir su pensión de jubilación"
+		],
+		description: "En caso de no poder ser reubicado, el empleado debe ser retirado con indemnización según la ley."
+	},
+	{
+		id: 73,
+		question: "La regulación del sistema del empleo público y el establecimiento de los principios básicos que deben regular el ejercicio de la Gerencia pública, es el objeto principal de:",
+		correct_answer: "La ley 909 de 2.004 de carrera Administrativa",
+		"incorrect_answers": [
+			"La Constitución Nacional",
+			"La ley 100 de 1.993",
+			"La ley 80 de 1.993 de contratación administrativa"
+		],
+		description: "La Ley 909 de 2004 establece el marco normativo del empleo público y la carrera administrativa en Colombia."
+	},
+	{
+		id: 74,
+		question: "Dice la Constitución Política en su Art. 40 numeral 7: “Todo ciudadano tiene derecho a acceder al desempeño de funciones y cargos públicos”, aquí se consagra el principio de la función pública, llamado:",
+		correct_answer: "Principio de igualdad",
+		incorrect_answers: [
+			"Principio de economía",
+			"Principio de mérito",
+			"Principio de publicidad"
+		],
+		description: "El artículo citado garantiza el derecho de todos los ciudadanos a participar en la administración pública sin discriminación."
+	},
+	{
+		id: 75,
+		question: "La ley 909 de 2.004, consagra en su Art. 28 el principio de ________________ como la efectiva difusión de las convocatorias en condiciones tales que permitan se conocidas por el total de los candidatos potenciales:",
+		correct_answer: "La publicidad",
+		incorrect_answers: [
+			"La celeridad",
+			"La transparencia",
+			"La economía"
+		],
+		description: "El principio de publicidad busca que los procesos de selección sean visibles y accesibles para todos los interesados."
+	},
+
+
+	{
+		id: 76,
+		question: "Por mandato constitucional y legal, los empleos públicos, en los órganos y entidades del estado colombiano son de Carrera Administrativa, EXCEPTO:",
+		correct_answer: "Los de libre nombramiento y remoción",
+		incorrect_answers: [
+			"Los de las personerías",
+			"Los de las corporaciones autónomas regionales",
+			"Los de la Auditoría General de la Nación"
+		],
+		description: "Los empleos de libre nombramiento y remoción no hacen parte de la carrera administrativa según la Constitución y la Ley 909."
+	},
+	{
+		id: 77,
+		question: "El número máximo de miembros que conforman la Comisión Nacional del Servicio Civil es de:",
+		correct_answer: "Tres",
+		incorrect_answers: [
+			"Dos",
+			"Cinco",
+			"Cuatro"
+		],
+		description: "La CNSC está conformada por tres miembros según lo establece la Ley 909 de 2004."
+	},
+	{
+		id: 78,
+		question: "Cuando un empleo de libre nombramiento y remoción sea clasificado como de carrera administrativa, deberá:",
+		correct_answer: "Ser provisto mediante concurso",
+		incorrect_answers: [
+			"Ser provisto en provisionalidad",
+			"Ser provisto por un empleado temporal",
+			"Ser provisto por un empleado a término fijo"
+		],
+		description: "Los cargos de carrera deben proveerse por concurso público de méritos según la ley."
+	},
+	{
+		id: 79,
+		question: "El principio de _________________ se refiere a que los instrumentos utilizados para verificar la capacidad y competencias de los aspirantes a acceder a los empleos públicos de carrera sean óptimos en su confección y aplicación:",
+		correct_answer: "Validez y confiabilidad",
+		incorrect_answers: [
+			"Eficacia",
+			"Publicidad",
+			"Imparcialidad"
+		],
+		description: "La validez y confiabilidad son esenciales para garantizar que los instrumentos de evaluación reflejan las competencias reales de los aspirantes."
+	},
+	{
+		id: 80,
+		question: "Los tres miembros de la Comisión Nacional del Servicio Civil, serán de dedicación exclusiva, no reelegibles y por un periodo de:",
+		correct_answer: "Cuatro años",
+		incorrect_answers: [
+			"Tres años",
+			"Seis años",
+			"Dos años"
+		],
+		description: "El período de cuatro años está establecido en la Ley 909 de 2004 para los miembros de la CNSC."
+	},
+
+
+	{
+		id: 81,
+		question: "Los servidores públicos tienen el deber de impulsar oficiosamente los procedimientos y no deben someterlos a retardos injustificados, aquí se enuncia el principio de la función pública denominado:",
+		correct_answer: "Celeridad",
+		incorrect_answers: [
+			"Eficacia",
+			"Economía",
+			"Igualdad"
+		],
+		description: "El principio de celeridad establece que los procedimientos administrativos deben realizarse sin retrasos innecesarios."
+	},
+	{
+		id: 82,
+		question: "Dice la ley 909 de 2.004 en su Art. 37 literal A: “La permanencia en los cargos de carrera administrativa exige la calificación satisfactoria en el desempeño del empleo, el logro de resultados y realizaciones el desarrollo y ejercicio de la función pública”, aquí se consagra el principio de:",
+		correct_answer: "Mérito",
+		incorrect_answers: [
+			"La publicidad",
+			"La moralidad",
+			"La economía"
+		],
+		description: "El principio de mérito es la base para la permanencia en la carrera administrativa, basado en el rendimiento del empleado."
+	},
+	{
+		id: 83,
+		question: "La _____________________ es un órgano de carácter legal, permanente de nivel nacional, independiente de las ramas y órganos del poder público, dotada de personería jurídica, autonomía administrativa y patrimonio propio y responsable de la administración de las carreras.",
+		correct_answer: "Comisión Nacional del Servicio Civil",
+		incorrect_answers: [
+			"Defensoría del pueblo",
+			"Personería",
+			"Comisión Nacional de Evaluación y Acreditación"
+		],
+		description: "La Comisión Nacional del Servicio Civil es el organismo encargado de la administración de las carreras en la función pública."
+	},
+	{
+		id: 84,
+		question: "Quienes ejercen los cargos de mayor jerarquía en las entidades de las tres ramas u órganos del poder público, en los niveles nacional, departamental, regional, provincial, distrital y municipal, deben:",
+		correct_answer: "Ser mínimo el 30% de mujeres",
+		incorrect_answers: [
+			"Ser mínimo el 25% de mujeres",
+			"Ser mínimo el 20% de mujeres",
+			"Ser mínimo el 10% de mujeres"
+		],
+		description: "La ley busca promover la igualdad de género en los altos cargos públicos en todas las entidades del estado."
+	},
+	{
+		id: 85,
+		question: "En virtud del principio de _________________ los servidores públicos tendrán en cuenta que los procedimientos deben lograr su finalidad, removiendo de oficio los obstáculos puramente formales, así está consagrado en el código contencioso administrativo, Art.3º:",
+		correct_answer: "Eficacia",
+		incorrect_answers: [
+			"Imparcialidad",
+			"Igualdad",
+			"Moralidad"
+		],
+		description: "El principio de eficacia garantiza que los actos administrativos sean efectivos y logren su propósito."
+	}
+
+]
+
+

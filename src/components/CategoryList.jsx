@@ -2,9 +2,9 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios } from '../page/data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa } from '../page/data'
 
-const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios] = imgs
+const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin] = imgs
 
 
 export const CategoryList = () => {
@@ -28,7 +28,7 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.conocimientosTributariosI} src={tributarios1} alt={`categoria ${categories.conocimientosTributariosI}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conocimientosTributariosI} />
                 <CategoryCard category={categories.conductuales} src={conductuales} alt={`categoria ${categories.conductuales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales} />
                 <CategoryCard category={categories.tramitesServicios} src={tramitesServicios} alt={`categoria ${categories.tramitesServicios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={tramites_Servicios} />
-
+                <CategoryCard category={categories.competencia_administrativa} src={competencia_admin} alt={`categoria ${categories.competencia_administrativa}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencia_administrativa} />
 
             </div>
         </div>

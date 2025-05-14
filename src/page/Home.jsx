@@ -28,6 +28,8 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import ViewListIcon from '@mui/icons-material/ViewList';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
+import { SeccionComentarios } from '../components/seccionComentarios/SeccionComentarios'
+import { Carrusel } from '../components/carrusel/Carrusel'
 
 
 
@@ -40,12 +42,14 @@ export const Home = () => {
 
             <div className="bg-cyan-500 text-white text-2xl font-bold text-center p-5 w-full">
                 <ul className='flex gap-10 justify-center'>
-                    <li><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
-                    <Link to='/category/list'><li>Practicar por categorías</li></Link>
-                    <Link to='/materialEstudio'><li>Material de estudio</li></Link>
-                    <li><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
+                    <li className='sm:text-lg'><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
+                    <Link to='/category/list'><li className='sm:text-lg'>Practicar por categorías</li></Link>
+                    <Link to='/materialEstudio'><li className='sm:text-lg'>Material de estudio</li></Link>
+                    <li className='sm:text-lg'><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
                 </ul>
             </div>
+
+            <div className='w-full mx-auto mt-5 mb-2'><Carrusel /></div>
 
 
             <br></br>
@@ -53,10 +57,11 @@ export const Home = () => {
                 <img src={slogan} alt="" />
             </div>
 
+
             <div className='flex flex-row justify-center gap-5'>
 
 
-                <div className='flex flex-col items-center p-10 w-3/4 rounded-lg bg-white shadow-lg w-2/5'>
+                <div className='flex flex-col items-center p-10 w-2/5 rounded-lg bg-white shadow-lg'>
                     <div className="container mt-20">
                         <div className="content space-y-10 mt-1">
                             <h1 className="text-4xl text-center ">Nuevo concurso meritocrático para cubrir vacantes en la DIAN</h1>
@@ -115,13 +120,14 @@ export const Home = () => {
 
 
 
+
                 <div className=' w-1/5 flex flex-col items-center justify-start gap-8'>
 
                     <div className=' shadow-2xl bg-white rounded-lg p-8 '>
 
                         <div>
                             <h1 className="text-2xl text-center">Proceso de selección DIAN 2667</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                            <ul class="max-w-md space-y-3 list-inside">
+                            <ul className="max-w-md space-y-3 list-inside">
 
                                 <li>< AccountBalanceIcon /><button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=65'>Normatividad</a></button></li><hr></hr>
                                 <li><CampaignIcon />        <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=64'>Avisos informativos</a></button></li><hr></hr>
@@ -139,7 +145,7 @@ export const Home = () => {
 
                         <div>
                             <h1 className="text-2xl text-center">Otros procesos de selección</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                            <ul class="max-w-md space-y-3 list-inside">
+                            <ul className="max-w-md space-y-3 list-inside">
 
                                 <li><AccountTreeIcon />         <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-desarrollo'>Procesos de selección en desarrollo</a></button></li><hr></hr>
                                 <li><FormatListNumberedIcon />  <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-uso-de-listas'>Lista de Elegibles</a></button></li><hr></hr>
@@ -177,20 +183,20 @@ export const Home = () => {
                     <div className=' shadow-2xl bg-white rounded-lg p-8 '>
 
                         <div>
-                            <img src={logo}/> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
+                            <img src={logo} /> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
                             <ul className="max-w-md space-y-3 list-inside">
 
                                 <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/Paginas/Inicio.aspx'>Sitio web Institucional</a></button></li><hr></hr>
-                                <li>                  <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Presentacion.aspx'>Presentación</a></button></li><hr></hr>
-                                <li>               <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Organigrama.aspx'>Organigrama</a></button></li><hr></hr>
-                                <li>                 <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/OfertasEmpleo.aspx'>Oferta de Empleos</a></button></li><hr></hr>
-                                <li>           <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/PlaneacionEvaluacionInstitucional.aspx'>Planeación y evaluación institucional</a></button></li><hr></hr>
-                                <li>           <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Manual_de_Funciones.aspx'>Manual de funciones</a></button></li><hr></hr>
-                                <li>             <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/mapaprocesos.aspx'>Manual de Procesos</a></button></li><hr></hr>
-                                <li>            <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/CodigoBuenGobierno/Codigo-de-Etica-Vr1-2021.pdf'>Código de ética</a></button></li><hr></hr>
-                                <li>            <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/Paginas/Escuela-DIAN.aspx'>Escuela DIAN</a></button></li><hr></hr>
-                                <li>            <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/GDocumental.aspx'>Gestión documental</a></button></li><hr></hr>
-                                <li>            <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/contratacion/Contratacion/MN_FI_0013_Manual_de_Contratacion_SGRF.pdf'>Manual de contratación</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Presentacion.aspx'>Presentación</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Organigrama.aspx'>Organigrama</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/OfertasEmpleo.aspx'>Oferta de Empleos</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/PlaneacionEvaluacionInstitucional.aspx'>Planeación y evaluación institucional</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Manual_de_Funciones.aspx'>Manual de funciones</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/mapaprocesos.aspx'>Manual de Procesos</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/CodigoBuenGobierno/Codigo-de-Etica-Vr1-2021.pdf'>Código de ética</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/Paginas/Escuela-DIAN.aspx'>Escuela DIAN</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/GDocumental.aspx'>Gestión documental</a></button></li><hr></hr>
+                                <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/contratacion/Contratacion/MN_FI_0013_Manual_de_Contratacion_SGRF.pdf'>Manual de contratación</a></button></li><hr></hr>
 
 
                             </ul>
@@ -200,11 +206,10 @@ export const Home = () => {
 
                 </div>
 
+            </div>
 
-
-
-
-
+            <div className=' w-2/5 mt-8  mr-[17%] border-2 '>
+                <SeccionComentarios />
             </div>
 
 
