@@ -28,6 +28,23 @@ import image27 from './images/image27.png';
 import image28 from './images/image28.png';
 import image29 from './images/image29.png';
 import image30 from './images/image30.png';
+import image31 from './images/image31.png';
+import image32 from './images/image32.png';
+import image33 from './images/image33.png';
+import image34 from './images/image34.png';
+import image35 from './images/image35.png';
+import image36 from './images/image36.jpg';
+import image37 from './images/image37.jpg';
+import image38 from './images/image38.avif';
+import image39 from './images/image39.jpg';
+import image40 from './images/image40.jpg';
+import image41 from './images/image41.jpg';
+import image42 from './images/image42.jpg';
+
+
+
+
+
 
 
 export const material_estudio_data = [
@@ -209,7 +226,79 @@ export const material_estudio_data = [
         titulo: "Evaluación del desempeño laboral",
         url: "https://www.inpec.gov.co/documents/d/guest/cnsc-cartilla-evaluacion-del-desempeno-laboral-guia",
         image: image30
+    },
+    {
+        id: 31,
+        titulo: "ACTUALIZACIÓN DE LA CLASIFICACIÓN DE ACTIVIDADES ECONÓMICAS",
+        url: "https://www.dian.gov.co/impuestos/Documents/Abece-Actividades-Economicas.pdf",
+        image: image31
+    },
+    {
+        id: 32,
+        titulo: "Elusión y evasión fiscal en Colombia",
+        url: "https://www.dian.gov.co/impuestos/Documents/Elusion-y-evasion-fiscal-en-colombia.pdf",
+        image: image32
+    },
+    {
+        id: 33,
+        titulo: "La calidad en la administración pública clombiana",
+        url: "https://www2.congreso.gob.pe/sicr/cendocbib/con4_uibd.nsf/9814A3C36D8EC87C05257BE50079B75D/$FILE/unpan035274.pdf",
+        image: image33
+    },
+    {
+        id: 34,
+        titulo: "NORMA TÉCNICA DE CALIDAD EN LA GESTIÓN PÚBLICA",
+        url: "http://apolo.uniatlantico.edu.co/SIG/NTC%20GP1000-2009.pdf",
+        image: image34
+    },
+    {
+        id: 35,
+        titulo: "Organigrama de la DIAN",
+        url: "https://www.dian.gov.co/dian/entidad/Organigramanuevo/Org_DIAN_2021.pdf",
+        image: image35
+    },
+    {
+        id: 36,
+        titulo: "Gerencia y formulación de proyectos",
+        url: "https://drive.google.com/drive/folders/1MQaF6fAEJYiTbp7G_TkUlL-kjyBMTUAL?usp=drive_link",
+        image: image36
+    },
+    {
+        id: 37,
+        titulo: "Administración de la custodia y disposición de mercancías",
+        url: "https://drive.google.com/drive/folders/1vrKz-tQb8vv4Ab7VL5GJ5Bc7sDWfxd1t?usp=drive_link",
+        image: image37
+    },
+    {
+        id: 38,
+        titulo: "Atención al ciudadano",
+        url: "https://drive.google.com/drive/folders/1C4d-_ve3y6Z3-b-31TYxFhdqx709-fMC?usp=drive_link",
+        image: image38
+    },
+    {
+        id: 39,
+        titulo: "Atención selectiva al ciudadano",
+        url: "https://drive.google.com/drive/folders/1PO0QqMLXM7aj8eFAGCT6gifBWYEbXjOE?usp=drive_link",
+        image: image39
+    },
+    {
+        id: 40,
+        titulo: "Competencias básicas y comportamentales",
+        url: "https://drive.google.com/drive/folders/169BIdstzwdq9YfbmnTwFjpkBnw6yceeE?usp=drive_link",
+        image: image40
+    },
+    {
+        id: 41,
+        titulo: "Código de ética y buen gobierno",
+        url: "https://drive.google.com/drive/folders/1MP2UkRJPD8ahYokjYsq38mUmUuOYufpD?usp=drive_link",
+        image: image41
+    },
+    {
+        id: 42,
+        titulo: "Código de integridad, transparencia y anticorrupción",
+        url: "https://drive.google.com/drive/folders/1DDsMiiK6DxnN9ZKmk-CRyYNedqSZlQTX?usp=drive_link",
+        image: image42
     }
-    
+        
 ]
 
