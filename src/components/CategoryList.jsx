@@ -2,9 +2,9 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa } from '../page/data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico} from '../page/data'
 
-const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin] = imgs
+const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud,razonamientologico ] = imgs
 
 
 export const CategoryList = () => {
@@ -29,7 +29,12 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.conductuales} src={conductuales} alt={`categoria ${categories.conductuales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales} />
                 <CategoryCard category={categories.tramitesServicios} src={tramitesServicios} alt={`categoria ${categories.tramitesServicios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={tramites_Servicios} />
                 <CategoryCard category={categories.competencia_administrativa} src={competencia_admin} alt={`categoria ${categories.competencia_administrativa}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencia_administrativa} />
-
+                <CategoryCard category={categories.codigo_general_proceso_colombia} src={codigo_general_proceso} alt={`categoria ${categories.codigo_general_proceso_colombia}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={codigo_general_proceso_en_colombia} />
+                <CategoryCard category={categories.estructura_estado_colombiano} src={estructura_estado} alt={`categoria ${categories.estructura_estado_colombiano}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={estructura_del_estado} />
+                <CategoryCard category={categories.modelo_integrado_gestion} src={mipg} alt={`categoria ${categories.modelo_integrado_gestion}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={modelo_integrado_de_gestión} />
+                <CategoryCard category={categories.competencia_comportamentales} src={comportamentales} alt={`categoria ${categories.competencia_comportamentales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencias_comportamentales_para_profesionales} />
+                <CategoryCard category={categories.codigo_unico_disciplinario} src={cud} alt={`categoria ${categories.codigo_unico_disciplinario}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={codigoUnicoDisciplinario} />
+                <CategoryCard category={categories.razonamientologico} src={razonamientologico} alt={`categoria ${categories.razonamientologico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_logico_nivel_basico} />
             </div>
         </div>
     )

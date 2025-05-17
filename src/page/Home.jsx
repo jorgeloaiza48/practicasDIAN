@@ -42,10 +42,10 @@ export const Home = () => {
 
             <div className="bg-cyan-500 text-white text-2xl font-bold text-center p-5 w-full">
                 <ul className='flex gap-10 justify-center'>
-                    <li className='sm:text-lg'><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
-                    <Link to='/category/list'><li className='sm:text-lg'>Practicar por categorías</li></Link>
-                    <Link to='/materialEstudio'><li className='sm:text-lg'>Material de estudio</li></Link>
-                    <li className='sm:text-lg'><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
+                    <li className=''><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
+                    <Link to='/category/list'><li className=''>Practicar por categorías</li></Link>
+                    <Link to='/materialEstudio'><li className=''>Material de estudio</li></Link>
+                    <li className=''><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
                 </ul>
             </div>
 
@@ -58,7 +58,7 @@ export const Home = () => {
             </div>
 
 
-            <div className='flex flex-row justify-center gap-5'>
+            <div className='flex flex-row justify-center gap-5 sm:justify-around md:justify-center lg:justify-center'>
 
 
                 <div className='flex flex-col items-center p-10 w-2/5 rounded-lg bg-white shadow-lg'>
@@ -208,7 +208,7 @@ export const Home = () => {
 
             </div>
 
-            <div className=' w-2/5 mt-8  mr-[17%] border-2 '>
+            <div className='w-2/5 mt-8  mr-[17%] border-2 mb-5 border-gray-300 rounded-lg bg-white shadow-lg'>
                 <SeccionComentarios />
             </div>
 
