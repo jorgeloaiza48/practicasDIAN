@@ -2,9 +2,9 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico} from '../page/data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal} from '../page/data'
 
-const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud,razonamientologico ] = imgs
+const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud,razonamientologico, comprensionlectora, razonamientonumerico, aptitudverbal ] = imgs
 
 
 export const CategoryList = () => {
@@ -35,6 +35,9 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.competencia_comportamentales} src={comportamentales} alt={`categoria ${categories.competencia_comportamentales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencias_comportamentales_para_profesionales} />
                 <CategoryCard category={categories.codigo_unico_disciplinario} src={cud} alt={`categoria ${categories.codigo_unico_disciplinario}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={codigoUnicoDisciplinario} />
                 <CategoryCard category={categories.razonamientologico} src={razonamientologico} alt={`categoria ${categories.razonamientologico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_logico_nivel_basico} />
+                <CategoryCard category={categories.comprensionlectora} src={comprensionlectora} alt={`categoria ${categories.comprensionlectora}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={comprension_lectora} />
+                <CategoryCard category={categories.razonamientonumerico} src={razonamientonumerico} alt={`categoria ${categories.razonamientonumerico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_numerico} />
+                <CategoryCard category={categories.aptitudverbal} src={aptitudverbal} alt={`categoria ${categories.aptitudverbal}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={aptitud_verbal} />
             </div>
         </div>
     )

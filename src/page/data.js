@@ -13,7 +13,9 @@ import mipg from '../assets/mipg.png'
 import comportamentales from '../assets/comportamentales.gif'
 import cud from '../assets/cud.gif'
 import razonamientologico from '../assets/razonamiento_logico.png'
-
+import comprensionlectora from '../assets/comprensionlectora.jpeg'
+import razonamientonumerico from '../assets/razonamientonumerico.jpeg'
+import aptitudverbal from '../assets/aptitudverbal.gif'
 
 
 export const imgs = [
@@ -31,7 +33,10 @@ export const imgs = [
 	mipg,
 	comportamentales,
 	cud,
-	razonamientologico
+	razonamientologico,
+	comprensionlectora,
+	razonamientonumerico,
+	aptitudverbal
 ];
 
 export const categories = {
@@ -50,6 +55,9 @@ export const categories = {
 	competencia_comportamentales: "Competencias comportamentales para profesionales",
 	codigo_unico_disciplinario: "Código Único Disciplinario",
 	razonamientologico: "Razonamiento lógico (nivel básico)",
+	comprensionlectora: "Comprensión lectora",
+	razonamientonumerico: "Razonamiento numérico (nivel básico)",
+	aptitudverbal: "Aptitud Verbal"
 };
 
 export const aspectos_generales = [
@@ -6362,4 +6370,1066 @@ export const razonamiento_logico_nivel_basico = [
 		"description": "¡¡¡Correcto!!!! Si A > B y B > C, entonces A > C."
 	}
 
+]
+
+export const comprension_lectora = [
+
+	{
+		"id": 1,
+		"question": "Juan leyó un libro de 200 páginas en 4 días. Si leyó la misma cantidad cada día, ¿cuántas páginas leyó por día?",
+		"correct_answer": "50 páginas",
+		"incorrect_answers": ["40 páginas", "60 páginas", "25 páginas"],
+		"description": "¡Correcto! Juan dividió equitativamente las 200 páginas entre los 4 días: 200 / 4 = 50."
+	},
+	{
+		"id": 2,
+		"question": "Ana va al supermercado y compra pan, leche y huevos. ¿Qué tipo de texto podría ser este?",
+		"correct_answer": "Narración",
+		"incorrect_answers": ["Descripción", "Instructivo", "Argumentativo"],
+		"description": "¡Correcto! Es un texto narrativo porque cuenta una acción cotidiana."
+	},
+	{
+		"id": 3,
+		"question": "¿Cuál es la idea principal del siguiente enunciado? 'Los árboles no solo embellecen el paisaje, también producen oxígeno y ofrecen sombra.'",
+		"correct_answer": "Los árboles son importantes por varias razones.",
+		"incorrect_answers": ["Los árboles solo sirven para hacer sombra.", "El oxígeno es lo más importante.", "Los árboles no son útiles."],
+		"description": "¡Muy bien! El texto menciona varias razones que hacen valiosos a los árboles."
+	},
+	{
+		"id": 4,
+		"question": "Si Pedro tiene frío, ¿qué es lo más probable que haga?",
+		"correct_answer": "Se pondrá un abrigo.",
+		"incorrect_answers": ["Tomará helado.", "Encenderá el ventilador.", "Saldrá descalzo."],
+		"description": "¡Correcto! Al tener frío, lo más lógico es que se abrigue."
+	},
+	{
+		"id": 5,
+		"question": "En el texto: 'El gato dormía plácidamente sobre el sofá', ¿qué palabra indica cómo dormía el gato?",
+		"correct_answer": "Plácidamente",
+		"incorrect_answers": ["Gato", "Sofá", "Dormía"],
+		"description": "¡Exacto! 'Plácidamente' describe la manera en que dormía el gato."
+	},
+	{
+		"id": 6,
+		"question": "Luis olvidó su sombrilla y empezó a llover. ¿Qué sucederá probablemente?",
+		"correct_answer": "Luis se mojará.",
+		"incorrect_answers": ["Luis estará seco.", "Luis encenderá la chimenea.", "Luis irá a la playa."],
+		"description": "¡Correcto! Si no tiene sombrilla y llueve, lo más lógico es que se moje."
+	},
+	{
+		"id": 7,
+		"question": "¿Qué significa la palabra 'enorme' en la frase: 'El perro de Marta es enorme'?",
+		"correct_answer": "Muy grande",
+		"incorrect_answers": ["Muy pequeño", "Muy fuerte", "Muy simpático"],
+		"description": "¡Muy bien! 'Enorme' significa algo de gran tamaño."
+	},
+	{
+		"id": 8,
+		"question": "Si un texto comienza con: 'Érase una vez...', ¿qué tipo de texto es?",
+		"correct_answer": "Un cuento",
+		"incorrect_answers": ["Una carta", "Un poema", "Una noticia"],
+		"description": "¡Correcto! Esa frase es típica del inicio de los cuentos."
+	},
+	{
+		"id": 9,
+		"question": "En el texto: 'María preparó una torta para el cumpleaños de su hermano', ¿qué relación hay entre María y el hermano?",
+		"correct_answer": "María es su hermana",
+		"incorrect_answers": ["María es su profesora", "María es su vecina", "María es su amiga"],
+		"description": "¡Exacto! El texto indica que María es la hermana del cumpleañero."
+	},
+	{
+		"id": 10,
+		"question": "¿Cuál es el propósito de un instructivo?",
+		"correct_answer": "Explicar cómo hacer algo paso a paso.",
+		"incorrect_answers": ["Contar una historia", "Describir un paisaje", "Dar una opinión"],
+		"description": "¡Correcto! Un instructivo sirve para enseñar cómo se hace algo."
+	},
+
+	{
+		"id": 11,
+		"question": "Si el texto dice: 'Laura tomó su mochila, se despidió y salió al colegio', ¿qué estaba haciendo Laura?",
+		"correct_answer": "Yendo al colegio",
+		"incorrect_answers": ["Saliendo de vacaciones", "Visitando a su abuela", "Yendo al supermercado"],
+		"description": "¡Correcto! El texto claramente indica que se dirige al colegio."
+	},
+	{
+		"id": 12,
+		"question": "¿Qué tipo de texto es una receta de cocina?",
+		"correct_answer": "Instructivo",
+		"incorrect_answers": ["Narrativo", "Argumentativo", "Descriptivo"],
+		"description": "¡Muy bien! Las recetas indican pasos a seguir, por eso son instructivas."
+	},
+	{
+		"id": 13,
+		"question": "En el texto: 'Carlos gritó de emoción al ver la sorpresa', ¿cómo se sentía Carlos?",
+		"correct_answer": "Feliz",
+		"incorrect_answers": ["Enojado", "Triste", "Cansado"],
+		"description": "¡Correcto! Gritar de emoción indica alegría."
+	},
+	{
+		"id": 14,
+		"question": "Si un texto dice: 'El león es un animal salvaje que vive en África', ¿qué tipo de texto es?",
+		"correct_answer": "Informativo",
+		"incorrect_answers": ["Narrativo", "Poético", "Publicitario"],
+		"description": "¡Exacto! El texto ofrece información sobre el león, por lo tanto es informativo."
+	},
+	{
+		"id": 15,
+		"question": "¿Qué palabra del siguiente enunciado es un verbo? 'María corre en el parque cada tarde.'",
+		"correct_answer": "Corre",
+		"incorrect_answers": ["Parque", "Tarde", "Cada"],
+		"description": "¡Bien hecho! 'Corre' indica una acción, por eso es un verbo."
+	},
+	{
+		"id": 16,
+		"question": "Pedro escribió una carta para su amigo. ¿Cuál es el propósito del texto?",
+		"correct_answer": "Comunicar algo a su amigo",
+		"incorrect_answers": ["Explicar una receta", "Dar una noticia", "Describir un lugar"],
+		"description": "¡Correcto! El propósito de una carta es comunicarse con alguien."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué significa la palabra 'rápidamente' en el texto: 'El niño corrió rápidamente al ver el autobús'?",
+		"correct_answer": "Con mucha velocidad",
+		"incorrect_answers": ["Con tristeza", "Con hambre", "Con miedo"],
+		"description": "¡Muy bien! 'Rápidamente' indica que lo hizo con velocidad."
+	},
+	{
+		"id": 18,
+		"question": "¿Qué se puede inferir si un niño está mojado y lleva un paraguas roto?",
+		"correct_answer": "Llovía y el paraguas no lo protegió",
+		"incorrect_answers": ["El niño se bañó", "El niño está jugando con agua", "Está lloviendo dentro de casa"],
+		"description": "¡Exacto! El texto sugiere que llovía y el paraguas no fue útil."
+	},
+	{
+		"id": 19,
+		"question": "¿Cuál es la idea principal del siguiente texto? 'Las tortugas son reptiles que caminan despacio y viven muchos años.'",
+		"correct_answer": "Las tortugas son reptiles especiales.",
+		"incorrect_answers": ["Las tortugas son lentas y aburridas.", "Las tortugas nadan mucho.", "Las tortugas no comen."],
+		"description": "¡Correcto! El texto destaca características de las tortugas como reptiles."
+	},
+	{
+		"id": 20,
+		"question": "En el texto: 'Marta estaba tan cansada que se quedó dormida con la luz encendida', ¿qué causó que Marta se durmiera con la luz encendida?",
+		"correct_answer": "Estaba muy cansada",
+		"incorrect_answers": ["No tenía sueño", "Tenía miedo", "Estaba viendo televisión"],
+		"description": "¡Muy bien! El cansancio fue la causa de que se durmiera sin apagar la luz."
+	},
+	{
+		"id": 21,
+		"question": "Si un texto dice: 'Ana olvidó su sombrilla y se mojó al salir del colegio', ¿qué se puede inferir?",
+		"correct_answer": "Llovía cuando Ana salió",
+		"incorrect_answers": ["Era de noche", "Estaba haciendo sol", "Hacía mucho viento"],
+		"description": "¡Correcto! El hecho de mojarse al salir indica que llovía."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué tipo de texto es un cuento infantil?",
+		"correct_answer": "Narrativo",
+		"incorrect_answers": ["Instructivo", "Argumentativo", "Expositivo"],
+		"description": "¡Muy bien! Un cuento relata hechos o historias, por eso es narrativo."
+	},
+	{
+		"id": 23,
+		"question": "En el texto: 'Luis se tapó los oídos por el fuerte ruido', ¿qué causó la acción de Luis?",
+		"correct_answer": "El ruido era muy fuerte",
+		"incorrect_answers": ["Tenía sueño", "Le dolía la cabeza", "Estaba resfriado"],
+		"description": "¡Correcto! El texto menciona claramente que el ruido fue la causa."
+	},
+	{
+		"id": 24,
+		"question": "¿Cuál es el propósito de una noticia en el periódico?",
+		"correct_answer": "Informar sobre un hecho",
+		"incorrect_answers": ["Contar una historia ficticia", "Dar consejos de cocina", "Hacer reír al lector"],
+		"description": "¡Exacto! El objetivo de una noticia es informar al lector."
+	},
+	{
+		"id": 25,
+		"question": "¿Qué personaje principal suele tener un cuento?",
+		"correct_answer": "Un protagonista",
+		"incorrect_answers": ["Un narrador", "Un espectador", "Un autor"],
+		"description": "¡Bien! El personaje central del cuento se llama protagonista."
+	},
+	{
+		"id": 26,
+		"question": "¿Cuál es el sinónimo de la palabra 'contento' en el texto: 'Juan estaba muy contento con su regalo'?",
+		"correct_answer": "Feliz",
+		"incorrect_answers": ["Triste", "Enojado", "Cansado"],
+		"description": "¡Correcto! 'Contento' es sinónimo de 'feliz'."
+	},
+	{
+		"id": 27,
+		"question": "¿Qué emoción expresa el texto: 'Lucía lloró al ver su juguete roto'?",
+		"correct_answer": "Tristeza",
+		"incorrect_answers": ["Felicidad", "Enojo", "Sorpresa"],
+		"description": "¡Muy bien! Llorar por un juguete roto indica tristeza."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué se puede deducir si alguien lee cada noche antes de dormir?",
+		"correct_answer": "Tiene el hábito de leer",
+		"incorrect_answers": ["No le gusta leer", "Solo lee los fines de semana", "Solo lee por obligación"],
+		"description": "¡Correcto! Leer todas las noches indica un hábito."
+	},
+	{
+		"id": 29,
+		"question": "Si el texto dice: 'El gato trepó por el árbol para escapar del perro', ¿qué motivó al gato?",
+		"correct_answer": "Escapar del perro",
+		"incorrect_answers": ["Dormir en el árbol", "Cazar un pájaro", "Buscar sombra"],
+		"description": "¡Exacto! El gato trepó porque huía del perro."
+	},
+	{
+		"id": 30,
+		"question": "¿Qué palabra es un adjetivo en el enunciado: 'La flor roja está en la mesa'?",
+		"correct_answer": "Roja",
+		"incorrect_answers": ["Flor", "Mesa", "Está"],
+		"description": "¡Correcto! 'Roja' describe a la flor, por lo tanto es un adjetivo."
+	},
+	{
+		"id": 31,
+		"question": "Si un texto dice: 'Pedro corrió al autobús pero no lo alcanzó', ¿qué ocurrió?",
+		"correct_answer": "Pedro perdió el autobús",
+		"incorrect_answers": ["Pedro se subió al autobús", "Pedro iba conduciendo", "El autobús estaba dañado"],
+		"description": "¡Correcto! El hecho de que no lo alcanzó indica que lo perdió."
+	},
+	{
+		"id": 32,
+		"question": "¿Qué se puede inferir del texto: 'María usó paraguas todo el día'?",
+		"correct_answer": "Estuvo lloviendo",
+		"incorrect_answers": ["Hacía mucho calor", "Era de noche", "Se le perdió el paraguas"],
+		"description": "¡Correcto! El uso del paraguas indica que llovía."
+	},
+	{
+		"id": 33,
+		"question": "En el texto: 'El niño cerró la puerta con fuerza', ¿qué palabra indica cómo cerró la puerta?",
+		"correct_answer": "Con fuerza",
+		"incorrect_answers": ["Cerró", "Puerta", "Niño"],
+		"description": "¡Bien! 'Con fuerza' es el complemento que indica cómo se realizó la acción."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué parte del texto contiene la idea principal?",
+		"correct_answer": "El primer o último párrafo, generalmente",
+		"incorrect_answers": ["Los títulos de los libros", "Las notas al pie", "El nombre del autor"],
+		"description": "¡Correcto! La idea principal suele encontrarse al inicio o al final del texto."
+	},
+	{
+		"id": 35,
+		"question": "Si un artículo de opinión habla de los beneficios del deporte, ¿qué tipo de texto es?",
+		"correct_answer": "Argumentativo",
+		"incorrect_answers": ["Narrativo", "Descriptivo", "Instructivo"],
+		"description": "¡Exacto! Los textos que defienden ideas con razones son argumentativos."
+	},
+	{
+		"id": 36,
+		"question": "¿Cuál es el antónimo de 'feliz' en el texto: 'No estaba feliz con los resultados'?",
+		"correct_answer": "Triste",
+		"incorrect_answers": ["Rápido", "Grande", "Claro"],
+		"description": "¡Correcto! 'Triste' es lo opuesto a 'feliz'."
+	},
+	{
+		"id": 37,
+		"question": "Si un texto dice: 'Claudia estudió mucho y aprobó el examen', ¿cuál fue la causa del resultado?",
+		"correct_answer": "Estudió mucho",
+		"incorrect_answers": ["Tenía suerte", "El examen fue fácil", "La profesora la ayudó"],
+		"description": "¡Muy bien! El texto indica que aprobar fue resultado de estudiar mucho."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué intención tiene un instructivo?",
+		"correct_answer": "Explicar cómo hacer algo",
+		"incorrect_answers": ["Contar una historia", "Convencer al lector", "Expresar sentimientos"],
+		"description": "¡Correcto! Un instructivo tiene una finalidad práctica."
+	},
+	{
+		"id": 39,
+		"question": "¿Cuál es la idea principal del texto: 'La bicicleta es un medio de transporte económico y ecológico'?",
+		"correct_answer": "La bicicleta tiene beneficios",
+		"incorrect_answers": ["La bicicleta es peligrosa", "La bicicleta es costosa", "La bicicleta es antigua"],
+		"description": "¡Bien! El texto resalta las ventajas de usar bicicleta."
+	},
+	{
+		"id": 40,
+		"question": "En el texto: 'Al escuchar el timbre, los estudiantes salieron al recreo', ¿qué indica la palabra 'al escuchar'?",
+		"correct_answer": "El momento en que ocurrió la acción",
+		"incorrect_answers": ["La causa del recreo", "La identidad de los estudiantes", "El lugar del recreo"],
+		"description": "¡Correcto! 'Al escuchar' indica cuándo sucedió la acción de salir."
+	},
+	{
+		"id": 41,
+		"question": "Si un texto dice: 'Lucía se puso el abrigo y salió apresurada', ¿qué se puede deducir?",
+		"correct_answer": "Hacía frío o tenía prisa",
+		"incorrect_answers": ["Estaba en vacaciones", "Iba a una fiesta", "Se iba a dormir"],
+		"description": "¡Correcto! El uso del abrigo y la prisa sugieren frío o urgencia."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué tipo de texto es una receta de cocina?",
+		"correct_answer": "Instructivo",
+		"incorrect_answers": ["Narrativo", "Descriptivo", "Argumentativo"],
+		"description": "¡Exacto! Las recetas dan instrucciones paso a paso."
+	},
+	{
+		"id": 43,
+		"question": "En el texto: 'Después del almuerzo, Juan leyó un libro en la sala', ¿cuál fue la acción principal?",
+		"correct_answer": "Juan leyó un libro",
+		"incorrect_answers": ["Juan cocinó", "Juan durmió", "Juan salió de casa"],
+		"description": "¡Correcto! Esa fue la acción realizada después del almuerzo."
+	},
+	{
+		"id": 44,
+		"question": "¿Qué indica el conector 'aunque' en una oración?",
+		"correct_answer": "Contraste u oposición",
+		"incorrect_answers": ["Suma de ideas", "Causa y efecto", "Secuencia temporal"],
+		"description": "¡Bien! 'Aunque' introduce una idea opuesta o contraria."
+	},
+	{
+		"id": 45,
+		"question": "Si un texto dice: 'No quedó ni una silla vacía en el teatro', ¿qué se puede inferir?",
+		"correct_answer": "El teatro estaba lleno",
+		"incorrect_answers": ["No hubo función", "Se vendieron pocas entradas", "Nadie asistió"],
+		"description": "¡Correcto! Significa que todas las sillas estaban ocupadas."
+	},
+	{
+		"id": 46,
+		"question": "¿Cuál es la idea principal de un texto que habla sobre los efectos del tabaquismo en la salud?",
+		"correct_answer": "El tabaquismo es perjudicial para la salud",
+		"incorrect_answers": ["El tabaco es legal", "Fumar es una decisión personal", "El cigarrillo es costoso"],
+		"description": "¡Muy bien! El texto se centra en los efectos negativos."
+	},
+	{
+		"id": 47,
+		"question": "¿Qué función cumple un título en un texto?",
+		"correct_answer": "Presentar el tema principal",
+		"incorrect_answers": ["Repetir el contenido", "Confundir al lector", "Mostrar opiniones"],
+		"description": "¡Correcto! El título resume o anticipa el contenido."
+	},
+	{
+		"id": 48,
+		"question": "¿Qué indica el uso del tiempo verbal pasado en un texto?",
+		"correct_answer": "Que la acción ya ocurrió",
+		"incorrect_answers": ["Que ocurrirá en el futuro", "Que ocurre ahora", "Que nunca sucederá"],
+		"description": "¡Exacto! El pasado narra hechos ya sucedidos."
+	},
+	{
+		"id": 49,
+		"question": "En el texto: 'Camila disfrutó del concierto desde la primera fila', ¿qué emoción expresa?",
+		"correct_answer": "Alegría o satisfacción",
+		"incorrect_answers": ["Tristeza", "Miedo", "Confusión"],
+		"description": "¡Correcto! 'Disfrutó' indica una emoción positiva."
+	},
+	{
+		"id": 50,
+		"question": "Si el texto dice: 'Los estudiantes rindieron el examen final el viernes', ¿qué indica la palabra 'final'?",
+		"correct_answer": "Que fue el último examen del periodo",
+		"incorrect_answers": ["Que el examen estaba incompleto", "Que era fácil", "Que era opcional"],
+		"description": "¡Bien! 'Final' indica el cierre de un ciclo académico."
+	}
+
+
+]
+
+export const razonamiento_numerico = [
+	{
+		"id": 1,
+		"question": "¿Cuál es el siguiente número en la serie: 2, 4, 6, 8, ___?",
+		"correct_answer": "10",
+		"incorrect_answers": ["11", "12", "9"],
+		"description": "Serie de números pares consecutivos. El siguiente número es 10."
+	},
+	{
+		"id": 2,
+		"question": "Si tienes 3 manzanas y compras 2 más, ¿cuántas manzanas tienes en total?",
+		"correct_answer": "5",
+		"incorrect_answers": ["6", "4", "3"],
+		"description": "3 + 2 = 5 manzanas en total."
+	},
+	{
+		"id": 3,
+		"question": "Un tren sale a las 3:00 p.m. y tarda 2 horas en llegar. ¿A qué hora llega?",
+		"correct_answer": "5:00 p.m.",
+		"incorrect_answers": ["4:00 p.m.", "6:00 p.m.", "3:30 p.m."],
+		"description": "3:00 p.m. + 2 horas = 5:00 p.m."
+	},
+	{
+		"id": 4,
+		"question": "¿Cuál es el resultado de 9 x 3?",
+		"correct_answer": "27",
+		"incorrect_answers": ["26", "30", "24"],
+		"description": "9 multiplicado por 3 es 27."
+	},
+	{
+		"id": 5,
+		"question": "¿Cuánto es la mitad de 20?",
+		"correct_answer": "10",
+		"incorrect_answers": ["5", "15", "12"],
+		"description": "La mitad de 20 es 10."
+	},
+	{
+		"id": 6,
+		"question": "Pedro tiene $100 y gasta $45. ¿Cuánto dinero le queda?",
+		"correct_answer": "55",
+		"incorrect_answers": ["65", "50", "45"],
+		"description": "100 - 45 = 55."
+	},
+	{
+		"id": 7,
+		"question": "Si un kilo de arroz cuesta $3.000, ¿cuánto cuestan 3 kilos?",
+		"correct_answer": "9.000",
+		"incorrect_answers": ["6.000", "3.300", "10.000"],
+		"description": "3.000 x 3 = 9.000."
+	},
+	{
+		"id": 8,
+		"question": "¿Qué número falta en la secuencia: 1, 3, 5, 7, ___?",
+		"correct_answer": "9",
+		"incorrect_answers": ["8", "10", "11"],
+		"description": "Secuencia de números impares. El siguiente es 9."
+	},
+	{
+		"id": 9,
+		"question": "Si 5 cuadernos cuestan $25.000, ¿cuánto cuesta cada cuaderno?",
+		"correct_answer": "5.000",
+		"incorrect_answers": ["4.000", "6.000", "5.500"],
+		"description": "25.000 dividido entre 5 es igual a 5.000."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué número es el doble de 12?",
+		"correct_answer": "24",
+		"incorrect_answers": ["22", "20", "26"],
+		"description": "El doble de 12 es 24."
+	},
+	{
+		"id": 11,
+		"question": "Si una caja contiene 24 chocolates y se reparten equitativamente entre 6 personas, ¿cuántos chocolates recibe cada una?",
+		"correct_answer": "4",
+		"incorrect_answers": ["3", "5", "6"],
+		"description": "24 dividido entre 6 es igual a 4."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es el valor de X en la ecuación: 3X + 5 = 20?",
+		"correct_answer": "5",
+		"incorrect_answers": ["3", "4", "6"],
+		"description": "Restamos 5: 20 - 5 = 15. Luego dividimos: 15 ÷ 3 = 5."
+	},
+	{
+		"id": 13,
+		"question": "Si un auto recorre 90 kilómetros en 1 hora y media, ¿cuál es su velocidad promedio en km/h?",
+		"correct_answer": "60",
+		"incorrect_answers": ["45", "75", "90"],
+		"description": "Velocidad = distancia ÷ tiempo. 90 ÷ 1.5 = 60 km/h."
+	},
+	{
+		"id": 14,
+		"question": "¿Cuál es el número que completa la serie? 1, 4, 9, 16, 25, ___",
+		"correct_answer": "36",
+		"incorrect_answers": ["30", "32", "34"],
+		"description": "Es una secuencia de cuadrados: 1², 2², 3², ..., por tanto, 6² = 36."
+	},
+	{
+		"id": 15,
+		"question": "Si una pizza se divide en 8 porciones iguales y se comen 3, ¿qué fracción representa lo que se ha comido?",
+		"correct_answer": "3/8",
+		"incorrect_answers": ["5/8", "3/5", "1/4"],
+		"description": "Se han comido 3 porciones de 8 totales, es decir, 3/8."
+	},
+	{
+		"id": 16,
+		"question": "Un tren sale de la estación A a las 3:00 p.m. y llega a la estación B a las 5:30 p.m. ¿Cuánto duró el viaje?",
+		"correct_answer": "2 horas y 30 minutos",
+		"incorrect_answers": ["2 horas", "3 horas", "1 hora y 30 minutos"],
+		"description": "De 3:00 p.m. a 5:30 p.m. hay 2 horas y 30 minutos."
+	},
+	{
+		"id": 17,
+		"question": "Si el 20% de un número es 50, ¿cuál es el número?",
+		"correct_answer": "250",
+		"incorrect_answers": ["100", "200", "150"],
+		"description": "Si 20% es 50, entonces el 100% es 50 ÷ 0.20 = 250."
+	},
+	{
+		"id": 18,
+		"question": "¿Cuál es el resultado de multiplicar 0.5 por 0.2?",
+		"correct_answer": "0.1",
+		"incorrect_answers": ["0.7", "0.02", "1.0"],
+		"description": "0.5 × 0.2 = 0.1."
+	},
+	{
+		"id": 19,
+		"question": "Si un rectángulo tiene un perímetro de 24 cm y su largo mide 7 cm, ¿cuánto mide su ancho?",
+		"correct_answer": "5 cm",
+		"incorrect_answers": ["6 cm", "4 cm", "3 cm"],
+		"description": "Perímetro = 2(largo + ancho) → 24 = 2(7 + ancho) → 12 = 7 + ancho → ancho = 5 cm."
+	},
+	{
+		"id": 20,
+		"question": "Si compro 3 manzanas a $2 cada una y pago con un billete de $10, ¿cuánto dinero me deben devolver?",
+		"correct_answer": "$4",
+		"incorrect_answers": ["$5", "$6", "$3"],
+		"description": "3 manzanas × $2 = $6. $10 - $6 = $4 de cambio."
+	},
+	{
+		"id": 21,
+		"question": "Si una camisa cuesta $80 y está en descuento del 25%, ¿cuál es el precio final?",
+		"correct_answer": "$60",
+		"incorrect_answers": ["$20", "$65", "$55"],
+		"description": "25% de $80 es $20, entonces $80 - $20 = $60."
+	},
+	{
+		"id": 22,
+		"question": "¿Cuál es el siguiente número en la secuencia: 2, 4, 8, 16, ...?",
+		"correct_answer": "32",
+		"incorrect_answers": ["24", "30", "36"],
+		"description": "Cada número se multiplica por 2 para obtener el siguiente."
+	},
+	{
+		"id": 23,
+		"question": "Si un automóvil recorre 150 kilómetros en 3 horas, ¿cuál es su velocidad promedio?",
+		"correct_answer": "50 km/h",
+		"incorrect_answers": ["45 km/h", "55 km/h", "60 km/h"],
+		"description": "Velocidad = distancia / tiempo = 150 km / 3 h = 50 km/h."
+	},
+	{
+		"id": 24,
+		"question": "En un aula hay 20 estudiantes, y 12 son mujeres. ¿Qué porcentaje son mujeres?",
+		"correct_answer": "60%",
+		"incorrect_answers": ["50%", "55%", "65%"],
+		"description": "Porcentaje = (12 / 20) × 100 = 60%."
+	},
+	{
+		"id": 25,
+		"question": "Si sumas los ángulos interiores de un triángulo, ¿cuánto obtienes?",
+		"correct_answer": "180 grados",
+		"incorrect_answers": ["90 grados", "360 grados", "270 grados"],
+	},
+	{
+		"id": 26,
+		"question": "¿Cuánto es 15% de 200?",
+		"correct_answer": "30",
+		"incorrect_answers": ["25", "35", "40"],
+		"description": "15% de 200 = (15/100) × 200 = 30."
+	},
+	{
+		"id": 27,
+		"question": "Si multiplicas un número por 0, ¿cuál es el resultado?",
+		"correct_answer": "0",
+		"incorrect_answers": ["El mismo número", "1", "No definido"],
+		"description": "Cualquier número multiplicado por 0 es 0."
+	},
+	{
+		"id": 28,
+		"question": "¿Cuál es la mitad de 90?",
+		"correct_answer": "45",
+		"incorrect_answers": ["40", "35", "55"],
+		"description": "La mitad de 90 es 90 ÷ 2 = 45."
+	},
+	{
+		"id": 29,
+		"question": "Si tienes 3 manzanas y compras 4 más, ¿cuántas manzanas tienes?",
+		"correct_answer": "7",
+		"incorrect_answers": ["6", "5", "8"],
+		"description": "3 + 4 = 7 manzanas."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es el resultado de 9 x 6?",
+		"correct_answer": "54",
+		"incorrect_answers": ["45", "56", "64"],
+		"description": "9 multiplicado por 6 es 54."
+	},
+	{
+		"id": 31,
+		"question": "Si un rectángulo tiene lados de 5 cm y 8 cm, ¿cuál es su perímetro?",
+		"correct_answer": "26 cm",
+		"incorrect_answers": ["40 cm", "20 cm", "13 cm"],
+		"description": "Perímetro = 2 × (5 + 8) = 2 × 13 = 26 cm."
+	},
+	{
+		"id": 32,
+		"question": "Si un número es incrementado en 25%, ¿a cuánto equivale este aumento en forma decimal?",
+		"correct_answer": "0.25",
+		"incorrect_answers": ["0.50", "0.75", "1.25"],
+		"description": "25% como decimal es 25 ÷ 100 = 0.25."
+	},
+	{
+		"id": 33,
+		"question": "¿Cuál es el resultado de dividir 81 entre 9?",
+		"correct_answer": "9",
+		"incorrect_answers": ["8", "7", "10"],
+		"description": "81 ÷ 9 = 9."
+	},
+	{
+		"id": 34,
+		"question": "Si restas 15 de 100, ¿cuál es el resultado?",
+		"correct_answer": "85",
+		"incorrect_answers": ["95", "75", "65"],
+		"description": "100 - 15 = 85."
+	},
+	{
+		"id": 35,
+		"question": "Un triángulo tiene lados de 3 cm, 4 cm y 5 cm. ¿Cuál es su perímetro?",
+		"correct_answer": "12 cm",
+		"incorrect_answers": ["10 cm", "14 cm", "15 cm"],
+		"description": "Perímetro = 3 + 4 + 5 = 12 cm."
+	},
+	{
+		"id": 36,
+		"question": "¿Cuál es el resultado de 7 x 7?",
+		"correct_answer": "49",
+		"incorrect_answers": ["42", "56", "64"],
+		"description": "7 multiplicado por 7 es 49."
+	},
+	{
+		"id": 37,
+		"question": "Si una tienda ofrece un 10% de descuento en un producto que cuesta $50, ¿cuánto pagarás?",
+		"correct_answer": "$45",
+		"incorrect_answers": ["$40", "$42", "$48"],
+		"description": "10% de $50 es $5, entonces $50 - $5 = $45."
+	},
+	{
+		"id": 38,
+		"question": "¿Cuál es el número siguiente en la serie: 5, 10, 15, 20, ...?",
+		"correct_answer": "25",
+		"incorrect_answers": ["30", "20", "35"],
+		"description": "La serie suma 5 en cada paso."
+	},
+	{
+		"id": 39,
+		"question": "Si un cubo tiene aristas de 3 cm, ¿cuál es su volumen?",
+		"correct_answer": "27 cm³",
+		"incorrect_answers": ["18 cm³", "9 cm³", "36 cm³"],
+		"description": "Volumen = lado³ = 3³ = 27 cm³."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es el resultado de 100 dividido entre 25?",
+		"correct_answer": "4",
+		"incorrect_answers": ["5", "2", "6"],
+		"description": "100 ÷ 25 = 4."
+	},
+	{
+		"id": 41,
+		"question": "Si una persona tiene $200 y gasta $75, ¿cuánto dinero le queda?",
+		"correct_answer": "$125",
+		"incorrect_answers": ["$100", "$150", "$175"],
+		"description": "$200 - $75 = $125."
+	},
+	{
+		"id": 42,
+		"question": "¿Cuál es el resultado de sumar los números pares del 2 al 10?",
+		"correct_answer": "30",
+		"incorrect_answers": ["20", "28", "32"],
+		"description": "2 + 4 + 6 + 8 + 10 = 30."
+	},
+	{
+		"id": 43,
+		"question": "¿Cuánto es 1/4 de 80?",
+		"correct_answer": "20",
+		"incorrect_answers": ["15", "25", "30"],
+		"description": "1/4 de 80 = 80 ÷ 4 = 20."
+	},
+	{
+		"id": 44,
+		"question": "¿Cuál es el área de un cuadrado con lado de 6 cm?",
+		"correct_answer": "36 cm²",
+		"incorrect_answers": ["12 cm²", "18 cm²", "24 cm²"],
+		"description": "Área = lado x lado = 6 × 6 = 36 cm²."
+	},
+	{
+		"id": 45,
+		"question": "Si un auto recorre 120 km en 2 horas, ¿cuál es su velocidad promedio?",
+		"correct_answer": "60 km/h",
+		"incorrect_answers": ["50 km/h", "55 km/h", "65 km/h"],
+		"description": "Velocidad = distancia / tiempo = 120 / 2 = 60 km/h."
+	},
+	{
+		"id": 46,
+		"question": "Si multiplicas 0.5 por 8, ¿cuál es el resultado?",
+		"correct_answer": "4",
+		"incorrect_answers": ["2", "6", "8"],
+		"description": "0.5 × 8 = 4."
+	},
+	{
+		"id": 47,
+		"question": "¿Cuál es el siguiente número en la serie: 1, 4, 9, 16, 25, ...?",
+		"correct_answer": "36",
+		"incorrect_answers": ["30", "35", "40"],
+		"description": "La serie son los cuadrados de los números naturales (1², 2², 3²...)."
+	},
+	{
+		"id": 48,
+		"question": "¿Cuál es el resultado de 15 + 28?",
+		"correct_answer": "43",
+		"incorrect_answers": ["42", "44", "45"],
+		"description": "15 + 28 = 43."
+	},
+	{
+		"id": 49,
+		"question": "Si divides 72 entre 8, ¿cuál es el resultado?",
+		"correct_answer": "9",
+		"incorrect_answers": ["8", "10", "12"],
+		"description": "72 ÷ 8 = 9."
+	},
+	{
+		"id": 50,
+		"question": "¿Cuánto es el 50% de 90?",
+		"correct_answer": "45",
+		"incorrect_answers": ["40", "50", "55"],
+		"description": "50% de 90 = (50/100) × 90 = 45."
+	}
+]
+
+export const aptitud_verbal = [
+	{
+		"id": 1,
+		"question": "¿Cuál es el sinónimo de la palabra 'benevolente'?",
+		"correct_answer": "Bondadoso",
+		"incorrect_answers": ["Cruel", "Egoísta", "Indiferente"],
+		"description": "'Benevolente' significa ser bondadoso o mostrar buena voluntad."
+	},
+	{
+		"id": 2,
+		"question": "¿Cuál es el antónimo de la palabra 'preciso'?",
+		"correct_answer": "Impreciso",
+		"incorrect_answers": ["Exacto", "Claro", "Definido"],
+		"description": "El antónimo de 'preciso' es 'impreciso', que significa no exacto."
+	},
+	{
+		"id": 3,
+		"question": "Selecciona la palabra que completa correctamente la frase: 'El niño __________ rápido para llegar a tiempo.'",
+		"correct_answer": "corre",
+		"incorrect_answers": ["corren", "corría", "corrió"],
+		"description": "El sujeto es singular ('El niño'), por eso el verbo debe ir en tercera persona singular: 'corre'."
+	},
+	{
+		"id": 4,
+		"question": "¿Cuál de las siguientes palabras es un sustantivo?",
+		"correct_answer": "Montaña",
+		"incorrect_answers": ["Correr", "Azul", "Rápido"],
+		"description": "'Montaña' es un sustantivo, es decir, el nombre de un lugar o cosa."
+	},
+	{
+		"id": 5,
+		"question": "¿Cuál es el significado de la palabra 'efímero'?",
+		"correct_answer": "Que dura poco tiempo",
+		"incorrect_answers": ["Que dura mucho tiempo", "Que es eterno", "Que es muy grande"],
+		"description": "'Efímero' se refiere a algo de corta duración."
+	},
+	{
+		"id": 6,
+		"question": "¿Cuál es la forma correcta de escribir la palabra para referirse a una persona que enseña?",
+		"correct_answer": "Profesor",
+		"incorrect_answers": ["Profecor", "Profezor", "Proffesor"],
+		"description": "'Profesor' es la forma correcta para referirse a quien enseña."
+	},
+	{
+		"id": 7,
+		"question": "¿Cuál es la palabra que mejor completa esta frase? 'Ella es una persona muy __________, siempre ayuda a los demás.'",
+		"correct_answer": "solidaria",
+		"incorrect_answers": ["egoísta", "perezosa", "indiferente"],
+		"description": "'Solidaria' describe a quien muestra apoyo y ayuda a otros."
+	},
+	{
+		"id": 8,
+		"question": "¿Cuál es el plural correcto de la palabra 'luz'?",
+		"correct_answer": "luces",
+		"incorrect_answers": ["luzes", "luzes", "luceses"],
+		"description": "El plural de 'luz' es 'luces'."
+	},
+	{
+		"id": 9,
+		"question": "¿Cuál es el tiempo verbal de la frase: 'Ella caminaba por el parque'?",
+		"correct_answer": "Pretérito imperfecto",
+		"incorrect_answers": ["Pretérito perfecto", "Presente", "Futuro"],
+		"description": "'Caminaba' es verbo en pretérito imperfecto, indica una acción pasada en desarrollo."
+	},
+	{
+		"id": 10,
+		"question": "¿Cuál es el significado de la palabra 'inminente'?",
+		"correct_answer": "Que va a ocurrir pronto",
+		"incorrect_answers": ["Que nunca ocurrirá", "Que ocurrió en el pasado", "Que es imposible"],
+		"description": "'Inminente' significa que algo está próximo a suceder."
+	},
+	{
+		"id": 11,
+		"question": "¿Qué palabra completa correctamente la siguiente frase? 'No me gusta la comida tan __________.'",
+		"correct_answer": "picante",
+		"incorrect_answers": ["picado", "picazón", "picantez"],
+		"description": "La palabra adecuada para referirse al sabor fuerte de una comida es 'picante'."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es el antónimo de la palabra 'abundante'?",
+		"correct_answer": "escaso",
+		"incorrect_answers": ["rico", "numeroso", "frecuente"],
+		"description": "'Escaso' es lo opuesto a 'abundante', que significa que hay poco de algo."
+	},
+	{
+		"id": 13,
+		"question": "¿Cuál de las siguientes palabras es un adjetivo?",
+		"correct_answer": "amable",
+		"incorrect_answers": ["amabilidad", "amablemente", "amando"],
+		"description": "'Amable' describe una cualidad, por lo tanto es un adjetivo."
+	},
+	{
+		"id": 14,
+		"question": "¿Cuál es la palabra correctamente escrita?",
+		"correct_answer": "absurdo",
+		"incorrect_answers": ["azurdo", "abzurdo", "absurdoh"],
+		"description": "La forma correcta es 'absurdo', que significa sin sentido o ilógico."
+	},
+	{
+		"id": 15,
+		"question": "¿Cuál es el sinónimo de 'valeroso'?",
+		"correct_answer": "valiente",
+		"incorrect_answers": ["temeroso", "débil", "inseguro"],
+		"description": "'Valiente' es sinónimo de 'valeroso', ambos significan tener coraje."
+	},
+	{
+		"id": 16,
+		"question": "¿Qué palabra forma una familia léxica con 'pan'?",
+		"correct_answer": "panadero",
+		"incorrect_answers": ["pandilla", "pantalla", "pantalón"],
+		"description": "'Panadero' es parte de la familia léxica de 'pan', ya que comparten raíz y significado relacionado."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué significa la expresión 'estar en las nubes'?",
+		"correct_answer": "Estar distraído",
+		"incorrect_answers": ["Estar volando", "Estar en el cielo", "Estar soñando"],
+		"description": "La expresión 'estar en las nubes' se usa para referirse a alguien distraído o despistado."
+	},
+	{
+		"id": 18,
+		"question": "¿Cuál es el plural correcto de 'reloj'?",
+		"correct_answer": "relojes",
+		"incorrect_answers": ["relojs", "relojeses", "relojis"],
+		"description": "El plural correcto de 'reloj' es 'relojes', agregando 'es' y cambiando la 'j' suavemente."
+	},
+	{
+		"id": 19,
+		"question": "¿Qué tipo de palabra es 'rápidamente'?",
+		"correct_answer": "Adverbio de modo",
+		"incorrect_answers": ["Adjetivo", "Sustantivo", "Verbo"],
+		"description": "'Rápidamente' indica cómo se hace algo, por eso es un adverbio de modo."
+	},
+	{
+		"id": 20,
+		"question": "¿Cuál es el antónimo de la palabra 'sabio'?",
+		"correct_answer": "ignorante",
+		"incorrect_answers": ["inteligente", "docto", "culto"],
+		"description": "'Ignorante' es lo contrario de 'sabio', ya que carece de conocimiento o sabiduría."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál es el significado del refrán 'El que mucho abarca, poco aprieta'?",
+		"correct_answer": "Quien quiere hacer muchas cosas a la vez, no logra hacer ninguna bien",
+		"incorrect_answers": ["Quien come mucho, se enferma", "Quien estudia mucho, se cansa", "Quien duerme poco, rinde más"],
+		"description": "Este refrán enseña que tratar de hacer muchas cosas al mismo tiempo puede afectar la calidad de los resultados."
+	},
+	{
+		"id": 22,
+		"question": "¿Cuál de las siguientes palabras está escrita correctamente?",
+		"correct_answer": "examen",
+		"incorrect_answers": ["exámen", "examenes", "examén"],
+		"description": "'Examen' es la forma correcta y no lleva tilde porque es una palabra grave terminada en 'n'."
+	},
+	{
+		"id": 23,
+		"question": "¿Qué palabra completa correctamente la frase? 'La maestra explicó la lección de forma muy __________.'",
+		"correct_answer": "clara",
+		"incorrect_answers": ["claridad", "claramente", "claro"],
+		"description": "'Clara' es el adjetivo correcto que concuerda con el sustantivo 'forma'."
+	},
+	{
+		"id": 24,
+		"question": "¿Cuál es el sinónimo de la palabra 'alegría'?",
+		"correct_answer": "felicidad",
+		"incorrect_answers": ["pena", "tristeza", "dolor"],
+		"description": "'Felicidad' es un sinónimo directo de 'alegría', ambas indican un estado emocional positivo."
+	},
+	{
+		"id": 25,
+		"question": "¿Cuál de las siguientes palabras es un sustantivo?",
+		"correct_answer": "ventana",
+		"incorrect_answers": ["abrir", "rápido", "mirar"],
+		"description": "'Ventana' es un sustantivo, ya que nombra un objeto."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué palabra forma una familia léxica con 'cantar'?",
+		"correct_answer": "canción",
+		"incorrect_answers": ["canasta", "caminar", "cantina"],
+		"description": "'Canción' proviene del verbo 'cantar' y forma parte de su familia léxica."
+	},
+	{
+		"id": 27,
+		"question": "¿Qué figura literaria se encuentra en la frase 'Las estrellas nos miraban desde lo alto'?",
+		"correct_answer": "Personificación",
+		"incorrect_answers": ["Metáfora", "Hipérbole", "Comparación"],
+		"description": "La frase atribuye una acción humana a las estrellas, lo cual es una personificación."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué palabra tiene un significado opuesto a 'generoso'?",
+		"correct_answer": "egoísta",
+		"incorrect_answers": ["amable", "solidario", "bondadoso"],
+		"description": "'Egoísta' es el antónimo de 'generoso', ya que describe a alguien que no comparte ni piensa en los demás."
+	},
+	{
+		"id": 29,
+		"question": "¿Cuál es la forma correcta del diminutivo de 'flor'?",
+		"correct_answer": "florecita",
+		"incorrect_answers": ["florcita", "florcilla", "florecilla"],
+		"description": "'Florecita' es el diminutivo más común y aceptado de 'flor' en español."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es el sinónimo de 'rápido'?",
+		"correct_answer": "veloz",
+		"incorrect_answers": ["lento", "tranquilo", "tardío"],
+		"description": "'Veloz' es un sinónimo de 'rápido', ya que ambos significan moverse con prontitud o velocidad."
+	},
+	{
+		"id": 31,
+		"question": "¿Cuál de las siguientes oraciones está escrita correctamente?",
+		"correct_answer": "Mañana iremos al parque si no llueve.",
+		"incorrect_answers": ["Mañana iremos al parque sino llueve.", "Mañana iremos, al parque sino llueve.", "Mañana iremos al parque, si no llueve."],
+		"description": "'Si no' se usa en sentido condicional, mientras que 'sino' es una conjunción adversativa."
+	},
+	{
+		"id": 32,
+		"question": "¿Cuál es el antónimo de la palabra 'valiente'?",
+		"correct_answer": "cobarde",
+		"incorrect_answers": ["intrépido", "audaz", "atrevido"],
+		"description": "'Cobarde' es el antónimo de 'valiente', ya que se refiere a quien evita el peligro por miedo."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué palabra completa la frase? 'El niño se cayó porque no miró por __________ iba.'",
+		"correct_answer": "donde",
+		"incorrect_answers": ["dónde", "don de", "donde que"],
+		"description": "En este caso, 'donde' funciona como conjunción que indica lugar, sin tilde."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué figura literaria se encuentra en la frase 'Sus ojos eran dos luceros'?",
+		"correct_answer": "Metáfora",
+		"incorrect_answers": ["Símil", "Hipérbole", "Onomatopeya"],
+		"description": "La metáfora compara directamente dos elementos sin usar nexos como 'como'."
+	},
+	{
+		"id": 35,
+		"question": "¿Cuál de las siguientes palabras es un adjetivo?",
+		"correct_answer": "hermoso",
+		"incorrect_answers": ["cantar", "hermosura", "hermosamente"],
+		"description": "'Hermoso' es un adjetivo porque califica a un sustantivo."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué significa la palabra 'efímero'?",
+		"correct_answer": "De corta duración",
+		"incorrect_answers": ["Grande", "Eterno", "Doloroso"],
+		"description": "'Efímero' se refiere a algo que dura poco tiempo o que es pasajero."
+	},
+	{
+		"id": 37,
+		"question": "¿Qué palabra tiene un significado similar a 'amplio'?",
+		"correct_answer": "espacioso",
+		"incorrect_answers": ["estrecho", "pequeño", "ajustado"],
+		"description": "'Espacioso' es un sinónimo de 'amplio', ya que indica gran capacidad o extensión."
+	},
+	{
+		"id": 38,
+		"question": "¿Cuál de las siguientes palabras no pertenece al mismo campo semántico que las demás?",
+		"correct_answer": "silla",
+		"incorrect_answers": ["camisa", "pantalón", "zapatos"],
+		"description": "'Silla' pertenece al mobiliario, mientras las otras son prendas de vestir."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué palabra se forma al agregar el prefijo 'in-' a 'correcto'?",
+		"correct_answer": "incorrecto",
+		"incorrect_answers": ["descorrecto", "preciso", "incorregible"],
+		"description": "El prefijo 'in-' indica negación; 'incorrecto' es el antónimo de 'correcto'."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es el significado del refrán 'Más vale pájaro en mano que cien volando'?",
+		"correct_answer": "Es mejor asegurarse de lo que se tiene que arriesgarse por algo incierto",
+		"incorrect_answers": ["Es mejor no tener nada que poco", "Es preferible volar alto", "Es bueno tener compañía"],
+		"description": "Este refrán enseña a valorar lo seguro en lugar de arriesgarlo por algo incierto."
+	},
+	{
+		"id": 41,
+		"question": "¿Cuál es el significado de la palabra 'ambiguo'?",
+		"correct_answer": "Que puede entenderse de varias maneras",
+		"incorrect_answers": ["Claro y preciso", "Rápido y directo", "Relacionado con el amor"],
+		"description": "Ambiguo se refiere a algo que puede tener más de un significado o interpretación."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué palabra es sinónimo de 'felicidad'?",
+		"correct_answer": "alegría",
+		"incorrect_answers": ["tristeza", "aburrimiento", "rabia"],
+		"description": "'Alegría' es un sinónimo de 'felicidad' porque ambas expresan un estado de ánimo positivo."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué palabra completa correctamente la frase? 'Me avisó que llegarían tarde, __________ no me preocupé.'",
+		"correct_answer": "por eso",
+		"incorrect_answers": ["aunque", "sin embargo", "porque"],
+		"description": "'Por eso' indica una consecuencia lógica con la primera parte de la oración."
+	},
+	{
+		"id": 44,
+		"question": "¿Cuál es el antónimo de la palabra 'sabio'?",
+		"correct_answer": "ignorante",
+		"incorrect_answers": ["inteligente", "lúcido", "culto"],
+		"description": "'Ignorante' es el antónimo de 'sabio' porque se refiere a la falta de conocimiento."
+	},
+	{
+		"id": 45,
+		"question": "¿Cuál de las siguientes oraciones es un enunciado exclamativo?",
+		"correct_answer": "¡Qué tarde tan hermosa!",
+		"incorrect_answers": ["La tarde está hermosa.", "¿Está hermosa la tarde?", "La tarde es hermosa."],
+		"description": "Las oraciones exclamativas expresan emoción y se escriben entre signos de admiración."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué figura literaria está presente en la frase 'Llueve a cántaros'?",
+		"correct_answer": "Hipérbole",
+		"incorrect_answers": ["Metáfora", "Símil", "Personificación"],
+		"description": "'Llueve a cántaros' es una exageración y, por tanto, una hipérbole."
+	},
+	{
+		"id": 47,
+		"question": "¿Cuál es el significado del dicho 'A buen hambre no hay pan duro'?",
+		"correct_answer": "Cuando se tiene necesidad, cualquier cosa es buena",
+		"incorrect_answers": ["Comer pan duro causa problemas", "Es mejor el pan fresco", "Siempre hay pan disponible"],
+		"description": "Este dicho enseña que cuando se tiene mucha necesidad, se aceptan soluciones que normalmente se rechazarían."
+	},
+	{
+		"id": 48,
+		"question": "¿Cuál de las siguientes palabras es un sustantivo?",
+		"correct_answer": "libro",
+		"incorrect_answers": ["leer", "leído", "leeré"],
+		"description": "'Libro' es un sustantivo porque es un objeto; los otros son formas del verbo 'leer'."
+	},
+	{
+		"id": 49,
+		"question": "¿Cuál es el sinónimo de 'rápido'?",
+		"correct_answer": "veloz",
+		"incorrect_answers": ["lento", "pesado", "cansado"],
+		"description": "'Veloz' y 'rápido' significan lo mismo: que se mueve con mucha rapidez."
+	},
+	{
+		"id": 50,
+		"question": "¿Cuál de las siguientes opciones representa una oración interrogativa?",
+		"correct_answer": "¿A qué hora empieza la reunión?",
+		"incorrect_answers": ["La reunión empieza a las ocho.", "Es una reunión importante.", "La reunión fue cancelada."],
+		"description": "Las oraciones interrogativas se caracterizan por estar formuladas como preguntas."
+	}
 ]
