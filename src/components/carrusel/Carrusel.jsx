@@ -6,6 +6,11 @@ import slogan from './imagenesCarrusel/slogan.jpg'
 import slogan2 from './imagenesCarrusel/slogan2.jpg'
 import slogan3 from './imagenesCarrusel/slogan3.jpg'
 import slogan4 from './imagenesCarrusel/slogan4.jpg'
+import slogan5 from './imagenesCarrusel/slogan5.webp'
+import slogan6 from './imagenesCarrusel/slogan6.jpg'
+import slogan7 from './imagenesCarrusel/slogan7.png'
+import slogan8 from './imagenesCarrusel/slogan8.jpeg'
+
 
 
 
@@ -26,8 +31,12 @@ export const Carrusel = () => {
                 <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan} alt="Slide 1" /></div>
                 <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan2} alt="Slide 2" /></div>
                 <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan3} alt="Slide 3" /></div>
-                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan4} alt="Slide 4" /></div>
-
+                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan4} alt="Slide 3" /></div>
+                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan5} alt="Slide 3" /></div>
+                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan6} alt="Slide 3" /></div>
+                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan7} alt="Slide 3" /></div>
+                <div><img className="w-full h-[400px] object-cover transition duration-500" src={slogan8} alt="Slide 3" /></div>
+               
             </Slider>
         </div>
     );

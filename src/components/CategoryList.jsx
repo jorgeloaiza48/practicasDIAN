@@ -2,9 +2,9 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios,competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal} from '../page/data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from '../page/data'
 
-const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud,razonamientologico, comprensionlectora, razonamientonumerico, aptitudverbal ] = imgs
+const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud, razonamientologico, comprensionlectora, razonamientonumerico, aptitudverbal, principiosconstitucionales, gobiernodigital] = imgs
 
 
 export const CategoryList = () => {
@@ -12,13 +12,15 @@ export const CategoryList = () => {
         <div>
             <div className='flex justify-center my-4  sm:justify-between sm:w-5/6 sm:mx-auto'>
 
-                <Link to={'/'}>
-                    <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 sm:ml-2">Inicio</button>
-                </Link>
-
-                <h1 className='text-3xl'>Categorías</h1>
                 <div className='text-white'>pfdfggfffggg</div> {/* Este div me tocó colocarlo para que el div principal quede con tres elementos y así al darle "justify-between" entonces el botón Incio se va para la izquierda y la palabra Categoría se centra. También hay que darle color blanco al texto para que no aparezca */}
             </div>
+            <div className='bg-red-500 w-full h-3'></div> {/* banda roja */}
+            <h1 className='text-3xl text-center pt-5'>Temas</h1>
+
+            <Link to={'/'}>
+                <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 sm:ml-2">Inicio</button>
+            </Link>
+
             <div className='sm:flex sm:flex-col sm:mx-auto md:justify-around md:w-80 lg:flex lg:flex-row lg:flex-wrap lg:w-3/5'> {/* sm es para 640px */}
                 <CategoryCard category={categories.aspectos_generales} src={ag1} alt={`categoria ${categories.aspectos_generales}`} gradientColor={'from-purple-500 to-pink-500'} cantidadPreguntas={aspectos_generales} />
                 <CategoryCard category={categories.conceptos_generales_DIAN} src={cgDIAN} alt={`categoria ${categories.conceptos_generales_DIAN}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conceptos_generales_DIAN} />
@@ -38,6 +40,10 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.comprensionlectora} src={comprensionlectora} alt={`categoria ${categories.comprensionlectora}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={comprension_lectora} />
                 <CategoryCard category={categories.razonamientonumerico} src={razonamientonumerico} alt={`categoria ${categories.razonamientonumerico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_numerico} />
                 <CategoryCard category={categories.aptitudverbal} src={aptitudverbal} alt={`categoria ${categories.aptitudverbal}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={aptitud_verbal} />
+                <CategoryCard category={categories.principiosconstitucionales} src={principiosconstitucionales} alt={`categoria ${categories.principiosconstitucionales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={principios_deberes_constitucionales} />
+                <CategoryCard category={categories.gobiernodigital} src={gobiernodigital} alt={`categoria ${categories.gobiernodigital}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={gobierno_digital} />
+
+
             </div>
         </div>
     )

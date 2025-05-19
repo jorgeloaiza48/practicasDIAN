@@ -16,6 +16,8 @@ import razonamientologico from '../assets/razonamiento_logico.png'
 import comprensionlectora from '../assets/comprensionlectora.jpeg'
 import razonamientonumerico from '../assets/razonamientonumerico.jpeg'
 import aptitudverbal from '../assets/aptitudverbal.gif'
+import principiosconstitucionales from '../assets/principiosconstitucionales.png'
+import gobiernodigital from '../assets/gobiernodigital.png'
 
 
 export const imgs = [
@@ -36,7 +38,9 @@ export const imgs = [
 	razonamientologico,
 	comprensionlectora,
 	razonamientonumerico,
-	aptitudverbal
+	aptitudverbal,
+	principiosconstitucionales,
+	gobiernodigital
 ];
 
 export const categories = {
@@ -57,7 +61,9 @@ export const categories = {
 	razonamientologico: "Razonamiento lógico (nivel básico)",
 	comprensionlectora: "Comprensión lectora",
 	razonamientonumerico: "Razonamiento numérico (nivel básico)",
-	aptitudverbal: "Aptitud Verbal"
+	aptitudverbal: "Aptitud Verbal",
+	principiosconstitucionales: "Principios y deberes constitucionales",
+	gobiernodigital: "Gobierno digital"
 };
 
 export const aspectos_generales = [
@@ -2132,13 +2138,7 @@ export const basicasorganizacionales = [
 		incorrect_answers: ['La diligencia es el aspecto mas importante dentro de un ambiente laboral.', 'No hay trabajo completo sin una adecuada responsabilidad social.'],
 		description: '¡¡¡Correcto!!! Este comportamiento es una de las conductas observables en la competencia adaptabilidad.'
 	}
-	/* {
-		id:,
-		question:'',
-		correct_answer:,
-		incorrect_answers:['',''],
-		description:''
-	} */
+
 
 ]
 
@@ -2214,6 +2214,446 @@ export const pruebaIntegridad = [
 		correct_answer: 'Abrir la ventana del diálogo y la comprensión, a pesar de que los demás tengan perspectivas y opiniones distintas a la suyas.',
 		incorrect_answers: ['Cambiar su forma de ser, con el fin de que esta situación mejore.', 'Mencionar al grupo que ellos también deben analizarse, para que el clima laboral mejore.'],
 		description: '¡¡¡Correcto!!! Respeto.'
+	},
+	{
+		"id": 11,
+		"question": "Un proveedor te ofrece una comisión si lo ayudas a ganar una licitación. ¿Qué debes hacer?",
+		"correct_answer": "Rechazar la oferta y reportarla de inmediato a los entes de control de la entidad.",
+		"incorrect_answers": [
+			"Aceptar la comisión y ayudarlo discretamente.",
+			"Decirle que no puedes ayudarlo, pero no reportarlo.",
+			"Ignorarlo y continuar con el proceso sin intervenir."
+		],
+		"description": "¡¡¡Correcto!!! La integridad requiere actuar con honestidad y denunciar cualquier intento de soborno o corrupción."
+	},
+	{
+		"id": 12,
+		"question": "Durante una revisión interna, descubres que cometiste un error en tu reporte. ¿Qué es lo correcto?",
+		"correct_answer": "Reconocer el error y corregirlo oportunamente, informando a quien corresponda.",
+		"incorrect_answers": [
+			"Ocultarlo esperando que nadie lo note.",
+			"Modificar el informe sin dejar evidencia.",
+			"Responsabilizar a otra persona para evitar consecuencias."
+		],
+		"description": "¡¡¡Correcto!!! Reconocer los errores propios es una manifestación clara de responsabilidad e integridad."
+	},
+	{
+		"id": 13,
+		"question": "Un compañero te pide acceso a tu cuenta institucional para adelantar una tarea urgente. ¿Qué haces?",
+		"correct_answer": "Le explico que no puedo compartir mis credenciales y le sugiero acudir al área correspondiente.",
+		"incorrect_answers": [
+			"Le doy la contraseña solo por esa vez.",
+			"Lo dejo usar mi cuenta bajo supervisión.",
+			"Le doy acceso si promete no revisar otra información."
+		],
+		"description": "¡¡¡Correcto!!! Compartir contraseñas va en contra de las normas de seguridad y ética institucional."
+	},
+	{
+		"id": 14,
+		"question": "Tienes la posibilidad de beneficiar a un conocido en un proceso selectivo sin que nadie se entere. ¿Qué haces?",
+		"correct_answer": "Actúo con imparcialidad y me abstengo de intervenir en el proceso.",
+		"incorrect_answers": [
+			"Lo ayudo discretamente porque confío en su capacidad.",
+			"Le doy información extraoficial para que se prepare mejor.",
+			"Delego el proceso en otro para no tener que decidir."
+		],
+		"description": "¡¡¡Correcto!!! La integridad se refleja en actuar sin favoritismos ni conflictos de interés."
+	},
+	{
+		"id": 15,
+		"question": "Te enteras de un fraude en tu dependencia, pero temes represalias. ¿Qué conducta es adecuada?",
+		"correct_answer": "Reportarlo a través de los canales institucionales seguros y anónimos, si es posible.",
+		"incorrect_answers": [
+			"No hacer nada por miedo a perder el empleo.",
+			"Contarlo solo a compañeros de confianza.",
+			"Esperar a que alguien más lo denuncie primero."
+		],
+		"description": "¡¡¡Correcto!!! La integridad institucional requiere denunciar irregularidades, incluso de forma anónima si es necesario."
+	},
+	{
+		"id": 16,
+		"question": "Un funcionario recibe un regalo costoso por parte de un contratista. ¿Qué acción es la más ética?",
+		"correct_answer": "Rechazar el regalo y reportar el hecho a las autoridades competentes.",
+		"incorrect_answers": [
+			"Aceptar el regalo pero no decir nada.",
+			"Aceptar el regalo y agradecer la cortesía.",
+			"Devolver el regalo sin reportarlo para evitar problemas."
+		],
+		"description": "¡¡¡Correcto!!! Aceptar regalos de partes interesadas puede constituir un conflicto de interés y debe reportarse."
+	},
+	{
+		"id": 17,
+		"question": "Te enteras de que un compañero está alterando registros para ocultar un incumplimiento. ¿Qué debes hacer?",
+		"correct_answer": "Informar el hecho a los órganos de control o a tu superior inmediato.",
+		"incorrect_answers": [
+			"Hablar con el compañero y pedirle que no lo vuelva a hacer.",
+			"Ignorar el hecho para evitar conflictos.",
+			"Cubrirlo porque es tu amigo y confías en él."
+		],
+		"description": "¡¡¡Correcto!!! La omisión frente a hechos irregulares también compromete la integridad."
+	},
+	{
+		"id": 18,
+		"question": "Estás en una situación en la que nadie supervisa tu trabajo. ¿Qué actitud demuestra mayor integridad?",
+		"correct_answer": "Hacer tu trabajo con la misma calidad y ética, aunque no seas supervisado.",
+		"incorrect_answers": [
+			"Aprovechar para trabajar menos.",
+			"Hacer lo mínimo necesario para cumplir.",
+			"Delegar todo el trabajo sin supervisión."
+		],
+		"description": "¡¡¡Correcto!!! La integridad implica actuar correctamente incluso cuando nadie nos observa."
+	},
+	{
+		"id": 19,
+		"question": "Un colega te pide que omitas cierta información en un informe porque podría afectar su evaluación. ¿Qué debes hacer?",
+		"correct_answer": "Incluir toda la información relevante, aunque afecte a terceros.",
+		"incorrect_answers": [
+			"Omitir la información por solidaridad.",
+			"Negociar con tu colega para modificar el informe.",
+			"Retrasar la entrega del informe para evitar el conflicto."
+		],
+		"description": "¡¡¡Correcto!!! La veracidad y la transparencia son principios esenciales de la integridad pública."
+	},
+	{
+		"id": 20,
+		"question": "Recibes un regalo costoso de un proveedor después de cerrar un contrato. ¿Cuál es la acción correcta?",
+		"correct_answer": "Rechazar el regalo y reportarlo a la oficina de control disciplinario.",
+		"incorrect_answers": [
+			"Aceptar el regalo si ya se firmó el contrato.",
+			"Guardar el regalo sin contarle a nadie.",
+			"Aceptar el regalo y agradecer discretamente."
+		],
+		"description": "¡¡¡Correcto!!! Aceptar regalos de contratistas puede constituir una falta disciplinaria y compromete tu imparcialidad."
+	},
+	{
+		"id": 21,
+		"question": "Te piden emitir un certificado con datos que no han sido verificados aún. ¿Qué debes hacer?",
+		"correct_answer": "Negarte hasta que se verifique toda la información.",
+		"incorrect_answers": [
+			"Emitir el certificado y verificar después.",
+			"Pedir que otro lo firme en tu lugar.",
+			"Emitirlo con una nota aclaratoria no oficial."
+		],
+		"description": "¡¡¡Correcto!!! Firmar documentos sin certeza de su veracidad va en contra de los principios de legalidad y responsabilidad."
+	},
+	{
+		"id": 22,
+		"question": "En una reunión, alguien propone alterar cifras para justificar gastos. ¿Cómo actúas?",
+		"correct_answer": "Me opongo claramente y reporto la propuesta a los entes de control.",
+		"incorrect_answers": [
+			"Acepto para evitar problemas con el grupo.",
+			"Sugiero hacerlo de una forma que no sea tan evidente.",
+			"No participo en la conversación, pero tampoco denuncio."
+		],
+		"description": "¡¡¡Correcto!!! La integridad exige rechazar y denunciar cualquier conducta que implique falsedad o fraude."
+	},
+	{
+		"id": 23,
+		"question": "Eres testigo de una conducta indebida de un superior. ¿Qué actitud refleja integridad?",
+		"correct_answer": "Reportar la conducta por los canales institucionales establecidos.",
+		"incorrect_answers": [
+			"Guardar silencio para no perjudicar tu carrera.",
+			"Hablar solo con compañeros para desahogarte.",
+			"Esperar a que se presenten más pruebas."
+		],
+		"description": "¡¡¡Correcto!!! La ética profesional implica actuar con valor, aún frente a figuras de autoridad, para proteger el interés público."
+	},
+	{
+		"id": 24,
+		"question": "Si descubres que un compañero está usando recursos públicos para beneficio personal, ¿qué debes hacer?",
+		"correct_answer": "Reportar el hecho a las autoridades competentes.",
+		"incorrect_answers": [
+			"Hablar con él para que no lo haga de nuevo.",
+			"Ignorar la situación, ya que no te afecta directamente.",
+			"Hacer lo mismo para equilibrar la situación."
+		],
+		"description": "¡¡¡Correcto!!! El uso indebido de recursos públicos debe ser denunciado para proteger el interés general."
+	},
+	{
+		"id": 25,
+		"question": "Te ofrecen dinero para agilizar un trámite que está bajo tu responsabilidad. ¿Qué haces?",
+		"correct_answer": "Rechazas la oferta y denuncias el intento de soborno.",
+		"incorrect_answers": [
+			"Aceptas si nadie más se entera.",
+			"Dices que lo harás pero sin aceptar el dinero.",
+			"Cobras más para que parezca una tarifa oficial."
+		],
+		"description": "¡¡¡Correcto!!! Aceptar o no denunciar un soborno atenta contra la integridad y puede tener consecuencias legales."
+	},
+	{
+		"id": 26,
+		"question": "Un amigo cercano te pide información confidencial de tu trabajo. ¿Qué deberías hacer?",
+		"correct_answer": "Negarte y explicarle que se trata de información reservada.",
+		"incorrect_answers": [
+			"Compartirla, pero pedirle que no diga nada.",
+			"Dársela si no parece algo grave.",
+			"Modificar los datos antes de entregárselos."
+		],
+		"description": "¡¡¡Correcto!!! La confidencialidad en el servicio público es un deber fundamental, incluso frente a personas cercanas."
+	},
+	{
+		"id": 27,
+		"question": "Tu jefe te pide alterar una fecha en un documento oficial. ¿Cuál es la conducta íntegra?",
+		"correct_answer": "Negarte y advertir que eso constituye una falta disciplinaria.",
+		"incorrect_answers": [
+			"Hacerlo por tratarse de tu superior jerárquico.",
+			"Cambiarla si el jefe asume la responsabilidad.",
+			"Hacerlo para evitar conflictos laborales."
+		],
+		"description": "¡¡¡Correcto!!! La obediencia no justifica actos contrarios a la ley o a la ética."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué principio de la función pública exige actuar siempre con honestidad y rectitud?",
+		"correct_answer": "Integridad.",
+		"incorrect_answers": [
+			"Agilidad.",
+			"Jerarquía.",
+			"Eficiencia."
+		],
+		"description": "¡¡¡Correcto!!! La integridad garantiza que las decisiones y actuaciones se basen en valores éticos y legales."
+	},
+	{
+		"id": 29,
+		"question": "Durante un proceso de contratación, un familiar tuyo participa como oferente. ¿Qué debes hacer?",
+		"correct_answer": "Declararte impedido por conflicto de interés.",
+		"incorrect_answers": [
+			"Apoyarlo discretamente para que gane.",
+			"No decir nada si crees que puede ganar legalmente.",
+			"Aconsejarle cómo presentar mejor su propuesta."
+		],
+		"description": "¡¡¡Correcto!!! Declararse impedido protege la transparencia y evita conflictos de interés en la función pública."
+	},
+	{
+		"id": 30,
+		"question": "Si notas que se están desviando fondos de un proyecto institucional, ¿cuál sería una conducta íntegra?",
+		"correct_answer": "Informar inmediatamente a los entes de control o superiores jerárquicos.",
+		"incorrect_answers": [
+			"Esperar a tener más pruebas antes de decir algo.",
+			"Ignorar el hecho si no estás directamente involucrado.",
+			"Usarlo como oportunidad para obtener un beneficio personal."
+		],
+		"description": "¡¡¡Correcto!!! La omisión ante actos de corrupción también compromete la responsabilidad del servidor público."
+	},
+	{
+		"id": 31,
+		"question": "Un contratista te ofrece regalos frecuentes a cambio de agilizar procesos. ¿Cuál es la acción correcta?",
+		"correct_answer": "Rechazar los regalos y reportar el hecho.",
+		"incorrect_answers": [
+			"Aceptar los regalos si no afectan tus decisiones.",
+			"Aceptar, pero sin comprometerte con el contratista.",
+			"Esperar a que los regalos sean de mayor valor antes de decidir."
+		],
+		"description": "¡¡¡Correcto!!! Aceptar regalos por tu cargo puede constituir una falta ética y legal, aun si no se condicionan decisiones."
+	},
+	{
+		"id": 32,
+		"question": "En una reunión privada se decide no registrar un acta para evitar problemas. ¿Qué deberías hacer?",
+		"correct_answer": "Exigir que se deje constancia escrita de lo tratado.",
+		"incorrect_answers": [
+			"Aceptar para evitar conflictos entre los presentes.",
+			"Hacer un acta personal y guardarla por si acaso.",
+			"Seguir lo acordado sin dejar registro alguno."
+		],
+		"description": "¡¡¡Correcto!!! Todo acto oficial debe tener trazabilidad para asegurar la legalidad, transparencia y responsabilidad."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué actitud demuestra mayor compromiso con la ética pública?",
+		"correct_answer": "Actuar de forma coherente con los valores y principios del servicio público, incluso cuando nadie observa.",
+		"incorrect_answers": [
+			"Cumplir solo lo estrictamente obligatorio.",
+			"Buscar beneficios personales sin afectar a otros.",
+			"Obedecer siempre a los superiores sin cuestionar."
+		],
+		"description": "¡¡¡Correcto!!! La ética pública exige coherencia entre lo que se dice, lo que se piensa y lo que se hace."
+	},
+	{
+		"id": 34,
+		"question": "Si te asignan una tarea que implica manejar información confidencial, ¿qué debes hacer?",
+		"correct_answer": "Guardar reserva y utilizarla solo para los fines autorizados.",
+		"incorrect_answers": [
+			"Compartirla con compañeros de confianza.",
+			"Publicarla si crees que es de interés general.",
+			"Utilizarla para obtener beneficios propios."
+		],
+		"description": "¡¡¡Correcto!!! La confidencialidad es un principio esencial para la integridad en el servicio público."
+	},
+	{
+		"id": 35,
+		"question": "Tu jefe te pide alterar un informe para mejorar la imagen del área. ¿Qué haces?",
+		"correct_answer": "Te niegas y reportas la solicitud a las instancias correspondientes.",
+		"incorrect_answers": [
+			"Lo haces porque es una orden directa.",
+			"Alteras solo algunos datos para no perjudicar a nadie.",
+			"Ignoras la petición sin reportarla."
+		],
+		"description": "¡¡¡Correcto!!! La lealtad institucional no justifica actuar en contra de la verdad ni de la legalidad."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué significa actuar con imparcialidad en el ejercicio de lo público?",
+		"correct_answer": "Tomar decisiones objetivas sin favorecer intereses particulares.",
+		"incorrect_answers": [
+			"Favorecer a quien te apoyó para obtener el cargo.",
+			"Buscar apoyo político para mantener tu puesto.",
+			"Aceptar recomendaciones personales para ciertos procesos."
+		],
+		"description": "¡¡¡Correcto!!! La imparcialidad garantiza el respeto a la legalidad y la igualdad en la administración pública."
+	},
+	{
+		"id": 37,
+		"question": "Al ver una irregularidad en tu equipo de trabajo, ¿qué harías si deseas actuar con integridad?",
+		"correct_answer": "Reportar el hecho a las autoridades competentes con pruebas claras.",
+		"incorrect_answers": [
+			"Advertir en privado a quien cometió la falta para que corrija.",
+			"Guardar silencio para no generar problemas.",
+			"Contarlo a otros compañeros para presionarlo indirectamente."
+		],
+		"description": "¡¡¡Correcto!!! Actuar con integridad implica enfrentar las irregularidades conforme a la ley y los canales adecuados."
+	},
+	{
+		"id": 38,
+		"question": "¿Cuál de estas situaciones refleja una conducta ética en el servicio público?",
+		"correct_answer": "Denunciar un acto de corrupción aunque te implique riesgos personales.",
+		"incorrect_answers": [
+			"Encubrir a un compañero por lealtad.",
+			"Callar para proteger tu estabilidad laboral.",
+			"Aprovechar los recursos institucionales para fines personales menores."
+		],
+		"description": "¡¡¡Correcto!!! El compromiso con la legalidad y la transparencia exige valentía y coherencia moral."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué significa actuar con transparencia en la gestión pública?",
+		"correct_answer": "Permitir el acceso a la información y rendir cuentas de manera clara.",
+		"incorrect_answers": [
+			"Ocultar información para evitar críticas.",
+			"Compartir solo lo que favorece a la entidad.",
+			"Informar únicamente a los superiores."
+		],
+		"description": "¡¡¡Correcto!!! La transparencia fortalece la confianza de la ciudadanía en las instituciones."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es una práctica correcta para evitar conflictos de interés en el servicio público?",
+		"correct_answer": "Declarar oportunamente cualquier relación o situación que pueda afectar la imparcialidad.",
+		"incorrect_answers": [
+			"Omitir información para no generar problemas.",
+			"Delegar decisiones importantes a familiares.",
+			"Aceptar regalos de proveedores."
+		],
+		"description": "¡¡¡Correcto!!! La declaración oportuna previene la corrupción y protege la integridad institucional."
+	},
+	{
+		"id": 41,
+		"question": "Cuando recibes un obsequio de un proveedor, ¿qué debes hacer para actuar con integridad?",
+		"correct_answer": "Rechazarlo o reportarlo según la normativa institucional.",
+		"incorrect_answers": [
+			"Aceptar siempre que sea un detalle pequeño.",
+			"Guardar el regalo sin informar a nadie.",
+			"Compartirlo con otros compañeros para evitar problemas."
+		],
+		"description": "¡¡¡Correcto!!! La ética en el servicio público prohíbe recibir regalos que puedan influir en decisiones."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué actitud refleja una persona con integridad en la gestión pública?",
+		"correct_answer": "Cumplir con las normas aunque no haya supervisión directa.",
+		"incorrect_answers": [
+			"Esperar a que alguien supervise para cumplir.",
+			"Realizar solo lo que le ordenan sin cuestionar.",
+			"Evitar responsabilidades difíciles."
+		],
+		"description": "¡¡¡Correcto!!! La integridad implica actuar conforme a los principios éticos en todo momento."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué es el uso adecuado de los recursos públicos?",
+		"correct_answer": "Utilizarlos exclusivamente para fines institucionales autorizados.",
+		"incorrect_answers": [
+			"Usarlos para actividades personales si son pequeñas cantidades.",
+			"Permitir que amigos usen los recursos sin permiso.",
+			"Prestar recursos a terceros sin autorización."
+		],
+		"description": "¡¡¡Correcto!!! El manejo responsable de recursos protege el patrimonio público y la confianza ciudadana."
+	},
+	{
+		"id": 44,
+		"question": "Una conducta que atenta contra la integridad en el servicio público es:",
+		"correct_answer": "Ocultar información para beneficiar intereses personales.",
+		"incorrect_answers": [
+			"Informar de manera clara y oportuna.",
+			"Reportar irregularidades detectadas.",
+			"Cumplir con los procedimientos establecidos."
+		],
+		"description": "¡¡¡Correcto!!! La ocultación de información compromete la transparencia y la legalidad."
+	},
+	{
+		"id": 45,
+		"question": "¿Qué debes hacer si observas que un compañero está incumpliendo normas éticas?",
+		"correct_answer": "Informar a las autoridades o instancias correspondientes de manera responsable.",
+		"incorrect_answers": [
+			"Ignorar la situación para no crear conflictos.",
+			"Hablar mal del compañero con otros colegas.",
+			"Resolverlo por tu cuenta sin informar."
+		],
+		"description": "¡¡¡Correcto!!! La responsabilidad ética incluye denunciar conductas inapropiadas conforme a la ley."
+	},
+	{
+		"id": 46,
+		"question": "¿Cuál es el principal objetivo de la probidad en la función pública?",
+		"correct_answer": "Ejercer el cargo con honestidad, justicia y respeto por la ley.",
+		"incorrect_answers": [
+			"Buscar beneficios personales mediante el cargo.",
+			"Favorecer a amigos y familiares.",
+			"Evitar tomar decisiones difíciles."
+		],
+		"description": "¡¡¡Correcto!!! La probidad garantiza confianza y legitimidad en la gestión pública."
+	},
+	{
+		"id": 47,
+		"question": "Para actuar con responsabilidad en la función pública se debe:",
+		"correct_answer": "Responder por las acciones y decisiones tomadas en el cargo.",
+		"incorrect_answers": [
+			"Evadir responsabilidades ante errores.",
+			"Delegar todas las decisiones importantes.",
+			"Ignorar las consecuencias de las decisiones."
+		],
+		"description": "¡¡¡Correcto!!! La responsabilidad implica asumir las consecuencias y aprender de los errores."
+	},
+	{
+		"id": 48,
+		"question": "¿Qué significa actuar con respeto en el ámbito laboral público?",
+		"correct_answer": "Tratar a todos con dignidad y consideración, sin discriminación.",
+		"incorrect_answers": [
+			"Favorecer solo a personas cercanas.",
+			"Ignorar opiniones contrarias a la propia.",
+			"Permitir tratos despectivos si son entre compañeros."
+		],
+		"description": "¡¡¡Correcto!!! El respeto fortalece un ambiente laboral sano y colaborativo."
+	},
+	{
+		"id": 49,
+		"question": "¿Cuál es la consecuencia de no actuar con integridad en la administración pública?",
+		"correct_answer": "Pérdida de confianza ciudadana y sanciones legales.",
+		"incorrect_answers": [
+			"Mayor reconocimiento y apoyo público.",
+			"Mejor desempeño laboral sin problemas.",
+			"Beneficios personales sin consecuencias."
+		],
+		"description": "¡¡¡Correcto!!! La falta de integridad afecta la legitimidad y la eficiencia institucional."
+	},
+	{
+		"id": 50,
+		"question": "Una práctica que fortalece la integridad en las instituciones públicas es:",
+		"correct_answer": "Capacitar continuamente al personal en ética y transparencia.",
+		"incorrect_answers": [
+			"Permitir discrecionalidad sin controles.",
+			"Ignorar denuncias para evitar conflictos.",
+			"Delegar la ética solo a los altos directivos."
+		],
+		"description": "¡¡¡Correcto!!! La formación constante promueve una cultura de integridad y cumplimiento."
 	}
 
 
@@ -4601,7 +5041,7 @@ export const modelo_integrado_de_gestión = [
 		"correct_answer": "La identificación, evaluación y mitigación de riesgos",
 		"incorrect_answers": [
 			"El incremento de procesos administrativos",
-			"El retraso en la ejecución de proyectos"
+			"El retraso en la ejecución de proyectos",
 		],
 		"description": "¡¡Correcto!! La gestión del riesgo ayuda a prevenir problemas y asegurar el cumplimiento de metas."
 	},
@@ -7431,5 +7871,1112 @@ export const aptitud_verbal = [
 		"correct_answer": "¿A qué hora empieza la reunión?",
 		"incorrect_answers": ["La reunión empieza a las ocho.", "Es una reunión importante.", "La reunión fue cancelada."],
 		"description": "Las oraciones interrogativas se caracterizan por estar formuladas como preguntas."
+	}
+]
+
+export const principios_deberes_constitucionales = [
+	{
+		"id": 1,
+		"question": "¿Cuál de los siguientes enunciados corresponde a un principio fundamental de la Constitución Política de Colombia de 1991?",
+		"correct_answer": "La soberanía reside exclusivamente en el pueblo",
+		"incorrect_answers": [
+			"El poder reside en el Congreso de la República",
+			"El Estado impone derechos y libertades",
+			"La justicia está por encima de la ley"
+		],
+		"description": "La soberanía popular es un principio fundamental consagrado en el artículo 3 de la Constitución de 1991."
+	},
+	{
+		"id": 2,
+		"question": "Según la Constitución de 1991, ¿cuál es uno de los deberes de toda persona en Colombia?",
+		"correct_answer": "Respetar los derechos ajenos y no abusar de los propios",
+		"incorrect_answers": [
+			"Servir obligatoriamente al Estado en cargos públicos",
+			"Adoptar una religión reconocida por el Estado",
+			"Participar activamente en política"
+		],
+		"description": "El artículo 95 establece como deber respetar los derechos ajenos, entre otros deberes ciudadanos."
+	},
+	{
+		"id": 3,
+		"question": "¿Qué principio constitucional consagra que todas las autoridades deben proteger a todas las personas en su vida, honra y bienes?",
+		"correct_answer": "El principio de dignidad humana",
+		"incorrect_answers": [
+			"El principio de legalidad",
+			"El principio de territorialidad",
+			"El principio de economía"
+		],
+		"description": "La dignidad humana es el eje del ordenamiento jurídico colombiano y guía el actuar de las autoridades."
+	},
+	{
+		"id": 4,
+		"question": "¿Cuál de los siguientes deberes constitucionales está relacionado con la participación ciudadana?",
+		"correct_answer": "Participar en la vida política, cívica y comunitaria del país",
+		"incorrect_answers": [
+			"Pagar impuestos únicamente si se está de acuerdo",
+			"Trabajar en una entidad pública mínimo un año",
+			"Votar cada cinco años"
+		],
+		"description": "El deber de participación activa en la sociedad está contenido en el artículo 95 de la Constitución."
+	},
+	{
+		"id": 5,
+		"question": "El respeto por el medio ambiente es considerado en la Constitución como:",
+		"correct_answer": "Un deber de la persona y del ciudadano",
+		"incorrect_answers": [
+			"Una recomendación opcional del Estado",
+			"Una función exclusiva del Ministerio de Ambiente",
+			"Un principio ético sin valor jurídico"
+		],
+		"description": "Cuidar los recursos naturales es un deber ciudadano consagrado constitucionalmente."
+	},
+	{
+		"id": 6,
+		"question": "¿Qué significa el principio de igualdad ante la ley, según la Constitución colombiana?",
+		"correct_answer": "Todas las personas tienen los mismos derechos, deberes y oportunidades",
+		"incorrect_answers": [
+			"Algunas personas tienen más deberes por su rol social",
+			"La ley solo protege a los ciudadanos colombianos",
+			"La igualdad aplica únicamente en temas judiciales"
+		],
+		"description": "El principio de igualdad está establecido en el artículo 13 de la Constitución."
+	},
+	{
+		"id": 7,
+		"question": "¿Cuál es el deber constitucional relacionado con el respeto y defensa de los bienes públicos?",
+		"correct_answer": "Proteger los recursos culturales y naturales de la Nación",
+		"incorrect_answers": [
+			"Colaborar con el uso privado de los bienes públicos",
+			"Recibir subsidios del Estado periódicamente",
+			"Priorizar el beneficio individual sobre el colectivo"
+		],
+		"description": "El artículo 95 señala como deber proteger el patrimonio común de los colombianos."
+	},
+	{
+		"id": 8,
+		"question": "Uno de los principios constitucionales del Estado colombiano es:",
+		"correct_answer": "Colombia es un Estado social de derecho",
+		"incorrect_answers": [
+			"Colombia es una república autoritaria de derechos",
+			"Colombia es un Estado centralizado y unitario",
+			"Colombia es una monarquía parlamentaria"
+		],
+		"description": "La Constitución de 1991 define a Colombia como un Estado social de derecho en su artículo 1."
+	},
+	{
+		"id": 9,
+		"question": "¿Cuál de las siguientes opciones corresponde a un principio de la función pública según la Constitución?",
+		"correct_answer": "Moralidad",
+		"incorrect_answers": [
+			"Impunidad",
+			"Neutralidad política",
+			"Secreto institucional"
+		],
+		"description": "El artículo 209 de la Constitución establece principios como moralidad, eficacia, economía, celeridad, imparcialidad y publicidad."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué valor constitucional se refleja cuando los ciudadanos exigen a las autoridades transparencia en la gestión pública?",
+		"correct_answer": "Participación democrática",
+		"incorrect_answers": [
+			"Autoridad centralizada",
+			"Privacidad institucional",
+			"Jerarquía normativa"
+		],
+		"description": "La participación democrática permite a los ciudadanos exigir transparencia, rendición de cuentas y buen gobierno."
+	},
+	{
+		"id": 11,
+		"question": "Según la Constitución Política de 1991, ¿cuál es el fundamento de la soberanía nacional?",
+		"correct_answer": "Reside exclusivamente en el pueblo",
+		"incorrect_answers": [
+			"Radica únicamente en el Presidente de la República",
+			"Es compartida entre los poderes públicos",
+			"La detentan las Fuerzas Militares en tiempos de guerra"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 3 de la Constitución establece que la soberanía reside exclusivamente en el pueblo, del cual emanan los poderes públicos."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál de los siguientes es un principio que rige el ejercicio del poder público en Colombia?",
+		"correct_answer": "Prevalencia del interés general",
+		"incorrect_answers": [
+			"Primacía del poder ejecutivo",
+			"Independencia absoluta del ciudadano",
+			"Privilegio de intereses privados"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 1 de la Constitución menciona la prevalencia del interés general como uno de los principios fundamentales del Estado colombiano."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué principio constitucional establece la responsabilidad de los servidores públicos por infringir la Constitución y la ley?",
+		"correct_answer": "Principio de responsabilidad",
+		"incorrect_answers": [
+			"Principio de conveniencia",
+			"Principio de lealtad",
+			"Principio de jerarquía"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 6 de la Constitución señala que los servidores públicos son responsables por infringir la Constitución y la ley, lo que corresponde al principio de responsabilidad."
+	},
+	{
+		"id": 14,
+		"question": "¿Cuál es un deber constitucional en relación con el medio ambiente?",
+		"correct_answer": "Proteger los recursos naturales y velar por su conservación",
+		"incorrect_answers": [
+			"Permitir su explotación libre",
+			"Garantizar que solo el Estado los utilice",
+			"Cederlos al capital extranjero sin restricción"
+		],
+		"description": "¡¡¡Correcto!!! Según el artículo 95, uno de los deberes de toda persona es proteger los recursos naturales y velar por la conservación de un ambiente sano."
+	},
+	{
+		"id": 15,
+		"question": "De acuerdo con la Constitución, ¿qué debe hacer el ciudadano frente a las autoridades legítimamente constituidas?",
+		"correct_answer": "Acatar la Constitución y las leyes",
+		"incorrect_answers": [
+			"Desobedecer si no está de acuerdo",
+			"Ejercer vigilancia armada sobre ellas",
+			"Apoyarlas solo si pertenecen a su partido político"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 95 establece como deber de toda persona acatar la Constitución y las leyes, y respetar y obedecer a las autoridades."
+	},
+	{
+		"id": 16,
+		"question": "¿Cuál es uno de los fines esenciales del Estado colombiano según la Constitución?",
+		"correct_answer": "Servir a la comunidad",
+		"incorrect_answers": [
+			"Favorecer a los sectores empresariales",
+			"Imponer un único modelo cultural",
+			"Ejercer control absoluto sobre los ciudadanos"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 2 de la Constitución establece que uno de los fines esenciales del Estado es servir a la comunidad, además de garantizar los derechos y libertades."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué principio constitucional garantiza que todos los ciudadanos son iguales ante la ley?",
+		"correct_answer": "Principio de igualdad",
+		"incorrect_answers": [
+			"Principio de imparcialidad",
+			"Principio de neutralidad",
+			"Principio de subsidiariedad"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 13 de la Constitución consagra el principio de igualdad, asegurando que todas las personas tienen los mismos derechos, libertades y oportunidades."
+	},
+	{
+		"id": 18,
+		"question": "¿Qué deber constitucional promueve el ejercicio del sufragio?",
+		"correct_answer": "Participar en la vida política, cívica y comunitaria del país",
+		"incorrect_answers": [
+			"Renunciar a la ciudadanía",
+			"Apoyar únicamente al partido de gobierno",
+			"Evitar cualquier participación política"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 95 indica que uno de los deberes de los ciudadanos es participar en la vida política, incluyendo el voto como una expresión fundamental."
+	},
+	{
+		"id": 19,
+		"question": "¿Cuál de los siguientes NO es un deber constitucional según el artículo 95?",
+		"correct_answer": "Velar por el enriquecimiento personal sobre el bien común",
+		"incorrect_answers": [
+			"Respetar los derechos ajenos",
+			"Participar en la vida política",
+			"Contribuir al financiamiento del Estado"
+		],
+		"description": "¡¡¡Correcto!!! El enriquecimiento personal por encima del bien común contradice los principios constitucionales; no es un deber, sino un comportamiento reprobable."
+	},
+	{
+		"id": 20,
+		"question": "¿Qué deber constitucional contribuye directamente al sostenimiento del Estado?",
+		"correct_answer": "Contribuir al financiamiento de los gastos e inversiones del Estado",
+		"incorrect_answers": [
+			"Negarse a pagar impuestos",
+			"Exigir servicios sin contribuir",
+			"Promover la evasión fiscal"
+		],
+		"description": "¡¡¡Correcto!!! Según el artículo 95, todos los ciudadanos deben contribuir al financiamiento del Estado de acuerdo con su capacidad económica."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál de los siguientes enunciados corresponde a un principio constitucional de la función pública?",
+		"correct_answer": "La moralidad",
+		"incorrect_answers": [
+			"La conveniencia personal",
+			"La influencia política",
+			"La acumulación de poder"
+		],
+		"description": "¡¡¡Correcto!!! Según el artículo 209 de la Constitución, la función administrativa se rige por principios como la moralidad, eficiencia, celeridad, imparcialidad y publicidad."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué principio constitucional se refiere a que las autoridades deben actuar con prontitud y sin demoras injustificadas?",
+		"correct_answer": "Celeridad",
+		"incorrect_answers": [
+			"Subsidiariedad",
+			"Estabilidad",
+			"Jerarquía"
+		],
+		"description": "¡¡¡Correcto!!! El principio de celeridad exige que los funcionarios actúen con prontitud para garantizar una administración eficiente."
+	},
+	{
+		"id": 23,
+		"question": "¿Qué establece el artículo 1º de la Constitución Política de Colombia sobre la forma de Estado?",
+		"correct_answer": "Colombia es un Estado social de derecho",
+		"incorrect_answers": [
+			"Colombia es una monarquía constitucional",
+			"Colombia es un Estado confesional",
+			"Colombia es una federación descentralizada"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 1º de la Constitución declara que Colombia es un Estado social de derecho, organizado en forma de república unitaria, democrática, participativa y pluralista."
+	},
+	{
+		"id": 24,
+		"question": "Según la Constitución, ¿quiénes deben cumplir la Constitución y las leyes?",
+		"correct_answer": "Todas las personas en Colombia",
+		"incorrect_answers": [
+			"Solo los funcionarios públicos",
+			"Solo los ciudadanos colombianos",
+			"Solo las entidades estatales"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 6 de la Constitución establece que todas las personas deben respetar la Constitución y las leyes."
+	},
+	{
+		"id": 25,
+		"question": "¿Cuál de los siguientes es un principio constitucional relacionado con la transparencia en la gestión pública?",
+		"correct_answer": "Publicidad",
+		"incorrect_answers": [
+			"Confidencialidad absoluta",
+			"Secreto institucional",
+			"Privatización del control"
+		],
+		"description": "¡¡¡Correcto!!! El principio de publicidad implica que las actuaciones de la administración deben ser públicas, salvo excepciones legales."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué deber constitucional tiene todo ciudadano respecto al sufragio?",
+		"correct_answer": "Participar en la vida política del país votando en elecciones",
+		"incorrect_answers": [
+			"Solo afiliarse a un partido político",
+			"Presentarse como candidato",
+			"Votar únicamente en elecciones presidenciales"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 95 de la Constitución establece como deber participar en la vida política del país, especialmente votando en elecciones y consultas populares."
+	},
+	{
+		"id": 27,
+		"question": "¿Cuál es el deber fundamental relacionado con el respeto a los derechos ajenos?",
+		"correct_answer": "Respetar los derechos ajenos y no abusar de los propios",
+		"incorrect_answers": [
+			"Defender solo los derechos propios",
+			"Desconocer derechos ajenos en caso de conflicto",
+			"Respetar únicamente los derechos del Estado"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 95 de la Constitución menciona que respetar los derechos ajenos es un deber de toda persona en Colombia."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué principio constitucional establece que todas las personas son iguales ante la ley?",
+		"correct_answer": "Igualdad",
+		"incorrect_answers": [
+			"Autoridad",
+			"Jerarquía",
+			"Autonomía"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 13 de la Constitución Política establece el derecho a la igualdad ante la ley, sin discriminación alguna."
+	},
+	{
+		"id": 29,
+		"question": "¿Qué establece la Constitución frente al uso de los recursos naturales por parte del Estado?",
+		"correct_answer": "El Estado es responsable de su planificación y manejo, garantizando el desarrollo sostenible",
+		"incorrect_answers": [
+			"Son de uso exclusivo de la empresa privada",
+			"No están regulados por la Constitución",
+			"Su explotación depende únicamente de tratados internacionales"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución establece que los recursos naturales son patrimonio de la Nación y deben ser manejados de forma sostenible."
+	},
+	{
+		"id": 30,
+		"question": "¿Qué principio guía la actuación de los servidores públicos conforme a la Constitución?",
+		"correct_answer": "Legalidad",
+		"incorrect_answers": [
+			"Arbitrariedad",
+			"Discrecionalidad ilimitada",
+			"Interés personal"
+		],
+		"description": "¡¡¡Correcto!!! El principio de legalidad implica que los servidores públicos solo pueden hacer lo que la ley les permite expresamente."
+	},
+	{
+		"id": 31,
+		"question": "¿Cuál es el principio constitucional que establece que las autoridades están instituidas para proteger a todas las personas en su vida, honra y bienes?",
+		"correct_answer": "Finalidad social del Estado",
+		"incorrect_answers": [
+			"Separación de poderes",
+			"Control fiscal",
+			"Descentralización administrativa"
+		],
+		"description": "¡¡¡Correcto!!! Según el artículo 2 de la Constitución, las autoridades están instituidas para proteger a todas las personas en su vida, honra, bienes, creencias y demás derechos."
+	},
+	{
+		"id": 32,
+		"question": "¿Qué deber impone la Constitución a todos los ciudadanos para garantizar la convivencia pacífica?",
+		"correct_answer": "Obrar conforme al principio de solidaridad social",
+		"incorrect_answers": [
+			"Ejercer autoridad sobre los demás",
+			"Denunciar a toda persona sospechosa",
+			"Practicar una religión obligatoria"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución en el artículo 95 establece como deber obrar conforme al principio de solidaridad social, respondiendo con acciones humanitarias ante situaciones de emergencia."
+	},
+	{
+		"id": 33,
+		"question": "¿Cuál es el principio según el cual el poder público debe distribuirse entre distintas ramas y órganos del Estado?",
+		"correct_answer": "Separación de poderes",
+		"incorrect_answers": [
+			"Unidad de mando",
+			"Legalidad administrativa",
+			"Economía procesal"
+		],
+		"description": "¡¡¡Correcto!!! La separación de poderes garantiza el equilibrio entre las funciones legislativa, ejecutiva y judicial del Estado."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué principio constitucional garantiza que los ciudadanos puedan ejercer control sobre la administración pública?",
+		"correct_answer": "Participación",
+		"incorrect_answers": [
+			"Exclusividad del poder",
+			"Neutralidad del Estado",
+			"Confidencialidad administrativa"
+		],
+		"description": "¡¡¡Correcto!!! La participación es un principio que garantiza que los ciudadanos incidan en las decisiones públicas y ejerzan control político."
+	},
+	{
+		"id": 35,
+		"question": "¿Qué principio constitucional establece que el Estado debe garantizar el acceso efectivo a la administración de justicia?",
+		"correct_answer": "Acceso a la justicia",
+		"incorrect_answers": [
+			"Control ciudadano",
+			"Economía judicial",
+			"Autonomía regional"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 229 de la Constitución asegura que toda persona tiene derecho a acceder a la administración de justicia para la protección de sus derechos."
+	},
+	{
+		"id": 36,
+		"question": "¿Cuál es el deber constitucional que tienen los ciudadanos respecto a los derechos ajenos?",
+		"correct_answer": "Respetar los derechos ajenos y no abusar de los propios",
+		"incorrect_answers": [
+			"Velar por el cumplimiento de la ley",
+			"Informar a las autoridades sobre violaciones",
+			"Cumplir con las funciones públicas"
+		],
+		"description": "¡¡¡Correcto!!! El artículo 95 de la Constitución establece como deber respetar los derechos ajenos y no abusar de los propios, promoviendo así la convivencia armónica."
+	},
+	{
+		"id": 37,
+		"question": "¿Qué principio establece que ninguna persona o grupo está por encima de la Constitución?",
+		"correct_answer": "Supremacía de la Constitución",
+		"incorrect_answers": [
+			"Legalidad sustancial",
+			"Preeminencia de la ley",
+			"Autonomía normativa"
+		],
+		"description": "¡¡¡Correcto!!! La supremacía de la Constitución implica que toda actuación del Estado y los particulares debe ajustarse a sus disposiciones (Art. 4)."
+	},
+	{
+		"id": 38,
+		"question": "¿Cuál de los siguientes es un deber del ciudadano según el artículo 95 de la Constitución?",
+		"correct_answer": "Participar en la vida política, cívica y comunitaria del país",
+		"incorrect_answers": [
+			"Proteger la soberanía del poder judicial exclusivamente",
+			"Elegir representantes cada cuatro años",
+			"Cumplir funciones en el poder legislativo"
+		],
+		"description": "¡¡¡Correcto!!! La participación ciudadana es un deber constitucional que fortalece la democracia y el control social."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué deber tienen los ciudadanos en relación con el medio ambiente, según la Constitución?",
+		"correct_answer": "Proteger los recursos naturales y velar por la conservación del ambiente",
+		"incorrect_answers": [
+			"Exigir compensaciones al Estado",
+			"Denunciar delitos ambientales",
+			"Solicitar licencias ambientales"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución impone el deber de proteger el ambiente, como parte del principio de solidaridad y del desarrollo sostenible (Art. 95 y 79)."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es el principio que implica que los ciudadanos pueden exigir a las autoridades responsabilidad por sus actos?",
+		"correct_answer": "Responsabilidad",
+		"incorrect_answers": [
+			"Descentralización",
+			"Colaboración armónica",
+			"Publicidad"
+		],
+		"description": "¡¡¡Correcto!!! La responsabilidad es un principio esencial para garantizar la transparencia y el cumplimiento de los fines del Estado."
+	},
+	{
+		"id": 41,
+		"question": "Según la Constitución, ¿qué principio protege la igualdad de todos los ciudadanos ante la ley?",
+		"correct_answer": "Igualdad",
+		"incorrect_answers": [
+			"Libertad",
+			"Participación",
+			"Solidaridad"
+		],
+		"description": "¡¡¡Correcto!!! La igualdad es un principio fundamental que garantiza que todas las personas tengan los mismos derechos y deberes ante la ley (Art. 13)."
+	},
+	{
+		"id": 42,
+		"question": "¿Cuál es uno de los deberes constitucionales en materia de defensa de la soberanía y la independencia nacional?",
+		"correct_answer": "Colaborar en la defensa de la soberanía y la independencia nacional",
+		"incorrect_answers": [
+			"Solo participar en elecciones presidenciales",
+			"Informar a la prensa sobre asuntos militares",
+			"Promover tratados internacionales sin control"
+		],
+		"description": "¡¡¡Correcto!!! Los ciudadanos deben colaborar activamente en la defensa del territorio y soberanía nacional (Art. 95)."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué principio constitucional establece la distribución del poder público entre diferentes ramas del Estado?",
+		"correct_answer": "Separación de poderes",
+		"incorrect_answers": [
+			"Participación ciudadana",
+			"Unidad nacional",
+			"Pluralismo"
+		],
+		"description": "¡¡¡Correcto!!! La separación de poderes evita la concentración de autoridad y garantiza un equilibrio en el ejercicio del poder público."
+	},
+	{
+		"id": 44,
+		"question": "¿Qué deber tienen los ciudadanos en cuanto a la educación, según la Constitución?",
+		"correct_answer": "Exigir y promover una educación de calidad para todos",
+		"incorrect_answers": [
+			"Solo asistir a la escuela primaria",
+			"Financiar la educación privada",
+			"Evitar la educación formal"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución reconoce la educación como un derecho y un deber que fortalece la formación integral de los ciudadanos (Art. 67)."
+	},
+	{
+		"id": 45,
+		"question": "¿Cuál es el deber constitucional que contribuye a la convivencia pacífica y el respeto mutuo?",
+		"correct_answer": "Respetar la diversidad étnica y cultural de la nación",
+		"incorrect_answers": [
+			"Imponer una cultura única",
+			"Evitar el diálogo con minorías",
+			"Rechazar tradiciones ancestrales"
+		],
+		"description": "¡¡¡Correcto!!! El respeto a la diversidad cultural es un deber para fortalecer la unidad y la convivencia social (Art. 7)."
+	},
+	{
+		"id": 46,
+		"question": "¿Cuál es uno de los principios fundamentales que rige la función pública según la Constitución?",
+		"correct_answer": "Transparencia y eficiencia",
+		"incorrect_answers": [
+			"Secreto y discrecionalidad",
+			"Arbitrariedad y parcialidad",
+			"Exclusividad y reserva"
+		],
+		"description": "¡¡¡Correcto!!! La función pública debe regirse por la transparencia y eficiencia para garantizar el buen uso de los recursos públicos."
+	},
+	{
+		"id": 47,
+		"question": "De acuerdo con la Constitución, ¿qué derecho tiene todo ciudadano en materia de participación política?",
+		"correct_answer": "Elegir y ser elegido en cargos públicos",
+		"incorrect_answers": [
+			"Solo elegir representantes",
+			"Solo votar en elecciones presidenciales",
+			"No participar en campañas políticas"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución reconoce el derecho a elegir y ser elegido como parte esencial de la democracia (Art. 40)."
+	},
+	{
+		"id": 48,
+		"question": "¿Cuál es un deber de los ciudadanos en relación con la ley y el orden público?",
+		"correct_answer": "Acatar las leyes y respetar las autoridades legítimas",
+		"incorrect_answers": [
+			"Desobedecer normas injustas sin consecuencia",
+			"Ignorar las órdenes oficiales",
+			"Promover la anarquía para el cambio social"
+		],
+		"description": "¡¡¡Correcto!!! Los ciudadanos deben respetar el orden jurídico para mantener la convivencia pacífica (Art. 95)."
+	},
+	{
+		"id": 49,
+		"question": "Según la Constitución, ¿qué principio protege el derecho a la propiedad privada?",
+		"correct_answer": "Función social de la propiedad",
+		"incorrect_answers": [
+			"Propiedad absoluta e ilimitada",
+			"Derecho exclusivo sin límites",
+			"No existe protección a la propiedad"
+		],
+		"description": "¡¡¡Correcto!!! La propiedad privada está protegida pero debe cumplir una función social (Art. 58)."
+	},
+	{
+		"id": 50,
+		"question": "¿Qué principio constitucional garantiza la libertad de expresión y el derecho a la información?",
+		"correct_answer": "Libertad de prensa y expresión",
+		"incorrect_answers": [
+			"Censura previa obligatoria",
+			"Restricción absoluta a la crítica",
+			"Privacidad total sin acceso público"
+		],
+		"description": "¡¡¡Correcto!!! La Constitución protege la libertad de expresión y prensa como pilares de la democracia (Art. 20)."
+	}
+]
+
+
+export const gobierno_digital = [
+	{
+		"id": 1,
+		"question": "¿Qué es el Gobierno Digital?",
+		"correct_answer": "El uso de tecnologías digitales para mejorar la gestión pública y la interacción con los ciudadanos.",
+		"incorrect_answers": [
+			"Un sistema de control interno de las entidades públicas.",
+			"Una estrategia exclusiva para el sector privado.",
+			"La digitalización de documentos sin cambios en los procesos."
+		],
+		"description": "¡¡¡Correcto!!! El Gobierno Digital consiste en utilizar tecnologías para hacer más eficientes y transparentes los servicios públicos."
+	},
+	{
+		"id": 2,
+		"question": "¿Cuál es uno de los principales objetivos del Gobierno Digital?",
+		"correct_answer": "Mejorar la eficiencia y transparencia en la gestión pública.",
+		"incorrect_answers": [
+			"Reducir la participación ciudadana en los procesos gubernamentales.",
+			"Incrementar el gasto público en tecnología sin resultados.",
+			"Mantener los procesos administrativos tradicionales sin cambios."
+		],
+		"description": "¡¡¡Correcto!!! El objetivo clave es optimizar procesos y aumentar la transparencia para beneficio de los ciudadanos."
+	},
+	{
+		"id": 3,
+		"question": "¿Qué instrumento normativo en Colombia regula la estrategia de Gobierno Digital?",
+		"correct_answer": "La Ley 1712 de 2014 (Ley de Transparencia y del Derecho de Acceso a la Información Pública).",
+		"incorrect_answers": [
+			"El Decreto 1082 de 2015.",
+			"La Ley 734 de 2002.",
+			"El Código General del Proceso."
+		],
+		"description": "¡¡¡Correcto!!! La Ley 1712 de 2014 establece las bases para la transparencia y acceso a la información pública, pilares del Gobierno Digital."
+	},
+	{
+		"id": 4,
+		"question": "¿Cuál es una herramienta clave para la implementación del Gobierno Digital?",
+		"correct_answer": "Plataformas electrónicas que facilitan la interacción entre ciudadanos y entidades públicas.",
+		"incorrect_answers": [
+			"El uso exclusivo de papel en los trámites.",
+			"El aumento del personal sin formación tecnológica.",
+			"La eliminación de canales digitales."
+		],
+		"description": "¡¡¡Correcto!!! Las plataformas digitales permiten agilizar trámites y mejorar la comunicación entre el Estado y la ciudadanía."
+	},
+	{
+		"id": 5,
+		"question": "¿Qué papel juega la transparencia en el Gobierno Digital?",
+		"correct_answer": "Promueve el acceso a la información pública y la rendición de cuentas.",
+		"incorrect_answers": [
+			"Limita el acceso a la información para proteger a las entidades.",
+			"Sólo es relevante en el sector privado.",
+			"Es un aspecto secundario sin impacto real."
+		],
+		"description": "¡¡¡Correcto!!! La transparencia fortalece la confianza ciudadana al garantizar acceso a información relevante del Estado."
+	},
+	{
+		"id": 6,
+		"question": "¿Qué significa interoperabilidad en el contexto del Gobierno Digital?",
+		"correct_answer": "La capacidad de los sistemas y organizaciones para trabajar juntos y compartir información.",
+		"incorrect_answers": [
+			"El aislamiento de sistemas sin conexión entre ellos.",
+			"El uso exclusivo de software propietario.",
+			"La duplicación de información en diferentes entidades."
+		],
+		"description": "¡¡¡Correcto!!! La interoperabilidad facilita el intercambio eficiente de datos entre entidades públicas para mejorar los servicios."
+	},
+	{
+		"id": 7,
+		"question": "¿Cuál es un beneficio directo del Gobierno Digital para los ciudadanos?",
+		"correct_answer": "Acceso más rápido y sencillo a los servicios públicos.",
+		"incorrect_answers": [
+			"Incremento en los costos para realizar trámites.",
+			"Reducción de opciones para hacer consultas.",
+			"Mayor burocracia en la atención."
+		],
+		"description": "¡¡¡Correcto!!! Los ciudadanos pueden acceder fácilmente a servicios y realizar trámites sin desplazamientos innecesarios."
+	},
+	{
+		"id": 8,
+		"question": "¿Qué es la firma digital en el contexto del Gobierno Digital?",
+		"correct_answer": "Un mecanismo electrónico para validar la autenticidad de documentos y personas.",
+		"incorrect_answers": [
+			"Una firma manuscrita escaneada.",
+			"Un sistema para imprimir documentos oficiales.",
+			"Una contraseña para ingresar a páginas web."
+		],
+		"description": "¡¡¡Correcto!!! La firma digital garantiza seguridad y validez legal a los documentos electrónicos."
+	},
+	{
+		"id": 9,
+		"question": "¿Qué entidad en Colombia coordina la estrategia de Gobierno Digital?",
+		"correct_answer": "El Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC).",
+		"incorrect_answers": [
+			"La Contraloría General de la República.",
+			"La Fiscalía General de la Nación.",
+			"El Departamento Administrativo de la Función Pública."
+		],
+		"description": "¡¡¡Correcto!!! El MinTIC lidera la implementación de políticas y estrategias para el Gobierno Digital en Colombia."
+	},
+	{
+		"id": 10,
+		"question": "¿Cuál de las siguientes no es una característica del Gobierno Digital?",
+		"correct_answer": "Incrementar el papeleo y burocracia en los procesos.",
+		"incorrect_answers": [
+			"Facilitar el acceso a servicios públicos.",
+			"Promover la participación ciudadana en línea.",
+			"Optimizar recursos mediante el uso de tecnología."
+		],
+		"description": "¡¡¡Correcto!!! El Gobierno Digital busca reducir trámites y burocracia, no aumentarlos."
+	},
+	{
+		"id": 11,
+		"question": "¿Qué es la transformación digital en el sector público?",
+		"correct_answer": "El proceso de integrar tecnología para cambiar la forma en que se ofrecen servicios y se gestionan procesos.",
+		"incorrect_answers": [
+			"Simplemente comprar más computadoras para las oficinas.",
+			"Mantener los procesos tradicionales sin cambios tecnológicos.",
+			"Crear páginas web sin funcionalidades interactivas."
+		],
+		"description": "¡¡¡Correcto!!! La transformación digital implica modificar procesos para mejorar la eficiencia y experiencia del usuario."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es la función principal del Portal Único de Servicios de Gobierno Digital?",
+		"correct_answer": "Facilitar a los ciudadanos el acceso a trámites y servicios en línea desde un solo lugar.",
+		"incorrect_answers": [
+			"Centralizar todos los documentos impresos del gobierno.",
+			"Controlar las redes sociales de las entidades públicas.",
+			"Administrar las bases de datos internas sin acceso público."
+		],
+		"description": "¡¡¡Correcto!!! El portal unifica servicios digitales para hacer más fácil la interacción del ciudadano con el Estado."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué es un dato abierto o 'open data' en Gobierno Digital?",
+		"correct_answer": "Información pública accesible, reutilizable y redistribuible por cualquier persona.",
+		"incorrect_answers": [
+			"Datos privados de los funcionarios públicos.",
+			"Información confidencial restringida a entidades gubernamentales.",
+			"Datos que solo pueden consultarse pagando una tarifa."
+		],
+		"description": "¡¡¡Correcto!!! Los datos abiertos promueven transparencia y permiten crear soluciones innovadoras para la sociedad."
+	},
+	{
+		"id": 14,
+		"question": "¿Cuál es un riesgo que puede enfrentar el Gobierno Digital si no se gestionan bien las tecnologías?",
+		"correct_answer": "La vulneración de la privacidad y la seguridad de la información pública.",
+		"incorrect_answers": [
+			"Mayor interacción ciudadana.",
+			"Mejor acceso a servicios en línea.",
+			"Incremento en la eficiencia administrativa."
+		],
+		"description": "¡¡¡Correcto!!! La seguridad informática es fundamental para proteger los datos y mantener la confianza ciudadana."
+	},
+	{
+		"id": 15,
+		"question": "¿Qué papel tiene la ciudadanía en el Gobierno Digital?",
+		"correct_answer": "Participar activamente usando las plataformas digitales para hacer trámites y aportar sugerencias.",
+		"incorrect_answers": [
+			"No tiene ninguna función directa.",
+			"Solo debe esperar a que el gobierno tome decisiones.",
+			"Debe evitar usar las herramientas digitales por seguridad."
+		],
+		"description": "¡¡¡Correcto!!! La participación ciudadana fortalece la gobernanza y mejora los servicios públicos."
+	},
+	{
+		"id": 16,
+		"question": "¿Qué es un trámite electrónico?",
+		"correct_answer": "Un procedimiento administrativo realizado completamente a través de medios digitales.",
+		"incorrect_answers": [
+			"Un trámite que requiere ir presencialmente a la entidad.",
+			"Un documento en papel enviado por correo postal.",
+			"Un proceso que solo se inicia por teléfono."
+		],
+		"description": "¡¡¡Correcto!!! Los trámites electrónicos agilizan y facilitan la gestión administrativa para usuarios y entidades."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué es la ciberseguridad en el contexto del Gobierno Digital?",
+		"correct_answer": "Conjunto de medidas para proteger los sistemas informáticos y la información pública de ataques y accesos no autorizados.",
+		"incorrect_answers": [
+			"Una nueva plataforma para ofrecer servicios digitales.",
+			"El software usado para crear páginas web.",
+			"Una estrategia para aumentar el gasto en tecnología."
+		],
+		"description": "¡¡¡Correcto!!! La ciberseguridad protege los datos y la infraestructura tecnológica del Estado."
+	},
+	{
+		"id": 18,
+		"question": "¿Qué es el acceso inclusivo en Gobierno Digital?",
+		"correct_answer": "Garantizar que todas las personas, incluyendo las vulnerables, puedan acceder a los servicios digitales sin barreras.",
+		"incorrect_answers": [
+			"Ofrecer servicios solo a quienes tienen internet de alta velocidad.",
+			"Restringir el acceso a ciertas plataformas por edad.",
+			"Evitar la participación de personas con discapacidades."
+		],
+		"description": "¡¡¡Correcto!!! La inclusión digital busca que nadie quede excluido de los beneficios del Gobierno Digital."
+	},
+	{
+		"id": 19,
+		"question": "¿Qué significa que un servicio público sea interoperable?",
+		"correct_answer": "Que puede funcionar y compartir información con otros servicios o sistemas sin problemas.",
+		"incorrect_answers": [
+			"Que solo se ofrece en una sola entidad sin conexión con otras.",
+			"Que requiere documentación en papel para su realización.",
+			"Que debe realizarse presencialmente."
+		],
+		"description": "¡¡¡Correcto!!! La interoperabilidad permite que diferentes sistemas trabajen juntos para facilitar trámites."
+	},
+	{
+		"id": 20,
+		"question": "¿Cuál es el beneficio de digitalizar la información pública?",
+		"correct_answer": "Facilitar el acceso, almacenamiento y consulta rápida de la información para usuarios y entidades.",
+		"incorrect_answers": [
+			"Aumentar el uso de papel y espacio físico.",
+			"Restringir la información solo a funcionarios.",
+			"Hacer más lentos los procesos administrativos."
+		],
+		"description": "¡¡¡Correcto!!! La digitalización optimiza la gestión documental y mejora la transparencia."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál es uno de los objetivos clave del Gobierno Digital?",
+		"correct_answer": "Mejorar la eficiencia y transparencia en la gestión pública.",
+		"incorrect_answers": [
+			"Eliminar completamente el contacto con la ciudadanía.",
+			"Reducir el número de funcionarios públicos.",
+			"Privatizar todos los servicios públicos."
+		],
+		"description": "¡¡¡Correcto!!! El Gobierno Digital busca hacer más eficientes los procesos y transparentar la información pública."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué papel juega la inteligencia artificial en el Gobierno Digital?",
+		"correct_answer": "Automatizar procesos y mejorar la toma de decisiones con base en datos.",
+		"incorrect_answers": [
+			"Reemplazar completamente a los funcionarios públicos.",
+			"Eliminar el contacto con el ciudadano.",
+			"Borrar toda la información institucional."
+		],
+		"description": "¡¡¡Correcto!!! La IA puede mejorar la eficiencia y apoyar la toma de decisiones basada en grandes volúmenes de datos."
+	},
+	{
+		"id": 23,
+		"question": "¿Cuál es una característica importante de una política de datos abiertos?",
+		"correct_answer": "Los datos deben estar disponibles de forma gratuita y reutilizable.",
+		"incorrect_answers": [
+			"Los datos deben estar encriptados y protegidos contra el público.",
+			"Los datos deben solicitarse por derecho de petición.",
+			"Los datos solo deben estar disponibles en físico."
+		],
+		"description": "¡¡¡Correcto!!! Los datos abiertos deben estar disponibles sin restricciones para fomentar transparencia e innovación."
+	},
+	{
+		"id": 24,
+		"question": "¿Qué busca garantizar la Ley de Transparencia y Acceso a la Información Pública en Colombia?",
+		"correct_answer": "El derecho de toda persona a acceder a la información pública.",
+		"incorrect_answers": [
+			"El control total del gobierno sobre los medios de comunicación.",
+			"La confidencialidad absoluta de todos los datos públicos.",
+			"El cobro por el acceso a los servicios de información."
+		],
+		"description": "¡¡¡Correcto!!! La ley garantiza el acceso libre y gratuito a la información pública como derecho fundamental."
+	},
+	{
+		"id": 25,
+		"question": "¿Qué es la estrategia de Gobierno en Línea en Colombia?",
+		"correct_answer": "Un plan para mejorar la interacción digital entre el Estado y los ciudadanos.",
+		"incorrect_answers": [
+			"Una estrategia para restringir el acceso a la tecnología.",
+			"Un programa de vigilancia digital masiva.",
+			"Una iniciativa privada para conectar empresas."
+		],
+		"description": "¡¡¡Correcto!!! La estrategia busca acercar los servicios del Estado a los ciudadanos a través de medios digitales."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué permite la firma digital en el contexto del Gobierno Digital?",
+		"correct_answer": "Autenticar documentos electrónicos con validez legal.",
+		"incorrect_answers": [
+			"Hacer grafitis digitales.",
+			"Ocultar la identidad del firmante.",
+			"Firmar en papel y escanearlo."
+		],
+		"description": "¡¡¡Correcto!!! La firma digital permite validar la identidad y proteger la integridad de los documentos electrónicos."
+	},
+	{
+		"id": 27,
+		"question": "¿Cuál es uno de los pilares del ecosistema de Gobierno Digital en Colombia?",
+		"correct_answer": "La arquitectura TI empresarial del Estado.",
+		"incorrect_answers": [
+			"La instalación de redes sociales en todas las entidades.",
+			"La eliminación del papel en todas las oficinas.",
+			"La privatización del correo institucional."
+		],
+		"description": "¡¡¡Correcto!!! La arquitectura TI permite alinear la tecnología con la estrategia del gobierno para una mejor gestión."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué es interoperabilidad técnica?",
+		"correct_answer": "Capacidad de los sistemas para intercambiar datos de forma eficiente y segura.",
+		"incorrect_answers": [
+			"Reutilización de computadoras antiguas.",
+			"Uso de software gratuito en las entidades públicas.",
+			"Reducción del ancho de banda digital."
+		],
+		"description": "¡¡¡Correcto!!! La interoperabilidad técnica permite el flujo de información entre diferentes plataformas tecnológicas."
+	},
+	{
+		"id": 29,
+		"question": "¿Qué deben considerar las entidades al diseñar servicios digitales?",
+		"correct_answer": "Las necesidades y capacidades de los ciudadanos.",
+		"incorrect_answers": [
+			"Solo los intereses de la entidad.",
+			"La complejidad para evitar accesos no deseados.",
+			"Reducir el uso de tecnologías."
+		],
+		"description": "¡¡¡Correcto!!! El diseño centrado en el ciudadano es fundamental para un Gobierno Digital eficiente e inclusivo."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es una barrera común para la implementación del Gobierno Digital?",
+		"correct_answer": "La falta de conectividad en zonas rurales.",
+		"incorrect_answers": [
+			"El exceso de recursos tecnológicos.",
+			"La abundancia de datos disponibles.",
+			"La participación ciudadana activa."
+		],
+		"description": "¡¡¡Correcto!!! Las brechas de conectividad dificultan el acceso equitativo a los servicios digitales del Estado."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué busca promover la estrategia de servicios ciudadanos digitales?",
+		"correct_answer": "Acceso simple, rápido y seguro a servicios del Estado.",
+		"incorrect_answers": [
+			"Eliminación total de trámites presenciales.",
+			"Sustitución de funcionarios por robots.",
+			"Cobro por el uso de plataformas digitales."
+		],
+		"description": "¡¡¡Correcto!!! Esta estrategia facilita la interacción con el Estado a través de medios digitales amigables y eficientes."
+	},
+	{
+		"id": 32,
+		"question": "¿Qué función tiene el portal Gov.co en Colombia?",
+		"correct_answer": "Centralizar el acceso a servicios e información del Estado.",
+		"incorrect_answers": [
+			"Promover redes sociales institucionales.",
+			"Realizar campañas políticas.",
+			"Brindar formación en tecnología a funcionarios."
+		],
+		"description": "¡¡¡Correcto!!! Gov.co es el portal único del Estado colombiano para que los ciudadanos accedan a información y servicios públicos."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué es la gestión documental electrónica?",
+		"correct_answer": "Manejo y conservación de documentos digitales con validez legal.",
+		"incorrect_answers": [
+			"Impresión masiva de archivos en físico.",
+			"Almacenamiento en discos compactos.",
+			"Eliminación de todos los registros históricos."
+		],
+		"description": "¡¡¡Correcto!!! La gestión documental electrónica garantiza el manejo adecuado, seguro y normativo de la información."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué implica la transformación digital del Estado?",
+		"correct_answer": "Uso de tecnologías para mejorar la gestión pública y el servicio al ciudadano.",
+		"incorrect_answers": [
+			"Privatizar servicios estatales.",
+			"Reducir el personal estatal al mínimo.",
+			"Desconectar al ciudadano de la administración pública."
+		],
+		"description": "¡¡¡Correcto!!! La transformación digital busca modernizar al Estado y facilitar el acceso de los ciudadanos a sus servicios."
+	},
+	{
+		"id": 35,
+		"question": "¿Qué entidad lidera la política de Gobierno Digital en Colombia?",
+		"correct_answer": "El Ministerio de Tecnologías de la Información y las Comunicaciones (MinTIC).",
+		"incorrect_answers": [
+			"El Ministerio de Educación.",
+			"La Contraloría General.",
+			"La Registraduría Nacional."
+		],
+		"description": "¡¡¡Correcto!!! MinTIC lidera e impulsa la política de Gobierno Digital en el país."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué es la ciberseguridad en el contexto del Gobierno Digital?",
+		"correct_answer": "Conjunto de acciones para proteger la información y los sistemas del Estado.",
+		"incorrect_answers": [
+			"Controlar redes sociales de ciudadanos.",
+			"Bloquear el acceso a Internet público.",
+			"Eliminar la información antigua del sistema."
+		],
+		"description": "¡¡¡Correcto!!! La ciberseguridad protege la infraestructura digital del Estado y los datos ciudadanos."
+	},
+	{
+		"id": 37,
+		"question": "¿Cuál es un beneficio del uso de la nube en el sector público?",
+		"correct_answer": "Almacenar y gestionar datos con mayor flexibilidad y eficiencia.",
+		"incorrect_answers": [
+			"Reducir la cantidad de personal TI.",
+			"Limitar el acceso ciudadano a servicios.",
+			"Evitar el uso de Internet."
+		],
+		"description": "¡¡¡Correcto!!! La nube permite escalar, almacenar y acceder a servicios de forma eficiente y segura."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué es el expediente digital único?",
+		"correct_answer": "Un sistema para centralizar los documentos del ciudadano ante el Estado.",
+		"incorrect_answers": [
+			"Un software para emitir facturas electrónicas.",
+			"Una aplicación para funcionarios.",
+			"Un archivo de cada entidad estatal."
+		],
+		"description": "¡¡¡Correcto!!! El expediente digital único busca simplificar trámites y evitar que el ciudadano entregue repetidamente la misma información."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué busca el principio de neutralidad tecnológica?",
+		"correct_answer": "Permitir que cualquier tecnología que cumpla los estándares pueda ser usada.",
+		"incorrect_answers": [
+			"Obligar a usar un único proveedor.",
+			"Utilizar exclusivamente software privado.",
+			"Impedir el uso de tecnología extranjera."
+		],
+		"description": "¡¡¡Correcto!!! La neutralidad tecnológica garantiza competencia e innovación en la implementación del Gobierno Digital."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es un reto clave para la implementación del Gobierno Digital en territorios rurales?",
+		"correct_answer": "Acceso limitado a infraestructura tecnológica y conectividad.",
+		"incorrect_answers": [
+			"Sobrecarga de plataformas digitales.",
+			"Demasiadas aplicaciones disponibles.",
+			"Exceso de formación técnica en las comunidades."
+		],
+		"description": "¡¡¡Correcto!!! La brecha digital en zonas rurales es uno de los principales desafíos para garantizar el acceso equitativo."
+	},
+	{
+		"id": 41,
+		"question": "¿Qué rol cumple la interoperabilidad en el Gobierno Digital?",
+		"correct_answer": "Permitir el intercambio eficiente de información entre entidades del Estado.",
+		"incorrect_answers": [
+			"Eliminar los registros en papel.",
+			"Impedir que los ciudadanos usen diferentes plataformas.",
+			"Privatizar los sistemas de información pública."
+		],
+		"description": "¡¡¡Correcto!!! La interoperabilidad permite que las instituciones compartan datos sin duplicidad ni errores, facilitando trámites para el ciudadano."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué objetivo tiene la política de Gobierno Digital frente a la participación ciudadana?",
+		"correct_answer": "Fortalecer los canales digitales de interacción entre ciudadanos y el Estado.",
+		"incorrect_answers": [
+			"Limitar las solicitudes ciudadanas a correos electrónicos.",
+			"Suspender las audiencias públicas.",
+			"Eliminar la atención presencial en las entidades."
+		],
+		"description": "¡¡¡Correcto!!! La política de Gobierno Digital promueve la participación activa del ciudadano mediante medios tecnológicos."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué es un trámite digital?",
+		"correct_answer": "Un proceso que se puede realizar completamente a través de medios electrónicos.",
+		"incorrect_answers": [
+			"Una solicitud escrita que debe entregarse en físico.",
+			"Un formulario manual escaneado.",
+			"Un trámite que requiere firma notarial presencial."
+		],
+		"description": "¡¡¡Correcto!!! Los trámites digitales eliminan la necesidad de desplazamientos, haciendo más eficiente la interacción con el Estado."
+	},
+	{
+		"id": 44,
+		"question": "¿Cuál es una herramienta clave para garantizar transparencia en Gobierno Digital?",
+		"correct_answer": "Datos abiertos.",
+		"incorrect_answers": [
+			"Privacidad institucional.",
+			"Bloqueo de información oficial.",
+			"Contraseñas compartidas entre entidades."
+		],
+		"description": "¡¡¡Correcto!!! Los datos abiertos permiten el acceso público a la información estatal para fomentar el control social y la innovación."
+	},
+	{
+		"id": 45,
+		"question": "¿Qué representa la estrategia de 'Gobierno Digital' en Colombia?",
+		"correct_answer": "Una política pública para transformar digitalmente las entidades del Estado.",
+		"incorrect_answers": [
+			"Una campaña comercial sobre software libre.",
+			"Una red social de servidores públicos.",
+			"Un sistema de vigilancia electrónica."
+		],
+		"description": "¡¡¡Correcto!!! Es una política que busca modernizar la gestión pública con uso de tecnología centrada en el ciudadano."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué busca el modelo de madurez digital en las entidades públicas?",
+		"correct_answer": "Medir el nivel de avance en la implementación de la transformación digital.",
+		"incorrect_answers": [
+			"Clasificar las entidades según su presupuesto.",
+			"Determinar la cantidad de funcionarios tecnológicos.",
+			"Evaluar únicamente el hardware de la entidad."
+		],
+		"description": "¡¡¡Correcto!!! Este modelo permite identificar fortalezas y debilidades en el camino hacia un gobierno digital efectivo."
+	},
+	{
+		"id": 47,
+		"question": "¿Qué permite el uso de firma digital en los procesos administrativos?",
+		"correct_answer": "Validar legalmente documentos electrónicos.",
+		"incorrect_answers": [
+			"Acelerar procesos manuales.",
+			"Evitar la revisión de documentos.",
+			"Reemplazar correos electrónicos."
+		],
+		"description": "¡¡¡Correcto!!! La firma digital tiene la misma validez jurídica que la manuscrita y permite mayor seguridad en procesos digitales."
+	},
+	{
+		"id": 48,
+		"question": "¿Cuál es un objetivo de los servicios ciudadanos digitales?",
+		"correct_answer": "Proporcionar un acceso único, seguro y eficiente a los servicios públicos.",
+		"incorrect_answers": [
+			"Permitir el ingreso múltiple por cada entidad.",
+			"Duplicar trámites entre entidades.",
+			"Restringir el acceso desde dispositivos móviles."
+		],
+		"description": "¡¡¡Correcto!!! Se busca que los ciudadanos interactúen fácilmente con el Estado, sin repetir procesos en cada entidad."
+	},
+	{
+		"id": 49,
+		"question": "¿Qué caracteriza a una política de Gobierno Abierto en el entorno digital?",
+		"correct_answer": "Transparencia, participación y colaboración en la gestión pública.",
+		"incorrect_answers": [
+			"Control exclusivo de la información.",
+			"Centralización de decisiones sin consulta.",
+			"Reducción de canales de interacción."
+		],
+		"description": "¡¡¡Correcto!!! El Gobierno Abierto impulsa la confianza ciudadana y el control social a través del uso de tecnologías digitales."
+	},
+	{
+		"id": 50,
+		"question": "¿Cuál de los siguientes NO es un componente de la estrategia de Gobierno Digital?",
+		"correct_answer": "El fortalecimiento del sistema penitenciario.",
+		"incorrect_answers": [
+			"Seguridad digital.",
+			"Servicios ciudadanos digitales.",
+			"Gestión de TI en el sector público."
+		],
+		"description": "¡¡¡Correcto!!! El sistema penitenciario no hace parte de los ejes de Gobierno Digital como política tecnológica del Estado."
 	}
 ]

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal } from './data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from './data'
 import { Question } from '../components/Question'
 
 export const CategoryPage = () => {
@@ -25,11 +25,13 @@ export const CategoryPage = () => {
   else if (category === "Modelo integrado de gestión") { preguntas = modelo_integrado_de_gestión }
   else if (category === "Competencias comportamentales para profesionales") { preguntas = competencias_comportamentales_para_profesionales }
   else if (category === "Razonamiento lógico (nivel básico)") { preguntas = razonamiento_logico_nivel_basico }
-  else if (category === "Comprensión lectora") { preguntas = comprension_lectora}
-  else if (category === "Razonamiento numérico (nivel básico)") { preguntas = razonamiento_numerico}
+  else if (category === "Comprensión lectora") { preguntas = comprension_lectora }
+  else if (category === "Razonamiento numérico (nivel básico)") { preguntas = razonamiento_numerico }
+  else if (category === "Aptitud Verbal") { preguntas = aptitud_verbal }
+  else if (category === "Principios y deberes constitucionales") { preguntas = principios_deberes_constitucionales }
 
 
-  else { preguntas = aptitud_verbal }
+  else { preguntas = gobierno_digital }
 
   return (
     <div className='flex flex-col items-center justify-center gap-10 my-3' style={{ height: 'calc(100vh-5rem)' }}>

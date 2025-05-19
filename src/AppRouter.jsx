@@ -5,6 +5,8 @@ import { Navbar } from './components'
 import { CategoryList } from './components/CategoryList'
 import Footer from './components/Footer'
 import { MaterialEstudioList } from './components/materialEstudio/MaterialEstudioList'
+import {BarraRedesSociales} from    './components/barraredessociales/BarraRedesSociales'
+import { WhatsAppButton} from       './components/whatsappboton/WhatsAppButton'
 
 
 
@@ -12,6 +14,8 @@ export const AppRouter = () => {
   return (
     <>
       <Navbar />
+      <BarraRedesSociales/>
+      <WhatsAppButton/>
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/homePage' element={<HomePage />}></Route>
