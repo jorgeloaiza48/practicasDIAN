@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import { MaterialEstudioList } from './components/materialEstudio/MaterialEstudioList'
 import {BarraRedesSociales} from    './components/barraredessociales/BarraRedesSociales'
 import { WhatsAppButton} from       './components/whatsappboton/WhatsAppButton'
+import { ContactForm } from './components/contactform/ContactForm'
 
 
 
@@ -22,6 +23,7 @@ export const AppRouter = () => {
         <Route path='/category/:category' element={<CategoryPage />}></Route>
         <Route path='/category/list' element={<CategoryList />}></Route>
         <Route path='/materialEstudio' element={<MaterialEstudioList />}></Route>
+        <Route path='/formulario-contacto' element={<ContactForm/>}></Route>
         <Route path='*' element={<h1>404 Not Found</h1>}></Route>
       </Routes>
       <Footer />

@@ -108,7 +108,7 @@ export const WhatsAppButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chatea por WhatsApp"
-      className="fixed bottom-4 right-4 z-50 w-14 h-14 md:w-16 md:h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition"
+      className="fixed bottom-4 left-4 z-50 w-14 h-14 md:w-16 md:h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition"
     >
       <svg
         className="w-7 h-7 md:w-8 md:h-8 text-white"

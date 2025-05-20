@@ -31,7 +31,8 @@ export const PostsList = () => {
               {new Date(post.date).toLocaleDateString()}
             </p>
             <img className='p-3' src={post.image} alt=''/>
-            <p className="text-gray-700 text-justify">{post.content}</p>
+            <p className="text-gray-700 text-justify">{post.content}</p><br></br>
+            <strong><p className='text-xs'>Fuente: {post.fuente}</p></strong>
           </article>
         ))}
       </div>

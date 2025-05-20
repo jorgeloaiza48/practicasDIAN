@@ -29,6 +29,7 @@ import ChildCareIcon from '@mui/icons-material/ChildCare';
 import { SeccionComentarios } from '../components/seccionComentarios/SeccionComentarios'
 import { Carrusel } from '../components/carrusel/Carrusel'
 import { PostsList } from '../components/posts/PostsList'
+import { ContactForm } from '../components/contactform/ContactForm'
 
 
 export const Home = () => {
@@ -44,6 +45,7 @@ export const Home = () => {
                         <Link to='/category/list'><li className=''>Practicar por temas</li></Link>
                         <Link to='/materialEstudio'><li className=''>Material de estudio</li></Link>
                         <li className=''><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
+                        <Link to='/formulario-contacto'><li>Contacto</li></Link>
                     </ul>
                 </div>
 
