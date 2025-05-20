@@ -3,9 +3,6 @@ import React from 'react'
 import slogan from './images/slogan.jpg'
 import logo from './images/logodian.png'
 import logocontraloria from './images/logocontraloria.png'
-import felicidad from './images/felicidad.jpg'
-import aplicar from './images/aplicar.jpg'
-import inscripcion from './images/inscripcion.webp'
 import { Link } from 'react-router-dom'
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import CampaignIcon from '@mui/icons-material/Campaign';
@@ -31,27 +28,27 @@ import ViewListIcon from '@mui/icons-material/ViewList';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 import { SeccionComentarios } from '../components/seccionComentarios/SeccionComentarios'
 import { Carrusel } from '../components/carrusel/Carrusel'
-
+import { PostsList } from '../components/posts/PostsList'
 
 
 export const Home = () => {
     return (
 
-        <div className=" flex justify-center items-center flex-col">
+        <div className="flex justify-center items-center flex-col">
             <div className='bg-red-500 w-full h-3'></div> {/* banda roja */}
 
+            <div className='flex flex-col justify-center mx-auto w-full p-1'>
+                <div className="bg-cyan-500 text-white text-sm font-bold text-center p-5 w-full md:text-xl">
+                    <ul className='flex gap-10 justify-center'>
+                        <li className=''><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
+                        <Link to='/category/list'><li className=''>Practicar por temas</li></Link>
+                        <Link to='/materialEstudio'><li className=''>Material de estudio</li></Link>
+                        <li className=''><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
+                    </ul>
+                </div>
 
-            <div className="bg-cyan-500 text-white text-2xl font-bold text-center p-5 w-full">
-                <ul className='flex gap-10 justify-center'>
-                    <li className=''><a href='https://cv-jorge-loaiza.vercel.app/'>Acerca del autor</a></li>
-                    <Link to='/category/list'><li className=''>Practicar por temas</li></Link>
-                    <Link to='/materialEstudio'><li className=''>Material de estudio</li></Link>
-                    <li className=''><a href='https://convocatoriacnsc.com/simulacros-pruebas-funcionales/'>Simulacros CNSC</a></li>
-                </ul>
+                <div className='w-full mx-auto mt-5 mb-2'><Carrusel /></div>
             </div>
-
-            <div className='w-full mx-auto mt-5 mb-2'><Carrusel /></div>
-
 
             <br></br>
             {/*  <div className="m-5">
@@ -63,7 +60,8 @@ export const Home = () => {
 
 
                 <div className='flex flex-col items-center p-10 w-2/5 rounded-lg bg-white shadow-lg'>
-                    <div className="container mt-20">
+                    <PostsList />
+                    {/*  <div className="container mt-20">
                         <div className="content space-y-10 mt-1">
                             <h1 className="text-4xl text-center ">Nuevo concurso meritocrático para cubrir vacantes en la DIAN</h1>
                             <img className="rounded-lg" src={felicidad} alt="" />
@@ -116,7 +114,7 @@ export const Home = () => {
                         </div>
                         <div className="clear"></div>
                     </div>
-
+ */}
                 </div>
 
 
