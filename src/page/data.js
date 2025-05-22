@@ -3,7 +3,6 @@ import cgDIAN from '../assets/cgDIAN.png'
 import ofimatica from '../assets/ofimatica.png'
 import basicas_organizacionales from '../assets/basicas_organizacionales.png'
 import integridad from '../assets/integridad.png'
-import tributarios1 from '../assets/tributarios1.png'
 import conductuales from '../assets/conductuales.png'
 import tramitesServicios from '../assets/tramitesServicios.png'
 import competencia_admin from '../assets/competencia_administrativa.jpg'
@@ -18,6 +17,7 @@ import razonamientonumerico from '../assets/razonamientonumerico.jpeg'
 import aptitudverbal from '../assets/aptitudverbal.gif'
 import principiosconstitucionales from '../assets/principiosconstitucionales.png'
 import gobiernodigital from '../assets/gobiernodigital.png'
+import conocimiento_tributario from '../assets/conocimiento_tributario.png'
 
 
 export const imgs = [
@@ -26,7 +26,7 @@ export const imgs = [
 	ofimatica,
 	basicas_organizacionales,
 	integridad,
-	tributarios1,
+	conocimiento_tributario,
 	conductuales,
 	tramitesServicios,
 	competencia_admin,
@@ -40,16 +40,16 @@ export const imgs = [
 	razonamientonumerico,
 	aptitudverbal,
 	principiosconstitucionales,
-	gobiernodigital
+	gobiernodigital,
 ];
 
 export const categories = {
-	aspectos_generales: 'Aspectos generales',
+	aspectos_generales: 'Aspectos generales DIAN',
 	conceptos_generales_DIAN: 'Conceptos generales DIAN',
 	ofimatica_sistemas: 'Ofimática y Sistemas',
 	basicas_organizacionales: 'Basicas Organizacionales',
 	prueba_integridad: 'Prueba de Integridad',
-	conocimientosTributariosI: 'Conocimientos Tributarios I',
+	conocimientosTributarios: 'Conocimientos Tributarios',
 	conductuales: "Conductuales e interpersonales",
 	tramitesServicios: "Trámites y servicios",
 	competencia_administrativa: "Competencia administrativa",
@@ -2659,13 +2659,357 @@ export const pruebaIntegridad = [
 
 ]
 
-export const conocimientosTributariosI = [
+export const conocimientosTributarios = [
+
 	{
-		id: 1,
-		question: 'En el desarrollo de sus funciones al interior de la DIAN, usted debe realizar un análisis sobre la corporación XYZ, la cual percibe rentas susceptibles de distribuirse total o parcialmente a cualquier título a personas naturales, directamente o a través de otras personas jurídicas, durante su existencia o al momento de su liquidación. Con esta información usted puede:',
-		correct_answer: 'Identificar que la corporación XYZ es una organización con fines de lucro.',
-		incorrect_answers: ['Determinar que la corporación XYZ es una organización sin fines de lucro', 'Inferir que se trata de una comunidad organizada sin fines de lucro.'],
-		description: '¡¡¡Correcto!!! Se entiende que las corporaciones o asociaciones tienen fines de lucro cuando perciban rentas susceptibles de distribuirse total o parcialmente a cualquier título a personas naturales, directamente o a través de otras personas jurídicas, durante su existencia o al momento de su liquidación. Decreto 1625 de 2016, Artículo 1.2.1.1.2'
+		"id": 1,
+		"question": "¿Cuál de estos macro procesos NO pertenecen a la DIAN?",
+		"correct_answer": "Recaudación y Control Interno",
+		"incorrect_answers": ["Misionales", "Estratégicos", "De apoyo y evaluación"],
+		"description": "¡¡Correcto!!! 'Recaudación y Control Interno' no es uno de los macro procesos oficialmente definidos por la DIAN, que agrupa sus procesos en misionales, estratégicos, y de apoyo y evaluación."
+	},
+	{
+		"id": 2,
+		"question": "¿Qué impuesto es de carácter territorial en Colombia?",
+		"correct_answer": "Impuesto de Industria y Comercio (ICA)",
+		"incorrect_answers": ["Impuesto sobre la Renta", "IVA", "Gravamen a los Movimientos Financieros (GMF)"],
+		"description": "¡¡Correcto!!! El ICA es un impuesto territorial administrado por los municipios, a diferencia de los demás que son nacionales y administrados por la DIAN."
+	},
+	{
+		"id": 3,
+		"question": "¿Cuál es el principal objetivo del Régimen Simple de Tributación (RST)?",
+		"correct_answer": "Simplificar el cumplimiento de obligaciones tributarias",
+		"incorrect_answers": ["Eliminar el IVA", "Reemplazar el impuesto de renta", "Cobrar más impuestos a grandes empresas"],
+		"description": "¡¡Correcto!!! El Régimen Simple busca simplificar la carga formal tributaria para pequeños empresarios, facilitando su cumplimiento."
+	},
+	{
+		"id": 4,
+		"question": "¿Qué documento fiscal es obligatorio para soportar una venta ante la DIAN?",
+		"correct_answer": "Factura electrónica de venta",
+		"incorrect_answers": ["Recibo de caja", "Cotización comercial", "Nota contable"],
+		"description": "¡¡Correcto!!! La factura electrónica de venta es el único documento aceptado por la DIAN como soporte válido para transacciones comerciales obligadas a facturar."
+	},
+	{
+		"id": 5,
+		"question": "¿Cuál de los siguientes impuestos es administrado por la DIAN?",
+		"correct_answer": "Impuesto sobre la Renta y Complementarios",
+		"incorrect_answers": ["Impuesto Predial", "Impuesto de Vehículos", "Impuesto de Alumbrado Público"],
+		"description": "¡¡Correcto!!! El Impuesto sobre la Renta y Complementarios es un tributo nacional administrado por la DIAN, a diferencia de los otros, que son de competencia territorial."
+	},
+	{
+		"id": 6,
+		"question": "¿Qué valor representa una UVT para el año gravable 2024 según la DIAN?",
+		"correct_answer": "$47.065",
+		"incorrect_answers": ["$38.004", "$45.530", "$50.000"],
+		"description": "¡¡Correcto!!! La DIAN fijó el valor de la Unidad de Valor Tributario (UVT) para el año 2024 en $47.065, mediante resolución oficial."
+	},
+	{
+		"id": 7,
+		"question": "¿Cuál de los siguientes contribuyentes puede acogerse al Régimen Simple de Tributación (RST)?",
+		"correct_answer": "Una persona natural comerciante con ingresos brutos anuales inferiores a 100.000 UVT",
+		"incorrect_answers": ["Una multinacional con presencia en varios países", "Una entidad sin ánimo de lucro", "Una empresa pública de servicios"],
+		"description": "¡¡Correcto!!! El Régimen Simple está dirigido a pequeños y medianos empresarios, incluyendo personas naturales con ingresos brutos anuales menores a 100.000 UVT."
+	},
+	{
+		"id": 8,
+		"question": "¿Qué sanción aplica si un contribuyente no presenta una declaración tributaria estando obligado a ello?",
+		"correct_answer": "Sanción por no declarar",
+		"incorrect_answers": ["Sanción por mora", "Sanción por extemporaneidad", "Sanción por evasión"],
+		"description": "¡¡Correcto!!! La sanción por no declarar se impone cuando un contribuyente no presenta una declaración obligatoria, y es una de las más graves establecidas en el Estatuto Tributario."
+	},
+	{
+		"id": 9,
+		"question": "¿Cuál es el porcentaje general del IVA en Colombia?",
+		"correct_answer": "19%",
+		"incorrect_answers": ["16%", "21%", "12%"],
+		"description": "¡¡Correcto!!! El porcentaje general del IVA en Colombia es del 19%, aunque existen tarifas diferenciales para algunos bienes y servicios."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué entidad fija el calendario tributario nacional en Colombia?",
+		"correct_answer": "Dirección de Impuestos y Aduanas Nacionales (DIAN)",
+		"incorrect_answers": ["Ministerio de Hacienda", "Gobernaciones", "Contraloría General de la República"],
+		"description": "¡¡Correcto!!! La DIAN es la entidad encargada de establecer mediante resolución el calendario tributario que deben seguir los contribuyentes a nivel nacional."
+	},
+	{
+		"id": 11,
+		"question": "¿Cuál es la función principal del Registro Único Tributario (RUT)?",
+		"correct_answer": "Identificar, ubicar y clasificar a los contribuyentes",
+		"incorrect_answers": ["Emitir facturas electrónicas", "Recaudar impuestos", "Liquidar sanciones tributarias"],
+		"description": "¡¡Correcto!!! El RUT permite identificar, ubicar y clasificar a las personas naturales y jurídicas ante la DIAN para efectos tributarios y aduaneros."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es el plazo general para declarar y pagar el IVA en el régimen común bimestral?",
+		"correct_answer": "Dentro de los plazos establecidos por la DIAN, cada dos meses",
+		"incorrect_answers": ["Cada seis meses", "Mensualmente", "Anualmente"],
+		"description": "¡¡Correcto!!! Los responsables del IVA en el régimen bimestral deben declarar y pagar este impuesto cada dos meses, siguiendo el calendario que fija la DIAN."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué tipo de retención se aplica sobre pagos por servicios prestados por personas naturales?",
+		"correct_answer": "Retención en la fuente por honorarios o servicios",
+		"incorrect_answers": ["IVA", "Régimen Simple", "Gravamen a los Movimientos Financieros"],
+		"description": "¡¡Correcto!!! La retención en la fuente por servicios u honorarios aplica cuando se contrata a una persona natural y busca recaudar anticipadamente el impuesto de renta."
+	},
+	{
+		"id": 14,
+		"question": "¿Qué obligación tributaria tiene una persona natural que alquila un inmueble y obtiene ingresos por ello?",
+		"correct_answer": "Debe declarar renta si supera los topes establecidos",
+		"incorrect_answers": ["No tiene ninguna obligación", "Debe pagar ICA obligatoriamente", "Solo debe sacar el RUT"],
+		"description": "¡¡Correcto!!! Si los ingresos por arriendo superan los topes anuales definidos en UVT, la persona natural está obligada a declarar renta."
+	},
+	{
+		"id": 15,
+		"question": "¿Qué impuesto se causa al realizar transacciones financieras en Colombia?",
+		"correct_answer": "Gravamen a los Movimientos Financieros (GMF)",
+		"incorrect_answers": ["IVA", "ICA", "Impuesto al Consumo"],
+		"description": "¡¡Correcto!!! El GMF, conocido como '4x1000', se aplica sobre los retiros o movimientos de recursos en cuentas financieras."
+	},
+	{
+		"id": 16,
+		"question": "¿Qué personas están obligadas a expedir factura electrónica en Colombia?",
+		"correct_answer": "Quienes desarrollan actividades económicas gravadas y superan topes establecidos por la DIAN",
+		"incorrect_answers": ["Solo grandes contribuyentes", "Solo personas jurídicas", "Cualquier persona natural sin importar sus ingresos"],
+		"description": "¡¡Correcto!!! La obligación de facturar electrónicamente aplica a quienes desarrollan actividades económicas y cumplen con los topes de ingresos o condiciones definidos por la DIAN."
+	},
+	{
+		"id": 17,
+		"question": "¿Cuál es el documento exigido por la DIAN para acreditar el cumplimiento de obligaciones fiscales ante terceros?",
+		"correct_answer": "Certificado de cumplimiento tributario",
+		"incorrect_answers": ["RUT", "Declaración de renta", "Factura electrónica"],
+		"description": "¡¡Correcto!!! El certificado de cumplimiento tributario es un documento emitido por la DIAN que acredita el cumplimiento de obligaciones fiscales por parte del contribuyente."
+	},
+	{
+		"id": 18,
+		"question": "¿Cuál es la tarifa general de retención en la fuente por prestación de servicios por personas naturales en 2024?",
+		"correct_answer": "10%",
+		"incorrect_answers": ["19%", "2.5%", "15%"],
+		"description": "¡¡Correcto!!! La tarifa general para personas naturales por servicios es del 10%, aunque puede variar si se cumplen ciertos requisitos como pertenecer al régimen de costos y gastos del 40%."
+	},
+	{
+		"id": 19,
+		"question": "¿Qué es el NIT en el sistema tributario colombiano?",
+		"correct_answer": "Número de Identificación Tributaria",
+		"incorrect_answers": ["Número de Identidad Técnica", "Norma de Ingreso Tributario", "Nota de Ingreso Transaccional"],
+		"description": "¡¡Correcto!!! El NIT es el Número de Identificación Tributaria, asignado por la DIAN para identificar a los contribuyentes en Colombia."
+	},
+	{
+		"id": 20,
+		"question": "¿Qué entidad tiene la función de interpretar y aplicar la normatividad tributaria en Colombia?",
+		"correct_answer": "Dirección de Impuestos y Aduanas Nacionales (DIAN)",
+		"incorrect_answers": ["Ministerio del Interior", "Superintendencia de Sociedades", "Registraduría Nacional del Estado Civil"],
+		"description": "¡¡Correcto!!! La DIAN es la autoridad competente para administrar, interpretar y aplicar las normas tributarias y aduaneras a nivel nacional."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál es el plazo para actualizar el RUT después de un cambio en la actividad económica?",
+		"correct_answer": "Un mes calendario contado a partir del cambio",
+		"incorrect_answers": ["15 días hábiles", "Tres meses", "No es obligatorio actualizarlo"],
+		"description": "¡¡Correcto!!! La actualización del RUT debe realizarse dentro del mes calendario siguiente al hecho que genera el cambio, según lo establece la DIAN."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué consecuencia puede tener no expedir factura estando obligado a hacerlo?",
+		"correct_answer": "Sanción por no facturar",
+		"incorrect_answers": ["Cierre del establecimiento sin sanción", "Solo un llamado de atención", "Multa fija de 10 UVT sin excepciones"],
+		"description": "¡¡Correcto!!! No expedir factura puede generar sanciones económicas e incluso el cierre del establecimiento, conforme al artículo 652 del Estatuto Tributario."
+	},
+	{
+		"id": 23,
+		"question": "¿Qué es la retención en la fuente en Colombia?",
+		"correct_answer": "Un mecanismo de recaudo anticipado del impuesto de renta",
+		"incorrect_answers": ["Un impuesto adicional al IVA", "Un descuento voluntario sobre el salario", "Un cobro que solo aplica a empresas grandes"],
+		"description": "¡¡Correcto!!! La retención en la fuente es un sistema mediante el cual se recauda por anticipado el impuesto de renta en el momento del pago o abono en cuenta."
+	},
+	{
+		"id": 24,
+		"question": "¿Cuál es el porcentaje del Gravamen a los Movimientos Financieros (GMF)?",
+		"correct_answer": "0.4%",
+		"incorrect_answers": ["4%", "1%", "0.2%"],
+		"description": "¡¡Correcto!!! El GMF, conocido como '4x1000', equivale al 0.4% del valor de cada retiro o movimiento gravado realizado en cuentas financieras."
+	},
+	{
+		"id": 25,
+		"question": "¿Qué documento sustituye a la factura electrónica en operaciones con personas no obligadas a facturar?",
+		"correct_answer": "Documento soporte en adquisiciones",
+		"incorrect_answers": ["Recibo de caja menor", "Nota débito", "Certificado de ingresos"],
+		"description": "¡¡Correcto!!! Cuando se adquieren bienes o servicios de personas no obligadas a facturar, se debe elaborar el documento soporte, que sustituye la factura electrónica en esos casos."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué tipo de ingreso se considera gravado en el impuesto sobre la renta para personas naturales?",
+		"correct_answer": "Los salarios y honorarios obtenidos en el año gravable",
+		"incorrect_answers": ["Las donaciones recibidas de familiares", "Los premios menores de $100.000", "Los intereses generados por cuentas de ahorro exentas"],
+		"description": "¡¡Correcto!!! Los ingresos como salarios, honorarios y otros conceptos laborales o profesionales están sujetos al impuesto sobre la renta para personas naturales."
+	},
+	{
+		"id": 27,
+		"question": "¿En qué caso se puede aplicar exoneración de aportes a salud y pensión para empleadores?",
+		"correct_answer": "Cuando se contratan trabajadores que devengan menos de 10 salarios mínimos",
+		"incorrect_answers": ["Solo si es una empresa extranjera", "Cuando los trabajadores son independientes", "Cuando el contrato es por prestación de servicios"],
+		"description": "¡¡Correcto!!! Las empresas están exoneradas de aportar salud y pensión para empleados que ganen menos de 10 SMMLV, si están sujetos al régimen ordinario del impuesto de renta."
+	},
+	{
+		"id": 28,
+		"question": "¿Cuál es el mecanismo que permite a la DIAN fiscalizar electrónicamente a los contribuyentes?",
+		"correct_answer": "Facturación electrónica y sistemas de validación previa",
+		"incorrect_answers": ["Controles manuales", "Inspección de domicilios", "Visitas presenciales rutinarias"],
+		"description": "¡¡Correcto!!! La facturación electrónica con validación previa permite a la DIAN hacer control en tiempo real sobre las operaciones de los contribuyentes."
+	},
+	{
+		"id": 29,
+		"question": "¿Qué impuesto aplica sobre la compra de bienes suntuarios como vehículos de alta gama?",
+		"correct_answer": "Impuesto al Consumo",
+		"incorrect_answers": ["IVA del 5%", "GMF", "ICA"],
+		"description": "¡¡Correcto!!! El impuesto al consumo se aplica a ciertos bienes suntuarios como vehículos de alta gama, cervezas, cigarrillos y licores, en adición al IVA."
+	},
+	{
+		"id": 30,
+		"question": "¿Qué declaración debe presentar una persona natural que recibe ingresos de varias fuentes y supera los topes establecidos?",
+		"correct_answer": "Declaración de renta",
+		"incorrect_answers": ["Declaración de IVA", "Declaración de activos en el exterior", "Declaración de importaciones"],
+		"description": "¡¡Correcto!!! Cuando una persona natural supera los topes de ingresos, patrimonio, consumos o consignaciones definidos por la DIAN, debe presentar su declaración de renta."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué sucede si un contribuyente presenta su declaración tributaria después del plazo establecido por la DIAN?",
+		"correct_answer": "Debe pagar sanción por extemporaneidad y los intereses correspondientes",
+		"incorrect_answers": ["Pierde el RUT", "Debe pagar doble impuesto", "Solo recibe un llamado de atención"],
+		"description": "¡¡Correcto!!! Si la declaración se presenta fuera del plazo, el contribuyente incurre en sanción por extemporaneidad y debe pagar intereses moratorios según el Estatuto Tributario."
+	},
+	{
+		"id": 32,
+		"question": "¿Qué es el régimen sustitutivo del impuesto sobre la renta?",
+		"correct_answer": "Es un régimen opcional llamado Régimen Simple de Tributación (RST)",
+		"incorrect_answers": ["Es el régimen ordinario tradicional", "Es el régimen para no residentes", "Es el régimen especial para empleados públicos"],
+		"description": "¡¡Correcto!!! El Régimen Simple de Tributación (RST) es un régimen sustitutivo y opcional del impuesto de renta, creado para simplificar el cumplimiento tributario."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué documento se genera automáticamente al inscribirse por primera vez en el RUT?",
+		"correct_answer": "NIT",
+		"incorrect_answers": ["Factura electrónica", "Declaración de renta", "Certificado de existencia"],
+		"description": "¡¡Correcto!!! Al inscribirse en el RUT, la DIAN asigna automáticamente un Número de Identificación Tributaria (NIT) que permite a la persona ser identificada como contribuyente."
+	},
+	{
+		"id": 34,
+		"question": "¿Cuál de los siguientes ingresos está exento del impuesto sobre la renta?",
+		"correct_answer": "Indemnización por accidente de trabajo",
+		"incorrect_answers": ["Intereses de cuentas bancarias", "Ingresos por alquiler", "Honorarios por servicios profesionales"],
+		"description": "¡¡Correcto!!! Las indemnizaciones por accidente de trabajo están exentas del impuesto sobre la renta según el Estatuto Tributario colombiano."
+	},
+	{
+		"id": 35,
+		"question": "¿Cuál es la entidad encargada de reglamentar y controlar el cumplimiento del régimen de precios de transferencia?",
+		"correct_answer": "DIAN",
+		"incorrect_answers": ["Superintendencia de Sociedades", "Banco de la República", "Contraloría General de la República"],
+		"description": "¡¡Correcto!!! La DIAN es la autoridad competente para vigilar el cumplimiento del régimen de precios de transferencia por parte de los contribuyentes que realicen operaciones con vinculados del exterior."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué instrumento permite a la DIAN conocer los ingresos y compras de los contribuyentes de forma detallada?",
+		"correct_answer": "Información exógena",
+		"incorrect_answers": ["RUT", "Declaración de IVA", "Factura electrónica"],
+		"description": "¡¡Correcto!!! La información exógena es reportada por los contribuyentes y terceros para que la DIAN cruce datos sobre ingresos, compras, pagos, entre otros."
+	},
+	{
+		"id": 37,
+		"question": "¿En qué casos se requiere presentar la Declaración de activos en el exterior?",
+		"correct_answer": "Cuando el valor de los activos en el exterior supera 2.000 UVT",
+		"incorrect_answers": ["Cuando se tiene cualquier activo en el exterior", "Solo si se tiene residencia fiscal en el exterior", "Si se ha hecho inversión extranjera directa"],
+		"description": "¡¡Correcto!!! Esta declaración aplica para personas naturales y jurídicas que posean activos en el exterior superiores a 2.000 UVT."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué tarifa general del IVA se aplica en Colombia a la mayoría de bienes y servicios gravados?",
+		"correct_answer": "19%",
+		"incorrect_answers": ["5%", "10%", "16%"],
+		"description": "¡¡Correcto!!! La tarifa general del IVA en Colombia es del 19%, aunque existen tarifas diferenciales para ciertos productos y servicios."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué tipo de persona natural no está obligada a declarar renta?",
+		"correct_answer": "Quien no supera los topes de ingresos, patrimonio, consumos o consignaciones establecidos",
+		"incorrect_answers": ["Quien tiene RUT", "Quien trabaja por cuenta propia", "Quien no factura electrónicamente"],
+		"description": "¡¡Correcto!!! Solo están obligadas a declarar renta las personas naturales que superan los topes definidos anualmente por la DIAN."
+	},
+	{
+		"id": 40,
+		"question": "¿Cuál es el objetivo principal del Régimen Simple de Tributación (RST)?",
+		"correct_answer": "Facilitar el cumplimiento tributario y reducir la carga impositiva",
+		"incorrect_answers": ["Eliminar la obligación de declarar", "Evitar el pago del IVA", "Controlar el contrabando"],
+		"description": "¡¡Correcto!!! El RST busca simplificar el cumplimiento de obligaciones y ofrecer una tarifa integrada más favorable a pequeños empresarios."
+	},
+	{
+		"id": 41,
+		"question": "¿Qué entidad es competente para imponer sanciones tributarias en Colombia?",
+		"correct_answer": "DIAN",
+		"incorrect_answers": ["Procuraduría General", "Ministerio de Hacienda", "Contaduría General de la Nación"],
+		"description": "¡¡Correcto!!! La DIAN es la autoridad competente para aplicar sanciones a los contribuyentes que incumplen sus deberes fiscales."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué documento sustituye el uso de la firma en la facturación electrónica?",
+		"correct_answer": "Firma digital o electrónica autorizada por la DIAN",
+		"incorrect_answers": ["Cédula escaneada", "RUT", "Certificado de existencia"],
+		"description": "¡¡Correcto!!! La facturación electrónica debe contar con firma digital o electrónica validada por la DIAN para garantizar autenticidad e integridad."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué significa la sigla UVT en el sistema tributario colombiano?",
+		"correct_answer": "Unidad de Valor Tributario",
+		"incorrect_answers": ["Unidad de Verificación Tributaria", "Utilidad Variable Tributaria", "Unidad de Valor Técnico"],
+		"description": "¡¡Correcto!!! La UVT es un valor estandarizado que permite unificar y actualizar valores tributarios cada año."
+	},
+	{
+		"id": 44,
+		"question": "¿Qué sanción puede imponer la DIAN por no actualizar el RUT cuando es obligatorio?",
+		"correct_answer": "Sanción por no informar, según el artículo 658-3 del E.T.",
+		"incorrect_answers": ["Suspensión del NIT", "Sanción penal", "Revocatoria de la declaración de renta"],
+		"description": "¡¡Correcto!!! La omisión en la actualización del RUT puede dar lugar a la sanción por no informar, conforme a lo dispuesto en el Estatuto Tributario."
+	},
+	{
+		"id": 45,
+		"question": "¿Cuál es el principal impuesto territorial que deben pagar los comerciantes y empresas a nivel municipal?",
+		"correct_answer": "Impuesto de Industria y Comercio (ICA)",
+		"incorrect_answers": ["IVA", "GMF", "Impuesto al Consumo"],
+		"description": "¡¡Correcto!!! El ICA es un impuesto municipal que grava las actividades industriales, comerciales y de servicios realizadas dentro del municipio."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué documento permite acreditar la residencia fiscal en Colombia?",
+		"correct_answer": "Certificado de residencia fiscal emitido por la DIAN",
+		"incorrect_answers": ["Cédula de ciudadanía", "Pasaporte colombiano", "RUT"],
+		"description": "¡¡Correcto!!! La DIAN emite este certificado para acreditar oficialmente la residencia fiscal de una persona natural o jurídica ante terceros, especialmente en el exterior."
+	},
+	{
+		"id": 47,
+		"question": "¿Cuál es el propósito del Estatuto Tributario en Colombia?",
+		"correct_answer": "Regular el sistema de impuestos y obligaciones tributarias",
+		"incorrect_answers": ["Regular la política monetaria", "Establecer reglas comerciales internacionales", "Controlar las exportaciones"],
+		"description": "¡¡Correcto!!! El Estatuto Tributario contiene las normas que regulan la administración, recaudo y fiscalización de los tributos administrados por la DIAN."
+	},
+	{
+		"id": 48,
+		"question": "¿Qué tipo de contribuyente está obligado a llevar contabilidad según el Código de Comercio y normas fiscales?",
+		"correct_answer": "Las personas jurídicas y algunas personas naturales que superan topes",
+		"incorrect_answers": ["Solo los asalariados", "Personas naturales sin ingresos", "Todos los ciudadanos mayores de edad"],
+		"description": "¡¡Correcto!!! Están obligados a llevar contabilidad las personas jurídicas y aquellas naturales que, por ingresos o actividad económica, así lo exige la ley."
+	},
+	{
+		"id": 49,
+		"question": "¿Qué función cumple el código CIIU en el RUT?",
+		"correct_answer": "Identificar la actividad económica del contribuyente",
+		"incorrect_answers": ["Definir la zona de residencia", "Asignar el monto de impuestos a pagar", "Registrar el nivel educativo"],
+		"description": "¡¡Correcto!!! El CIIU (Clasificación Industrial Internacional Uniforme) indica la actividad económica del contribuyente y es clave para su categorización tributaria."
+	},
+	{
+		"id": 50,
+		"question": "¿Qué pasa si un contribuyente omite ingresos en su declaración tributaria?",
+		"correct_answer": "Puede ser sancionado por inexactitud",
+		"incorrect_answers": ["La DIAN cierra el RUT", "Solo debe corregir sin consecuencias", "Pierde beneficios de IVA"],
+		"description": "¡¡Correcto!!! Omitir ingresos constituye una falta que puede ser sancionada por inexactitud, de acuerdo con el artículo 647 del Estatuto Tributario."
 	}
 
 ]
@@ -2734,6 +3078,367 @@ export const conductualesInterpersonales = [
 		correct_answer: 'Prefiero esperar a que se impartan lineamientos por parte del nivel central.',
 		incorrect_answers: ['Tomo la iniciativa de mejorarlo para aportar con los objetivos de la entidad.', 'Investigo a fondo sobre el tema, con el fin de adquirir nuevos conocimientos que puedan ayudar.'],
 		description: '¡¡¡Correcto!!! Nótese que las tres opciones de respuesta son totalmente validas, pero al verificar las competencias conductuales del cargo, se evidencia que no tiene iniciativa o aporte técnico profesional, razón por la cual la respuesta esta respuesta representa la adaptación.'
+	},
+	{
+		"id": 10,
+		"question": "¿Qué actitud es más adecuada al trabajar en equipo?",
+		"correct_answer": "Escuchar activamente a los demás y aportar ideas con respeto",
+		"incorrect_answers": ["Imponer decisiones para que el grupo avance rápido", "Delegar todo y no intervenir", "Criticar sin proponer soluciones"],
+		"description": "¡¡Correcto!!! Escuchar y participar activamente demuestra habilidades colaborativas esenciales en entornos laborales efectivos."
+	},
+	{
+		"id": 11,
+		"question": "Ante un conflicto con un compañero de trabajo, ¿cuál es la mejor respuesta?",
+		"correct_answer": "Buscar el diálogo para resolver el malentendido de forma constructiva",
+		"incorrect_answers": ["Ignorar el problema esperando que desaparezca", "Reportarlo directamente sin hablar con él", "Reaccionar emocionalmente y discutir"],
+		"description": "¡¡Correcto!!! El diálogo abierto permite resolver conflictos de forma madura, promoviendo el respeto y la convivencia laboral."
+	},
+	{
+		"id": 12,
+		"question": "Si notas que un compañero está teniendo dificultades con una tarea, ¿qué deberías hacer?",
+		"correct_answer": "Ofrecer ayuda si está dentro de tus posibilidades y sin afectar tus responsabilidades",
+		"incorrect_answers": ["Evitar involucrarte porque no es tu función", "Criticar su falta de habilidad", "Reportarlo al jefe sin comentarlo con él"],
+		"description": "¡¡Correcto!!! Brindar apoyo demuestra empatía y compromiso con el trabajo en equipo."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué comportamiento demuestra inteligencia emocional en el trabajo?",
+		"correct_answer": "Reconocer y manejar adecuadamente tus emociones y las de los demás",
+		"incorrect_answers": ["Ocultar todas tus emociones", "Expresar enojo sin filtros", "Imponer tu punto de vista en todo momento"],
+		"description": "¡¡Correcto!!! La inteligencia emocional permite regular emociones, empatizar y mantener relaciones laborales saludables."
+	},
+	{
+		"id": 14,
+		"question": "En una reunión donde todos opinan diferente, ¿qué conducta es más efectiva?",
+		"correct_answer": "Escuchar, valorar las ideas y buscar consensos con respeto",
+		"incorrect_answers": ["Insistir en tu idea porque estás convencido", "Guardar silencio y no participar", "Desacreditar a quien no está de acuerdo"],
+		"description": "¡¡Correcto!!! La escucha activa y el respeto por las diferencias fortalecen la toma de decisiones colectivas y el clima organizacional."
+	},
+	{
+		"id": 15,
+		"question": "¿Qué es lo más recomendable cuando se recibe una crítica constructiva en el trabajo?",
+		"correct_answer": "Escuchar con atención y reflexionar sobre lo que se puede mejorar",
+		"incorrect_answers": ["Responder a la defensiva", "Ignorar la crítica", "Buscar justificar el error sin aceptar responsabilidad"],
+		"description": "¡¡Correcto!!! La crítica constructiva es una oportunidad para el crecimiento profesional y debe ser recibida con apertura."
+	},
+	{
+		"id": 16,
+		"question": "Cuando se trabaja bajo presión, ¿cuál es una actitud adecuada?",
+		"correct_answer": "Organizar prioridades y mantener la calma para cumplir con lo requerido",
+		"incorrect_answers": ["Acelerar todo sin planificación", "Culpar a otros por el estrés", "Abandonar responsabilidades temporalmente"],
+		"description": "¡¡Correcto!!! Manejar la presión con organización y control emocional es clave para el rendimiento laboral."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué muestra una buena habilidad de comunicación interpersonal?",
+		"correct_answer": "Transmitir ideas de forma clara, respetuosa y con empatía",
+		"incorrect_answers": ["Hablar rápido para terminar pronto", "Usar tecnicismos para impresionar", "Evitar el contacto visual y hablar poco"],
+		"description": "¡¡Correcto!!! Comunicar de manera efectiva implica claridad, empatía y adecuación al contexto."
+	},
+	{
+		"id": 18,
+		"question": "Cuando un proyecto requiere colaboración entre diferentes áreas, ¿qué conducta favorece el éxito?",
+		"correct_answer": "Fomentar la cooperación y el respeto entre los equipos",
+		"incorrect_answers": ["Trabajar de forma independiente sin consultar", "Criticar las decisiones de otras áreas", "Restringir el flujo de información"],
+		"description": "¡¡Correcto!!! La cooperación interdepartamental fortalece los resultados y mejora el ambiente laboral."
+	},
+	{
+		"id": 19,
+		"question": "Si estás en desacuerdo con una instrucción de tu jefe, ¿qué es lo más apropiado?",
+		"correct_answer": "Exponer tu punto de vista con respeto y argumentos válidos",
+		"incorrect_answers": ["Desobedecer sin avisar", "Discutir frente al equipo", "Guardar silencio pero actuar en contra"],
+		"description": "¡¡Correcto!!! Es válido expresar desacuerdos, siempre que se haga de manera respetuosa y profesional."
+	},
+	{
+		"id": 20,
+		"question": "¿Cuál de las siguientes acciones refleja mejor un liderazgo positivo?",
+		"correct_answer": "Motivar al equipo con el ejemplo y promover un ambiente de confianza",
+		"incorrect_answers": ["Delegar todo y ausentarse del proceso", "Imponer decisiones sin consultar", "Ignorar las preocupaciones del equipo"],
+		"description": "¡¡Correcto!!! Un líder positivo guía con el ejemplo, escucha y genera confianza, lo cual fortalece el compromiso del equipo."
+	},
+	{
+		"id": 21,
+		"question": "En una situación de conflicto entre dos miembros del equipo, ¿qué debería hacer un buen líder?",
+		"correct_answer": "Intervenir para facilitar el diálogo y buscar una solución justa para ambas partes",
+		"incorrect_answers": ["Tomar partido rápidamente", "Evitar involucrarse para no complicarse", "Ignorar el conflicto esperando que se resuelva solo"],
+		"description": "¡¡Correcto!!! Un líder efectivo actúa como mediador y promueve una resolución justa que mantenga la armonía y el respeto en el equipo."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué comportamiento demuestra una buena gestión de conflictos?",
+		"correct_answer": "Buscar comprender las causas y promover acuerdos mediante el diálogo",
+		"incorrect_answers": ["Imponer una solución sin escuchar", "Rechazar cualquier reclamo", "Minimizar el conflicto para evitar actuar"],
+		"description": "¡¡Correcto!!! La resolución efectiva de conflictos requiere análisis, empatía y comunicación clara para llegar a soluciones duraderas."
+	},
+	{
+		"id": 23,
+		"question": "¿Cuál es una característica esencial de un líder que resuelve problemas de manera efectiva?",
+		"correct_answer": "Capacidad de análisis y toma de decisiones basadas en hechos",
+		"incorrect_answers": ["Evita decisiones difíciles", "Reacciona emocionalmente ante los problemas", "Depende exclusivamente de su equipo para decidir"],
+		"description": "¡¡Correcto!!! Un líder eficaz analiza la situación con objetividad y toma decisiones estratégicas orientadas a resultados."
+	},
+	{
+		"id": 24,
+		"question": "¿Qué actitud fortalece la autoridad de un líder ante el equipo?",
+		"correct_answer": "Ser coherente entre lo que dice y lo que hace",
+		"incorrect_answers": ["Dar órdenes sin explicaciones", "Exigir resultados sin acompañamiento", "Cambiar constantemente de opinión sin justificarlo"],
+		"description": "¡¡Correcto!!! La coherencia fortalece la credibilidad y el respeto hacia el liderazgo dentro del equipo de trabajo."
+	},
+	{
+		"id": 25,
+		"question": "¿Cuál es la mejor forma de tomar decisiones en un entorno laboral?",
+		"correct_answer": "Analizar la situación, considerar alternativas y elegir la más adecuada con base en datos",
+		"incorrect_answers": ["Tomar decisiones rápidas sin información", "Delegar siempre en otros", "Evitar decidir por temor a equivocarse"],
+		"description": "¡¡Correcto!!! La toma de decisiones efectiva requiere análisis, responsabilidad y objetividad para lograr los mejores resultados."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué actitud refleja una buena capacidad de adaptabilidad?",
+		"correct_answer": "Aceptar los cambios con disposición y buscar cómo aportar desde tu rol",
+		"incorrect_answers": ["Resistirse a los cambios constantemente", "Esperar instrucciones sin involucrarse", "Criticar las nuevas políticas sin proponer nada"],
+		"description": "¡¡Correcto!!! Ser adaptable implica responder positivamente al cambio y contribuir al éxito del proceso de transformación."
+	},
+	{
+		"id": 27,
+		"question": "Ante una situación que compromete la ética en el trabajo, ¿qué deberías hacer?",
+		"correct_answer": "Actuar con integridad y reportar la situación siguiendo los canales adecuados",
+		"incorrect_answers": ["Guardar silencio para evitar conflictos", "Ignorarla si no te afecta directamente", "Aprovechar la situación si te beneficia"],
+		"description": "¡¡Correcto!!! La ética laboral implica actuar con responsabilidad, denunciar irregularidades y mantener altos estándares morales."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué es esencial en la atención al cliente?",
+		"correct_answer": "Escuchar con empatía, brindar soluciones claras y mantener una actitud cordial",
+		"incorrect_answers": ["Hablar rápido para terminar pronto", "Culpar al cliente por errores", "Responder de forma mecánica sin personalización"],
+		"description": "¡¡Correcto!!! Una atención al cliente efectiva se basa en empatía, claridad y cortesía para satisfacer las necesidades del usuario."
+	},
+	{
+		"id": 29,
+		"question": "¿Cuál es una característica de la comunicación asertiva?",
+		"correct_answer": "Expresar tus ideas de forma clara y respetuosa, cuidando el impacto en los demás",
+		"incorrect_answers": ["Evitar decir lo que piensas para no incomodar", "Imponer tu opinión con firmeza", "Responder de forma evasiva ante preguntas incómodas"],
+		"description": "¡¡Correcto!!! La comunicación asertiva equilibra la honestidad con el respeto, facilitando relaciones interpersonales saludables."
+	},
+	{
+		"id": 30,
+		"question": "Cuando debes cumplir múltiples tareas en poco tiempo, ¿qué es lo más efectivo?",
+		"correct_answer": "Organizar las actividades por prioridad y establecer tiempos realistas",
+		"incorrect_answers": ["Realizar todo al mismo tiempo sin orden", "Hacer primero lo más fácil", "Dejar para el final lo que no te gusta hacer"],
+		"description": "¡¡Correcto!!! La organización y priorización permiten un uso más eficiente del tiempo y mejoran el rendimiento bajo presión."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué actitud demuestra empatía en el entorno laboral?",
+		"correct_answer": "Ponerse en el lugar del otro y ofrecer apoyo sin juzgar",
+		"incorrect_answers": ["Aconsejar sin escuchar", "Minimizar los problemas de los demás", "Evitar involucrarse en asuntos personales del equipo"],
+		"description": "¡¡Correcto!!! La empatía fortalece las relaciones laborales y contribuye a un clima organizacional saludable."
+	},
+	{
+		"id": 32,
+		"question": "¿Cómo se puede fomentar la innovación en el trabajo?",
+		"correct_answer": "Proponiendo ideas nuevas y estando abierto a diferentes formas de hacer las cosas",
+		"incorrect_answers": ["Evitando cambios en procesos ya establecidos", "Siguiendo instrucciones al pie de la letra sin preguntar", "Rechazando propuestas que no conoces"],
+		"description": "¡¡Correcto!!! La innovación requiere apertura al cambio, creatividad y disposición para mejorar continuamente."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué comportamiento demuestra compromiso organizacional?",
+		"correct_answer": "Cumplir tus funciones con responsabilidad y contribuir a los objetivos de la organización",
+		"incorrect_answers": ["Solo hacer lo mínimo requerido", "Buscar excusas para delegar tu trabajo", "Trabajar bien solo cuando eres supervisado"],
+		"description": "¡¡Correcto!!! El compromiso se refleja en la responsabilidad, proactividad y alineación con la misión de la organización."
+	},
+	{
+		"id": 34,
+		"question": "Si un compañero recibe el mérito por un logro que fue tuyo, ¿qué es lo más adecuado?",
+		"correct_answer": "Hablar con respeto y aclarar la situación con tu superior o con el compañero",
+		"incorrect_answers": ["Ignorarlo para evitar conflictos", "Reclamar públicamente", "Contarle a otros compañeros para que se enteren"],
+		"description": "¡¡Correcto!!! Aclarar la situación con respeto evita malentendidos y reafirma tu profesionalismo."
+	},
+	{
+		"id": 35,
+		"question": "¿Cómo puedes demostrar liderazgo si no tienes un cargo directivo?",
+		"correct_answer": "Tomando iniciativa, colaborando y siendo un ejemplo para otros",
+		"incorrect_answers": ["Esperando instrucciones", "Evitando responsabilidades adicionales", "Solo enfocándote en tus tareas"],
+		"description": "¡¡Correcto!!! El liderazgo no depende del cargo, sino de la actitud y el impacto positivo en el equipo."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué actitud favorece la solución de problemas en grupo?",
+		"correct_answer": "Escuchar diferentes opiniones y buscar acuerdos en conjunto",
+		"incorrect_answers": ["Insistir solo en tu punto de vista", "Dejar que el líder decida todo", "Evitar participar para no generar conflicto"],
+		"description": "¡¡Correcto!!! La solución colaborativa promueve decisiones más efectivas y fortalece el trabajo en equipo."
+	},
+	{
+		"id": 37,
+		"question": "Cuando un cliente se muestra molesto, ¿qué deberías hacer?",
+		"correct_answer": "Escuchar con calma, mostrar comprensión y buscar una solución",
+		"incorrect_answers": ["Responder con el mismo tono", "Cortar la conversación lo antes posible", "Culpar a otro compañero del problema"],
+		"description": "¡¡Correcto!!! Mantener la calma y buscar soluciones demuestra profesionalismo y mejora la experiencia del cliente."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué acción demuestra responsabilidad laboral?",
+		"correct_answer": "Cumplir con tus tareas en los plazos establecidos y con calidad",
+		"incorrect_answers": ["Pedir constantemente que te recuerden las tareas", "Cumplir solo cuando te supervisan", "Esperar a último momento para comenzar"],
+		"description": "¡¡Correcto!!! La responsabilidad se refleja en la autonomía, el cumplimiento oportuno y la calidad del trabajo realizado."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué actitud favorece un ambiente de trabajo positivo?",
+		"correct_answer": "Mantener una comunicación clara, respetuosa y con disposición a colaborar",
+		"incorrect_answers": ["Hablar solo con personas afines", "Evitar contacto con compañeros", "Participar en rumores del entorno laboral"],
+		"description": "¡¡Correcto!!! La comunicación positiva y la colaboración construyen relaciones laborales sanas y un clima organizacional productivo."
+	},
+	{
+		"id": 40,
+		"question": "¿Qué es importante para un líder al delegar tareas?",
+		"correct_answer": "Asignar responsabilidades claras y ofrecer apoyo cuando sea necesario",
+		"incorrect_answers": ["Delegar sin explicar ni supervisar", "Asignar tareas solo a personas cercanas", "Hacer todo tú mismo para evitar errores"],
+		"description": "¡¡Correcto!!! Delegar correctamente implica comunicación clara y acompañamiento para asegurar el cumplimiento."
+	},
+	{
+		"id": 41,
+		"question": "Cuando te equivocas en el trabajo, ¿qué actitud es la más adecuada?",
+		"correct_answer": "Reconocer el error y buscar soluciones para corregirlo",
+		"incorrect_answers": ["Ocultar el error", "Culpar a otros", "Ignorar la situación y continuar"],
+		"description": "¡¡Correcto!!! La honestidad y la proactividad frente a los errores fortalecen la confianza y la mejora continua."
+	},
+	{
+		"id": 42,
+		"question": "¿Cómo debe manejar un líder la diversidad en su equipo?",
+		"correct_answer": "Valorando las diferencias y fomentando un ambiente inclusivo",
+		"incorrect_answers": ["Ignorando las diferencias para evitar conflictos", "Exigiendo que todos sean iguales", "Separando al equipo por características"],
+		"description": "¡¡Correcto!!! La diversidad aporta riqueza de ideas y fortalece la creatividad y el desempeño del equipo."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué es fundamental para resolver un conflicto de manera efectiva?",
+		"correct_answer": "Escuchar a todas las partes y buscar un acuerdo beneficioso para todos",
+		"incorrect_answers": ["Imponer una solución rápida", "Evitar la confrontación y dejar que siga", "Tomar partido por una de las partes"],
+		"description": "¡¡Correcto!!! La resolución efectiva requiere diálogo, imparcialidad y búsqueda de consensos."
+	},
+	{
+		"id": 44,
+		"question": "¿Cuál es la mejor forma de motivar a un equipo de trabajo?",
+		"correct_answer": "Reconociendo sus logros y fomentando un ambiente de respeto y colaboración",
+		"incorrect_answers": ["Exigiendo más sin reconocimiento", "Ignorando las necesidades del equipo", "Fomentando la competencia desleal entre ellos"],
+		"description": "¡¡Correcto!!! La motivación positiva aumenta la productividad y el compromiso laboral."
+	},
+	{
+		"id": 45,
+		"question": "Ante un cambio inesperado en el trabajo, ¿qué debe hacer un empleado?",
+		"correct_answer": "Adaptarse rápidamente y buscar cómo contribuir positivamente al cambio",
+		"incorrect_answers": ["Resistirse y negarse a cambiar", "Quejarse sin proponer soluciones", "Ignorar las nuevas directrices"],
+		"description": "¡¡Correcto!!! La adaptabilidad es clave para la resiliencia y el éxito en entornos dinámicos."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué comportamiento demuestra ética profesional?",
+		"correct_answer": "Cumplir con las normas y actuar con honestidad en todas las circunstancias",
+		"incorrect_answers": ["Tomar atajos que perjudican a otros", "Ocultar información relevante", "Apropiarse de resultados ajenos"],
+		"description": "¡¡Correcto!!! La ética profesional garantiza confianza, reputación y un ambiente laboral justo."
+	},
+	{
+		"id": 47,
+		"question": "En una reunión, ¿qué actitud ayuda a una comunicación efectiva?",
+		"correct_answer": "Escuchar activamente y respetar las opiniones de los demás",
+		"incorrect_answers": ["Interrumpir para imponer tu punto", "Desconectarte y no participar", "Criticar sin argumentos claros"],
+		"description": "¡¡Correcto!!! La comunicación efectiva se basa en la escucha activa y el respeto mutuo."
+	},
+	{
+		"id": 48,
+		"question": "¿Cómo puedes demostrar liderazgo en situaciones de crisis?",
+		"correct_answer": "Manteniendo la calma, tomando decisiones claras y apoyando al equipo",
+		"incorrect_answers": ["Entrando en pánico y delegando todo", "Esconder información importante", "Actuar impulsivamente sin pensar"],
+		"description": "¡¡Correcto!!! El liderazgo en crisis requiere control emocional y claridad para guiar efectivamente."
+	},
+	{
+		"id": 49,
+		"question": "¿Qué es lo más importante en la atención a un cliente insatisfecho?",
+		"correct_answer": "Escuchar sus quejas con empatía y ofrecer soluciones rápidas y claras",
+		"incorrect_answers": ["Ignorar sus comentarios", "Culpar a otros departamentos", "Responder de forma defensiva"],
+		"description": "¡¡Correcto!!! La atención al cliente efectiva mejora la experiencia y la fidelización."
+	},
+	{
+		"id": 50,
+		"question": "¿Qué significa ser proactivo en el trabajo?",
+		"correct_answer": "Anticiparse a los problemas y buscar soluciones antes de que ocurran",
+		"incorrect_answers": ["Esperar instrucciones para actuar", "Reaccionar solo cuando hay problemas", "Evitar responsabilidades extras"],
+		"description": "¡¡Correcto!!! La proactividad implica iniciativa y responsabilidad para mejorar procesos y evitar inconvenientes."
+	},
+	{
+		"id": 51,
+		"question": "¿Cuál es una señal de que un líder tiene inteligencia emocional?",
+		"correct_answer": "Sabe controlar sus emociones y entender las de los demás",
+		"incorrect_answers": ["Ignora sus sentimientos para enfocarse solo en resultados", "Reacciona impulsivamente ante el estrés", "No considera las emociones del equipo"],
+		"description": "¡¡Correcto!!! La inteligencia emocional permite un liderazgo efectivo y relaciones laborales saludables."
+	},
+	{
+		"id": 52,
+		"question": "¿Qué debe hacer un empleado cuando recibe una crítica constructiva?",
+		"correct_answer": "Escuchar atentamente y utilizarla para mejorar su desempeño",
+		"incorrect_answers": ["Responder con defensividad", "Ignorar la crítica", "Quejarse con otros compañeros"],
+		"description": "¡¡Correcto!!! La capacidad de recibir retroalimentación es clave para el desarrollo profesional."
+	},
+	{
+		"id": 53,
+		"question": "En la resolución de conflictos, ¿qué rol es fundamental para un mediador?",
+		"correct_answer": "Facilitar la comunicación y ayudar a encontrar acuerdos mutuos",
+		"incorrect_answers": ["Imponer una solución sin consenso", "Tomar partido por uno de los involucrados", "Ignorar el problema esperando que desaparezca"],
+		"description": "¡¡Correcto!!! El mediador debe ser imparcial y buscar soluciones que satisfagan a todas las partes."
+	},
+	{
+		"id": 54,
+		"question": "¿Qué característica es esencial para trabajar efectivamente en equipo?",
+		"correct_answer": "Colaborar y respetar las ideas de los demás",
+		"incorrect_answers": ["Trabajar individualmente para destacar", "Competir con los compañeros", "Ignorar las opiniones del grupo"],
+		"description": "¡¡Correcto!!! La colaboración y el respeto fortalecen el trabajo en equipo y los resultados colectivos."
+	},
+	{
+		"id": 55,
+		"question": "¿Cuál es una práctica ética al manejar información confidencial?",
+		"correct_answer": "Mantener la confidencialidad y compartir solo con personas autorizadas",
+		"incorrect_answers": ["Compartir la información con quien lo solicite", "Usar la información para beneficio personal", "Ignorar los protocolos de seguridad"],
+		"description": "¡¡Correcto!!! La ética exige proteger la información y respetar las normas de confidencialidad."
+	},
+	{
+		"id": 56,
+		"question": "¿Qué actitud facilita el manejo del estrés laboral?",
+		"correct_answer": "Practicar la organización, pedir apoyo y mantener una actitud positiva",
+		"incorrect_answers": ["Ignorar las responsabilidades", "Evitar los retos y nuevas tareas", "Reaccionar de forma agresiva"],
+		"description": "¡¡Correcto!!! Gestionar el estrés con organización y apoyo contribuye al bienestar y desempeño."
+	},
+	{
+		"id": 57,
+		"question": "¿Cuál es un beneficio de la comunicación asertiva en el trabajo?",
+		"correct_answer": "Mejora la comprensión y reduce los malentendidos",
+		"incorrect_answers": ["Genera conflictos frecuentes", "Produce confusión en los mensajes", "Evita la expresión de ideas propias"],
+		"description": "¡¡Correcto!!! La comunicación asertiva facilita relaciones claras y efectivas."
+	},
+	{
+		"id": 58,
+		"question": "¿Qué es clave para mantener la motivación en el trabajo diario?",
+		"correct_answer": "Establecer metas claras y reconocer los avances",
+		"incorrect_answers": ["Trabajar sin pausas ni descansos", "Ignorar el reconocimiento personal", "Dejar las metas indefinidas"],
+		"description": "¡¡Correcto!!! Las metas y el reconocimiento mantienen el enfoque y la energía para cumplir objetivos."
+	},
+	{
+		"id": 59,
+		"question": "¿Cómo debe actuar un líder para generar confianza en su equipo?",
+		"correct_answer": "Siendo transparente, cumpliendo compromisos y escuchando activamente",
+		"incorrect_answers": ["Ocultando información para mantener control", "Prometiendo cosas que no puede cumplir", "Ignorando las inquietudes del equipo"],
+		"description": "¡¡Correcto!!! La confianza se construye con honestidad, coherencia y comunicación abierta."
+	},
+	{
+		"id": 60,
+		"question": "¿Qué actitud es clave para manejar efectivamente la crítica negativa en el trabajo?",
+		"correct_answer": "Analizarla objetivamente y usarla para mejorar sin tomarla personalmente",
+		"incorrect_answers": [
+			"Responder de forma defensiva y argumentar",
+			"Ignorarla completamente",
+			"Quejarse con los compañeros"
+		],
+		"description": "¡¡Correcto!!! Manejar la crítica con objetividad y apertura contribuye al crecimiento profesional y evita conflictos."
 	}
 
 
@@ -2741,11 +3446,554 @@ export const conductualesInterpersonales = [
 
 export const tramites_Servicios = [
 	{
-		id: 1,
-		question: '',
-		correct_answer: '',
-		incorrect_answers: ['', '', ''],
-		description: ''
+		"id": 1,
+		"question": "¿Cuál es el trámite básico para obtener la cédula de ciudadanía en Colombia?",
+		"correct_answer": "Registrar la solicitud ante la Registraduría Nacional del Estado Civil",
+		"incorrect_answers": [
+			"Solicitarla en la alcaldía local",
+			"Realizar el trámite en la Fiscalía General",
+			"Hacer la solicitud en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La Registraduría Nacional es la entidad encargada de expedir la cédula de ciudadanía en Colombia."
+	},
+	{
+		"id": 2,
+		"question": "¿Cuál es el documento necesario para solicitar un pasaporte colombiano?",
+		"correct_answer": "Cédula de ciudadanía válida y en buen estado",
+		"incorrect_answers": [
+			"Registro civil de nacimiento",
+			"Licencia de conducción",
+			"Carnet de afiliación a salud"
+		],
+		"description": "¡¡Correcto!!! La cédula de ciudadanía es el documento principal requerido para solicitar el pasaporte."
+	},
+	{
+		"id": 3,
+		"question": "¿Dónde se realiza el trámite para obtener el RUT (Registro Único Tributario) en Colombia?",
+		"correct_answer": "En la DIAN (Dirección de Impuestos y Aduanas Nacionales)",
+		"incorrect_answers": [
+			"En la Alcaldía Municipal",
+			"En la Cámara de Comercio",
+			"En la Secretaría de Salud"
+		],
+		"description": "¡¡Correcto!!! La DIAN es la entidad encargada de registrar el RUT para las personas naturales y jurídicas."
+	},
+	{
+		"id": 4,
+		"question": "¿Cuál es el trámite para obtener una licencia de conducción en Colombia?",
+		"correct_answer": "Realizar un curso de conducción autorizado y aprobar el examen teórico y práctico",
+		"incorrect_answers": [
+			"Solicitar directamente en la Secretaría de Movilidad sin curso",
+			"Comprar la licencia en un centro autorizado",
+			"Enviar una carta a la Policía Nacional"
+		],
+		"description": "¡¡Correcto!!! Para obtener la licencia de conducción se debe cumplir con el curso y aprobar los exámenes requeridos."
+	},
+	{
+		"id": 5,
+		"question": "¿Qué entidad es responsable de registrar los actos civiles como nacimientos, matrimonios y defunciones?",
+		"correct_answer": "La Registraduría Nacional del Estado Civil",
+		"incorrect_answers": [
+			"La DIAN",
+			"La Alcaldía Municipal",
+			"La Secretaría de Salud"
+		],
+		"description": "¡¡Correcto!!! La Registraduría tiene la función de registrar los actos civiles en Colombia."
+	},
+	{
+		"id": 6,
+		"question": "¿Cuál es el trámite para registrar una empresa en Colombia?",
+		"correct_answer": "Inscribir la empresa en la Cámara de Comercio correspondiente",
+		"incorrect_answers": [
+			"Registrar la empresa en la DIAN directamente",
+			"Solicitar permiso en la Alcaldía sin registro",
+			"Hacer la inscripción en la Policía Nacional"
+		],
+		"description": "¡¡Correcto!!! La Cámara de Comercio es la entidad encargada de registrar y formalizar las empresas."
+	},
+	{
+		"id": 7,
+		"question": "¿Qué documento es fundamental para realizar trámites bancarios en Colombia?",
+		"correct_answer": "Cédula de ciudadanía o documento de identificación válido",
+		"incorrect_answers": [
+			"Licencia de conducción",
+			"Pasaporte",
+			"Registro civil"
+		],
+		"description": "¡¡Correcto!!! La cédula o documento de identificación es necesario para validar la identidad en entidades bancarias."
+	},
+	{
+		"id": 8,
+		"question": "¿Cuál es el organismo encargado de expedir la licencia de construcción en Colombia?",
+		"correct_answer": "La Alcaldía Municipal o Distrital",
+		"incorrect_answers": [
+			"La Cámara de Comercio",
+			"La DIAN",
+			"El Ministerio de Vivienda"
+		],
+		"description": "¡¡Correcto!!! Las alcaldías otorgan las licencias de construcción para garantizar el cumplimiento de normas urbanísticas."
+	},
+	{
+		"id": 9,
+		"question": "¿Para qué sirve el certificado de antecedentes judiciales en Colombia?",
+		"correct_answer": "Para demostrar que una persona no tiene antecedentes penales",
+		"incorrect_answers": [
+			"Para comprobar el historial crediticio",
+			"Para obtener la licencia de conducción",
+			"Para registrar una empresa"
+		],
+		"description": "¡¡Correcto!!! Este certificado es un requisito común en procesos laborales y judiciales para validar la buena conducta."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué entidad expide el registro civil de nacimiento en Colombia?",
+		"correct_answer": "La Registraduría Nacional del Estado Civil",
+		"incorrect_answers": [
+			"La Alcaldía",
+			"La Secretaría de Salud",
+			"La DIAN"
+		],
+		"description": "¡¡Correcto!!! La Registraduría es responsable de expedir el registro civil, documento fundamental para la identidad."
+	},
+	{
+		"id": 11,
+		"question": "¿Qué trámite se debe realizar para cambiar de nombre legalmente en Colombia?",
+		"correct_answer": "Solicitar un proceso judicial ante un juez de familia",
+		"incorrect_answers": [
+			"Hacer la solicitud en la Alcaldía",
+			"Registrar el cambio en la Cámara de Comercio",
+			"Solicitarlo en la DIAN"
+		],
+		"description": "¡¡Correcto!!! El cambio de nombre requiere un proceso judicial que avale la solicitud."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es el plazo máximo para reclamar la devolución de impuestos en Colombia?",
+		"correct_answer": "Cinco años a partir del pago o declaración",
+		"incorrect_answers": [
+			"Un año después del pago",
+			"Diez años después del pago",
+			"Seis meses después del pago"
+		],
+		"description": "¡¡Correcto!!! La DIAN establece un plazo de cinco años para realizar reclamaciones por devoluciones."
+	},
+	{
+		"id": 13,
+		"question": "¿Dónde se debe realizar el trámite para obtener la licencia sanitaria de un establecimiento de alimentos?",
+		"correct_answer": "En la Secretaría de Salud municipal o departamental",
+		"incorrect_answers": [
+			"En la Alcaldía únicamente",
+			"En la DIAN",
+			"En la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La Secretaría de Salud es la encargada de garantizar la higiene y salubridad de establecimientos alimenticios."
+	},
+	{
+		"id": 14,
+		"question": "¿Qué documento se requiere para inscribir un vehículo en el registro nacional?",
+		"correct_answer": "Factura de compra y certificado de tradición y libertad",
+		"incorrect_answers": [
+			"Licencia de conducción",
+			"Cédula de ciudadanía solamente",
+			"Póliza de seguro únicamente"
+		],
+		"description": "¡¡Correcto!!! La factura y el certificado son esenciales para registrar formalmente un vehículo."
+	},
+	{
+		"id": 15,
+		"question": "¿Cuál es el procedimiento para solicitar el pasaporte de un menor de edad en Colombia?",
+		"correct_answer": "Presentar la cédula de ciudadanía del menor y autorización de los padres",
+		"incorrect_answers": [
+			"Solo presentar la cédula del menor",
+			"Solicitar autorización judicial exclusivamente",
+			"Realizar la solicitud en la DIAN"
+		],
+		"description": "¡¡Correcto!!! La autorización de los padres y la documentación del menor son indispensables para el trámite."
+	},
+	{
+		"id": 16,
+		"question": "¿Cuál es la función principal del RUT (Registro Único Tributario)?",
+		"correct_answer": "Identificar a los contribuyentes ante la DIAN",
+		"incorrect_answers": [
+			"Registrar vehículos ante el Ministerio de Transporte",
+			"Registrar empresas ante la Cámara de Comercio",
+			"Expedir licencias de construcción"
+		],
+		"description": "¡¡Correcto!!! El RUT es el documento que identifica a los contribuyentes para efectos fiscales."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué documento se requiere para realizar trámites notariales en Colombia?",
+		"correct_answer": "Documento de identidad vigente",
+		"incorrect_answers": [
+			"Registro civil de nacimiento",
+			"Copia del pasaporte",
+			"Licencia de conducción"
+		],
+		"description": "¡¡Correcto!!! El documento de identidad es indispensable para validar la identidad en trámites notariales."
+	},
+	{
+		"id": 18,
+		"question": "¿Dónde se realiza la inscripción para acceder al régimen de seguridad social en salud?",
+		"correct_answer": "En una EPS (Entidad Promotora de Salud)",
+		"incorrect_answers": [
+			"En la DIAN",
+			"En la Alcaldía municipal",
+			"En la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La afiliación a una EPS es necesaria para acceder al sistema de salud en Colombia."
+	},
+	{
+		"id": 19,
+		"question": "¿Cuál es el trámite para actualizar datos personales en el RUT?",
+		"correct_answer": "Presentar la solicitud de actualización ante la DIAN",
+		"incorrect_answers": [
+			"Hacer la actualización en la Cámara de Comercio",
+			"Solicitar la actualización en la Alcaldía",
+			"Actualizar directamente en el banco"
+		],
+		"description": "¡¡Correcto!!! La DIAN es la entidad encargada de actualizar la información del RUT."
+	},
+	{
+		"id": 20,
+		"question": "¿Qué documento debe presentar una persona para solicitar la pensión de vejez en Colombia?",
+		"correct_answer": "Certificación de semanas cotizadas y documento de identidad",
+		"incorrect_answers": [
+			"Licencia de conducción y certificado médico",
+			"Registro civil y certificado de estudio",
+			"Tarjeta profesional y contrato de trabajo"
+		],
+		"description": "¡¡Correcto!!! Es necesario acreditar el tiempo cotizado y la identidad para acceder a la pensión."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál es la entidad responsable de expedir el pasaporte colombiano?",
+		"correct_answer": "Ministerio de Relaciones Exteriores",
+		"incorrect_answers": [
+			"DIAN",
+			"Alcaldía Municipal",
+			"Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! El Ministerio de Relaciones Exteriores es la entidad encargada de expedir pasaportes."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué trámite se debe realizar para inscribir una propiedad inmueble a nombre propio?",
+		"correct_answer": "Realizar la inscripción en la Oficina de Registro de Instrumentos Públicos",
+		"incorrect_answers": [
+			"Registrar en la Alcaldía",
+			"Solicitar en la Cámara de Comercio",
+			"Actualizar en la DIAN"
+		],
+		"description": "¡¡Correcto!!! La inscripción formaliza la propiedad ante el sistema registral."
+	},
+	{
+		"id": 23,
+		"question": "¿Cuál es el trámite para obtener un certificado de tradición y libertad de un inmueble?",
+		"correct_answer": "Solicitarlo en la Oficina de Registro de Instrumentos Públicos",
+		"incorrect_answers": [
+			"Solicitarlo en la Alcaldía",
+			"Solicitarlo en la DIAN",
+			"Solicitarlo en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! Este certificado es importante para conocer la situación jurídica del inmueble."
+	},
+	{
+		"id": 24,
+		"question": "¿Qué requisito es obligatorio para tramitar la licencia de funcionamiento de un negocio?",
+		"correct_answer": "Contar con el certificado de uso del suelo expedido por la Alcaldía",
+		"incorrect_answers": [
+			"Tener la cédula de ciudadanía del propietario",
+			"Contar con registro en la Cámara de Comercio",
+			"Presentar el RUT actualizado"
+		],
+		"description": "¡¡Correcto!!! El uso del suelo garantiza que el negocio cumple con las normas urbanísticas."
+	},
+	{
+		"id": 25,
+		"question": "¿Dónde se debe solicitar la expedición del carnet de extranjería en Colombia?",
+		"correct_answer": "Migración Colombia",
+		"incorrect_answers": [
+			"DIAN",
+			"Alcaldía Municipal",
+			"Ministerio de Salud"
+		],
+		"description": "¡¡Correcto!!! Migración Colombia es la entidad encargada de expedir documentos para extranjeros."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué entidad se encarga de la expedición de la licencia de pesca en Colombia?",
+		"correct_answer": "Autoridad Nacional de Acuicultura y Pesca (AUNAP)",
+		"incorrect_answers": [
+			"Ministerio de Agricultura",
+			"DIAN",
+			"Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La AUNAP regula y expide las licencias para actividades pesqueras."
+	},
+	{
+		"id": 27,
+		"question": "¿Cuál es el trámite para realizar el registro civil de matrimonio en Colombia?",
+		"correct_answer": "Presentar la solicitud en la Registraduría Nacional del Estado Civil",
+		"incorrect_answers": [
+			"Hacer la solicitud en la Alcaldía",
+			"Solicitar en la DIAN",
+			"Realizarlo en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La Registraduría es la entidad encargada de registrar los matrimonios civiles."
+	},
+	{
+		"id": 28,
+		"question": "¿Cuál es el documento que acredita la afiliación al sistema de pensiones en Colombia?",
+		"correct_answer": "Certificado de afiliación emitido por la entidad administradora de pensiones",
+		"incorrect_answers": [
+			"Carnet de salud",
+			"Registro civil",
+			"Licencia de conducción"
+		],
+		"description": "¡¡Correcto!!! Este certificado es esencial para trámites relacionados con pensiones."
+	},
+	{
+		"id": 29,
+		"question": "¿Dónde se debe realizar el trámite para obtener la tarjeta profesional para ejercer una carrera?",
+		"correct_answer": "En el organismo regulador de la profesión correspondiente",
+		"incorrect_answers": [
+			"DIAN",
+			"Alcaldía",
+			"Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! Cada profesión tiene una entidad reguladora encargada de expedir la tarjeta profesional."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es el requisito para renovar la licencia de conducción en Colombia?",
+		"correct_answer": "Presentar examen médico y de aptitud física y mental",
+		"incorrect_answers": [
+			"Solo pagar la tasa de renovación",
+			"Realizar un curso de conducción",
+			"Solicitar autorización en la Alcaldía"
+		],
+		"description": "¡¡Correcto!!! La renovación requiere la evaluación médica para garantizar la capacidad para conducir."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué trámite se debe hacer para registrar una obra literaria en Colombia?",
+		"correct_answer": "Registrar la obra en la Dirección Nacional de Derechos de Autor",
+		"incorrect_answers": [
+			"Solicitar registro en la Cámara de Comercio",
+			"Registrar en la DIAN",
+			"Inscribir en la Alcaldía"
+		],
+		"description": "¡¡Correcto!!! La protección de derechos de autor se realiza ante la entidad nacional especializada."
+	},
+	{
+		"id": 32,
+		"question": "¿Cuál es el procedimiento para solicitar un subsidio de vivienda en Colombia?",
+		"correct_answer": "Presentar la solicitud ante el Ministerio de Vivienda o entidad autorizada, cumpliendo requisitos de ingresos y vivienda",
+		"incorrect_answers": [
+			"Solicitar en la Alcaldía sin requisitos",
+			"Hacer la solicitud en la Cámara de Comercio",
+			"Presentar documentos en la DIAN"
+		],
+		"description": "¡¡Correcto!!! El subsidio de vivienda tiene requisitos específicos que deben cumplirse y se tramita ante las entidades autorizadas."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué documento se necesita para realizar el trámite de divorcio de mutuo acuerdo en Colombia?",
+		"correct_answer": "Convenio de divorcio firmado por ambos cónyuges y presentado ante un juez de familia",
+		"incorrect_answers": [
+			"Solicitud unilateral en la Alcaldía",
+			"Registro civil de matrimonio solamente",
+			"Acta de conciliación ante la DIAN"
+		],
+		"description": "¡¡Correcto!!! El divorcio de mutuo acuerdo requiere un convenio aprobado por la autoridad judicial."
+	},
+	{
+		"id": 34,
+		"question": "¿Cuál es el trámite para solicitar una visa de trabajo en Colombia?",
+		"correct_answer": "Presentar la solicitud ante Migración Colombia con contrato laboral y documentos requeridos",
+		"incorrect_answers": [
+			"Solicitar en la DIAN",
+			"Realizar trámite en la Alcaldía",
+			"Registrar en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! Migración Colombia es la entidad encargada de la expedición de visas de trabajo."
+	},
+	{
+		"id": 35,
+		"question": "¿Cuál es el procedimiento para solicitar el registro de una marca en Colombia?",
+		"correct_answer": "Presentar la solicitud ante la Superintendencia de Industria y Comercio",
+		"incorrect_answers": [
+			"Registrar en la Cámara de Comercio",
+			"Solicitar en la DIAN",
+			"Inscribir en la Alcaldía"
+		],
+		"description": "¡¡Correcto!!! La Superintendencia de Industria y Comercio es responsable de la protección de marcas."
+	},
+	{
+		"id": 36,
+		"question": "¿Qué documento es necesario para realizar la inscripción en el servicio militar obligatorio en Colombia?",
+		"correct_answer": "Tarjeta de identidad o cédula de ciudadanía",
+		"incorrect_answers": [
+			"Licencia de conducción",
+			"Pasaporte",
+			"Certificado de nacimiento"
+		],
+		"description": "¡¡Correcto!!! La identificación personal es fundamental para el trámite de inscripción al servicio militar."
+	},
+	{
+		"id": 37,
+		"question": "¿Cuál es el trámite para obtener el certificado de antecedentes disciplinarios en Colombia?",
+		"correct_answer": "Solicitarlo en la Procuraduría General de la Nación",
+		"incorrect_answers": [
+			"Solicitarlo en la DIAN",
+			"Solicitarlo en la Fiscalía",
+			"Solicitarlo en la Alcaldía"
+		],
+		"description": "¡¡Correcto!!! La Procuraduría expide certificados relacionados con antecedentes disciplinarios."
+	},
+	{
+		"id": 38,
+		"question": "¿Dónde se debe realizar el trámite para obtener la licencia de caza deportiva en Colombia?",
+		"correct_answer": "En la Autoridad Nacional de Licencias Ambientales (ANLA)",
+		"incorrect_answers": [
+			"En la Alcaldía",
+			"En la DIAN",
+			"En la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La ANLA es la entidad encargada de regular actividades ambientales como la caza deportiva."
+	},
+	{
+		"id": 39,
+		"question": "¿Cuál es el procedimiento para solicitar el certificado electoral en Colombia?",
+		"correct_answer": "Solicitarlo en la Registraduría Nacional del Estado Civil",
+		"incorrect_answers": [
+			"Solicitarlo en la Alcaldía",
+			"Solicitarlo en la DIAN",
+			"Solicitarlo en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La Registraduría expide certificados electorales para validar la participación en procesos electorales."
+	},
+	{
+		"id": 40,
+		"question": "¿Qué trámite se debe realizar para inscribir una asociación sin ánimo de lucro en Colombia?",
+		"correct_answer": "Registrar los estatutos en la Cámara de Comercio",
+		"incorrect_answers": [
+			"Inscribir en la DIAN",
+			"Solicitar en la Alcaldía",
+			"Registrar en la Procuraduría"
+		],
+		"description": "¡¡Correcto!!! La inscripción formal se realiza ante la Cámara de Comercio para asociaciones sin ánimo de lucro."
+	},
+	{
+		"id": 41,
+		"question": "¿Cuál es el trámite para obtener la licencia ambiental en Colombia?",
+		"correct_answer": "Solicitarla ante la Autoridad Nacional de Licencias Ambientales (ANLA) o autoridad ambiental regional",
+		"incorrect_answers": [
+			"Solicitarla en la Alcaldía",
+			"Solicitarla en la DIAN",
+			"Solicitarla en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La licencia ambiental regula actividades con impacto ambiental y es expedida por la ANLA o autoridades regionales."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué trámite debe hacer una persona para registrar un bien mueble, como un vehículo usado?",
+		"correct_answer": "Realizar la transferencia de propiedad en el Registro Nacional Automotor",
+		"incorrect_answers": [
+			"Registrar en la DIAN",
+			"Registrar en la Cámara de Comercio",
+			"Inscribir en la Alcaldía"
+		],
+		"description": "¡¡Correcto!!! La transferencia formaliza el cambio de propietario ante el registro automotor."
+	},
+	{
+		"id": 43,
+		"question": "¿Cuál es el documento necesario para inscribir un acto notarial en Colombia?",
+		"correct_answer": "Copia del acta notarial y documento de identidad",
+		"incorrect_answers": [
+			"Factura de compra",
+			"Certificado de tradición",
+			"Licencia de funcionamiento"
+		],
+		"description": "¡¡Correcto!!! El acta notarial junto con identificación es requerida para inscribir actos notariales."
+	},
+	{
+		"id": 44,
+		"question": "¿Cuál es el plazo para solicitar la devolución de saldos a favor en impuestos en Colombia?",
+		"correct_answer": "Cinco años desde la fecha de la declaración o pago",
+		"incorrect_answers": [
+			"Dos años",
+			"Tres años",
+			"Un año"
+		],
+		"description": "¡¡Correcto!!! El plazo legal para reclamar devoluciones tributarias es de cinco años."
+	},
+	{
+		"id": 45,
+		"question": "¿Qué trámite se debe realizar para obtener el Registro Único de Víctimas en Colombia?",
+		"correct_answer": "Presentar la solicitud en la Unidad para la Atención y Reparación Integral a las Víctimas",
+		"incorrect_answers": [
+			"Solicitarlo en la DIAN",
+			"Solicitarlo en la Alcaldía",
+			"Solicitarlo en la Fiscalía"
+		],
+		"description": "¡¡Correcto!!! La Unidad para la Atención y Reparación Integral a las Víctimas es la entidad encargada del registro."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué entidad debe autorizar la exportación de productos agrícolas en Colombia?",
+		"correct_answer": "ICA (Instituto Colombiano Agropecuario)",
+		"incorrect_answers": [
+			"DIAN",
+			"Ministerio de Comercio",
+			"Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! El ICA es responsable del control fitosanitario y autorización para exportar productos agrícolas."
+	},
+	{
+		"id": 47,
+		"question": "¿Qué trámite se debe realizar para obtener la licencia de construcción en Colombia?",
+		"correct_answer": "Solicitar la licencia en la Curaduría Urbana o Alcaldía municipal",
+		"incorrect_answers": [
+			"Solicitar en la DIAN",
+			"Registrar en la Cámara de Comercio",
+			"Solicitar en el Ministerio de Vivienda"
+		],
+		"description": "¡¡Correcto!!! La licencia de construcción es otorgada por la Curaduría Urbana o Alcaldía según la jurisdicción."
+	},
+	{
+		"id": 48,
+		"question": "¿Dónde se debe presentar la declaración de renta en Colombia?",
+		"correct_answer": "Ante la DIAN",
+		"incorrect_answers": [
+			"En la Alcaldía",
+			"En la Cámara de Comercio",
+			"En la Superintendencia de Sociedades"
+		],
+		"description": "¡¡Correcto!!! La DIAN es la entidad encargada de recibir y procesar las declaraciones de renta."
+	},
+	{
+		"id": 49,
+		"question": "¿Cuál es el trámite para solicitar la afiliación a una caja de compensación familiar?",
+		"correct_answer": "Presentar la solicitud con los documentos requeridos en la caja de compensación seleccionada",
+		"incorrect_answers": [
+			"Realizar la solicitud en la Alcaldía",
+			"Inscribirse en la DIAN",
+			"Solicitar en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La afiliación a cajas de compensación se hace directamente ante la entidad respectiva."
+	},
+	{
+		"id": 50,
+		"question": "¿Cuál es el procedimiento para inscribir un vehículo nuevo en Colombia?",
+		"correct_answer": "Realizar la matrícula en el Registro Nacional Automotor presentando factura y documentos de propiedad",
+		"incorrect_answers": [
+			"Registrar en la DIAN",
+			"Solicitar inscripción en la Alcaldía",
+			"Hacer el trámite en la Cámara de Comercio"
+		],
+		"description": "¡¡Correcto!!! La matrícula formaliza la propiedad y uso legal del vehículo."
 	}
 ]
 

@@ -7,7 +7,7 @@ function Footer() {
          <svg class="animate-bounce mt-1 h-6 w-6 text-white-800" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="12" cy="12" r="9" />  <path d="M14.5 9a3.5 4 0 1 0 0 6" /></svg>
          <h4 className='p-2'>jorge.loaiza@utp.edu.co</h4>
      </footer> */
-    <footer className="bg-white">
+    <footer className="bg-blue-500">
       <hr></hr>
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">

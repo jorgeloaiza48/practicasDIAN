@@ -2,7 +2,7 @@
 import { imgs, categories } from '../page/data'
 import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from '../page/data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributarios, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from '../page/data'
 
 const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud, razonamientologico, comprensionlectora, razonamientonumerico, aptitudverbal, principiosconstitucionales, gobiernodigital] = imgs
 
@@ -14,7 +14,7 @@ export const CategoryList = () => {
 
                 <div className='text-white'>pfdfggfffggg</div> {/* Este div me tocó colocarlo para que el div principal quede con tres elementos y así al darle "justify-between" entonces el botón Incio se va para la izquierda y la palabra Categoría se centra. También hay que darle color blanco al texto para que no aparezca */}
             </div>
-            <div className='bg-red-500 w-full h-3'></div> {/* banda roja */}
+
             <h1 className='text-3xl text-center pt-5'>Temas</h1>
 
             <Link to={'/'}>
@@ -27,7 +27,7 @@ export const CategoryList = () => {
                 <CategoryCard category={categories.ofimatica_sistemas} src={ofimatica} alt={`categoria ${categories.ofimatica_sistemas}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={ofimatica_sistemas} />
                 <CategoryCard category={categories.basicas_organizacionales} src={basicas_organizacionales} alt={`categoria ${categories.basicas_organizacionales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={basicasorganizacionales} />
                 <CategoryCard category={categories.prueba_integridad} src={integridad} alt={`categoria ${categories.prueba_integridad}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={pruebaIntegridad} />
-                <CategoryCard category={categories.conocimientosTributariosI} src={tributarios1} alt={`categoria ${categories.conocimientosTributariosI}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conocimientosTributariosI} />
+                <CategoryCard category={categories.conocimientosTributarios} src={tributarios1} alt={`categoria ${categories.conocimientosTributarios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conocimientosTributarios} />
                 <CategoryCard category={categories.conductuales} src={conductuales} alt={`categoria ${categories.conductuales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales} />
                 <CategoryCard category={categories.tramitesServicios} src={tramitesServicios} alt={`categoria ${categories.tramitesServicios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={tramites_Servicios} />
                 <CategoryCard category={categories.competencia_administrativa} src={competencia_admin} alt={`categoria ${categories.competencia_administrativa}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencia_administrativa} />

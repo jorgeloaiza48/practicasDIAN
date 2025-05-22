@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributariosI, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from './data'
+import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributarios, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from './data'
 import { Question } from '../components/Question'
 
 export const CategoryPage = () => {
@@ -10,13 +10,13 @@ export const CategoryPage = () => {
 
   const [indexQuestion, setIndexQuestion] = useState(0)
 
-  if (category === "Aspectos generales") { preguntas = aspectos_generales }
+  if (category === "Aspectos generales DIAN") { preguntas = aspectos_generales }
 
   else if (category === "Conceptos generales DIAN") { preguntas = conceptos_generales_DIAN }
   else if (category === "Ofimática y Sistemas") { preguntas = ofimatica_sistemas }
   else if (category === "Basicas Organizacionales") { preguntas = basicasorganizacionales }
   else if (category === "Prueba de Integridad") { preguntas = pruebaIntegridad }
-  else if (category === "Conocimientos Tributarios I") { preguntas = conocimientosTributariosI }
+  else if (category === "Conocimientos Tributarios") { preguntas = conocimientosTributarios }
   else if (category === "Conductuales e interpersonales") { preguntas = conductualesInterpersonales }
   else if (category === "Trámites y servicios") { preguntas = tramites_Servicios }
   else if (category === "Competencia administrativa") { preguntas = competencia_administrativa }

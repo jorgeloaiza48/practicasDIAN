@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1747930911132,
+    "name": "Jacobo",
+    "text": "Me encantó este sitio. Encontré muchos recursos académicos.",
+    "date": "5/22/2025, 11:21:51 AM",
+    "likes": 1
+  },
+  {
+    "id": 1747857571732,
+    "name": "Juan",
+    "text": "Buen material de preparación.",
+    "date": "5/21/2025, 2:59:31 PM",
+    "likes": 6
+  },
+  {
+    "id": 1747857136016,
+    "name": "Helián.",
+    "text": "Este sitio me ha servido mucho para estudiar.",
+    "date": "5/21/2025, 2:52:16 PM",
+    "likes": 8
+  },
+  {
+    "id": 1747856674551,
+    "name": "jorge",
+    "text": "Muy buena página. La recomiendo.",
+    "date": "5/21/2025, 2:44:34 PM",
+    "likes": 6
+  }
+]
