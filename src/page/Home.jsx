@@ -1,36 +1,20 @@
 import React from 'react'
 //import './style.css'
-import slogan from './images/slogan.jpg'
-import logo from './images/logodian.png'
-import logocontraloria from './images/logocontraloria.png'
 import { Link } from 'react-router-dom'
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import CampaignIcon from '@mui/icons-material/Campaign';
-import ImportContactsIcon from '@mui/icons-material/ImportContacts';
-import PagesIcon from '@mui/icons-material/Pages';
-import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
-import ListAltIcon from '@mui/icons-material/ListAlt';
-import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
-import FilePresentIcon from '@mui/icons-material/FilePresent';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
-import PanToolIcon from '@mui/icons-material/PanTool';
-import SchoolIcon from '@mui/icons-material/School';
-import MenuBookIcon from '@mui/icons-material/MenuBook';
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
-import LaptopChromebookIcon from '@mui/icons-material/LaptopChromebook';
-import HubIcon from '@mui/icons-material/Hub';
-import WindowIcon from '@mui/icons-material/Window';
-import QuizIcon from '@mui/icons-material/Quiz';
-import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import ViewListIcon from '@mui/icons-material/ViewList';
-import ChildCareIcon from '@mui/icons-material/ChildCare';
+
 import { SeccionComentarios } from '../components/seccionComentarios/SeccionComentarios'
 import { Carrusel } from '../components/carrusel/Carrusel'
 import { PostsList } from '../components/posts/PostsList'
 import { BookOpen, ListChecks, GraduationCap, User, Info, Mail } from 'lucide-react';
-
+import { ProcesoSeleccionDIAN } from '../components/panelderecha/ProcesoSeleccionDIAN'
+import { OtrosProcesosSeleccion } from '../components/panelderecha/OtrosProcesosSeleccion'
+import { EnlacesInteres } from '../components/panelderecha/EnlacesInteres'
+import {DIAN} from '../components/panelderecha/DIAN'
+import { Contraloria } from '../components/panelderecha/Contraloria'
+import { Fiscalia } from '../components/panelderecha/Fiscalia'
+import { Procuraduria } from '../components/panelderecha/Procuraduria'
+import {CNSC} from '../components/panelderecha/CNSC'
+import {EnlacesSIMO} from '../components/panelderecha/EnlacesSIMO'
 
 
 
@@ -83,122 +67,26 @@ export const Home = () => {
             <br></br>
 
 
-            <div className='flex flex-row justify-center gap-5 sm:justify-around md:justify-center lg:justify-center'>
 
-
-                <div className='flex flex-col items-center p-10 w-2/5 rounded-lg bg-white shadow-lg'>
+            <div className="flex flex-col lg:flex-row justify-center gap-8 px-4 py-8">
+                <div className="lg:w-2/3 w-full">
                     <PostsList />
                 </div>
-
-
-
-
-                <div className=' w-1/5 flex flex-col items-center justify-start gap-8'>
-
-                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
-
-                        <div>
-                            <h1 className="text-2xl text-center">Proceso de selección DIAN 2667</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                            <ul className="max-w-md space-y-3 list-inside">
-
-                                <li>< AccountBalanceIcon /> <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=65'>Normatividad</a></button></li><hr></hr>
-                                <li><CampaignIcon />        <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=64'>Avisos informativos</a></button></li><hr></hr>
-                                <li><ImportContactsIcon />  <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=66'>Acciones constitucionales</a></button></li><hr></hr>
-                                <li><PagesIcon />           <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1479'>Acciones administrativas</a></button></li><hr></hr>
-                                <li><SpaceDashboardIcon />  <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1410'>Guías</a></button></li><hr></hr>
-                                <li><ListAltIcon />         <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/dian-2667?field_tipo_de_contenido_convocat_target_id=1461'>Listas desiertas</a></button></li><hr></hr>
-                                <li><SpeakerNotesIcon />    <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/divulgacion/dian-2667'>Divulgaciones</a></button></li><hr></hr>
-                                <li><FilePresentIcon />     <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/sites/default/files/2024-10/anexo-acuerdo-dian_2667_0.pdf'>Anexo DIAN 2667</a></button></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
-
-                        <div>
-                            <h1 className="text-2xl text-center">Otros procesos de selección</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                            <ul className="max-w-md space-y-3 list-inside">
-
-                                <li><AccountTreeIcon />         <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-desarrollo'>Procesos de selección en desarrollo</a></button></li><hr></hr>
-                                <li><FormatListNumberedIcon />  <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/en-uso-de-listas'>Lista de Elegibles</a></button></li><hr></hr>
-                                <li><PanToolIcon />             <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/historicas'>Procesos de selección finalizados</a></button></li><hr></hr>
-                                <li><SchoolIcon />              <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/universidades-acreditadas'>IES acreditadas</a></button></li><hr></hr>
-                                <li><MenuBookIcon />            <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/convocatorias/tutoriales-y-videos'>Tutoriales y videos</a></button></li><hr></hr>
-                                <li><WorkspacePremiumIcon />    <button type="button" className="ml-2 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/procesos-de-seleccion/modelo-de-certificacion'>Modelo de certificación</a></button></li><hr></hr>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
-
-                        <div>
-                            <h1 className="text-2xl text-center">Enlaces de interés</h1> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                            <ul className="max-w-md space-y-3 list-inside">
-
-                                <li><LaptopChromebookIcon />     <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://simo4.cnsc.gov.co/'>Portal SIMO 4.0</a></button></li><hr></hr>
-                                <li><HubIcon />                  <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://simo.cnsc.gov.co/'>SIMO</a></button></li><hr></hr>
-                                <li><WindowIcon />               <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='http://gestion.cnsc.gov.co/cpqr/'>Ventanilla única CNSC</a></button></li><hr></hr>
-                                <li><QuizIcon />                 <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://edl.cnsc.gov.co/'>Evaluación del desempeño laboral EDL</a></button></li><hr></hr>
-                                <li><LocalLibraryIcon />         <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://escuelavirtual.cnsc.gov.co/'>Escuela virtual CNSC</a></button></li><hr></hr>
-                                <li><ConnectWithoutContactIcon /><button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://doctrina.cnsc.gov.co/doctrina/'>Doctrina</a></button></li><hr></hr>
-                                <li><ViewListIcon />             <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://bnle.cnsc.gov.co/bnle-listas/bnle-listas-consulta-general'>Banco Nacional de Lista de Elegibles</a></button></li><hr></hr>
-                                <li><ChildCareIcon />            <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.cnsc.gov.co/sites/default/files/site_ninos/'>CNSC para niños</a></button></li><hr></hr>
-
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
-
-                        <img src={logo} /> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                        <ul className="max-w-md space-y-3 list-inside">
-
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/Paginas/Inicio.aspx'>Sitio web Institucional</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Presentacion.aspx'>Presentación</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Organigrama.aspx'>Organigrama</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/OfertasEmpleo.aspx'>Oferta de Empleos</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/PlaneacionEvaluacionInstitucional.aspx'>Planeación y evaluación institucional</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/Manual_de_Funciones.aspx'>Manual de funciones</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/mapaprocesos.aspx'>Manual de Procesos</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/CodigoBuenGobierno/Codigo-de-Etica-Vr1-2021.pdf'>Código de ética</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/Paginas/Escuela-DIAN.aspx'>Escuela DIAN</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/entidad/Paginas/GDocumental.aspx'>Gestión documental</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.dian.gov.co/dian/contratacion/Contratacion/MN_FI_0013_Manual_de_Contratacion_SGRF.pdf'>Manual de contratación</a></button></li><hr></hr>
-                        </ul>
-
-                    </div>
-
-
-                    <div className=' shadow-2xl bg-white rounded-lg p-8 '>
-
-                        <img src={logocontraloria} /> <hr className='mt-2 mb-5 h-1 bg-sky-300'></hr>
-                        <ul className="max-w-md space-y-3 list-inside">
-
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/es/web/guest/contraloria/la-entidad/organigrama-y-dependencias'>Organigrama y dependencias</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/contraloria/la-entidad/historiaycontralores'>Historia y contralores</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/web/guest/mision-y-vision'>Misión y visión</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/web/guest/simbolos-institucionales'>Símbolos institucionales</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/web/guest/guia-de-auditoria'>Guía de auditoría</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/es/web/guest/control-fiscal/responsabilidad-fiscal/certificado-de-antecedentes-fiscales'>Certificado de antecedentes fiscales</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/web/guest/atencion-al-ciudadano'>Atención al ciudadano</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/en/web/rendicion-de-cuentas/transparencia-y-acceso-a-la-informacion-p%C3%BAblica'>Transparencia y accesso a la información pública</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/web/guest/resultados-e-informes'>Resultados e informes</a></button></li><hr></hr>
-                            <li>          <button type="button" className="ml-1 py-2.5 px-5 me-2 mb-1 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><a href='https://www.contraloria.gov.co/resultados/notificaciones-y-citaciones'>Notificaciones y citaciones</a></button></li><hr></hr>
-
-                        </ul>
-
-                    </div>
-
-
-
-
+                <div className="lg:w-1/3 w-full flex flex-col gap-6">
+                    <ProcesoSeleccionDIAN />
+                    <OtrosProcesosSeleccion />
+                    <EnlacesInteres />
+                    <DIAN/>
+                    <Contraloria/>
+                    <Fiscalia/>
+                    <Procuraduria/>
+                    <CNSC/>
+                    <EnlacesSIMO/>
                 </div>
-
             </div>
+
+
+
 
             <div className='w-2/5 mt-8  mr-[17%] border-2 mb-5 border-gray-300 rounded-lg bg-white shadow-lg'>
                 <SeccionComentarios />

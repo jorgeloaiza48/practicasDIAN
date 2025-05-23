@@ -75,20 +75,6 @@ import image74 from './images/image74.jpg';
 import image75 from './images/image75.jpg';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const material_estudio_data = [
     {
         id: 1,
@@ -134,7 +120,7 @@ export const material_estudio_data = [
     },
     {
         id: 8,
-        titulo: "TRécnicas para el análisis de la gestión financiera de las entidades territoriales",
+        titulo: "Técnicas para el análisis de la gestión financiera de las entidades territoriales",
         url: "https://colaboracion.dnp.gov.co/CDT/Desarrollo%20Territorial/T%C3%A9cnicas%20gesti%C3%B3n%20financiera%20ET.pdf",
         image: image8
     },
@@ -539,7 +525,7 @@ export const material_estudio_data = [
     },
     {
         id: 74,
-        titulo: "Código Nacinal de tránsito y conductores",
+        titulo: "Código Nacional de tránsito y conductores",
         url: "https://drive.google.com/drive/folders/1tZBTXOGk2bmhkA0xQjehSuXEPAdzUiyo?usp=drive_link",
         image: image74
     },
@@ -548,9 +534,205 @@ export const material_estudio_data = [
         titulo: "Sistema integrado de información financiera",
         url: "https://drive.google.com/drive/folders/1HdV3iJ6aVF4pv1jss-xH4rE4JBad8Rt9?usp=drive_link",
         image: image75
-    }
-
-
-
+    },
+    {
+        id: 76,
+        titulo: "Reglamento General de Concursos Públicos CNSC",
+        url: "https://www.cnsc.gov.co/portal/Descargas/Normatividad/Reglamento_General_Concursos_Publicos.pdf",
+        image: "https://images.unsplash.com/photo-1600267165692-0f24a368fc90?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 77,
+        "titulo": "Ley 909 de 2004 - Carrera Administrativa y Servicio Civil",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=21465",
+        "image": "https://images.unsplash.com/photo-1581090700227-1e8e89a6b6a8?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 78,
+        "titulo": "Manual para la Inscripción en Concursos CNSC",
+        "url": "https://www.cnsc.gov.co/portal/Descargas/Guias/Manual_Inscripcion_Concursos.pdf",
+        "image": "https://images.unsplash.com/photo-1581093588401-3e09b4caa712?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 79,
+        "titulo": "Ley 270 de 1996 - Servicio Civil",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=1843",
+        "image": "https://images.unsplash.com/photo-1603572563273-b1c8f67f9ec9?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 80,
+        "titulo": "Decreto 1083 de 2015 - Reglamento Único del Empleo Público",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=61414",
+        "image": "https://images.unsplash.com/photo-1581090469485-39981397c445?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 81,
+        "titulo": "Guía CNSC para Presentar Concursos de Méritos",
+        "url": "https://www.cnsc.gov.co/portal/Descargas/Guias/Guia_Concursos_de_Meritos.pdf",
+        "image": "https://images.unsplash.com/photo-1581093448796-5b4c43c0b2b3?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 82,
+        "titulo": "Preguntas Frecuentes sobre Concursos CNSC",
+        "url": "https://www.cnsc.gov.co/portal/PreguntasFrecuentes.aspx",
+        "image": "https://images.unsplash.com/photo-1581093588402-4bd7ecf8b537?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 83,
+        "titulo": "Convocatorias Vigentes CNSC",
+        "url": "https://www.cnsc.gov.co/portal/Concursos/Vigentes.aspx",
+        "image": "https://images.unsplash.com/photo-1603572563485-b00a7e690bf7?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 84,
+        "titulo": "Código Disciplinario Único - Ley 734 de 2002",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=22063",
+        "image": "https://images.unsplash.com/photo-1603572563337-f4362f32c8b1?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 85,
+        "titulo": "Ley 1952 de 2019 - Nuevo Código Disciplinario",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=98308",
+        "image": "https://images.unsplash.com/photo-1581090700022-386aa57d9e8d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 86,
+        "titulo": "Guía para Aspirantes a Concursos de Méritos",
+        "url": "https://www.cnsc.gov.co/portal/Descargas/Guias/Guia_Aspirantes_Concursos_Meritos.pdf",
+        "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 87,
+        "titulo": "Constitución Política de Colombia (Actualizada)",
+        "url": "https://www.constitucioncolombia.com/constitucion-de-1991",
+        "image": "https://images.unsplash.com/photo-1581093588128-3fefcaa172a2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 88,
+        "titulo": "Estatuto Anticorrupción - Ley 1474 de 2011",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=43275",
+        "image": "https://images.unsplash.com/photo-1573164574394-7fbb7a6f5885?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 89,
+        "titulo": "Ley de Transparencia - Ley 1712 de 2014",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=56332",
+        "image": "https://images.unsplash.com/photo-1611171711914-8c9e71f19d4a?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 90,
+        "titulo": "Normas de Control Interno - MECI 1000:2005",
+        "url": "https://www.funcionpublica.gov.co/web/meci/normatividad",
+        "image": "https://images.unsplash.com/photo-1581091742628-1d9cb6f99212?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 91,
+        "titulo": "Guía para la Verificación de Requisitos Mínimos CNSC",
+        "url": "https://www.cnsc.gov.co/portal/Descargas/Guias/Guia_Verificacion_Requisitos_Minimos.pdf",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 92,
+        "titulo": "Ley 1437 de 2011 - Código de Procedimiento Administrativo y de lo Contencioso Administrativo",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=41275",
+        "image": "https://images.unsplash.com/photo-1603572563049-6c54dcf8e6b7?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 93,
+        "titulo": "Manual del Usuario SIMO - Sistema de Apoyo para la Igualdad, el Mérito y la Oportunidad",
+        "url": "https://simo.cnsc.gov.co/",
+        "image": "https://images.unsplash.com/photo-1600195077073-28a821a2911c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 94,
+        "titulo": "Decreto 1081 de 2015 - Decreto Único Reglamentario del Sector Presidencia",
+        "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=63970",
+        "image": "https://images.unsplash.com/photo-1565372525854-85db30f17dd0?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 95,
+        "titulo": "Estatuto de Profesionalización del Empleo Público",
+        "url": "https://www.funcionpublica.gov.co/web/eva/gestion-normativa/normativa/-/asset_publisher/eGU4jYr7k3It/content/estatuto-de-profesionalizacion-del-empleo-publico",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 96,
+        "titulo": "Informe Nacional de Desarrollo Humano - PNUD Colombia",
+        "url": "https://www.co.undp.org/content/colombia/es/home/library/informe-nacional-de-desarrollo-humano.html",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 97,
+        "titulo": "Plan Nacional de Desarrollo 2022-2026",
+        "url": "https://colaboracion.dnp.gov.co/CDT/PND/PND-2022-2026.pdf",
+        "image": "https://images.unsplash.com/photo-1603572562982-77e3a97f94b6?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 98,
+        "titulo": "Manual para el Uso del SECOP II",
+        "url": "https://www.colombiacompra.gov.co/secop/manual-para-el-uso-del-secop-ii",
+        "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 99,
+        "titulo": "Guía de Buen Gobierno para el Estado Colombiano",
+        "url": "https://www.funcionpublica.gov.co/documents/418537/501005/GUIA_BUEN_GOBIERNO.pdf",
+        "image": "https://images.unsplash.com/photo-1549921296-3a6b5c1e4162?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 100,
+        "titulo": "Lineamientos para la Gestión Estratégica del Talento Humano",
+        "url": "https://www.funcionpublica.gov.co/web/eva/gestion-normativa/normativa/-/asset_publisher/eGU4jYr7k3It/content/lineamientos-gestion-estrategica-talento-humano",
+        "image": "https://images.unsplash.com/photo-1531497865144-0464ef8fb9c6?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 101,
+        "titulo": "Política de Gobierno Digital en Colombia",
+        "url": "https://www.mintic.gov.co/portal/inicio/Pol-ticas/Gobierno-Digital/",
+        "image": "https://images.unsplash.com/photo-1518081461904-b65eaa1eaf9c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 102,
+        "titulo": "Cartilla del Proceso de Selección CNSC",
+        "url": "https://www.cnsc.gov.co/portal/Descargas/Cartillas/Cartilla_Proceso_Seleccion_CNSC.pdf",
+        "image": "https://images.unsplash.com/photo-1526378722401-e2fd23c4b157?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+    "id": 103,
+    "titulo": "Ley 909 de 2004 - Empleo Público y Gerencia Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=13500",
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 104,
+    "titulo": "Manual Operativo del Sistema de Control Interno",
+    "url": "https://www.funcionpublica.gov.co/documents/418537/0/Manual_Operativo_SCI.pdf",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 105,
+    "titulo": "Guía para la Evaluación del Desempeño Laboral",
+    "url": "https://www.funcionpublica.gov.co/documents/418537/501005/Guia_Evaluacion_Desempeno_Laboral.pdf",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 106,
+    "titulo": "Cartilla para la Participación en Concursos Públicos de Mérito",
+    "url": "https://www.cnsc.gov.co/portal/Descargas/Cartillas/Cartilla_Participacion_Concursos_Publicos.pdf",
+    "image": "https://images.unsplash.com/photo-1524777312-3bdb2dd03a4b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 107,
+    "titulo": "Ley 80 de 1993 - Estatuto General de Contratación de la Administración Pública",
+    "url": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=249",
+    "image": "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 108,
+    "titulo": "Marco Normativo de la Función Pública en Colombia",
+    "url": "https://www.funcionpublica.gov.co/web/eva/normativa-funcion-publica",
+    "image": "https://images.unsplash.com/photo-1556740772-1a741367b93e?auto=format&fit=crop&w=600&q=80"
+  }
 ]
+
 

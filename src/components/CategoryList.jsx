@@ -1,50 +1,119 @@
-
-import { imgs, categories } from '../page/data'
-import { CategoryCard } from './CategoryCard'
 import { Link } from 'react-router-dom'
-import { aspectos_generales, conceptos_generales_DIAN, ofimatica_sistemas, basicasorganizacionales, pruebaIntegridad, conocimientosTributarios, conductualesInterpersonales, tramites_Servicios, competencia_administrativa, codigo_general_proceso_en_colombia, estructura_del_estado, modelo_integrado_de_gestión, competencias_comportamentales_para_profesionales, codigoUnicoDisciplinario, razonamiento_logico_nivel_basico, comprension_lectora, razonamiento_numerico, aptitud_verbal, principios_deberes_constitucionales, gobierno_digital } from '../page/data'
+import { CategoryCard } from './CategoryCard'
+import { imgs, categories } from '../page/data'
 
-const [ag1, cgDIAN, ofimatica, basicas_organizacionales, integridad, tributarios1, conductuales, tramitesServicios, competencia_admin, codigo_general_proceso, estructura_estado, mipg, comportamentales, cud, razonamientologico, comprensionlectora, razonamientonumerico, aptitudverbal, principiosconstitucionales, gobiernodigital] = imgs
+import {
+  aspectos_generales,
+  conceptos_generales_DIAN,
+  ofimatica_sistemas,
+  basicasorganizacionales,
+  pruebaIntegridad,
+  conocimientosTributarios,
+  conductualesInterpersonales,
+  tramites_Servicios,
+  competencia_administrativa,
+  codigo_general_proceso_en_colombia,
+  estructura_del_estado,
+  modelo_integrado_de_gestión,
+  competencias_comportamentales_para_profesionales,
+  codigoUnicoDisciplinario,
+  razonamiento_logico_nivel_basico,
+  comprension_lectora,
+  razonamiento_numerico,
+  aptitud_verbal,
+  principios_deberes_constitucionales,
+  gobierno_digital
+} from '../page/data'
 
+// Mapa de categorías a tipos (puedes ajustar y expandir)
+const categoryTypes = {
+  aspectos_generales: 'general',
+  conceptos_generales_DIAN: 'general',
+  ofimatica_sistemas: 'tecnologia',
+  basicas_organizacionales: 'general',
+  prueba_integridad: 'juridico',
+  conocimientosTributarios: 'juridico',
+  conductuales: 'habilidades',
+  tramitesServicios: 'general',
+  competencia_administrativa: 'juridico',
+  codigo_general_proceso_colombia: 'juridico',
+  estructura_estado_colombiano: 'juridico',
+  modelo_integrado_gestion: 'gestion',
+  competencia_comportamentales: 'habilidades',
+  codigo_unico_disciplinario: 'juridico',
+  razonamientologico: 'razonamiento',
+  comprensionlectora: 'razonamiento',
+  razonamientonumerico: 'razonamiento',
+  aptitudverbal: 'razonamiento',
+  principiosconstitucionales: 'juridico',
+  gobiernodigital: 'gestion',
+}
+
+// Degradados por tipo
+const typeColors = {
+  general: 'from-purple-500 to-pink-500',
+  tecnologia: 'from-cyan-500 to-blue-600',
+  juridico: 'from-red-500 to-orange-600',
+  habilidades: 'from-teal-400 to-emerald-500',
+  gestion: 'from-green-500 to-emerald-600',
+  razonamiento: 'from-yellow-500 to-amber-600',
+}
+
+const preguntaData = [
+  { key: 'aspectos_generales', preguntas: aspectos_generales },
+  { key: 'conceptos_generales_DIAN', preguntas: conceptos_generales_DIAN },
+  { key: 'ofimatica_sistemas', preguntas: ofimatica_sistemas },
+  { key: 'basicas_organizacionales', preguntas: basicasorganizacionales },
+  { key: 'prueba_integridad', preguntas: pruebaIntegridad },
+  { key: 'conocimientosTributarios', preguntas: conocimientosTributarios },
+  { key: 'conductuales', preguntas: conductualesInterpersonales },
+  { key: 'tramitesServicios', preguntas: tramites_Servicios },
+  { key: 'competencia_administrativa', preguntas: competencia_administrativa },
+  { key: 'codigo_general_proceso_colombia', preguntas: codigo_general_proceso_en_colombia },
+  { key: 'estructura_estado_colombiano', preguntas: estructura_del_estado },
+  { key: 'modelo_integrado_gestion', preguntas: modelo_integrado_de_gestión },
+  { key: 'competencia_comportamentales', preguntas: competencias_comportamentales_para_profesionales },
+  { key: 'codigo_unico_disciplinario', preguntas: codigoUnicoDisciplinario },
+  { key: 'razonamientologico', preguntas: razonamiento_logico_nivel_basico },
+  { key: 'comprensionlectora', preguntas: comprension_lectora },
+  { key: 'razonamientonumerico', preguntas: razonamiento_numerico },
+  { key: 'aptitudverbal', preguntas: aptitud_verbal },
+  { key: 'principiosconstitucionales', preguntas: principios_deberes_constitucionales },
+  { key: 'gobiernodigital', preguntas: gobierno_digital },
+]
 
 export const CategoryList = () => {
-    return (
-        <div>
-            <div className='flex justify-center my-4  sm:justify-between sm:w-5/6 sm:mx-auto'>
+  return (
+    <div className="px-4">
+      <div className="flex justify-between items-center sm:w-5/6 sm:mx-auto mt-4 mb-6">
+        <div></div>
+        <h1 className="text-3xl font-bold text-center flex-1">Temas</h1>
+        <Link to={'/'}>
+          <button
+            type="button"
+            className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5"
+          >
+            Inicio
+          </button>
+        </Link>
+      </div>
 
-                <div className='text-white'>pfdfggfffggg</div> {/* Este div me tocó colocarlo para que el div principal quede con tres elementos y así al darle "justify-between" entonces el botón Incio se va para la izquierda y la palabra Categoría se centra. También hay que darle color blanco al texto para que no aparezca */}
-            </div>
-
-            <h1 className='text-3xl text-center pt-5'>Temas</h1>
-
-            <Link to={'/'}>
-                <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 sm:ml-2">Inicio</button>
-            </Link>
-
-            <div className='sm:flex sm:flex-col sm:mx-auto md:justify-around md:w-80 lg:flex lg:flex-row lg:flex-wrap lg:w-3/5'> {/* sm es para 640px */}
-                <CategoryCard category={categories.aspectos_generales} src={ag1} alt={`categoria ${categories.aspectos_generales}`} gradientColor={'from-purple-500 to-pink-500'} cantidadPreguntas={aspectos_generales} />
-                <CategoryCard category={categories.conceptos_generales_DIAN} src={cgDIAN} alt={`categoria ${categories.conceptos_generales_DIAN}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conceptos_generales_DIAN} />
-                <CategoryCard category={categories.ofimatica_sistemas} src={ofimatica} alt={`categoria ${categories.ofimatica_sistemas}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={ofimatica_sistemas} />
-                <CategoryCard category={categories.basicas_organizacionales} src={basicas_organizacionales} alt={`categoria ${categories.basicas_organizacionales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={basicasorganizacionales} />
-                <CategoryCard category={categories.prueba_integridad} src={integridad} alt={`categoria ${categories.prueba_integridad}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={pruebaIntegridad} />
-                <CategoryCard category={categories.conocimientosTributarios} src={tributarios1} alt={`categoria ${categories.conocimientosTributarios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conocimientosTributarios} />
-                <CategoryCard category={categories.conductuales} src={conductuales} alt={`categoria ${categories.conductuales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={conductualesInterpersonales} />
-                <CategoryCard category={categories.tramitesServicios} src={tramitesServicios} alt={`categoria ${categories.tramitesServicios}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={tramites_Servicios} />
-                <CategoryCard category={categories.competencia_administrativa} src={competencia_admin} alt={`categoria ${categories.competencia_administrativa}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencia_administrativa} />
-                <CategoryCard category={categories.codigo_general_proceso_colombia} src={codigo_general_proceso} alt={`categoria ${categories.codigo_general_proceso_colombia}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={codigo_general_proceso_en_colombia} />
-                <CategoryCard category={categories.estructura_estado_colombiano} src={estructura_estado} alt={`categoria ${categories.estructura_estado_colombiano}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={estructura_del_estado} />
-                <CategoryCard category={categories.modelo_integrado_gestion} src={mipg} alt={`categoria ${categories.modelo_integrado_gestion}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={modelo_integrado_de_gestión} />
-                <CategoryCard category={categories.competencia_comportamentales} src={comportamentales} alt={`categoria ${categories.competencia_comportamentales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={competencias_comportamentales_para_profesionales} />
-                <CategoryCard category={categories.codigo_unico_disciplinario} src={cud} alt={`categoria ${categories.codigo_unico_disciplinario}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={codigoUnicoDisciplinario} />
-                <CategoryCard category={categories.razonamientologico} src={razonamientologico} alt={`categoria ${categories.razonamientologico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_logico_nivel_basico} />
-                <CategoryCard category={categories.comprensionlectora} src={comprensionlectora} alt={`categoria ${categories.comprensionlectora}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={comprension_lectora} />
-                <CategoryCard category={categories.razonamientonumerico} src={razonamientonumerico} alt={`categoria ${categories.razonamientonumerico}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={razonamiento_numerico} />
-                <CategoryCard category={categories.aptitudverbal} src={aptitudverbal} alt={`categoria ${categories.aptitudverbal}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={aptitud_verbal} />
-                <CategoryCard category={categories.principiosconstitucionales} src={principiosconstitucionales} alt={`categoria ${categories.principiosconstitucionales}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={principios_deberes_constitucionales} />
-                <CategoryCard category={categories.gobiernodigital} src={gobiernodigital} alt={`categoria ${categories.gobiernodigital}`} gradientColor={'from-lime-400   to-teal-700'} cantidadPreguntas={gobierno_digital} />
-
-
-            </div>
-        </div>
-    )
+      <div className="sm:flex sm:flex-col sm:mx-auto md:justify-around md:w-80 lg:flex lg:flex-row lg:flex-wrap lg:w-3/5 gap-4">
+        {preguntaData.map((item, index) => {
+          const tipo = categoryTypes[item.key] || 'general'
+          const gradientColor = typeColors[tipo] || typeColors.general
+          return (
+            <CategoryCard
+              key={item.key}
+              category={categories[item.key]}
+              src={imgs[index]}
+              alt={`categoria ${categories[item.key]}`}
+              gradientColor={gradientColor}
+              cantidadPreguntas={item.preguntas}
+            />
+          )
+        })}
+      </div>
+    </div>
+  )
 }
