@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preguntas, categoria }) => {
 
@@ -34,8 +36,61 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
     if ((indexQuestion + 1) / preguntas.length === 1) { disableBotonLastQuestion = true }//cuando hacen click en el botón "siguiente pregunta" y ya no hay más entonces se convierte a true para ocultar el botón.
     if (indexQuestion === 0) { disableBotonFirstQuestion = true }
 
+
+    const exportarPDF = () => {
+        const doc = new jsPDF();
+        let y = 20;
+
+        doc.setFontSize(16);
+        doc.text(`Preguntas - Categoría: ${categoria}`, 14, y);
+        y += 10;
+
+        preguntas.forEach((pregunta, idx) => {
+            const opciones = [...pregunta.incorrect_answers, pregunta.correct_answer].sort(() => Math.random() - 0.5);
+
+            const data = opciones.map((opcion) => [
+                opcion,
+                opcion === pregunta.correct_answer ? '✅ Correcta' : '',
+            ]);
+
+            autoTable(doc, {
+                startY: y,
+                head: [[`Pregunta ${idx + 1}: ${pregunta.question}`, 'Respuesta']],
+                body: data,
+                theme: 'grid',
+                headStyles: { fillColor: [22, 160, 133] },
+                bodyStyles: { textColor: 20 },
+            });
+
+            // Agregar descripción debajo de la tabla
+            const tablaY = doc.lastAutoTable.finalY;
+            doc.setFontSize(11);
+            doc.setTextColor(80);
+            doc.text(`Justificación: ${pregunta.description}`, 14, tablaY + 6);
+
+            y = tablaY + 16;
+
+            // Salto de página si el contenido se sale
+            if (y > 270) {
+                doc.addPage();
+                y = 20;
+            }
+        });
+
+        doc.save(`${categoria}_preguntas.pdf`);
+    };
+
     return (
-        <div className="border-4 flex flex-col shadow-md shadow-salet-300 rounded-lg w-5/6 top-2  sm:w-3/5 md:border-indigo-100/100 md:w-3/5 md:mt-20">
+        <div className="border-4 flex flex-col shadow-md shadow-salet-300 rounded-lg w-5/6 top-2  sm:w-3/5 md:border-indigo-100/100 md:w-3/5 md:mt-20 mb-10">
+            <div className="flex justify-end p-4">
+                <button
+                    onClick={exportarPDF}
+                    className="border border-green-700 px-4 py-2 rounded-lg text-green-700 hover:bg-green-600 hover:text-white font-bold transition-all"
+                >
+                    Descargar estas preguntas en PDF
+                </button>
+            </div>
+
             <span className='text-xl font-bold text-center mb-6'>
                 Categoría: {categoria}
             </span>
@@ -83,6 +138,10 @@ export const Question = ({ preguntasIndex, setIndexQuestion, indexQuestion, preg
                     </button>
                 </Link>
             </div>
+
+
+
+
 
         </div>
     )

@@ -38,9 +38,11 @@ export const imgs = [
 	razonamientologico,
 	comprensionlectora,
 	razonamientonumerico,
-	aptitudverbal,
+	"https://plus.unsplash.com/premium_photo-1678361172092-85da0a5e812f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", //aptitud verbal
 	principiosconstitucionales,
-	gobiernodigital,
+	"https://plus.unsplash.com/premium_photo-1677093906033-dc2beb53ace3?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"https://images.unsplash.com/photo-1610030852212-438471e34223?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"https://plus.unsplash.com/premium_photo-1664301191471-0dc137e504bc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" //SST
 ];
 
 export const categories = {
@@ -63,7 +65,9 @@ export const categories = {
 	razonamientonumerico: "Razonamiento numérico (nivel básico)",
 	aptitudverbal: "Aptitud Verbal",
 	principiosconstitucionales: "Principios y deberes constitucionales",
-	gobiernodigital: "Gobierno digital"
+	gobiernodigital: "Gobierno digital",
+	gestion_talento_humano: "Gestión del talento humano",
+	seguridad_salud_trabajo: "Seguridad y salud en el trabajo"
 };
 
 export const aspectos_generales = [
@@ -10226,5 +10230,991 @@ export const gobierno_digital = [
 			"Gestión de TI en el sector público."
 		],
 		"description": "¡¡¡Correcto!!! El sistema penitenciario no hace parte de los ejes de Gobierno Digital como política tecnológica del Estado."
+	}
+]
+
+export const gestion_talento_humano = [
+	{
+		"id": 1,
+		"question": "¿Cuál es el objetivo principal de la gestión del talento humano en las organizaciones?",
+		"correct_answer": "Maximizar el potencial y desempeño de los colaboradores",
+		"incorrect_answers": [
+			"Reducir costos operativos",
+			"Aumentar la producción sin importar la calidad",
+			"Cumplir con la legislación laboral únicamente"
+		],
+		"description": "¡¡Correcto!!! La gestión del talento humano busca desarrollar las capacidades de los empleados para alcanzar los objetivos organizacionales."
+	},
+	{
+		"id": 2,
+		"question": "¿Qué ley regula principalmente las relaciones laborales en Colombia?",
+		"correct_answer": "Código Sustantivo del Trabajo",
+		"incorrect_answers": [
+			"Ley 100 de 1993",
+			"Ley 734 de 2002",
+			"Ley 1618 de 2013"
+		],
+		"description": "¡¡Correcto!!! El Código Sustantivo del Trabajo establece las normas para las relaciones laborales en Colombia."
+	},
+	{
+		"id": 3,
+		"question": "¿Qué función cumple la evaluación del desempeño en la gestión del talento humano?",
+		"correct_answer": "Medir y mejorar el rendimiento laboral de los empleados",
+		"incorrect_answers": [
+			"Registrar la asistencia diaria",
+			"Determinar el salario base",
+			"Cumplir requisitos legales sin impacto en el trabajo"
+		],
+		"description": "¡¡Correcto!!! La evaluación del desempeño ayuda a identificar fortalezas y áreas de mejora para el desarrollo profesional."
+	},
+	{
+		"id": 4,
+		"question": "¿Qué es la capacitación en el contexto del talento humano?",
+		"correct_answer": "Proceso de formación para mejorar competencias y habilidades laborales",
+		"incorrect_answers": [
+			"Entrenamiento para tareas administrativas exclusivamente",
+			"Proceso de selección de personal",
+			"Evaluación de desempeño anual"
+		],
+		"description": "¡¡Correcto!!! La capacitación busca preparar a los colaboradores para cumplir mejor sus funciones."
+	},
+	{
+		"id": 5,
+		"question": "¿Qué papel juega el clima organizacional en la gestión del talento humano?",
+		"correct_answer": "Influye en la motivación y productividad de los empleados",
+		"incorrect_answers": [
+			"Solo afecta la imagen externa de la empresa",
+			"No tiene impacto en el trabajo diario",
+			"Se limita a las relaciones entre gerentes"
+		],
+		"description": "¡¡Correcto!!! Un buen clima organizacional es clave para el bienestar y compromiso de los empleados."
+	},
+	{
+		"id": 6,
+		"question": "¿Qué es la selección de personal?",
+		"correct_answer": "Proceso para elegir al candidato más idóneo para un puesto",
+		"incorrect_answers": [
+			"Contratar al primero que se postula",
+			"Realizar capacitaciones internas",
+			"Evaluar solo aspectos físicos del candidato"
+		],
+		"description": "¡¡Correcto!!! La selección busca asegurar que la persona contratada cumpla con el perfil requerido."
+	},
+	{
+		"id": 7,
+		"question": "¿Cuál es la importancia de la comunicación interna en la gestión del talento humano?",
+		"correct_answer": "Facilitar la información y fortalecer las relaciones laborales",
+		"incorrect_answers": [
+			"Reducir la cantidad de reuniones",
+			"Incrementar la burocracia administrativa",
+			"Evitar conflictos sin diálogo"
+		],
+		"description": "¡¡Correcto!!! La comunicación efectiva es vital para la coordinación y motivación del equipo."
+	},
+	{
+		"id": 8,
+		"question": "¿Qué es la remuneración justa en el contexto laboral?",
+		"correct_answer": "Pago adecuado que reconoce el valor y esfuerzo del trabajador",
+		"incorrect_answers": [
+			"El salario mínimo legal sin beneficios",
+			"Pagar solo comisiones",
+			"Retribución en especie sin dinero"
+		],
+		"description": "¡¡Correcto!!! Una remuneración justa contribuye a la satisfacción y retención del talento."
+	},
+	{
+		"id": 9,
+		"question": "¿Cuál es el objetivo del plan de desarrollo individual en una organización?",
+		"correct_answer": "Potenciar habilidades y preparar para futuros retos laborales",
+		"incorrect_answers": [
+			"Aplicar sanciones disciplinarias",
+			"Reducir el número de empleados",
+			"Organizar actividades recreativas"
+		],
+		"description": "¡¡Correcto!!! Los planes de desarrollo personal buscan fortalecer las capacidades individuales para el crecimiento profesional."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué es la retención del talento humano?",
+		"correct_answer": "Conjunto de estrategias para mantener a los empleados valiosos en la empresa",
+		"incorrect_answers": [
+			"Obligar a los empleados a no renunciar",
+			"Reducir salarios para ahorrar costos",
+			"Evitar promociones internas"
+		],
+		"description": "¡¡Correcto!!! La retención busca evitar la rotación de personal clave y mantener el conocimiento en la organización."
+	},
+	{
+		"id": 11,
+		"question": "¿Qué es el proceso de inducción en la gestión del talento humano?",
+		"correct_answer": "Integrar al nuevo empleado a la cultura y procesos de la organización",
+		"incorrect_answers": [
+			"Capacitarlo en temas técnicos exclusivamente",
+			"Evaluar su desempeño desde el primer día",
+			"Realizar la contratación formal"
+		],
+		"description": "¡¡Correcto!!! La inducción facilita la adaptación y alineación del nuevo colaborador con la empresa."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál es la finalidad de la política de igualdad y no discriminación en el trabajo?",
+		"correct_answer": "Garantizar oportunidades iguales sin importar género, raza o religión",
+		"incorrect_answers": [
+			"Promover solo a hombres en cargos directivos",
+			"Limitar la contratación a ciertos grupos",
+			"Evitar la capacitación de ciertos empleados"
+		],
+		"description": "¡¡Correcto!!! La igualdad laboral es un derecho fundamental y fomenta ambientes inclusivos."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué rol tiene el liderazgo en la gestión del talento humano?",
+		"correct_answer": "Motivar y guiar al equipo hacia el logro de objetivos organizacionales",
+		"incorrect_answers": [
+			"Supervisar sin delegar responsabilidades",
+			"Tomar todas las decisiones sin consultar",
+			"Evitar el contacto con los colaboradores"
+		],
+		"description": "¡¡Correcto!!! Un buen líder inspira, apoya y facilita el desarrollo del equipo."
+	},
+	{
+		"id": 14,
+		"question": "¿Qué es la rotación de personal y por qué es importante gestionarla?",
+		"correct_answer": "Cambio de empleados que puede afectar la productividad y cultura organizacional",
+		"incorrect_answers": [
+			"Incremento de empleados en una empresa",
+			"Contratación temporal para eventos especiales",
+			"Ausencia justificada por vacaciones"
+		],
+		"description": "¡¡Correcto!!! Gestionar la rotación ayuda a mantener la estabilidad y retener talento valioso."
+	},
+	{
+		"id": 15,
+		"question": "¿Cuál es la función del Comité Paritario de Seguridad y Salud en el Trabajo (COPASST)?",
+		"correct_answer": "Promover condiciones seguras y saludables en el ambiente laboral",
+		"incorrect_answers": [
+			"Administrar los salarios de los empleados",
+			"Realizar evaluaciones de desempeño",
+			"Gestionar la contratación de personal"
+		],
+		"description": "¡¡Correcto!!! El COPASST vela por la prevención de riesgos laborales y el bienestar de los trabajadores."
+	},
+	{
+		"id": 16,
+		"question": "¿Qué es la gestión por competencias en el talento humano?",
+		"correct_answer": "Identificar y desarrollar habilidades específicas para cada puesto de trabajo",
+		"incorrect_answers": [
+			"Evaluar solo el rendimiento económico",
+			"Contratar personal sin perfil definido",
+			"Realizar capacitaciones genéricas"
+		],
+		"description": "¡¡Correcto!!! Gestionar por competencias asegura que el personal tenga las capacidades necesarias para su rol."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué significa la flexibilidad laboral en la gestión del talento humano?",
+		"correct_answer": "Adaptar horarios y modalidades de trabajo para mejorar el bienestar del empleado",
+		"incorrect_answers": [
+			"Reducir salarios para ahorrar costos",
+			"Eliminar beneficios laborales",
+			"Obligar a trabajar horas extras sin compensación"
+		],
+		"description": "¡¡Correcto!!! La flexibilidad contribuye a la conciliación entre vida personal y laboral."
+	},
+	{
+		"id": 18,
+		"question": "¿Qué es el teletrabajo según la normativa colombiana?",
+		"correct_answer": "Modalidad de trabajo que se realiza fuera de las instalaciones físicas de la empresa",
+		"incorrect_answers": [
+			"Trabajo sin supervisión ni reglas",
+			"Trabajo presencial obligatorio",
+			"Vacaciones prolongadas"
+		],
+		"description": "¡¡Correcto!!! El teletrabajo es regulado para garantizar derechos y obligaciones tanto del empleador como del empleado."
+	},
+	{
+		"id": 19,
+		"question": "¿Cuál es la importancia de la retroalimentación en el desarrollo profesional?",
+		"correct_answer": "Permite identificar fortalezas y áreas de mejora para el crecimiento laboral",
+		"incorrect_answers": [
+			"Criticar sin ofrecer soluciones",
+			"Evaluar solo la asistencia",
+			"Ignorar el desempeño del empleado"
+		],
+		"description": "¡¡Correcto!!! La retroalimentación constructiva fomenta el aprendizaje y la mejora continua."
+	},
+	{
+		"id": 20,
+		"question": "¿Qué función cumple la gestión de la salud ocupacional en las empresas?",
+		"correct_answer": "Prevenir enfermedades y accidentes laborales para proteger a los empleados",
+		"incorrect_answers": [
+			"Aumentar la carga laboral",
+			"Reducir beneficios de salud",
+			"Evitar controles médicos periódicos"
+		],
+		"description": "¡¡Correcto!!! La salud ocupacional es fundamental para mantener ambientes de trabajo seguros y saludables."
+	},
+	{
+		"id": 21,
+		"question": "¿Qué es el proceso de outplacement en una empresa?",
+		"correct_answer": "Apoyo y asesoría para la reinserción laboral de empleados desvinculados",
+		"incorrect_answers": [
+			"Contratación externa de personal",
+			"Capacitación interna para ascensos",
+			"Evaluación de desempeño anual"
+		],
+		"description": "¡¡Correcto!!! El outplacement ayuda a los empleados a encontrar nuevas oportunidades fuera de la empresa."
+	},
+	{
+		"id": 22,
+		"question": "¿Cuál es el papel de la retroalimentación 360 grados en la gestión del talento humano?",
+		"correct_answer": "Recibir evaluaciones de desempeño desde diferentes perspectivas: superiores, pares y subordinados",
+		"incorrect_answers": [
+			"Evaluación solo por el jefe inmediato",
+			"Evaluación solo por recursos humanos",
+			"Evaluación informal sin estructura"
+		],
+		"description": "¡¡Correcto!!! La retroalimentación 360 grados aporta una visión integral del desempeño del empleado."
+	},
+	{
+		"id": 23,
+		"question": "¿Qué es el employer branding y por qué es importante?",
+		"correct_answer": "La imagen y reputación que tiene una empresa como empleadora para atraer talento",
+		"incorrect_answers": [
+			"El diseño del logo corporativo",
+			"La publicidad de productos y servicios",
+			"La estrategia de ventas"
+		],
+		"description": "¡¡Correcto!!! Un buen employer branding facilita la atracción y retención de talento."
+	},
+	{
+		"id": 24,
+		"question": "¿Qué implica la gestión del cambio en el talento humano?",
+		"correct_answer": "Acompañar y facilitar la adaptación de los empleados a nuevas políticas o estructuras",
+		"incorrect_answers": [
+			"Implementar castigos por errores",
+			"Evitar modificaciones en la empresa",
+			"Cambiar la organización sin comunicación"
+		],
+		"description": "¡¡Correcto!!! La gestión del cambio busca minimizar resistencia y maximizar la aceptación."
+	},
+	{
+		"id": 25,
+		"question": "¿Qué es el plan de sucesión en una organización?",
+		"correct_answer": "Identificar y preparar empleados para ocupar cargos claves en el futuro",
+		"incorrect_answers": [
+			"Reducir personal en áreas no productivas",
+			"Contratar nuevos empleados constantemente",
+			"Capacitar solo al personal operativo"
+		],
+		"description": "¡¡Correcto!!! El plan de sucesión garantiza la continuidad y estabilidad organizacional."
+	},
+	{
+		"id": 26,
+		"question": "¿Cuál es la función principal de los procesos de onboarding?",
+		"correct_answer": "Integrar y acomodar al nuevo empleado en su rol y cultura organizacional",
+		"incorrect_answers": [
+			"Evaluar el desempeño al finalizar el contrato",
+			"Planear la salida del empleado",
+			"Reducir la carga laboral"
+		],
+		"description": "¡¡Correcto!!! El onboarding mejora la experiencia y retención del nuevo talento."
+	},
+	{
+		"id": 27,
+		"question": "¿Qué es la diversidad e inclusión en el talento humano?",
+		"correct_answer": "Promover un ambiente laboral respetuoso y valorando diferencias individuales",
+		"incorrect_answers": [
+			"Contratar solo un tipo de perfil",
+			"Excluir a minorías",
+			"Evitar cambios en el equipo"
+		],
+		"description": "¡¡Correcto!!! La diversidad e inclusión enriquecen el ambiente y la creatividad organizacional."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué importancia tiene el bienestar laboral para la gestión del talento humano?",
+		"correct_answer": "Mejora la satisfacción, salud y productividad de los empleados",
+		"incorrect_answers": [
+			"Incrementa los costos sin beneficios",
+			"Solo se enfoca en beneficios sociales",
+			"No tiene impacto en la empresa"
+		],
+		"description": "¡¡Correcto!!! El bienestar laboral es clave para la motivación y retención del personal."
+	},
+	{
+		"id": 29,
+		"question": "¿Qué es un programa de incentivos en la gestión del talento humano?",
+		"correct_answer": "Mecanismos para motivar y recompensar el buen desempeño de los empleados",
+		"incorrect_answers": [
+			"Multas por incumplimiento",
+			"Aumentos salariales obligatorios",
+			"Jornadas laborales extendidas"
+		],
+		"description": "¡¡Correcto!!! Los incentivos fomentan la productividad y compromiso con la empresa."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es la función del área de recursos humanos en la gestión del talento humano?",
+		"correct_answer": "Diseñar y ejecutar estrategias para atraer, desarrollar y retener talento",
+		"incorrect_answers": [
+			"Solo contratar personal",
+			"Administrar únicamente la nómina",
+			"Supervisar solo la disciplina"
+		],
+		"description": "¡¡Correcto!!! Recursos humanos gestiona integralmente el ciclo de vida del empleado en la organización."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué es la capacitación laboral y cuál es su objetivo principal?",
+		"correct_answer": "Proceso para mejorar habilidades y conocimientos de los empleados",
+		"incorrect_answers": [
+			"Reuniones informales entre empleados",
+			"Evaluación anual sin seguimiento",
+			"Contratar nuevos empleados"
+		],
+		"description": "¡¡Correcto!!! La capacitación potencia el desempeño y desarrollo profesional del talento humano."
+	},
+	{
+		"id": 32,
+		"question": "¿Qué papel juega la comunicación interna en la gestión del talento humano?",
+		"correct_answer": "Facilitar el flujo de información y fortalecer el compromiso organizacional",
+		"incorrect_answers": [
+			"Generar rumores entre empleados",
+			"Ocultar información importante",
+			"Solo enviar correos formales"
+		],
+		"description": "¡¡Correcto!!! Una comunicación efectiva es clave para la coordinación y motivación del equipo."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué es el análisis de clima laboral?",
+		"correct_answer": "Evaluación del ambiente y condiciones de trabajo que afectan a los empleados",
+		"incorrect_answers": [
+			"Examen médico periódico",
+			"Estudio de mercado externo",
+			"Informe financiero anual"
+		],
+		"description": "¡¡Correcto!!! El análisis del clima laboral permite identificar áreas de mejora para aumentar la satisfacción."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué son las competencias blandas y por qué son importantes?",
+		"correct_answer": "Habilidades sociales y emocionales que facilitan la interacción y el trabajo en equipo",
+		"incorrect_answers": [
+			"Conocimientos técnicos específicos",
+			"Certificaciones académicas",
+			"Experiencia laboral previa"
+		],
+		"description": "¡¡Correcto!!! Las competencias blandas complementan las técnicas y mejoran la eficacia laboral."
+	},
+	{
+		"id": 35,
+		"question": "¿Qué es un plan de desarrollo profesional?",
+		"correct_answer": "Estrategia para potenciar el crecimiento y aprendizaje continuo del empleado",
+		"incorrect_answers": [
+			"Plan para reducir costos en capacitación",
+			"Documento para despidos masivos",
+			"Horario laboral semanal"
+		],
+		"description": "¡¡Correcto!!! Este plan ayuda a alinear objetivos personales con los de la organización."
+	},
+	{
+		"id": 36,
+		"question": "¿Cuál es la importancia del trabajo en equipo dentro de una organización?",
+		"correct_answer": "Potencia la colaboración y el logro de objetivos comunes",
+		"incorrect_answers": [
+			"Genera conflictos constantes",
+			"Reduce la productividad",
+			"Impide la comunicación"
+		],
+		"description": "¡¡Correcto!!! El trabajo en equipo fortalece el ambiente laboral y los resultados."
+	},
+	{
+		"id": 37,
+		"question": "¿Qué es la evaluación del desempeño y para qué sirve?",
+		"correct_answer": "Proceso para medir y mejorar el rendimiento laboral de los empleados",
+		"incorrect_answers": [
+			"Castigo por errores cometidos",
+			"Proceso para despedir empleados",
+			"Revisión de horarios únicamente"
+		],
+		"description": "¡¡Correcto!!! Permite detectar fortalezas y áreas de mejora para el desarrollo profesional."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué significa el concepto de talento crítico en la gestión del talento humano?",
+		"correct_answer": "Empleados con habilidades y conocimientos clave para el éxito organizacional",
+		"incorrect_answers": [
+			"Personal de apoyo administrativo",
+			"Empleados temporales",
+			"Contratistas externos"
+		],
+		"description": "¡¡Correcto!!! Identificar talento crítico ayuda a enfocarse en su retención y desarrollo."
+	},
+	{
+		"id": 39,
+		"question": "¿Cuál es el objetivo principal de la gestión del desempeño?",
+		"correct_answer": "Mejorar la productividad y el desarrollo continuo de los empleados",
+		"incorrect_answers": [
+			"Reducir el número de empleados",
+			"Incrementar las horas de trabajo",
+			"Evitar evaluaciones periódicas"
+		],
+		"description": "¡¡Correcto!!! Gestionar el desempeño impulsa la mejora constante y el logro de metas."
+	},
+	{
+		"id": 40,
+		"question": "¿Qué son los planes de bienestar laboral?",
+		"correct_answer": "Programas diseñados para mejorar la calidad de vida de los empleados en la empresa",
+		"incorrect_answers": [
+			"Planes para aumentar la carga laboral",
+			"Programas para recortar beneficios",
+			"Estrategias para reducir salarios"
+		],
+		"description": "¡¡Correcto!!! Los planes de bienestar contribuyen a la motivación y salud integral del personal."
+	},
+	{
+		"id": 41,
+		"question": "¿Qué es la movilidad laboral dentro de una empresa?",
+		"correct_answer": "El traslado o cambio de un empleado a diferentes puestos o áreas dentro de la organización",
+		"incorrect_answers": [
+			"Despido de empleados",
+			"Contratación externa",
+			"Reducción de jornada laboral"
+		],
+		"description": "¡¡Correcto!!! La movilidad laboral permite desarrollar habilidades y retener talento al ofrecer nuevas oportunidades."
+	},
+	{
+		"id": 42,
+		"question": "¿Cuál es la importancia del liderazgo en la gestión del talento humano?",
+		"correct_answer": "Motivar, guiar y apoyar al equipo para alcanzar objetivos organizacionales",
+		"incorrect_answers": [
+			"Imponer reglas estrictas sin diálogo",
+			"Delegar sin supervisión",
+			"Evitar la comunicación con el equipo"
+		],
+		"description": "¡¡Correcto!!! Un buen liderazgo impulsa el compromiso y desempeño del personal."
+	},
+	{
+		"id": 43,
+		"question": "¿Qué es la gestión por competencias?",
+		"correct_answer": "Modelo que identifica y desarrolla habilidades necesarias para el éxito en el trabajo",
+		"incorrect_answers": [
+			"Proceso de selección aleatoria",
+			"Evaluación económica de la empresa",
+			"Contratación basada en antigüedad"
+		],
+		"description": "¡¡Correcto!!! La gestión por competencias permite alinear talento con necesidades organizacionales."
+	},
+	{
+		"id": 44,
+		"question": "¿Qué es la retención de talento?",
+		"correct_answer": "Estrategias para mantener a los empleados valiosos y evitar su salida",
+		"incorrect_answers": [
+			"Contratar nuevo personal frecuentemente",
+			"Reducir beneficios laborales",
+			"No ofrecer oportunidades de crecimiento"
+		],
+		"description": "¡¡Correcto!!! La retención asegura la estabilidad y continuidad en la empresa."
+	},
+	{
+		"id": 45,
+		"question": "¿Cuál es el propósito de un programa de mentoría en la gestión del talento humano?",
+		"correct_answer": "Guiar y apoyar el desarrollo profesional de empleados menos experimentados",
+		"incorrect_answers": [
+			"Evaluar el desempeño anual",
+			"Capacitar en temas técnicos únicamente",
+			"Reducir la comunicación interna"
+		],
+		"description": "¡¡Correcto!!! La mentoría fomenta el aprendizaje y crecimiento dentro de la organización."
+	},
+	{
+		"id": 46,
+		"question": "¿Qué papel juega la evaluación  de clima organizacional en la gestión del talento humano?",
+		"correct_answer": "Identificar aspectos que afectan el ambiente laboral y tomar acciones para mejorarlo",
+		"incorrect_answers": [
+			"Medir la productividad individual",
+			"Contabilizar ausencias laborales",
+			"Gestionar solo la nómina"
+		],
+		"description": "¡¡Correcto!!! El clima organizacional influye directamente en la satisfacción y desempeño de los empleados."
+	},
+	{
+		"id": 47,
+		"question": "¿Qué es un plan de formación continua?",
+		"correct_answer": "Programa constante de capacitación para mantener actualizados a los empleados",
+		"incorrect_answers": [
+			"Evaluación para despedir empleados",
+			"Reducción de horarios laborales",
+			"Plan para reducir costos en personal"
+		],
+		"description": "¡¡Correcto!!! La formación continua es vital para la competitividad y crecimiento profesional."
+	},
+	{
+		"id": 48,
+		"question": "¿Cuál es la función del proceso de selección en la gestión del talento humano?",
+		"correct_answer": "Identificar y elegir candidatos adecuados para un puesto de trabajo",
+		"incorrect_answers": [
+			"Asignar tareas a empleados actuales",
+			"Evaluar salarios del personal",
+			"Capacitar a los empleados"
+		],
+		"description": "¡¡Correcto!!! La selección asegura la incorporación del talento que mejor se ajusta a la organización."
+	},
+	{
+		"id": 49,
+		"question": "¿Qué es la planificación estratégica de recursos humanos?",
+		"correct_answer": "Definir políticas y acciones para satisfacer las necesidades futuras de talento",
+		"incorrect_answers": [
+			"Reducir el personal sin planificación",
+			"Aumentar la carga laboral sin análisis",
+			"Evaluar solo desempeño pasado"
+		],
+		"description": "¡¡Correcto!!! La planificación estratégica permite anticipar cambios y preparar al talento necesario."
+	},
+	{
+		"id": 50,
+		"question": "¿Qué importancia tiene la ética profesional en la gestión del talento humano?",
+		"correct_answer": "Garantiza un comportamiento responsable, justo y transparente dentro de la organización",
+		"incorrect_answers": [
+			"Permite justificar malas prácticas",
+			"No afecta el ambiente laboral",
+			"Es irrelevante en la gestión"
+		],
+		"description": "¡¡Correcto!!! La ética profesional fortalece la confianza y el buen clima organizacional."
+	}
+]
+
+export const seguridad_salud_trabajo = [
+	{
+		"id": 1,
+		"question": "¿Cuál es el objetivo principal del Sistema de Gestión de la Seguridad y Salud en el Trabajo (SG-SST)?",
+		"correct_answer": "Prevenir accidentes y enfermedades laborales",
+		"incorrect_answers": ["Reducir los costos de producción", "Incrementar las ventas", "Capacitar al personal en finanzas"],
+		"description": "¡¡Correcto!!! El SG-SST busca anticipar, reconocer, evaluar y controlar los riesgos que puedan afectar la seguridad y salud de los trabajadores."
+	},
+	{
+		"id": 2,
+		"question": "¿Cuál es la norma que regula el SG-SST en Colombia?",
+		"correct_answer": "Decreto 1072 de 2015",
+		"incorrect_answers": ["Ley 100 de 1993", "Decreto 1295 de 1994", "Ley 1562 de 2012"],
+		"description": "¡¡Correcto!!! El Decreto 1072 de 2015 compila las normas del sector trabajo, incluyendo las relacionadas con el SG-SST."
+	},
+	{
+		"id": 3,
+		"question": "¿Qué entidad vigila el cumplimiento del SG-SST en Colombia?",
+		"correct_answer": "Ministerio del Trabajo",
+		"incorrect_answers": ["ARL", "Ministerio de Salud", "Superintendencia de Industria"],
+		"description": "¡¡Correcto!!! El Ministerio del Trabajo es la autoridad competente para verificar que las empresas implementen el SG-SST."
+	},
+	{
+		"id": 4,
+		"question": "¿Con qué frecuencia mínima debe actualizarse la matriz de peligros?",
+		"correct_answer": "Cada año o cuando ocurran cambios significativos",
+		"incorrect_answers": ["Cada 5 años", "Sólo al iniciar el SG-SST", "Nunca"],
+		"description": "¡¡Correcto!!! La actualización anual o por cambios relevantes garantiza que la matriz esté alineada con los riesgos reales del entorno laboral."
+	},
+	{
+		"id": 5,
+		"question": "¿Cuál es el documento que establece los riesgos, medidas preventivas y controles en un área de trabajo?",
+		"correct_answer": "Matriz de peligros",
+		"incorrect_answers": ["Manual de funciones", "Código de conducta", "Inventario de activos"],
+		"description": "¡¡Correcto!!! La matriz de peligros es una herramienta clave para identificar y gestionar riesgos laborales."
+	},
+	{
+		"id": 6,
+		"question": "¿Quiénes están obligados a implementar el SG-SST en Colombia?",
+		"correct_answer": "Todas las empresas, independientemente de su tamaño o actividad",
+		"incorrect_answers": ["Solo empresas con más de 10 empleados", "Solo del sector industrial", "Solo empresas del Estado"],
+		"description": "¡¡Correcto!!! Toda organización con al menos un trabajador debe implementar el SG-SST según la normatividad colombiana."
+	},
+	{
+		"id": 7,
+		"question": "¿Qué es una condición insegura?",
+		"correct_answer": "Una situación que puede causar un accidente de trabajo",
+		"incorrect_answers": ["Un trabajador que se queja mucho", "Un error en el pago de nómina", "Una enfermedad común"],
+		"description": "¡¡Correcto!!! Las condiciones inseguras son factores del entorno que aumentan la probabilidad de un incidente laboral."
+	},
+	{
+		"id": 8,
+		"question": "¿Cuál es el propósito de las pausas activas en el trabajo?",
+		"correct_answer": "Prevenir trastornos músculo-esqueléticos",
+		"incorrect_answers": ["Reducir el tiempo de trabajo", "Aumentar la productividad", "Verificar el desempeño laboral"],
+		"description": "¡¡Correcto!!! Las pausas activas mejoran la salud física y mental del trabajador, reduciendo el riesgo de lesiones por movimientos repetitivos."
+	},
+	{
+		"id": 9,
+		"question": "¿Qué es un accidente de trabajo según la legislación colombiana?",
+		"correct_answer": "Todo suceso repentino que sobrevenga por causa o con ocasión del trabajo",
+		"incorrect_answers": ["Solo los accidentes en la calle", "Enfermedad común", "Una sanción disciplinaria"],
+		"description": "¡¡Correcto!!! Así lo establece el Decreto 1295 de 1994 en Colombia."
+	},
+	{
+		"id": 10,
+		"question": "¿Qué debe hacer un trabajador al identificar un riesgo en su lugar de trabajo?",
+		"correct_answer": "Reportarlo de inmediato al responsable de seguridad y salud en el trabajo",
+		"incorrect_answers": ["Ignorarlo si no es grave", "Intentar corregirlo solo", "Esperar a que lo detecte un supervisor"],
+		"description": "¡¡Correcto!!! Reportar riesgos es un deber del trabajador y una acción clave para prevenir accidentes."
+	},
+	{
+		"id": 11,
+		"question": "¿Qué es la ergonomía?",
+		"correct_answer": "La disciplina que adapta el trabajo al trabajador",
+		"incorrect_answers": ["La ciencia que estudia las enfermedades ocupacionales", "Una técnica de gestión del tiempo", "Un programa de salud mental"],
+		"description": "¡¡Correcto!!! La ergonomía busca adaptar las condiciones de trabajo a las capacidades físicas y cognitivas del trabajador para mejorar la salud y el desempeño."
+	},
+	{
+		"id": 12,
+		"question": "¿Cuál de los siguientes es un objetivo de la ergonomía?",
+		"correct_answer": "Reducir lesiones músculo-esqueléticas",
+		"incorrect_answers": ["Mejorar la apariencia de la oficina", "Capacitar en seguridad informática", "Diseñar turnos rotativos"],
+		"description": "¡¡Correcto!!! La ergonomía busca prevenir trastornos físicos derivados de posturas forzadas, movimientos repetitivos o cargas excesivas."
+	},
+	{
+		"id": 13,
+		"question": "¿Qué postura se recomienda al trabajar frente a un computador?",
+		"correct_answer": "Espalda recta, pies apoyados y monitor a la altura de los ojos",
+		"incorrect_answers": ["Espalda encorvada y pantalla al nivel del pecho", "Sentado con las piernas cruzadas", "De pie con el teclado en alto"],
+		"description": "¡¡Correcto!!! Una postura ergonómica adecuada previene dolores musculares, fatiga visual y lesiones."
+	},
+	{
+		"id": 14,
+		"question": "¿Cuál es un riesgo ergonómico común en oficinas?",
+		"correct_answer": "Movimientos repetitivos en el teclado",
+		"incorrect_answers": ["Exposición a ruidos intensos", "Contacto con sustancias tóxicas", "Caídas desde alturas"],
+		"description": "¡¡Correcto!!! Los movimientos repetitivos como escribir en el teclado pueden generar lesiones por esfuerzo repetitivo como el síndrome del túnel carpiano."
+	},
+	{
+		"id": 15,
+		"question": "¿Qué equipo ayuda a mejorar la ergonomía en un puesto de trabajo?",
+		"correct_answer": "Silla ergonómica ajustable",
+		"incorrect_answers": ["Ventilador portátil", "Extintor manual", "Botiquín de primeros auxilios"],
+		"description": "¡¡Correcto!!! Una silla ergonómica ayuda a mantener la postura adecuada y reduce la tensión en la espalda y el cuello."
+	},
+	{
+		"id": 16,
+		"question": "¿Cuál es la recomendación para trabajos que requieren estar de pie por mucho tiempo?",
+		"correct_answer": "Usar descansapies o alfombras antifatiga",
+		"incorrect_answers": ["Usar zapatos de tacón", "Permanecer inmóvil", "Llevar casco en todo momento"],
+		"description": "¡¡Correcto!!! Las alfombras antifatiga y los descansapies reducen la presión en las piernas y la fatiga muscular."
+	},
+	{
+		"id": 17,
+		"question": "¿Qué medida puede prevenir lesiones ergonómicas al cargar objetos?",
+		"correct_answer": "Doblar las rodillas y mantener la espalda recta",
+		"incorrect_answers": ["Girar el torso al levantar", "Doblar la espalda completamente", "Cargar solo con los brazos"],
+		"description": "¡¡Correcto!!! Levantar objetos con la técnica correcta protege la columna vertebral y evita lesiones."
+	},
+	{
+		"id": 18,
+		"question": "¿Qué se entiende por trastorno músculo-esquelético relacionado con el trabajo?",
+		"correct_answer": "Lesiones en músculos, tendones o articulaciones causadas por el trabajo",
+		"incorrect_answers": ["Resfriados comunes", "Enfermedades de transmisión sexual", "Problemas de visión congénitos"],
+		"description": "¡¡Correcto!!! Estos trastornos son comunes en actividades que implican esfuerzo físico, mala postura o movimientos repetitivos."
+	},
+	{
+		"id": 19,
+		"question": "¿Qué componente del SG-SST incluye la evaluación ergonómica?",
+		"correct_answer": "Identificación de peligros y evaluación de riesgos",
+		"incorrect_answers": ["Análisis financiero", "Informe de sostenibilidad", "Presupuesto de mercadeo"],
+		"description": "¡¡Correcto!!! La evaluación ergonómica forma parte del análisis de riesgos laborales que deben incluirse en el SG-SST."
+	},
+	{
+		"id": 20,
+		"question": "¿Cuál es una consecuencia común de una mala postura prolongada en el trabajo?",
+		"correct_answer": "Dolor lumbar y cervical",
+		"incorrect_answers": ["Fractura ósea", "Gripe recurrente", "Cansancio visual inmediato"],
+		"description": "¡¡Correcto!!! Una postura incorrecta mantenida por tiempo prolongado puede causar lesiones en la columna y otros problemas musculares."
+	},
+	{
+		"id": 21,
+		"question": "¿Cuál es la norma que establece el Sistema de Gestión de la Seguridad y Salud en el Trabajo en Colombia?",
+		"correct_answer": "Decreto 1072 de 2015",
+		"incorrect_answers": ["Ley 100 de 1993", "Ley 1010 de 2006", "Decreto 1295 de 1994"],
+		"description": "¡¡Correcto!!! El Decreto 1072 de 2015 compila y reglamenta las normas del sector trabajo, incluyendo el SG-SST."
+	},
+	{
+		"id": 22,
+		"question": "¿Qué entidad es la encargada de vigilar el cumplimiento del SG-SST en Colombia?",
+		"correct_answer": "Ministerio del Trabajo",
+		"incorrect_answers": ["ARL", "EPS", "SENA"],
+		"description": "¡¡Correcto!!! El Ministerio del Trabajo es la autoridad encargada de inspeccionar, vigilar y controlar el cumplimiento de las normas en SST."
+	},
+	{
+		"id": 23,
+		"question": "¿Cada cuánto tiempo debe revisarse el Plan de Trabajo Anual del SG-SST según la normativa vigente?",
+		"correct_answer": "Cada año",
+		"incorrect_answers": ["Cada dos años", "Cada seis meses", "Cada cinco años"],
+		"description": "¡¡Correcto!!! El plan de trabajo debe revisarse y actualizarse anualmente para mantener la mejora continua del SG-SST."
+	},
+	{
+		"id": 24,
+		"question": "¿Cuál de los siguientes documentos es obligatorio para evidenciar la implementación del SG-SST?",
+		"correct_answer": "Matriz de peligros",
+		"incorrect_answers": ["Manual de funciones", "Código de ética", "Certificado de afiliación EPS"],
+		"description": "¡¡Correcto!!! La matriz de peligros es un documento clave en la identificación de riesgos dentro del SG-SST."
+	},
+	{
+		"id": 25,
+		"question": "¿Cuál es la ley que establece el derecho de los trabajadores a un ambiente laboral sano y seguro?",
+		"correct_answer": "Ley 1562 de 2012",
+		"incorrect_answers": ["Ley 100 de 1993", "Ley 1090 de 2006", "Ley 80 de 1993"],
+		"description": "¡¡Correcto!!! La Ley 1562 de 2012 fortalece el sistema de riesgos laborales y promueve condiciones laborales seguras."
+	},
+	{
+		"id": 26,
+		"question": "¿Qué busca la promoción de la salud en el entorno laboral?",
+		"correct_answer": "Fomentar hábitos saludables y prevenir enfermedades",
+		"incorrect_answers": ["Imponer normas estrictas de comportamiento", "Reducir la carga laboral", "Aumentar la jornada laboral"],
+		"description": "¡¡Correcto!!! La promoción de la salud busca crear entornos de trabajo que favorezcan el bienestar físico, mental y social del trabajador."
+	},
+	{
+		"id": 27,
+		"question": "Una estrategia común para la promoción de la salud en las empresas es:",
+		"correct_answer": "Jornadas de actividad física y pausas activas",
+		"incorrect_answers": ["Aumento de turnos nocturnos", "Revisión de contratos", "Reducción de vacaciones"],
+		"description": "¡¡Correcto!!! Las pausas activas y la actividad física ayudan a prevenir enfermedades músculo-esqueléticas y mejorar la salud general."
+	},
+	{
+		"id": 28,
+		"question": "¿Qué instrumento guía la promoción de la salud en el ambiente laboral en Colombia?",
+		"correct_answer": "Resolución 0312 de 2019",
+		"incorrect_answers": ["Decreto 1010 de 2006", "Ley 50 de 1990", "Decreto 2150 de 1995"],
+		"description": "¡¡Correcto!!! La Resolución 0312 de 2019 establece los estándares mínimos del SG-SST, incluyendo acciones de promoción y prevención."
+	},
+	{
+		"id": 29,
+		"question": "¿Qué tipo de enfoque promueve la promoción de la salud en el trabajo?",
+		"correct_answer": "Preventivo y proactivo",
+		"incorrect_answers": ["Correctivo", "Punitivo", "Competitivo"],
+		"description": "¡¡Correcto!!! Se trata de un enfoque preventivo, que busca anticiparse a los riesgos y fomentar la salud de manera proactiva."
+	},
+	{
+		"id": 30,
+		"question": "¿Cuál es un beneficio organizacional de promover la salud en el lugar de trabajo?",
+		"correct_answer": "Disminución del ausentismo laboral",
+		"incorrect_answers": ["Incremento del estrés", "Aumento en sanciones disciplinarias", "Reducción en el número de empleados"],
+		"description": "¡¡Correcto!!! Las estrategias de promoción de la salud reducen las enfermedades y el ausentismo, mejorando la productividad."
+	},
+	{
+		"id": 31,
+		"question": "¿Qué es la gestión del riesgo en Seguridad y Salud en el Trabajo?",
+		"correct_answer": "El proceso para identificar, evaluar y controlar los riesgos laborales",
+		"incorrect_answers": [
+			"Un sistema para aumentar la producción",
+			"La imposición de multas a los trabajadores",
+			"Un plan para reducir el salario"
+		],
+		"description": "¡¡Correcto!!! La gestión del riesgo implica identificar peligros, evaluar riesgos y establecer controles para prevenir accidentes y enfermedades laborales."
+	},
+	{
+		"id": 32,
+		"question": "¿Cuál es el primer paso para una adecuada gestión del riesgo en el trabajo?",
+		"correct_answer": "Identificación de peligros",
+		"incorrect_answers": [
+			"Control de riesgos",
+			"Capacitación a empleados",
+			"Inspección final"
+		],
+		"description": "¡¡Correcto!!! Antes de controlar un riesgo, debe ser identificado claramente para tomar medidas efectivas."
+	},
+	{
+		"id": 33,
+		"question": "¿Qué herramienta se utiliza para evaluar los riesgos laborales?",
+		"correct_answer": "Matriz de riesgos",
+		"incorrect_answers": [
+			"Mapa mental",
+			"Encuesta de satisfacción",
+			"Manual de funciones"
+		],
+		"description": "¡¡Correcto!!! La matriz de riesgos permite clasificar y priorizar los riesgos según su probabilidad y severidad."
+	},
+	{
+		"id": 34,
+		"question": "¿Qué tipo de medidas corresponden a la gestión del riesgo?",
+		"correct_answer": "Medidas de prevención y control",
+		"incorrect_answers": [
+			"Medidas punitivas",
+			"Medidas administrativas para despidos",
+			"Medidas de marketing"
+		],
+		"description": "¡¡Correcto!!! La gestión del riesgo busca implementar controles para minimizar o eliminar riesgos."
+	},
+	{
+		"id": 35,
+		"question": "¿Quién debe participar en la gestión del riesgo en una empresa?",
+		"correct_answer": "Todos los trabajadores y empleadores",
+		"incorrect_answers": [
+			"Solo el jefe inmediato",
+			"Solo el área de recursos humanos",
+			"Solo los supervisores"
+		],
+		"description": "¡¡Correcto!!! La gestión del riesgo es una responsabilidad compartida para asegurar un ambiente laboral seguro."
+	},
+	{
+		"id": 36,
+		"question": "¿Cuál es el objetivo principal de la prevención de accidentes laborales?",
+		"correct_answer": "Evitar la ocurrencia de accidentes y enfermedades laborales",
+		"incorrect_answers": [
+			"Incrementar la producción",
+			"Reducir costos sin importar la seguridad",
+			"Sancionar a los empleados"
+		],
+		"description": "¡¡Correcto!!! La prevención busca proteger la integridad física y mental de los trabajadores, evitando accidentes y enfermedades."
+	},
+	{
+		"id": 37,
+		"question": "¿Qué es una investigación de accidentes laborales?",
+		"correct_answer": "El análisis detallado de las causas que provocaron un accidente",
+		"incorrect_answers": [
+			"Una sanción al trabajador involucrado",
+			"Un reporte para la gerencia sin seguimiento",
+			"Un trámite burocrático sin relevancia"
+		],
+		"description": "¡¡Correcto!!! Investigar accidentes permite identificar fallas y evitar que se repitan."
+	},
+	{
+		"id": 38,
+		"question": "¿Qué elemento es clave para la prevención de accidentes en la empresa?",
+		"correct_answer": "Capacitación continua en seguridad y uso de EPP",
+		"incorrect_answers": [
+			"Incrementar la jornada laboral",
+			"Reducir la comunicación interna",
+			"Ignorar los reportes de incidentes"
+		],
+		"description": "¡¡Correcto!!! La formación constante y el uso adecuado de equipos de protección personal son esenciales para prevenir accidentes."
+	},
+	{
+		"id": 39,
+		"question": "¿Qué significa EPP en Seguridad y Salud en el Trabajo?",
+		"correct_answer": "Equipo de Protección Personal",
+		"incorrect_answers": [
+			"Evaluación de Procedimientos de Producción",
+			"Entidad Promotora de Prestaciones",
+			"Elemento de Planeación Productiva"
+		],
+		"description": "¡¡Correcto!!! El EPP es el conjunto de elementos destinados a proteger al trabajador de riesgos específicos."
+	},
+	{
+		"id": 40,
+		"question": "¿Qué rol juega la señalización en la prevención de accidentes?",
+		"correct_answer": "Indicar riesgos y medidas de seguridad para evitar accidentes",
+		"incorrect_answers": [
+			"Decorar las áreas de trabajo",
+			"Reducir la visibilidad en zonas peligrosas",
+			"Controlar la entrada de visitantes"
+		],
+		"description": "¡¡Correcto!!! La señalización advierte sobre peligros y guía comportamientos seguros en el lugar de trabajo."
+	},
+	{
+		"id": 41,
+		"question": "¿Qué debe contener un plan de emergencia en una empresa?",
+		"correct_answer": "Procedimientos claros para evacuar y atender emergencias",
+		"incorrect_answers": [
+			"Solo una lista de empleados",
+			"Un informe de ventas",
+			"Un manual de calidad sin relación"
+		],
+		"description": "¡¡Correcto!!! Un plan de emergencia debe incluir rutas de evacuación, roles y acciones a seguir en caso de accidentes o desastres."
+	},
+	{
+		"id": 42,
+		"question": "¿Qué es un accidente de trabajo según la legislación colombiana?",
+		"correct_answer": "Un suceso que causa lesión o enfermedad debido a la actividad laboral",
+		"incorrect_answers": [
+			"Una falla administrativa",
+			"Un retraso en la entrega de productos",
+			"Un problema de transporte"
+		],
+		"description": "¡¡Correcto!!! El accidente laboral es un evento inesperado que afecta la salud del trabajador en relación con su trabajo."
+	},
+	{
+		"id": 43,
+		"question": "¿Quién debe reportar un accidente laboral en la empresa?",
+		"correct_answer": "El trabajador afectado o un testigo inmediato",
+		"incorrect_answers": [
+			"Solo el jefe inmediato",
+			"Solo el área de recursos humanos",
+			"Nadie está obligado a reportar"
+		],
+		"description": "¡¡Correcto!!! La ley obliga a reportar accidentes para tomar acciones oportunas y evitar futuros incidentes."
+	},
+	{
+		"id": 44,
+		"question": "¿Qué entidad en Colombia supervisa el cumplimiento de normas de Seguridad y Salud en el Trabajo?",
+		"correct_answer": "Ministerio del Trabajo",
+		"incorrect_answers": [
+			"Ministerio de Hacienda",
+			"DIAN",
+			"Superintendencia de Industria y Comercio"
+		],
+		"description": "¡¡Correcto!!! El Ministerio del Trabajo vigila que las empresas cumplan con las normas SST para proteger a los trabajadores."
+	},
+	{
+		"id": 45,
+		"question": "¿Qué se entiende por riesgo laboral?",
+		"correct_answer": "La probabilidad de que un trabajador sufra un daño por un peligro en el trabajo",
+		"incorrect_answers": [
+			"El salario que recibe un trabajador",
+			"La calidad del producto fabricado",
+			"El tiempo de descanso"
+		],
+		"description": "¡¡Correcto!!! El riesgo laboral evalúa la posibilidad de sufrir accidentes o enfermedades por condiciones del entorno laboral."
+	},
+	{
+		"id": 46,
+		"question": "¿Cuál es la función principal del Comité Paritario de Seguridad y Salud en el Trabajo (COPASST)?",
+		"correct_answer": "Promover y vigilar el cumplimiento de las normas de SST en la empresa",
+		"incorrect_answers": [
+			"Controlar la producción",
+			"Evaluar el desempeño laboral",
+			"Administrar las finanzas"
+		],
+		"description": "¡¡Correcto!!! El COPASST es un espacio de participación de trabajadores y empleadores para garantizar condiciones seguras."
+	},
+	{
+		"id": 47,
+		"question": "¿Qué es un peligro en el contexto de SST?",
+		"correct_answer": "Cualquier fuente o situación que puede causar daño o lesión",
+		"incorrect_answers": [
+			"Un trabajador nuevo",
+			"Un horario laboral largo",
+			"Un proceso administrativo"
+		],
+		"description": "¡¡Correcto!!! Identificar peligros es esencial para prevenir riesgos y accidentes en el trabajo."
+	},
+	{
+		"id": 48,
+		"question": "¿Qué debe hacerse tras la identificación de un peligro en el lugar de trabajo?",
+		"correct_answer": "Evaluar el riesgo asociado y tomar medidas de control",
+		"incorrect_answers": [
+			"Ignorar el peligro",
+			"Aumentar la producción",
+			"Cambiar el horario de trabajo"
+		],
+		"description": "¡¡Correcto!!! Identificar un peligro debe seguirse con su evaluación y acciones para evitar daños."
+	},
+	{
+		"id": 49,
+		"question": "¿Qué es la vigilancia epidemiológica en SST?",
+		"correct_answer": "Monitorear la salud de los trabajadores y detectar enfermedades ocupacionales",
+		"incorrect_answers": [
+			"Registrar las ventas de la empresa",
+			"Controlar el inventario",
+			"Supervisar horarios"
+		],
+		"description": "¡¡Correcto!!! La vigilancia epidemiológica ayuda a prevenir y controlar enfermedades relacionadas con el trabajo."
+	},
+	{
+		"id": 50,
+		"question": "¿Qué ley en Colombia regula la Seguridad y Salud en el Trabajo?",
+		"correct_answer": "Ley 1562 de 2012",
+		"incorrect_answers": [
+			"Ley 100 de 1993",
+			"Ley 734 de 2002",
+			"Ley 142 de 1994"
+		],
+		"description": "¡¡Correcto!!! La Ley 1562 establece el marco legal para la prevención, protección y promoción en SST."
 	}
 ]

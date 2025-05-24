@@ -22,7 +22,9 @@ import {
   razonamiento_numerico,
   aptitud_verbal,
   principios_deberes_constitucionales,
-  gobierno_digital
+  gobierno_digital,
+  gestion_talento_humano,
+  seguridad_salud_trabajo
 } from '../page/data'
 
 // Mapa de categorías a tipos (puedes ajustar y expandir)
@@ -47,6 +49,8 @@ const categoryTypes = {
   aptitudverbal: 'razonamiento',
   principiosconstitucionales: 'juridico',
   gobiernodigital: 'gestion',
+  gestion_talento_humano: 'gestion',
+  seguridad_salud_trabajo: 'SST'
 }
 
 // Degradados por tipo
@@ -57,6 +61,8 @@ const typeColors = {
   habilidades: 'from-teal-400 to-emerald-500',
   gestion: 'from-green-500 to-emerald-600',
   razonamiento: 'from-yellow-500 to-amber-600',
+  SST: 'from-gray-500 to-amber-600'
+
 }
 
 const preguntaData = [
@@ -80,6 +86,8 @@ const preguntaData = [
   { key: 'aptitudverbal', preguntas: aptitud_verbal },
   { key: 'principiosconstitucionales', preguntas: principios_deberes_constitucionales },
   { key: 'gobiernodigital', preguntas: gobierno_digital },
+  { key: 'gestion_talento_humano', preguntas: gestion_talento_humano },
+  { key: 'seguridad_salud_trabajo', preguntas: seguridad_salud_trabajo },
 ]
 
 export const CategoryList = () => {

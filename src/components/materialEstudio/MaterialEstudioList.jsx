@@ -48,10 +48,17 @@ export const MaterialEstudioList = () => {
     const [currentPage, setCurrentPage] = useState(1)
     const [itemsPerPage, setItemsPerPage] = useState(6)
     const [searchTerm, setSearchTerm] = useState('')
+    const [selectedCategory, setSelectedCategory] = useState('Todas')
 
-    const filteredItems = material_estudio_data.filter(item =>
-        item.titulo.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+    // Obtener todas las categorías únicas, agregar opción "Todas"
+    const categories = ['Todas', ...new Set(material_estudio_data.map(item => item.categoria))]
+
+    // Filtrar según búsqueda y categoría
+    const filteredItems = material_estudio_data.filter(item => {
+        const matchesSearch = item.titulo.toLowerCase().includes(searchTerm.toLowerCase())
+        const matchesCategory = selectedCategory === 'Todas' || item.categoria === selectedCategory
+        return matchesSearch && matchesCategory
+    })
 
     const totalItems = filteredItems.length
     const totalPages = Math.ceil(totalItems / itemsPerPage)
@@ -64,6 +71,17 @@ export const MaterialEstudioList = () => {
             setCurrentPage(page)
             window.scrollTo({ top: 0, behavior: 'smooth' })
         }
+    }
+
+    // Al cambiar filtro categoría o búsqueda, reiniciar página
+    const handleCategoryChange = (e) => {
+        setSelectedCategory(e.target.value)
+        setCurrentPage(1)
+    }
+
+    const handleSearchChange = (e) => {
+        setSearchTerm(e.target.value)
+        setCurrentPage(1)
     }
 
     return (
@@ -83,17 +101,24 @@ export const MaterialEstudioList = () => {
                 </button>
             </Link>
 
-            {/* Search Filter */}
-            <div className="flex justify-center items-center mb-4">
+            {/* Filtros: Categoría y búsqueda */}
+            <div className="flex justify-center items-center mb-4 space-x-4 flex-wrap">
+                <select
+                    value={selectedCategory}
+                    onChange={handleCategoryChange}
+                    className="border border-gray-300 rounded px-4 py-2"
+                >
+                    {categories.map(cat => (
+                        <option key={cat} value={cat}>{cat}</option>
+                    ))}
+                </select>
+
                 <input
                     type="text"
                     placeholder="Buscar por título o palabra clave..."
                     className="border border-gray-300 rounded px-4 py-2 w-full max-w-md"
                     value={searchTerm}
-                    onChange={(e) => {
-                        setSearchTerm(e.target.value)
-                        setCurrentPage(1)
-                    }}
+                    onChange={handleSearchChange}
                 />
             </div>
 
